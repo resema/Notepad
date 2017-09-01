@@ -1,17 +1,15 @@
 ---
 layout: post
-published: false
+published: true
 mathjax: false
 featured: true
 comments: false
 title: Let's become a blogger
-description: OMG! Will somebody gone read this....
+description: OMG! Will somebody gonna read this....
 headline: Let's blog!
 categories:
   - personal
 tags: 'blogging, github.io, jekyll'
-modified: ''
-imagefeature: ''
 ---
 
 >&quot;The beginning is the most important part of the work.&quot;
