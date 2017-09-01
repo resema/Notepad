@@ -5,11 +5,14 @@ mathjax: false
 featured: true
 comments: false
 title: Let's become a blogger
-description: OMG! Will somebody gonna read this....
+description: OMG! Will somebody gonna read this...
 headline: Let's blog!
 categories:
   - personal
-tags: 'blogging, github.io, jekyll'
+tags:
+  - blogging
+  - github.io
+  - jekyll
 ---
 
 >&quot;The beginning is the most important part of the work.&quot;
