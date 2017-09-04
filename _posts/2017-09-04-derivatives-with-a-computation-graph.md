@@ -28,3 +28,5 @@ dJ/da = dJ/dv x dv/da = 3 x 1
 dJ/du = dJ/dv x dv/du = 3 x 1
 dJ/db = dJ/du x du/db = dJ/dv x dv/du x du/db = 3 x 1 x c
 
+## Summary of gradient descent (Backpropagation)
+dz <sup> [2] </sup>
