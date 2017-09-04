@@ -5,7 +5,7 @@ title: ABOUT
 tags: [Semadeni, Renato, resema]
 ---
 
-My name is **Renato Semadeni**, and this is my personal blog.  
+My name is **Renato Semadeni** and this is my personal blog.  
 
 I'm a Software Engineer, a Medical Physicist and a Biomechanical. I studied mostly at the ETH Zurich as well as at the HSR Rapperswil.
 
