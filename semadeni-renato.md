@@ -1,13 +1,13 @@
 ---
 layout: page
-permalink: /hossain-mohd-faysal/index.html
+permalink: /resema/index.html
 title: RENATO SEMADENI
 tags: [Semadeni, Renato, resema]
 image:
-  feature: Hossain-Mohd-Faysal.jpg
+  feature: resema.jpg
 ---
 
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
+  <img src="{{ site.url }}/images/resema.jpg" alt="Semadeni Renato">
 
 
 My name is **Renato Semadeni**, and this is my personal blog.  
