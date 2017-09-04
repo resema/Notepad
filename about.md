@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/index.html
-title: RENATO SEMADENI
+title: ABOUT
 tags: [Semadeni, Renato, resema]
 ---
 
