@@ -4,10 +4,10 @@ permalink: /about/index.html
 title: RENATO SEMADENI
 tags: [Semadeni, Renato, resema]
 image:
-  feature: hmfaysal.jpg
+  feature: resema.jpg
 ---
 
-  <img src="{{ site.url }}/images/hmfaysal.jpg" alt="Semadeni Renato">
+  <img src="{{ site.url }}/images/resema.jpg" alt="Semadeni Renato">
 
 
 My name is **Renato Semadeni**, and this is my personal blog.  
