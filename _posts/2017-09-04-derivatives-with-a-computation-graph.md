@@ -13,6 +13,9 @@ headline: What to remember from Calculus
 modified: ''
 imagefeature: ''
 ---
+>&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
+><small><cite title="Einstein">Einstein</cite></small>
+
 What to keep in mind regarding Calculus.
 
 ## Introduction
