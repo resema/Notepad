@@ -35,3 +35,11 @@ dJ/db = dJ/du x du/db = dJ/dv x dv/du x du/db = 3 x 1 x c
 dz<sup>[1]</sup> = W<sup>[2]<sup>T</sup></sup>dz<sup>[2]</sup> x g<sup>[1]</sup>'(z<sup>[1]</sup>) <br>
 dW<sup>[1]</sup> = dz<sup>[1]</sup>x<sup>T</sup> <br>
 db<sup>[1]</sup> = dz<sup>[1]</sup> <br>
+
+### Vectorized implementation
+>dZ<sup>[2]</sup> = A<sup>[2]</sup> - Y <br>
+>dW<sup>[2]</sup> = 1/m dZ<sup>[2]</sup>A<sup>[1]<sup>T</sup></sup> <br>
+db<sup>[2]</sup> = 1/m np.sum(dZ<sup>[2]</sup>, axis=1, keepdims=True)<br>
+dZ<sup>[1]</sup> = W<sup>[2]<sup>T</sup></sup>dZ<sup>[2]</sup> x g<sup>[1]</sup>'(Z<sup>[1]</sup>)<br>
+dW<sup>[1]</sup> = 1/m dZ<sup>[1]</sup>X<sup>T</sup><br>
+db<sup>[1]</sup> = 1/m np.sum(dZ<sup>[1]</sup>, axis=1, keepdims)True)<br>
