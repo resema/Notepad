@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /resema/index.html
+permalink: /about/index.html
 title: RENATO SEMADENI
 tags: [Semadeni, Renato, resema]
 image:
