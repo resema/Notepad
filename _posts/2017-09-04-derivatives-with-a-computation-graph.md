@@ -23,10 +23,10 @@ Back propagation contains Calculus, or more specific we have to take different D
 ## Chain Rule
 u = bc --> v = a + u --> J = 3v
 
-dJ/dv = 3
-dJ/da = dJ/dv x dv/da = 3 x 1
-dJ/du = dJ/dv x dv/du = 3 x 1
-dJ/db = dJ/du x du/db = dJ/dv x dv/du x du/db = 3 x 1 x c
+>dJ/dv = 3 <br>
+>dJ/da = dJ/dv x dv/da = 3 x 1 <br>
+>dJ/du = dJ/dv x dv/du = 3 x 1 <br>
+>dJ/db = dJ/du x du/db = dJ/dv x dv/du x du/db = 3 x 1 x c <br>
 
 ## Summary of gradient descent (Backpropagation)
 >dz<sup>[2]</sup> = a<sup>[2]</sup> - y <br>
