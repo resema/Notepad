@@ -37,7 +37,7 @@ u = bc --> v = a + u --> J = 3v
 >Node a<sup>[i]</sup> = g<sup>[i]</sup>(z<sup>[i]</sup>)<br>
 >Loss (error) function L(yHat, y) = -(y log yHat + (1-y) log(1-yHat)<br>
 
-$$Cost Function J(w,b) = 1/m * \sum_{i=1}^m \mathcal(L)(yHat^[i], y^[i])$$
+$$Cost Function J(w,b) = 1/m * \sum_{i=1}^m \mathcal(L)(yHat^[i], y^[i]) = - 1/m * \sum_{i=1}^m y^(i) log yHat^(i) + (1-y^(i)) log(1-yHat^(i))$$
 
 ### Summary of gradient descent (Backpropagation)
 >dz<sup>[2]</sup> = a<sup>[2]</sup> - y <br>
