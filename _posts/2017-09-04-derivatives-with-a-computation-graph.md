@@ -9,7 +9,7 @@ categories:
   - Mathematics
   - Calculus
   - Neural Network
-tags: 'Calculus, Mathematics, Coursera'
+tags: 'Calculus,Mathematics,Coursera'
 description: Notes to the Coursera courser "DeepLearning.ai"
 headline: What to remember from Calculus in Backpropagation
 ---
