@@ -38,7 +38,7 @@ u = bc --> v = a + u --> J = 3v
 >Loss (error) function L(yHat, y) = -(y log yHat + (1-y) log(1-yHat)<br>
 >Cost function J(w,b) = 1/m <br>
 
-Cost Function $$J(w,b) = \sum_{i=1}^m \mathcal(L)(yHat^[i], y^[i])$$
+$$Cost Function J(w,b) = \sum_{i=1}^m \mathcal(L)(yHat^[i], y^[i])$$
 
 ### Summary of gradient descent (Backpropagation)
 >dz<sup>[2]</sup> = a<sup>[2]</sup> - y <br>
