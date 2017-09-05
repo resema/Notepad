@@ -18,5 +18,5 @@ headline: Normal Equation
 
 ## Normal Equation
 
-$$ \sigma = (X^TX)^{-1}X^Ty
+$$ \sigma = (X^TX)^{-1}X^Ty $$
 
