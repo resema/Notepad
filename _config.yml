@@ -124,6 +124,14 @@ prose:
               value: interesting
             - name: "Web-Development"
               value: webdevelopment
+            - name: "Calculus"
+              value: calculus
+            - name: "Neural Networks"
+              value: neuralnetworks
+            - name: "Machine Learning"
+              value: machinelearning
+            - name: "Mathematics"
+              value: mathematics
           alterable: true
       - name: "tags"
         field:
