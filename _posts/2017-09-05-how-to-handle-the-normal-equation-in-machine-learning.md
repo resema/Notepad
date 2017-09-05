@@ -13,6 +13,10 @@ tags: MachineLearning Calculus
 description: Computing parameter analytically in the normal equation
 headline: Normal Equation
 ---
-## A New Post
+>&quot;God does not care about our mathematical difficulties. He integrates empirically.&quot;
+><small><cite title="Einstein">Einstein</cite></small>
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+## Normal Equation
+
+$$ \sigma = (X^TX)^{-1}X^Ty
+
