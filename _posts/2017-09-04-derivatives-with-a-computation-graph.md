@@ -36,9 +36,8 @@ u = bc --> v = a + u --> J = 3v
 >Sigmoid function g<sup>[i]</sup> = 1 / 1+e<sup>-z</sup><br>
 >Node a<sup>[i]</sup> = g<sup>[i]</sup>(z<sup>[i]</sup>)<br>
 >Loss (error) function L(yHat, y) = -(y log yHat + (1-y) log(1-yHat)<br>
->Cost function J(w,b) = 1/m <br>
 
-$$Cost Function J(w,b) = \sum_{i=1}^m \mathcal(L)(yHat^[i], y^[i])$$
+$$Cost Function J(w,b) = 1/m * \sum_{i=1}^m \mathcal(L)(yHat^[i], y^[i])$$
 
 ### Summary of gradient descent (Backpropagation)
 >dz<sup>[2]</sup> = a<sup>[2]</sup> - y <br>
