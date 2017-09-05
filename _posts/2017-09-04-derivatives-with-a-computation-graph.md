@@ -12,6 +12,8 @@ categories:
 tags: Calculus Mathematics Coursera
 description: Notes to the Coursera courser "DeepLearning.ai"
 headline: What to remember from Calculus in Backpropagation
+modified: ''
+imagefeature: ''
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
@@ -32,7 +34,7 @@ u = bc --> v = a + u --> J = 3v
 >dJ/db = dJ/du x du/db = dJ/dv x dv/du x du/db = 3 x 1 x c <br>
 
 ## Wording
-$$a_j^{[2](i)} $$ := layer 2, example i, feature j
+$$a_j^{[2](i)} $$ := layer 2, example i, neuron j
 
 ## Formulas for Backpropagation
 >Estimation function z<sup>[i]</sup> = W<sup>[i]</sup> + b<sup>[i]</sup><br>
