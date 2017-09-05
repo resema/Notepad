@@ -4,19 +4,19 @@ published: false
 mathjax: false
 featured: false
 comments: false
-title: Derivatives with a Computation Graph
+title: 'Backpropagation: Derivatives with a Computation Graph'
 categories:
   - Mathematics
+  - Calculus
+  - Neural Network
 tags: 'Calculus, Mathematics, Coursera'
 description: Notes to the Coursera courser "DeepLearning.ai"
 headline: What to remember from Calculus
-modified: ''
-imagefeature: ''
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
-What to keep in mind regarding Calculus.
+What to keep in mind regarding Calculus for Backpropagation.
 
 ## Introduction
 To compute derivates in Neural Networks a Computation Graph can help. It contains both a forward and a back propagation.
@@ -30,6 +30,13 @@ u = bc --> v = a + u --> J = 3v
 >dJ/da = dJ/dv x dv/da = 3 x 1 <br>
 >dJ/du = dJ/dv x dv/du = 3 x 1 <br>
 >dJ/db = dJ/du x du/db = dJ/dv x dv/du x du/db = 3 x 1 x c <br>
+
+## Formulas for Backpropagation
+>Estimation function z<sup>[i]</sup> = W<sup>[i]</sup> + b<sup>[i]</sup><br>
+>Sigmoid function g<sup>[i]</sup> = 1 / 1+e<sup>-z</sup><br>
+>Node a<sup>[i]</sup> = g<sup>[i]</sup>(z<sup>[i]</sup>)
+>Cost function 
+>Loss (error) function L(yHat, y) = -(y log yHat + (1-y) log(1-yHat)<br>
 
 ## Summary of gradient descent (Backpropagation)
 >dz<sup>[2]</sup> = a<sup>[2]</sup> - y <br>
@@ -48,4 +55,14 @@ dW<sup>[1]</sup> = 1/m dZ<sup>[1]</sup>X<sup>T</sup><br>
 db<sup>[1]</sup> = 1/m np.sum(dZ<sup>[1]</sup>, axis=1, keepdims)True)<br>
 
 ## Random Initialization
-Initialize weigths with a 2x2 zero matrix is a problem. The computed a's will be the same.
+Initialize weigths with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
+
+### Solution
+We should initialize the parameters randomly.
+>W<sup>[1]</sup> = np.random.randn((2,2)) * 0.01<br>
+>b<sup>[1]</sup> = np.zero((2,1))<br>
+>W<sup>[2]</sup> = ...<br>
+>b<sup>[2]</sup> = 0<br>
+
+Where does the constant 0.01 comes from? We prefer to use very small initialization values. This means we will not start at the flat parts of the curve.
+
