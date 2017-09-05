@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-mathjax: false
+mathjax: true
 featured: false
 comments: false
 title: 'Backpropagation: Derivatives with a Computation Graph'
