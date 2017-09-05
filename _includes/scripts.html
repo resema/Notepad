@@ -7,13 +7,15 @@
     <script src="{{ site.url }}/assets/js/vendor/post-header-animationsb146.js?v=77a7756db2"></script>
     <script src="{{ site.url }}/assets/js/summerb146.js?v=77a7756db2"></script>
 
-<!-- MathJax -->
+{% if page.mathjax %}
+<!-- Load MathJax -->
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({tex2jax: {inlineMath: [['$$','$$'], ['\\(','\\)']]}});
 </script>
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+{% endif %}
 
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
