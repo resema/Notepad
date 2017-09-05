@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 mathjax: true
 featured: false
 comments: false
@@ -11,7 +11,7 @@ categories:
   - Neural Network
 tags: 'Calculus, Mathematics, Coursera'
 description: Notes to the Coursera courser "DeepLearning.ai"
-headline: What to remember from Calculus
+headline: What to remember from Calculus in Backpropagation
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
