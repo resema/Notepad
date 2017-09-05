@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-mathjax: true
+mathjax: false
 featured: false
 comments: false
 title: 'Backpropagation: Derivatives with a Computation Graph'
@@ -66,4 +66,3 @@ We should initialize the parameters randomly.
 >b<sup>[2]</sup> = 0<br>
 
 Where does the constant 0.01 comes from? We prefer to use very small initialization values. This means we will not start at the flat parts of the curve.
-
