@@ -31,6 +31,9 @@ u = bc --> v = a + u --> J = 3v
 >dJ/du = dJ/dv x dv/du = 3 x 1 <br>
 >dJ/db = dJ/du x du/db = dJ/dv x dv/du x du/db = 3 x 1 x c <br>
 
+## Wording
+$$a_j^{[2](i)} $$ := layer 2, example i, feature j
+
 ## Formulas for Backpropagation
 >Estimation function z<sup>[i]</sup> = W<sup>[i]</sup> + b<sup>[i]</sup><br>
 >Sigmoid function g<sup>[i]</sup> = 1 / 1+e<sup>-z</sup><br>
