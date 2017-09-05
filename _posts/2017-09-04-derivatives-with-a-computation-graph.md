@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-mathjax: false
+mathjax: true
 featured: false
 comments: false
 title: 'Backpropagation: Derivatives with a Computation Graph'
@@ -35,10 +35,12 @@ u = bc --> v = a + u --> J = 3v
 >Estimation function z<sup>[i]</sup> = W<sup>[i]</sup> + b<sup>[i]</sup><br>
 >Sigmoid function g<sup>[i]</sup> = 1 / 1+e<sup>-z</sup><br>
 >Node a<sup>[i]</sup> = g<sup>[i]</sup>(z<sup>[i]</sup>)
->Cost function 
 >Loss (error) function L(yHat, y) = -(y log yHat + (1-y) log(1-yHat)<br>
+>Cost function J(w,b) = 1/m <br>
 
-## Summary of gradient descent (Backpropagation)
+Cost Function $$J(w,b) = \sum_{i=1}^m \mathcal(L)(yHat^[i], y^[i])$$
+
+### Summary of gradient descent (Backpropagation)
 >dz<sup>[2]</sup> = a<sup>[2]</sup> - y <br>
 >dW<sup>[2]</sup> = dz<sup>[2]</sup>a<sup>[1]<sup>T</sup> </sup> <br>
 >db<sup>[2]</sup> = dz<sup>[2]</sup> <br>
@@ -46,7 +48,7 @@ dz<sup>[1]</sup> = W<sup>[2]<sup>T</sup></sup>dz<sup>[2]</sup> * g<sup>[1]</sup>
 dW<sup>[1]</sup> = dz<sup>[1]</sup>x<sup>T</sup> <br>
 db<sup>[1]</sup> = dz<sup>[1]</sup> <br>
 
-### Vectorized implementation
+#### Vectorized implementation
 >dZ<sup>[2]</sup> = A<sup>[2]</sup> - Y <br>
 >dW<sup>[2]</sup> = 1/m dZ<sup>[2]</sup>A<sup>[1]<sup>T</sup></sup> <br>
 db<sup>[2]</sup> = 1/m np.sum(dZ<sup>[2]</sup>, axis=1, keepdims=True)<br>
@@ -54,10 +56,10 @@ dZ<sup>[1]</sup> = W<sup>[2]<sup>T</sup></sup>dZ<sup>[2]</sup> * g<sup>[1]</sup>
 dW<sup>[1]</sup> = 1/m dZ<sup>[1]</sup>X<sup>T</sup><br>
 db<sup>[1]</sup> = 1/m np.sum(dZ<sup>[1]</sup>, axis=1, keepdims)True)<br>
 
-## Random Initialization
+### Random Initialization
 Initialize weigths with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
 
-### Solution
+#### Solution
 We should initialize the parameters randomly.
 >W<sup>[1]</sup> = np.random.randn((2,2)) * 0.01<br>
 >b<sup>[1]</sup> = np.zero((2,1))<br>
