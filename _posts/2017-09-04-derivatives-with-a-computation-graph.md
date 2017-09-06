@@ -12,8 +12,6 @@ categories:
 tags: Calculus Mathematics Coursera
 description: Notes to the Coursera courser "DeepLearning.ai"
 headline: What to remember from Calculus in Backpropagation
-modified: ''
-imagefeature: ''
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
@@ -40,7 +38,7 @@ $$a_j^{[2](i)} $$ := layer 2, example i, neuron j
 Estimation function $$z^{[i]} = W^{[i]}X + b^{[i]}$$ <br>
 Sigmoid function $$g^{[i]} = 1/1+e^{-z}$$
 
->Node a<sup>[i]</sup> = g<sup>[i]</sup>(z<sup>[i]</sup>)<br>
+Node $$a^{[i]} = g^{[i]}(z^{[i]})$$<br>
 >Loss (error) function L(yHat, y) = -(y log yHat + (1-y) log(1-yHat)<br>
 
 $$Cost\, Function\, J(w,b) = 1/m * \sum_{i=1}^m \mathcal{L}(\hat{y}^{[i]}, y^{[i]}) = - 1/m * \sum_{i=1}^m y^{(i)} log(\hat{y}^{[i]}) + (1-y^{[i]}) log(1-\hat{y}^{[i]})$$
