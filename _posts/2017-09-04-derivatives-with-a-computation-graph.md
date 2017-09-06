@@ -36,7 +36,7 @@ $$a_j^{[2](i)} $$ := layer 2, example i, neuron j
 
 ## Formulas for Backpropagation
 Estimation function $$z^{[i]} = W^{[i]}X + b^{[i]}$$ <br>
-Sigmoid function $$g^{[i]} = 1/1+e^{-z}$$
+Sigmoid function $$g^{[i]} = 1/1+e^{-z}$$<br>
 Node $$a^{[i]} = g^{[i]}(z^{[i]})$$<br>
 >Loss (error) function L(yHat, y) = -(y log yHat + (1-y) log(1-yHat)<br>
 
@@ -62,8 +62,8 @@ db<sup>[1]</sup> = 1/m np.sum(dZ<sup>[1]</sup>, axis=1, keepdims)True)<br>
 Initialize weigths with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
 
 #### Solution
-We should initialize the parameters randomly.
->W<sup>[1]</sup> = np.random.randn((2,2)) * 0.01<br>
+We should initialize the parameters randomly.<br>
+$$W^{[1]} = np.random.randn((2,2)) * 0.01$$<br>
 >b<sup>[1]</sup> = np.zero((2,1))<br>
 >W<sup>[2]</sup> = ...<br>
 >b<sup>[2]</sup> = 0<br>
