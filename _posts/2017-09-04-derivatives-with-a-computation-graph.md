@@ -37,7 +37,7 @@ u = bc --> v = a + u --> J = 3v
 $$a_j^{[2](i)} $$ := layer 2, example i, neuron j
 
 ## Formulas for Backpropagation
-Estimation function $$z^{[i]} = W^{[i]}X + b^{[i]}$$
+Estimation function $$z^{[i]} = W^{[i]}X + b^{[i]}$$ <br>
 Sigmoid function $$g^{[i]} = 1/1+e^{-z}$$
 
 >Node a<sup>[i]</sup> = g<sup>[i]</sup>(z<sup>[i]</sup>)<br>
