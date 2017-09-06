@@ -23,7 +23,7 @@ $$ \theta = (X^TX)^{-1}X^Ty $$
 ## Comparison with Normal Equation
 
 ### Normal Equation
-- No need to choose $\alpha$
+- No need to choose $$\alpha$$
 - Don't need to iterate
 - Need to compute $$(X^TX)^{-1}$$
 - Slow if $$n$$ is very large
