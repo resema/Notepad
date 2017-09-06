@@ -64,8 +64,8 @@ Initialize weigths with a 2x2 zero matrix is a problem. The computed a's will be
 #### Solution
 We should initialize the parameters randomly.<br>
 $$W^{[1]} = np.random.randn((2,2)) * 0.01$$<br>
->b<sup>[1]</sup> = np.zero((2,1))<br>
->W<sup>[2]</sup> = ...<br>
->b<sup>[2]</sup> = 0<br>
+$$b^{[1]} = np.zero((2,1))$$ <br>
+$$W^{[2]} = ...$$ <br>
+$$b^{[2]} = 0$$ <br>
 
 Where does the constant 0.01 comes from? We prefer to use very small initialization values. This means we will not start at the flat parts of the curve.
