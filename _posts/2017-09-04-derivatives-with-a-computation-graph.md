@@ -64,7 +64,7 @@ Initialize weigths with a 2x2 zero matrix is a problem. The computed a's will be
 #### Solution
 We should initialize the parameters randomly.<br>
 $$W^{[1]} = np.random.randn(2,2) * 0.01$$<br>
-$$b^{[1]} = np.zero((2,1))$$ <br>
+$$b^{[1]} = np.zeros((2,1))$$ <br>
 $$W^{[2]} = ...$$ <br>
 $$b^{[2]} = 0$$ <br>
 
