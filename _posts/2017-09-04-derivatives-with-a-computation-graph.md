@@ -58,10 +58,10 @@ dZ<sup>[1]</sup> = W<sup>[2]<sup>T</sup></sup>dZ<sup>[2]</sup> * g<sup>[1]</sup>
 dW<sup>[1]</sup> = 1/m dZ<sup>[1]</sup>X<sup>T</sup><br>
 db<sup>[1]</sup> = 1/m np.sum(dZ<sup>[1]</sup>, axis=1, keepdims)True)<br>
 
-### Random Initialization
-Initialize weigths with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
+### Calculation Problem with Zero Matrix
+Initialize weights with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
 
-#### Solution
+#### Random Initialization
 We should initialize the parameters randomly. The parameters are $$n_x := n\, of\, input\, layer$$, $$n_h := n\, of\, hidden\, layer$$ and $$n_h := n\, of\, output\, layer$$<br>
 $$W^{[1]} = np.random.randn(n_h,n_x) * 0.01$$<br>
 $$b^{[1]} = np.zeros((n_h,1))$$ <br>
