@@ -62,7 +62,7 @@ db<sup>[1]</sup> = 1/m np.sum(dZ<sup>[1]</sup>, axis=1, keepdims)True)<br>
 Initialize weigths with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
 
 #### Solution
-We should initialize the parameters randomly. The parameters are $$n_x := n\, of\, input\n, layer$$, $$n_h := n\, of\, hidden\n, layer$$ and $$n_h := n\, of\, output\n, layer$$<br>
+We should initialize the parameters randomly. The parameters are $$n_x := n\, of\, input\, layer$$, $$n_h := n\, of\, hidden\, layer$$ and $$n_h := n\, of\, output\, layer$$<br>
 $$W^{[1]} = np.random.randn(n_h,n_x) * 0.01$$<br>
 $$b^{[1]} = np.zeros((n_h,1))$$ <br>
 $$W^{[2]} = np.random.randn(n_y,n_h) * 0.01$$$$ <br>
