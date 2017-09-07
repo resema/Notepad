@@ -62,10 +62,10 @@ db<sup>[1]</sup> = 1/m np.sum(dZ<sup>[1]</sup>, axis=1, keepdims)True)<br>
 Initialize weigths with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
 
 #### Solution
-We should initialize the parameters randomly.<br>
-$$W^{[1]} = np.random.randn(2,2) * 0.01$$<br>
-$$b^{[1]} = np.zeros((2,1))$$ <br>
-$$W^{[2]} = ...$$ <br>
-$$b^{[2]} = 0$$ <br>
+We should initialize the parameters randomly. The parameters are $$n_x := n\, of\, input\n, layer$$, $$n_h := n\, of\, hidden\n, layer$$ and $$n_h := n\, of\, output\n, layer$$<br>
+$$W^{[1]} = np.random.randn(n_h,n_x) * 0.01$$<br>
+$$b^{[1]} = np.zeros((n_h,1))$$ <br>
+$$W^{[2]} = np.random.randn(n_y,n_h) * 0.01$$$$ <br>
+$$b^{[2]} = np.zeros((n_y,1))$$ <br>
 
 Where does the constant 0.01 comes from? We prefer to use very small initialization values. This means we will not start at the flat parts of the curve.
