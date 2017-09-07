@@ -55,7 +55,7 @@ $$dW^{[2]} = \frac{1}{m} dZ^{[2]}A^{[1]^T}$$ <br>
 $$db^{[2]} = \frac{1}{m} np.sum(dZ^{[2]}, axis=1, keepdims=True)$$<br>
 $$dZ^{[1]} = W^{[2]^T}dZ^{[2]} * g'^{[1]}(Z^{[1]})$$<br>
 $$dW^{[1]} = \frac{1}{m} dZ^{[1]}X^T$$<br>
-$$db^{[1]} = \frac{1}{m} np.sum(dZ^{[1]}, axis=1, keepdims)True)$$<br>
+$$db^{[1]} = \frac{1}{m} np.sum(dZ^{[1]}, axis=1, keepdims=True)$$<br>
 
 ### Calculation Problem with Zero Matrix
 Initialize weights with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
