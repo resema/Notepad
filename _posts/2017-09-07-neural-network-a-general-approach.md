@@ -11,7 +11,7 @@ categories:
   - neuralnetworks
 tags: NeuralNetworks Methodology
 ---
->&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
+>&quot;Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
 ## Steps
