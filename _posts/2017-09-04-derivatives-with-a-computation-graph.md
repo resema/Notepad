@@ -35,7 +35,7 @@ u = bc --> v = a + u --> J = 3v
 $$a_j^{[2](i)} $$ := layer 2, example i, neuron j
 
 ## Formulas for Back Propagation
-Estimation function $$z^{[i]} = W^{[i]}X + b^{[i]}$$ <br>
+Estimation function $$Z^{[i]} = W^{[i]}X + b^{[i]}$$ <br>
 Sigmoid function $$g^{[i]} = 1/1+e^{-z}$$<br>
 Node $$a^{[i]} = g^{[i]}(z^{[i]})$$<br>
 >Loss (error) function L(yHat, y) = -(y log yHat + (1-y) log(1-yHat)<br>
