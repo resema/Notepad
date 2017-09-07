@@ -45,7 +45,7 @@ Cost Function $$J(w,b) = 1/m * \sum_{i=1}^m \mathcal{L}(\hat{y}^{[i]}, y^{[i]}) 
 $$dz^{[2]} = a^{[2]} - y$$ <br>
 $$dW^{[2]} = dz^{[2]}a^{[1]^T}$$ <br>
 $$db^{[2]} = dz^{[2]}$$ <br>
-$$dz^{[1]} = W^{[2]^T}dz^{[2]} * g^{[1]}^{\prime}(z^{[1]})$$ <br>
+$$dz^{[1]} = W^{[2]^T}dz^{[2]} * g'^{[1]}(z^{[1]})$$ <br>
 $$dW^{[1]} = dz^{[1]}x^T$$<br>
 $$db^{[1]} = dz^{[1]}$$ <br>
 
@@ -53,7 +53,7 @@ $$db^{[1]} = dz^{[1]}$$ <br>
 $$dZ^{[2]} = A^{[2]} - Y$$ <br>
 $$dW^{[2]} = 1/m dZ^{[2]}A^{[1]^T}$$ <br>
 $$db^{[2]} = 1/m np.sum(dZ^{[2]}, axis=1, keepdims=True)$$<br>
-$$dZ^{[1]} = W^{[2]^T}dZ^{[2]} * g^{[1]}^{\prime}(Z^{[1]})<br>
+$$dZ^{[1]} = W^{[2]^T}dZ^{[2]} * g'^{[1]}(Z^{[1]})<br>
 $$dW^{[1]} = \frac{1}{m} dZ^{[1]}X^T$$<br>
 $$db^{[1]} = \frac{1}{m} np.sum(dZ^{[1]}, axis=1, keepdims)True)$$<br>
 
