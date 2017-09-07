@@ -16,7 +16,7 @@ headline: What to remember from Calculus in Backpropagation
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
-What to keep in mind regarding Calculus for Backpropagation.
+What to keep in mind regarding Calculus for Back Propagation.
 
 ## Introduction
 To compute derivates in Neural Networks a Computation Graph can help. It contains both a forward and a back propagation.
@@ -34,7 +34,7 @@ u = bc --> v = a + u --> J = 3v
 ## Wording
 $$a_j^{[2](i)} $$ := layer 2, example i, neuron j
 
-## Formulas for Backpropagation
+## Formulas for Back Propagation
 Estimation function $$z^{[i]} = W^{[i]}X + b^{[i]}$$ <br>
 Sigmoid function $$g^{[i]} = 1/1+e^{-z}$$<br>
 Node $$a^{[i]} = g^{[i]}(z^{[i]})$$<br>
@@ -65,7 +65,7 @@ Initialize weights with a 2x2 zero matrix is a problem. The computed a's will be
 We should initialize the parameters randomly. The parameters are $$n_x := n\, of\, input\, layer$$, $$n_h := n\, of\, hidden\, layer$$ and $$n_h := n\, of\, output\, layer$$<br>
 $$W^{[1]} = np.random.randn(n_h,n_x) * 0.01$$<br>
 $$b^{[1]} = np.zeros((n_h,1))$$ <br>
-$$W^{[2]} = np.random.randn(n_y,n_h) * 0.01$$$$ <br>
+$$W^{[2]} = np.random.randn(n_y,n_h) * 0.01$$ <br>
 $$b^{[2]} = np.zeros((n_y,1))$$ <br>
 
 Where does the constant 0.01 comes from? We prefer to use very small initialization values. This means we will not start at the flat parts of the curve.
