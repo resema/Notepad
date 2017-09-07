@@ -42,20 +42,20 @@ Loss (error) function $$ \mathcal{L}(\hat{y}, y) = -(y log \hat{y} + (1-y) log(1
 Cost Function $$J(w,b) = 1/m * \sum_{i=1}^m \mathcal{L}(\hat{y}^{[i]}, y^{[i]}) = - 1/m * \sum_{i=1}^m y^{(i)} log(\hat{y}^{[i]}) + (1-y^{[i]}) log(1-\hat{y}^{[i]})$$
 
 ### Summary of gradient descent (Backpropagation)
->dz<sup>[2]</sup> = a<sup>[2]</sup> - y <br>
->dW<sup>[2]</sup> = dz<sup>[2]</sup>a<sup>[1]<sup>T</sup> </sup> <br>
->db<sup>[2]</sup> = dz<sup>[2]</sup> <br>
-dz<sup>[1]</sup> = W<sup>[2]<sup>T</sup></sup>dz<sup>[2]</sup> * g<sup>[1]</sup>'(z<sup>[1]</sup>) <br>
-dW<sup>[1]</sup> = dz<sup>[1]</sup>x<sup>T</sup> <br>
-db<sup>[1]</sup> = dz<sup>[1]</sup> <br>
+$$dz^{[2]} = a^{[2]} - y$$ <br>
+$$dW^{[2]} = dz^{[2]}a^{[1]^T}$$ <br>
+$$db^{[2]} = dz^{[2]}$$ <br>
+$$dz^{[1]}= W^{[2]^T}dz^{[2]} * g^{[1]}'(z^{[1]})$$ <br>
+$$dW^{[1]} = dz^{[1]}x^T$$<br>
+$$db^{[1]} = dz^{[1]}$$ <br>
 
 #### Vectorized implementation
->dZ<sup>[2]</sup> = A<sup>[2]</sup> - Y <br>
->dW<sup>[2]</sup> = 1/m dZ<sup>[2]</sup>A<sup>[1]<sup>T</sup></sup> <br>
-db<sup>[2]</sup> = 1/m np.sum(dZ<sup>[2]</sup>, axis=1, keepdims=True)<br>
-dZ<sup>[1]</sup> = W<sup>[2]<sup>T</sup></sup>dZ<sup>[2]</sup> * g<sup>[1]</sup>'(Z<sup>[1]</sup>)<br>
-dW<sup>[1]</sup> = 1/m dZ<sup>[1]</sup>X<sup>T</sup><br>
-db<sup>[1]</sup> = 1/m np.sum(dZ<sup>[1]</sup>, axis=1, keepdims)True)<br>
+$$dZ^{[2]} = A^{[2]} - Y$$ <br>
+$$dW^{[2]} = 1/m dZ^{[2]}A^{[1]^T}$$ <br>
+$$db^{[2]} = 1/m np.sum(dZ^{[2]}, axis=1, keepdims=True)$$<br>
+$$dZ^{[1]} = W^{[2]^T}dZ^{[2]} * g^{[1]}'(Z^{[1]})<br>
+$$dW^{[1]} = 1/m dZ^{[1]}X^T$$<br>
+$$db^{[1]} = 1/m np.sum(dZ^{[1]}, axis=1, keepdims)True)<br>
 
 ### Calculation Problem with Zero Matrix
 Initialize weights with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
