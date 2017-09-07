@@ -51,9 +51,9 @@ $$db^{[1]} = dz^{[1]}$$ <br>
 
 #### Vectorized implementation
 $$dZ^{[2]} = A^{[2]} - Y$$ <br>
-$$dW^{[2]} = 1/m dZ^{[2]}A^{[1]^T}$$ <br>
-$$db^{[2]} = 1/m np.sum(dZ^{[2]}, axis=1, keepdims=True)$$<br>
-$$dZ^{[1]} = W^{[2]^T}dZ^{[2]} * g'^{[1]}(Z^{[1]})<br>
+$$dW^{[2]} = \frac{1}{m} dZ^{[2]}A^{[1]^T}$$ <br>
+$$db^{[2]} = \frac{1}{m} np.sum(dZ^{[2]}, axis=1, keepdims=True)$$<br>
+$$dZ^{[1]} = W^{[2]^T}dZ^{[2]} * g'^{[1]}(Z^{[1]})$$<br>
 $$dW^{[1]} = \frac{1}{m} dZ^{[1]}X^T$$<br>
 $$db^{[1]} = \frac{1}{m} np.sum(dZ^{[1]}, axis=1, keepdims)True)$$<br>
 
