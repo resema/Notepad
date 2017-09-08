@@ -26,10 +26,10 @@ Back propagation contains Calculus, or more specific we have to take different D
 ## Chain Rule
 u = bc --> v = a + u --> J = 3v
 
->dJ/dv = 3 <br>
->dJ/da = dJ/dv x dv/da = 3 x 1 <br>
->dJ/du = dJ/dv x dv/du = 3 x 1 <br>
->dJ/db = dJ/du x du/db = dJ/dv x dv/du x du/db = 3 x 1 x c <br>
+$$dJ/dv = 3$$ <br>
+$$dJ/da = dJ/dv x dv/da = 3 x 1$$ <br>
+$$dJ/du = dJ/dv x dv/du = 3 x 1$$ <br>
+$$dJ/db = dJ/du x du/db = dJ/dv x dv/du x du/db = 3 x 1 x c$$ <br>
 
 ## Wording
 $$a_j^{[2](i)} $$ := layer 2, example i, neuron j
