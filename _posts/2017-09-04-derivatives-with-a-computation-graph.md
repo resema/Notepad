@@ -68,3 +68,6 @@ $$W^{[2]} = np.random.randn(n_y,n_h) * 0.01$$ <br>
 $$b^{[2]} = np.zeros((n_y,1))$$ <br>
 
 Where does the constant 0.01 comes from? We prefer to use very small initialization values. This means we will not start at the flat parts of the curve.
+
+### General Gradient Descent Rule
+$$\theta = \theta - \alpha\frac{\aleph_0 J}{\aleph_0 \theat}
