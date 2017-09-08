@@ -24,7 +24,7 @@ To compute derivates in Neural Networks a Computation Graph can help. It contain
 Back propagation contains Calculus, or more specific we have to take different Derivatives. Look at it as a computation from right to left.
 
 ## Chain Rule
-u = bc --> v = a + u --> J = 3v
+$$u = bc --> v = a + u \Rightarrow J = 3v$$
 
 $$dJ/dv = 3$$ <br>
 $$dJ/da = dJ/dv x dv/da = 3 x 1$$ <br>
