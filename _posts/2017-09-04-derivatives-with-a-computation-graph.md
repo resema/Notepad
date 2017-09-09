@@ -4,14 +4,14 @@ published: true
 mathjax: true
 featured: false
 comments: false
-title: 'Backpropagation: Derivatives with a Computation Graph'
+title: The Basic Formulas in Neural Networks using Computation Graph
 categories:
   - Mathematics
   - Calculus
   - Neural Network
 tags: Calculus Mathematics Coursera
 description: Notes to the Coursera courser "DeepLearning.ai"
-headline: What to remember from Calculus in Backpropagation
+headline: What to remember from Mathematics in Forward and Backpropagation
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
