@@ -22,3 +22,6 @@ tags: NeuralNetworks Methodology
   - Compute loss
   - Implement backward propagation to get the gradients
 - Update parameters (gradient descent)
+
+### Forward Propagation
+Calculate the weigths $$Z^{[i]}$$ and the activations $$A^{[i]}
