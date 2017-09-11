@@ -24,4 +24,4 @@ tags: NeuralNetworks Methodology
 - Update parameters (gradient descent)
 
 ### Forward Propagation
-Calculate the weigths $$Z^{[i]} = W^{[i]}A^{[i]} + b^{[i]}$$ and the activations $$A^{[i]} = g^{[i]}(Z^{[i]})$$. In a neural network witth n-layer, there will be a for-loop for calculating this values. It's completely okay to use a for-loop at this point.
+Calculate the weigths $$Z^{[i]} = W^{[i]}A^{[i]} + b^{[i]}$$ and the activations $$A^{[i]} = g^{[i]}(Z^{[i]})$$. In a neural network with n-layer, there will be a for-loop for calculating this values. It's completely okay to use a for-loop at this point.
