@@ -27,3 +27,8 @@ tags: NeuralNetworks Methodology
 Calculate the weigths $$Z^{[i]} = W^{[i]}A^{[i]} + b^{[i]}$$ and the activations $$A^{[i]} = g^{[i]}(Z^{[i]})$$. In a neural network with n-layer, there will be a for-loop for calculating this values. 
 
 It's completely okay to use a for-loop at this point.
+
+#### Vectorized Parameters
+$$W^{[l]}$$ is a $$(n^{[l]}, n^{[l-1]}$$-matrix.<br>
+$$b^{[l]}$$ is a $$(n^{[l]}, 1)$$-matrix.
+
