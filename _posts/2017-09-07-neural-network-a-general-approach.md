@@ -24,4 +24,4 @@ tags: NeuralNetworks Methodology
 - Update parameters (gradient descent)
 
 ### Forward Propagation
-Calculate the weigths $$Z^{[i]}$$ and the activations $$A^{[i]}
+Calculate the weigths $$Z^{[i]} = W^{[i]}A^{[i]} + b^{[i]}$$ and the activations $$A^{[i]} = g^{[i]}(Z^{[i]}$$.
