@@ -38,6 +38,7 @@ Examples are Amazon as seller.
 Example in SciPy "iris"
 
 #### Pseudo Code
+``` javascript
 Create k points for starting centroids (often randomly)
 While any point has changed cluster assignment
 	for every point in our dataset:
