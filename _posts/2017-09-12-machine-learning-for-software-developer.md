@@ -77,7 +77,21 @@ Possible steps:
 
 ## Preconditions for Machine Learning
 - Useful topic
- - Automated decision taking
+ - Automated decision taking in a process
+ - Operative decision
+ - Repeated, time consuming or difficult decisions
+ - Non-deterministic probleme
+ - Root and cause
+- Data
+ - Relevant data
+ - Correct data
+ - Enough data (depending also on algorithm)
+ - Unaggregated data (better to have atomar data)
+ - Data with labels
+- Feedback loop
+ - Prediction of algorithm has value or not
+ - 
+ 
 
 ## Libraries
 - face_recognition 0.1.13, Python, https://face-recognition.readthedocs.io/en/latest/face_recognition.html
