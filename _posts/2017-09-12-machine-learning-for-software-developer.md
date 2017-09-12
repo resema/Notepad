@@ -52,6 +52,14 @@ While any point has changed cluster assignment
 ## General Approach
 Check follow-along.ipynb file.
 
+### Feature Engineering
+Needs a lot of domain knowledge to create set of features. Has a big impact on performance. A neural network handles the feature generation by itself. 
+
+Possible steps:
+- Extraction
+- Construction
+- Selectino
+
 
 ## Libraries
 - face_recognition 0.1.13, Python, https://face-recognition.readthedocs.io/en/latest/face_recognition.html
