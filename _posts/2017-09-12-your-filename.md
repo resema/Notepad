@@ -1,12 +1,17 @@
 ---
 layout: post
 published: true
-categories:
-  - personal
 mathjax: true
 featured: false
 comments: false
-title: ''
+title: Build a Small Robot
+description: Small Robot Controlled Remotely by JavaScript App
+headline: Build a Small Robot
+categories:
+  - interesting
+  - JavaScript
+  - Robotic
+tags: chOpen JavaScript Robotic
 ---
 ## Tools
 ### Digital design for the Hardware Production
