@@ -43,7 +43,7 @@ Examples are Amazon as seller.
   - Relevant data
   - Correct data
   - Enough data (depending also on algorithm)
-  - Unaggregated data (better to have atomar data)
+  - Unaggregated data (better to have atomic data)
   - Data with labels
 - Feedback loop
   - Prediction of algorithm has value or not
@@ -107,3 +107,4 @@ Possible steps:
 
 ## Links
 - www.kaggle.com
+- www.datarobot.com
