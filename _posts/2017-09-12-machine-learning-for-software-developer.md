@@ -34,8 +34,14 @@ Examples are Amazon as seller.
 
 ## Algorithms
 
+### Extreme Gradient Boosting
+
+### Neuronal Networks
+
 ### KMeans
 Example in SciPy "iris"
+
+### Random Forest
 
 #### Pseudo Code
 ```
