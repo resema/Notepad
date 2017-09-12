@@ -32,6 +32,25 @@ Used when existing data is extrem sparse. Cold-start.
 Examples are Amazon as seller.
 
 
+## Preconditions for Machine Learning
+- Useful topic
+  - Automated decision taking in a process
+  - Operative decision
+  - Repeated, time consuming or difficult decisions
+  - Non-deterministic probleme
+  - Root and cause
+- Data
+  - Relevant data
+  - Correct data
+  - Enough data (depending also on algorithm)
+  - Unaggregated data (better to have atomar data)
+  - Data with labels
+- Feedback loop
+  - Prediction of algorithm has value or not
+  - Controlling of estimation
+  - Adapt the model
+ 
+ 
 ## Algorithms
 
 ### Extreme Gradient Boosting
@@ -74,26 +93,6 @@ Possible steps:
 - Construction
 - Selectino
 
-
-## Preconditions for Machine Learning
-- Useful topic
-  - Automated decision taking in a process
-  - Operative decision
-  - Repeated, time consuming or difficult decisions
-  - Non-deterministic probleme
-  - Root and cause
-- Data
-  - Relevant data
-  - Correct data
-  - Enough data (depending also on algorithm)
-  - Unaggregated data (better to have atomar data)
-  - Data with labels
-- Feedback loop
-  - Prediction of algorithm has value or not
-  - Controlling of estimation
-  - Adapt the model
- 
- 
 
 ## Libraries
 - face_recognition 0.1.13, Python, https://face-recognition.readthedocs.io/en/latest/face_recognition.html
