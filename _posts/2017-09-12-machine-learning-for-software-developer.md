@@ -40,7 +40,7 @@ Examples are Amazon as seller.
   - Automated decision taking in a process
   - Operative decision
   - Repeated, time consuming or difficult decisions
-  - Non-deterministic probleme
+  - **Non-deterministic** probleme
   - Root and cause
 - Data
   - Relevant data
@@ -49,11 +49,30 @@ Examples are Amazon as seller.
   - Unaggregated data (better to have atomic data)
   - Data with labels
 - Feedback loop
-  - Prediction of algorithm has value or not
-  - Controlling of estimation
+  - **Prediction** of algorithm has value or not
+  - **Controlling** of estimation
   - Adapt the model
  
- 
+### Process Steps for Supervised Learning
+Check follow-along.ipynb file.
+
+- Domain knowledge and data
+- Data preparation, clearing and correction
+- Feature engineering
+- Validation methodology
+- Training and model building
+  - Hyperparams optimize
+- Ensembling (Combine multiple algorithms)
+- Prediction
+
+#### Feature Engineering
+Needs a lot of domain knowledge to create set of features. Has a big impact on performance. A neural network handles the feature generation by itself. 
+
+Possible steps:
+- Extraction
+- Construction
+- Selection
+
 ## Algorithms
 
 ### Extreme Gradient Boosting
@@ -83,18 +102,6 @@ While any point has changed cluster assignment
 ```
 
 ### Random Forest
-
-
-## General Approach
-Check follow-along.ipynb file.
-
-### Feature Engineering
-Needs a lot of domain knowledge to create set of features. Has a big impact on performance. A neural network handles the feature generation by itself. 
-
-Possible steps:
-- Extraction
-- Construction
-- Selection
 
 
 ## Libraries
