@@ -16,13 +16,16 @@ tags: chOpen MachineLearning
 
 ### Supervised Learning
 An example with the housing prices and the known prices for a cluster of houses. This can be used to predict the housing price of a new house.
+The every data feature has a clear label.
 
 ### Unsupervised Learning
-Examples are clustering of e.g. flowers, customer segmetation
+Examples are clustering of e.g. flowers, customer segmetation.
+The data features have no clear label at the beginning. Cluster can become labels.
 
 ### Reinforcement Learning
 Characterised with missing classical inputs and outputs.
 Examples are Alpha Go, Robotic control, ...
+Labels are completely unclear.
 
 ### Semi-Supervised Learning
 Labeling, which is generally expensive and/or time consuming, is reduced to a small set.
