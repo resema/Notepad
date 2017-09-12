@@ -32,7 +32,7 @@ Used when existing data is extrem sparse. Cold-start.
 Examples are Amazon as seller.
 
 
-## Preconditions for Machine Learning
+## Preconditions for Supervised Learning
 - Useful topic
   - Automated decision taking in a process
   - Operative decision
