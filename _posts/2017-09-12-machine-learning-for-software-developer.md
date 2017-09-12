@@ -53,7 +53,7 @@ Examples are Amazon as seller.
   - **Controlling** of estimation
   - Adapt the model
  
-### Process Steps for Supervised Learning
+## Process Steps for Supervised Learning
 Check follow-along.ipynb file.
 
 - Domain knowledge and data
@@ -65,13 +65,14 @@ Check follow-along.ipynb file.
 - Ensembling (Combine multiple algorithms)
 - Prediction
 
-#### Feature Engineering
+### Feature Engineering
 Needs a lot of domain knowledge to create set of features. Has a big impact on performance. A neural network handles the feature generation by itself. 
 
 Possible steps:
 - Extraction
 - Construction
 - Selection
+
 
 ## Algorithms
 
