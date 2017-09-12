@@ -36,11 +36,14 @@ Examples are Amazon as seller.
 
 ### Extreme Gradient Boosting
 
-### Neuronal Networks
+### Neural Networks
 Is a universal function approximator. Used for supervised and unsupervised learning.
 
 #### Deep Learning
 Is a deep neural network, meaningly a higher number of hidden layers.
+
+- CNN: Convolutional Neural Network
+- RNN: Recurrent Neural Network
 
 ### KMeans
 Example in SciPy "iris"
