@@ -41,9 +41,7 @@ Examples are Amazon as seller.
 ### KMeans
 Example in SciPy "iris"
 
-### Random Forest
-
-### Pseudo Code
+#### Pseudo Code
 ```
 Create k points for starting centroids (often randomly)
 While any point has changed cluster assignment
@@ -54,6 +52,9 @@ While any point has changed cluster assignment
 	for every cluster calculate the mean of the points in that cluster
 		assign the centroid to the mean
 ```
+
+### Random Forest
+
 
 ## General Approach
 Check follow-along.ipynb file.
