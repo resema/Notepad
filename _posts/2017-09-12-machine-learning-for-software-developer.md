@@ -90,7 +90,9 @@ Possible steps:
  - Data with labels
 - Feedback loop
  - Prediction of algorithm has value or not
- - 
+ - Controlling of estimation
+ - Adapt the model
+ 
  
 
 ## Libraries
