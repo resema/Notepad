@@ -77,7 +77,7 @@ Possible steps:
 
 ## Preconditions for Machine Learning
 - Useful topic
- - Automated decision taking in a process
+  - Automated decision taking in a process
  - Operative decision
  - Repeated, time consuming or difficult decisions
  - Non-deterministic probleme
