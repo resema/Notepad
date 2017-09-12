@@ -78,20 +78,20 @@ Possible steps:
 ## Preconditions for Machine Learning
 - Useful topic
   - Automated decision taking in a process
- - Operative decision
- - Repeated, time consuming or difficult decisions
- - Non-deterministic probleme
- - Root and cause
+  - Operative decision
+  - Repeated, time consuming or difficult decisions
+  - Non-deterministic probleme
+  - Root and cause
 - Data
- - Relevant data
- - Correct data
- - Enough data (depending also on algorithm)
- - Unaggregated data (better to have atomar data)
- - Data with labels
+  - Relevant data
+  - Correct data
+  - Enough data (depending also on algorithm)
+  - Unaggregated data (better to have atomar data)
+  - Data with labels
 - Feedback loop
- - Prediction of algorithm has value or not
- - Controlling of estimation
- - Adapt the model
+  - Prediction of algorithm has value or not
+  - Controlling of estimation
+  - Adapt the model
  
  
 
