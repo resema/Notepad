@@ -40,3 +40,5 @@ Image input --> Edge detection --> Face subparts --> Faces
 
 ### Circuit Theory and Deep Learning
 Informally: There are functions you can compute with a "small" L-layer deep neural network that shallower networks require exponentially more hidden units to compute.
+![ex_deep-shallow_neural_network.png]({{site.baseurl}}/images/posts/ex_deep-shallow_neural_network.png)
+
