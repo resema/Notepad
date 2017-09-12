@@ -8,13 +8,14 @@ title: Neural Network - A General Approach
 description: General methodology to build a Neural Network
 headline: Basic Approach
 categories:
+  - personal
   - neuralnetworks
 tags: NeuralNetworks Methodology
 ---
 >&quot;Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
-## Steps
+## General Steps
 1. Define the neural network structure (\# of input units, \# of hidden units, etc)
 2. Initialize the model's parameters
 3. Loop:
@@ -32,4 +33,8 @@ It's completely okay to use a for-loop at this point.
 $$W^{[l]}$$ is a $$(n^{[l]}, n^{[l-1]}$$-matrix.<br>
 $$b^{[l]}$$ is a $$(n^{[l]}, 1)$$-matrix. <br>
 $$Z^{[l]}$$ is a also a $$(n^{[l]}, m)$$-matrix. $$m$$ is the amount of features. The addition of b is made by means of Python's broadcasting.<br>
+
+## Intiution about deep representation
+Example:
+Image input --> Edge detection --> Face subparts --> Faces
 
