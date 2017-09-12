@@ -39,6 +39,9 @@ Examples are Amazon as seller.
 ### Neuronal Networks
 Is a universal function approximator. Used for supervised and unsupervised learning.
 
+#### Deep Learning
+Is a deep neural network, meaningly a higher number of layers.
+
 ### KMeans
 Example in SciPy "iris"
 
