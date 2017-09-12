@@ -75,6 +75,10 @@ Possible steps:
 - Selectino
 
 
+## Preconditions for Machine Learning
+- Useful topic
+ - Automated decision taking
+
 ## Libraries
 - face_recognition 0.1.13, Python, https://face-recognition.readthedocs.io/en/latest/face_recognition.html
 - Dlib, C++, www.dlib.net
