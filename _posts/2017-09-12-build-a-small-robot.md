@@ -7,6 +7,7 @@ comments: false
 title: Build a Small Robot
 description: Build a small robot with JavaScript
 categories:
+  - personal
   - interesting
   - Robotic
   - JavaScript
