@@ -34,6 +34,7 @@ The central unit is a NodeMCU with an underlying RTOS and a Firmata Receiver uni
 The file wifiConfig.h configures the wireless connection to upload data and connect the remote.
 
 ### Hardware
+- SumoBot (nodebots.ch)
 - NodeMCU ESP8266
 - LIS3DH (Accelerometer)
 - LED Matrix HT16K33 8x8
