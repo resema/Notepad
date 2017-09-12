@@ -38,7 +38,7 @@ Examples are Amazon as seller.
 Example in SciPy "iris"
 
 #### Pseudo Code
-```javascript
+```
 Create k points for starting centroids (often randomly)
 While any point has changed cluster assignment
 	for every point in our dataset:
@@ -48,6 +48,10 @@ While any point has changed cluster assignment
 	for every cluster calculate the mean of the points in that cluster
 		assign the centroid to the mean
 ```
+
+## General Approach
+Check follow-along.ipynb file.
+
 
 ## Libraries
 - face_recognition 0.1.13, Python, https://face-recognition.readthedocs.io/en/latest/face_recognition.html
