@@ -91,7 +91,7 @@ Needs a lot of domain knowledge to create set of features. Has a big impact on p
 Possible steps:
 - Extraction
 - Construction
-- Selectino
+- Selection
 
 
 ## Libraries
