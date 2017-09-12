@@ -18,7 +18,7 @@ tags: chOpen MachineLearning
 An example with the housing prices and the known prices for a cluster of houses. This can be used to predict the housing price of a new house.
 
 ### Unsupervised Learning
-Examples are clustering of e.g. flowers.
+Examples are clustering of e.g. flowers, customer segmetation
 
 ### Reinforcement Learning
 Characterised with missing classical inputs and outputs.
