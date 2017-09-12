@@ -37,6 +37,7 @@ Examples are Amazon as seller.
 ### Extreme Gradient Boosting
 
 ### Neuronal Networks
+Is a universal function approximator. Used for supervised and unsupervised learning.
 
 ### KMeans
 Example in SciPy "iris"
