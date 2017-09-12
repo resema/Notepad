@@ -74,6 +74,14 @@ Possible steps:
 - Selection
 
 
+## SW Developpers
+A pyramide shows the needs on the SW devs:
+- predict
+- report & visualize
+- process & query
+- measure, structure & store
+
+
 ## Algorithms
 
 ### Extreme Gradient Boosting
