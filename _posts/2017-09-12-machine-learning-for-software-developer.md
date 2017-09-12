@@ -46,7 +46,7 @@ While any point has changed cluster assignment
 			calculate the distance between the centroid and point
 		assign the point to the cluster with the lowest distance
 	for every cluster calculate the mean of the points in that cluster
-assign the centroid to the mean
+		assign the centroid to the mean
 ```
 
 ## Libraries
