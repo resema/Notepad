@@ -15,7 +15,8 @@ tags: chOpen MachineLearning
 ## 
 
 ## Libraries
-- face_recognition 0.1.13, https://face-recognition.readthedocs.io/en/latest/face_recognition.html
+- face_recognition 0.1.13, Python, https://face-recognition.readthedocs.io/en/latest/face_recognition.html
+- Dlib, C++, www.dlib.net
 
 ## Personalities
 - Tom Mitchell
