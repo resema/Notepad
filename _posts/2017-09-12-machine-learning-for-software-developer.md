@@ -40,7 +40,7 @@ Examples are Amazon as seller.
 Is a universal function approximator. Used for supervised and unsupervised learning.
 
 #### Deep Learning
-Is a deep neural network, meaningly a higher number of layers.
+Is a deep neural network, meaningly a higher number of hidden layers.
 
 ### KMeans
 Example in SciPy "iris"
