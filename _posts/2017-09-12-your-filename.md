@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 mathjax: true
 featured: false
 comments: false
@@ -8,6 +8,7 @@ title: Build a Small Robot
 description: Small Robot Controlled Remotely by JavaScript App
 headline: Build a Small Robot
 categories:
+  - personal
   - interesting
   - JavaScript
   - Robotic
