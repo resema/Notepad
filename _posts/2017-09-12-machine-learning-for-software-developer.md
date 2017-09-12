@@ -43,7 +43,7 @@ Example in SciPy "iris"
 
 ### Random Forest
 
-#### Pseudo Code
+### Pseudo Code
 ```
 Create k points for starting centroids (often randomly)
 While any point has changed cluster assignment
