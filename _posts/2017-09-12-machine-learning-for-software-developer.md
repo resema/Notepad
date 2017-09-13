@@ -10,7 +10,8 @@ headline: 'chOpen2017: Machine Learning for Software Developer'
 categories:
   - interesting
   - machinelearning
-tags: chOpen MachineLearning
+  - chOpen
+tags: chOpen2017 MachineLearning
 ---
 ## Different categories for ML
 
