@@ -9,7 +9,8 @@ description: Build a small robot with JavaScript
 categories:
   - Robotic
   - JavaScript
-tags: chOpen JavaScript Robotic
+  - chOpen
+tags: chOpen2017 JavaScript Robotic
 headline: 'chOpen2017: Robotic with JavaScript'
 ---
 ## Tools
