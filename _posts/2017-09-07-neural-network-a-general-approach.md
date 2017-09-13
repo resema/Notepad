@@ -8,7 +8,6 @@ title: Neural Network - A General Approach
 description: General methodology to build a Neural Network
 headline: Basic Approach
 categories:
-  - personal
   - neuralnetworks
 tags: NeuralNetworks Methodology
 ---
@@ -34,11 +33,10 @@ $$W^{[l]}$$ is a $$(n^{[l]}, n^{[l-1]}$$-matrix.<br>
 $$b^{[l]}$$ is a $$(n^{[l]}, 1)$$-matrix. <br>
 $$Z^{[l]}$$ is a also a $$(n^{[l]}, m)$$-matrix. $$m$$ is the amount of features. The addition of b is made by means of Python's broadcasting.<br>
 
-## Intiution about deep representation
+## Intiution about Deep Representation
 Example:
 Image input --> Edge detection --> Face subparts --> Faces
 
 ### Circuit Theory and Deep Learning
 Informally: There are functions you can compute with a "small" L-layer deep neural network that shallower networks require exponentially more hidden units to compute.
 ![ex_deep-shallow_neural_network.png]({{site.baseurl}}/images/posts/ex_deep-shallow_neural_network.png)
-
