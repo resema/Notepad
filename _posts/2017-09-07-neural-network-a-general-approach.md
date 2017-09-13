@@ -8,6 +8,7 @@ title: Neural Network - A General Approach
 description: General methodology to build a Neural Network
 headline: Basic Approach
 categories:
+  - personal
   - neuralnetworks
 tags: NeuralNetworks Methodology
 ---
@@ -40,3 +41,7 @@ Image input --> Edge detection --> Face subparts --> Faces
 ### Circuit Theory and Deep Learning
 Informally: There are functions you can compute with a "small" L-layer deep neural network that shallower networks require exponentially more hidden units to compute.
 ![ex_deep-shallow_neural_network.png]({{site.baseurl}}/images/posts/ex_deep-shallow_neural_network.png)
+
+## Gradient Descent in Neural Network
+The following image shows a single step in gradient descent.
+![one_iteration_of_gradient_descent.png]({{site.baseurl}}/images/posts/one_iteration_of_gradient_descent.png)
