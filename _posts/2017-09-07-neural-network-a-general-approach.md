@@ -16,6 +16,7 @@ tags: NeuralNetworks Methodology
 ><small><cite title="Einstein">Einstein</cite></small>
 
 ## General Steps
+Applied deep learning is a very empirical process. From an idea, code a solution and test it on an experiment.	
 1. Define the neural network structure (\# of input units, \# of hidden units, etc)
 2. Initialize the model's parameters
 3. Loop:
@@ -43,5 +44,23 @@ Informally: There are functions you can compute with a "small" L-layer deep neur
 ![ex_deep-shallow_neural_network.png]({{site.baseurl}}/images/posts/ex_deep-shallow_neural_network.png)
 
 ## Gradient Descent in Neural Network
-The following image shows a single step in gradient descent.
+The following image shows a single step in gradient descent. It's important to see that some values are cached.
 ![one_iteration_of_gradient_descent.png]({{site.baseurl}}/images/posts/one_iteration_of_gradient_descent.png)
+
+### Forward Propagation
+
+### Backward Propagation
+
+### Parameters and Hyperparameters
+#### Parameters
+$$W^{[1]}$$, $$b^{[1]}$$, $$W^{[2]}$$, $$b^{[2]}$$, $$W^{[3]}$$, $$b^{[3]}$$
+
+#### Hyperparameters
+- Learning rate $$\alpha$$
+- Numbers of iterations
+- Number of hidden layers
+- Number of hidden units $$n^{[1]}$$, $$n^{[2]}$$, ...
+- Choice of activation function
+- Momentum
+- Minibatch size
+- Regularization
