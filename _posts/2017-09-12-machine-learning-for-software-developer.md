@@ -4,7 +4,7 @@ published: true
 mathjax: true
 featured: false
 comments: false
-title: Machine Learning for Software Developer
+title: 'chOpen2017: Machine Learning for Software Developer'
 description: Introduction to Machine Learning for SW Developers
 headline: 'chOpen2017: Machine Learning for Software Developer'
 categories:
