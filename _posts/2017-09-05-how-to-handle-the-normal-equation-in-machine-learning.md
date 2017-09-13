@@ -6,6 +6,7 @@ featured: false
 comments: false
 title: How to handle the Normal Equation in Machine Learning
 categories:
+  - personal
   - calculus
   - machinelearning
   - mathematics
@@ -17,10 +18,11 @@ headline: Normal Equation
 ><small><cite title="Einstein">Einstein</cite></small>
 
 ## Normal Equation
+The normal equation solves without iterating for the minima of the cost function. As a result it returns the $$\theta$$ where the cost function is at its minimum.
 
 $$ \theta = (X^TX)^{-1}X^Ty $$
 
-## Comparison with Normal Equation
+## Comparison with Gradient Descent
 
 ### Normal Equation
 - No need to choose $$\alpha$$
