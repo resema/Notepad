@@ -48,7 +48,7 @@ The following image shows a single step in gradient descent. It's important to s
 ![one_iteration_of_gradient_descent.png]({{site.baseurl}}/images/posts/one_iteration_of_gradient_descent.png)
 
 ### Forward and Backward Propagation
-
+![forward_backward_propagation.png]({{site.baseurl}}/images/posts/forward_backward_propagation.png)
 
 ### Parameters and Hyperparameters
 #### Parameters
