@@ -7,12 +7,18 @@ comments: false
 title: 'chOpen2017: Robotic with JavaScript'
 description: Build a small robot with JavaScript
 categories:
+  - personal
   - Robotic
   - JavaScript
-tags: chOpen JavaScript Robotic
+  - chOpen
+tags: chOpen2017 JavaScript Robotic
 headline: 'chOpen2017: Robotic with JavaScript'
 ---
+>&quot;If I were to start taking care of my grooming, I would no longer be my own self.&quot;
+><small><cite title="Einstein">Einstein</cite></small>
+
 ## Tools
+
 ### Digital design for the Hardware Production
 - "Inkscape" for svg data for laser cutter
 - "TinkerCAD" for 3D printer
