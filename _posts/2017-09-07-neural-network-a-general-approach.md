@@ -16,7 +16,7 @@ tags: NeuralNetworks Methodology
 ><small><cite title="Einstein">Einstein</cite></small>
 
 ## General Steps
-Applied deep learning is a very empirical process. From an idea, code a solution and test it on an experiment.
+Applied deep learning is a very empirical process. From an idea, code a solution and test it on an experiment.	
 1. Define the neural network structure (\# of input units, \# of hidden units, etc)
 2. Initialize the model's parameters
 3. Loop:
