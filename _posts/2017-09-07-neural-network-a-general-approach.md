@@ -33,7 +33,7 @@ $$W^{[l]}$$ is a $$(n^{[l]}, n^{[l-1]}$$-matrix.<br>
 $$b^{[l]}$$ is a $$(n^{[l]}, 1)$$-matrix. <br>
 $$Z^{[l]}$$ is a also a $$(n^{[l]}, m)$$-matrix. $$m$$ is the amount of features. The addition of b is made by means of Python's broadcasting.<br>
 
-## Intiution about Deep Representation
+## Intuition about Deep Representation
 Example:
 Image input --> Edge detection --> Face subparts --> Faces
 
