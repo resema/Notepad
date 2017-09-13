@@ -6,7 +6,7 @@ featured: false
 comments: false
 title: Machine Learning for Software Developer
 description: Introduction to Machine Learning for SW Developers
-headline: Machine Learning for Software Developer
+headline: 'chOpen2017: Machine Learning for Software Developer'
 categories:
   - interesting
   - machinelearning
