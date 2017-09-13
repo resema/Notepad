@@ -4,15 +4,13 @@ published: true
 mathjax: true
 featured: false
 comments: false
-title: Build a Small Robot
+title: 'chOpen2017: Robotic with JavaScript'
 description: Build a small robot with JavaScript
 categories:
-  - personal
-  - interesting
   - Robotic
   - JavaScript
 tags: chOpen JavaScript Robotic
-headline: Build a Small Robot
+headline: 'chOpen2017: Robotic with JavaScript'
 ---
 ## Tools
 ### Digital design for the Hardware Production
