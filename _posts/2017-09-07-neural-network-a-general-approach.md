@@ -51,4 +51,15 @@ The following image shows a single step in gradient descent. It's important to s
 ### Backward Propagation
 
 ### Parameters and Hyperparameters
-Parameters: $$W^{[1]}$$, $$b^{[1]}$$, $$W^{[2]}$$, $$b^{[2]}$$, $$W^{[3]}$$, $$b^{[3]}$$
+#### Parameters
+$$W^{[1]}$$, $$b^{[1]}$$, $$W^{[2]}$$, $$b^{[2]}$$, $$W^{[3]}$$, $$b^{[3]}$$
+
+#### Hyperparameters
+- Learning rate $$\alpha$$
+- Numbers of iterations
+- Number of hidden layers
+- Number of hidden units $$n^{[1]}$$, $$n^{[2]}$$, ...
+- Choice of activation function
+- Momentum
+- Minibatch size
+- Regularization
