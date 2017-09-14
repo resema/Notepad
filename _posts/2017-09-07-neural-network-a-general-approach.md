@@ -47,9 +47,8 @@ Informally: There are functions you can compute with a "small" L-layer deep neur
 The following image shows a single step in gradient descent. It's important to see that some values are cached.
 ![one_iteration_of_gradient_descent.png]({{site.baseurl}}/images/posts/one_iteration_of_gradient_descent.png)
 
-### Forward Propagation
-
-### Backward Propagation
+### Forward and Backward Propagation
+![forward_backward_propagation.png]({{site.baseurl}}/images/posts/forward_backward_propagation.png)
 
 ### Parameters and Hyperparameters
 #### Parameters
