@@ -18,7 +18,7 @@ tags: NeuralNetworks Methodology
 ## General Steps
 Applied deep learning is a very empirical process. From an idea, code a solution and test it on an experiment.	
 
-The above figure gives an overview of a possible approach.
+The above figure gives an overview of a possible approach. This approach contains the following steps:
 1. Define the neural network structure (\# of input units, \# of hidden units, etc)
 2. Initialize the model's parameters
 3. Loop:
