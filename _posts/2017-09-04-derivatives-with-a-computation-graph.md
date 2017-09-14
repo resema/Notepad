@@ -6,6 +6,7 @@ featured: false
 comments: false
 title: The Basic Formulas in Neural Networks using Computation Graph
 categories:
+  - personal
   - Mathematics
   - Calculus
   - Neural Network
@@ -40,6 +41,9 @@ Sigmoid function $$g^{[i]} = 1/1+e^{-z}$$<br>
 Node $$a^{[i]} = g^{[i]}(z^{[i]})$$<br>
 Loss (error) function $$ \mathcal{L}(\hat{y}, y) = -(y log \hat{y} + (1-y) log(1-\hat{y}))$$<br>
 Cost Function $$J(w,b) = 1/m * \sum_{i=1}^m \mathcal{L}(\hat{y}^{[i]}, y^{[i]}) = - 1/m * \sum_{i=1}^m y^{(i)} log(\hat{y}^{[i]}) + (1-y^{[i]}) log(1-\hat{y}^{[i]})$$
+
+#### Vectorized implementation
+$$cost = -1/m * np.sum(np.multiply(Y, np.log(AL)) + np.multiply((1 - Y),np.log(1-AL)))$$
 
 ### Summary of gradient descent (Backpropagation)
 $$dz^{[2]} = a^{[2]} - y$$ <br>
