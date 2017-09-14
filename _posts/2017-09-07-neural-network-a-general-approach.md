@@ -40,6 +40,9 @@ $$W^{[l]}$$ is a $$(n^{[l]}, n^{[l-1]}$$-matrix.<br>
 $$b^{[l]}$$ is a $$(n^{[l]}, 1)$$-matrix. <br>
 $$Z^{[l]}$$ is a also a $$(n^{[l]}, m)$$-matrix. $$m$$ is the amount of features. The addition of b is made by means of Python's broadcasting.<br>
 
+### Rectified Linear Unit (ReLU)
+In the context of artificial neural networks, the rectifier is an activation function defined as $$f(x) = x^+ = max(0,x)$$.
+
 ## Intuition about Deep Representation
 Example:
 Image input --> Edge detection --> Face subparts --> Faces
