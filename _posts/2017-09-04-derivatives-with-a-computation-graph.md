@@ -36,7 +36,7 @@ $$\frac{dJ}{db} = \frac{dJ}{du} * \frac{du}{db} = \frac{dJ}{dv} * \frac{dv}{du} 
 $$a_j^{[2](i)} $$ := layer 2, example i, neuron j
 
 ## Formulas for Forward and Back Propagation
-
+![forward_backward_propagation_formulas.png]({{site.baseurl}}/images/posts/forward_backward_propagation_formulas.png)
 ### Forward Propagation
 Estimation function $$Z^{[i]} = W^{[i]}X + b^{[i]}$$ <br>
 Sigmoid function $$g^{[i]} = 1/1+e^{-z}$$<br>
