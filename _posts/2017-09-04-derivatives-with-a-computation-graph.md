@@ -45,7 +45,7 @@ Loss (error) function $$ \mathcal{L}(\hat{y}, y) = -(y log(\hat{y}) + (1-y) log(
 Cost Function $$J(w,b) = 1/m * \sum_{i=1}^m \mathcal{L}(\hat{y}^{[i]}, y^{[i]}) = - 1/m * \sum_{i=1}^m y^{(i)} log(\hat{y}^{[i]}) + (1-y^{[i]}) log(1-\hat{y}^{[i]})$$
 
 #### Vectorized implementation
-$$J(w,b) = -1/m * np.sum(np.multiply(Y, np.log(AL)) + np.multiply((1 - Y),np.log(1-AL)))$$
+$$J(w,b) = -1/m * np.sum(np.multiply(Y, np.log(A^{[L]})) + np.multiply((1 - Y),np.log(1-A^{[L]})))$$
 
 ### Summary of gradient descent (Backpropagation)
 $$dz^{[2]} = a^{[2]} - y$$ <br>
