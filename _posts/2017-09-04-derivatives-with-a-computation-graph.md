@@ -54,6 +54,7 @@ $$db^{[2]} = dz^{[2]}$$ <br>
 $$dz^{[1]} = W^{[2]^T}dz^{[2]} * g'^{[1]}(z^{[1]})$$ <br>
 $$dW^{[1]} = dz^{[1]}x^T$$<br>
 $$db^{[1]} = dz^{[1]}$$ <br>
+$$dA^{[l-1]} = \frac{\partial{\mathcal{L}}}{\partial{A^{[l-1]}}}
 
 #### Vectorized implementation
 $$dZ^{[2]} = A^{[2]} - Y$$ <br>
