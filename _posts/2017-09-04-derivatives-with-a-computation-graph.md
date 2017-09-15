@@ -28,7 +28,7 @@ Back propagation contains Calculus, or more specific we have to take different D
 $$u = bc \Rightarrow v = a + u \Rightarrow J = 3v$$
 
 $$\frac{dJ}{dv} = 3$$ <br>
-$$\frac{dJ}{da} = \frac{dJ}{dv} * \frac{dv}{da} = 3 x 1$$ <br>
+$$\frac{dJ}{da} = \frac{dJ}{dv} * \frac{dv}{da} = 3 * 1$$ <br>
 $$\frac{dJ}{du} = \frac{dJ}{dv} * \frac{dv}{du} = 3 * 1$$ <br>
 $$\frac{dJ}{db} = \frac{dJ}{du} * \frac{du}{db} = \frac{dJ}{dv} * \frac{dv}{du} * \frac{du}{db} = 3 * 1 * c$$ <br>
 
@@ -69,7 +69,7 @@ $$dA^{[l-1]} = W^{[l]^T}dZ^{[l]}$$<br>
 Initialize weights with a 2x2 zero matrix is a problem. The computed a's will be the same. And the dW rows will also be the same. This is independent how many cycles are be computed.
 
 #### Random Initialization
-We should initialize the parameters randomly. The parameters are $$n_x := n\, of\, input\, layer$$, $$n_h := n\, of\, hidden\, layer$$ and $$n_h := n\, of\, output\, layer$$<br>
+We should initialize the parameters randomly. The parameters are $$n_x$$ := n of input layer, $$n_h$$ := n of hidden layer and $$n_y$$ := n of output layer<br>
 $$W^{[1]} = np.random.randn(n_h,n_x) * 0.01$$<br>
 $$b^{[1]} = np.zeros((n_h,1))$$ <br>
 $$W^{[2]} = np.random.randn(n_y,n_h) * 0.01$$ <br>
