@@ -37,6 +37,7 @@ $$a_j^{[2](i)} $$ := layer 2, example i, neuron j
 
 ## Formulas for Forward and Back Propagation
 
+### Forward Propagation
 Estimation function $$Z^{[i]} = W^{[i]}X + b^{[i]}$$ <br>
 Sigmoid function $$g^{[i]} = 1/1+e^{-z}$$<br>
 Node $$a^{[i]} = g^{[i]}(z^{[i]})$$<br>
