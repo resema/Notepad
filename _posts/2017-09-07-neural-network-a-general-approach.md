@@ -69,3 +69,12 @@ $$W^{[1]}$$, $$b^{[1]}$$, $$W^{[2]}$$, $$b^{[2]}$$, $$W^{[3]}$$, $$b^{[3]}$$
 - Momentum
 - Minibatch size
 - Regularization
+
+## Train, Dev and Test Sets
+In the modern big data area the commonly used splitting of the data into 70/30 or 60/20/20 is not mostly used anymore. Instead the dev and test sets just have to be big enough, e.g. in case of 1'000'000 data samples, 10'000 examples for the dev set and 10'000 for the test set can be enough. This results into 98/1/1 or 99.5/0.4/0.1 division.
+
+### Mismatched Train/Test Distribution
+Different image resolution between train and test set can lead to a mismatch.
+As a rule of thumb: "Make sure that dev and test sets come from the same distribution".
+
+## Bias and Variance
