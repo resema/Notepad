@@ -85,6 +85,7 @@ Bias refers to the tendency of a measurement process to over- or under-estimate 
 ### Variance
 Variance is the expectation of the squared deviation of a random variable from its mean. Informally, it measures how far a set of (random) numbers are spread out from their average value.
 
+### Examples
 From an example "Cat Classification" you have an Train Set Error of 1% and a Dev Set Error of 11%. This would mean you are performing will in train set but poorly under dev set. This looks like you have overfit the train set.
 So for the dev set it must be said that it has a high variance.
 
