@@ -97,3 +97,4 @@ In a last example, we have a train set error of 0.5% and 1% dev set error. Here 
 
 ### Basic Recipe for Machine Learning
 - High bias $$\Rightarrow$$ Bigger network, train longer, NN architecture
+- High variance $$\Rightarrow$$ More data, regularization, NN architecture
