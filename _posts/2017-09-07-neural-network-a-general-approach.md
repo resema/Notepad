@@ -105,4 +105,4 @@ Regularize the logistic regression cost function $$J(w,b)$$.
 
 #### Neural Network
 Frobenius norm used to regularize neural networks. Weight decay is also a key word in this field.
-
+![NN_regularization.png]({{site.baseurl}}/images/posts/NN_regularization.png)
