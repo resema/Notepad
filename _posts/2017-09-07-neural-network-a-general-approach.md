@@ -4,9 +4,9 @@ published: true
 mathjax: true
 featured: false
 comments: false
-title: Neural Network - A General Approach
+title: Neural Network - An Introduction
 description: General methodology to build a Neural Network
-headline: Basic Approach
+headline: Introduction
 categories:
   - personal
   - neuralnetworks
