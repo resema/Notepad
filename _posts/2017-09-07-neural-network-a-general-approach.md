@@ -78,3 +78,19 @@ Different image resolution between train and test set can lead to a mismatch.
 As a rule of thumb: "Make sure that dev and test sets come from the same distribution".
 
 ## Bias and Variance
+
+### Bias
+Bias refers to the tendency of a measurement process to over- or under-estimate the value of a population parameter.
+
+### Variance
+Variance is the expectation of the squared deviation of a random variable from its mean. Informally, it measures how far a set of (random) numbers are spread out from their average value.
+
+From an example "Cat Classification" you have an Train Set Error of 1% and a Dev Set Error of 11%. This would mean you are performing will in train set but poorly under dev set. This looks like you have overfit the train set.
+So for the dev set it must be said that it has a high variance.
+
+In a second example, we have a train set error of 15% and 16% under dev set. This means is has a high bias. It's not even fitting the train set.
+
+In a third example, we have a train set error of 15% and 30% under the dev set. Here you have high bias as well as high variance.
+
+In a last example, we have a train set error of 0.5% and 1% dev set error. Here we have low bias and low variance.
+
