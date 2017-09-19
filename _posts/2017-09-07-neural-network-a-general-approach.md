@@ -100,3 +100,7 @@ In a last example, we have a train set error of 0.5% and 1% dev set error. Here 
 - High variance $$\Rightarrow$$ More data, regularization, NN architecture
 
 ### Regularization
+Regularize the logistic regression cost function $$J(w,b)$$.
+![L2_regularization.png]({{site.baseurl}}/images/posts/L2_regularization.png)
+
+#### Neural Network
