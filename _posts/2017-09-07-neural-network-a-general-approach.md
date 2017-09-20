@@ -8,11 +8,9 @@ title: Neural Network - An Introduction
 description: General methodology to build a Neural Network
 headline: Introduction
 categories:
-  - personal
+  - calculus
   - neuralnetworks
-tags: NeuralNetworks Methodology
-modified: ''
-imagefeature: ''
+tags: NeuralNetworks Introduction Coursera
 ---
 >&quot;Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
