@@ -123,13 +123,13 @@ prose:
             - name: "Interesting"
               value: interesting
             - name: "Web-Development"
-              value: webdevelopment
+              value: web development
             - name: "Calculus"
               value: calculus
             - name: "Neural Networks"
-              value: neuralnetworks
+              value: neural networks
             - name: "Machine Learning"
-              value: machinelearning
+              value: machine learning
             - name: "Mathematics"
               value: mathematics
           alterable: true
