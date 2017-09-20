@@ -111,3 +111,8 @@ $$J(w,b) = \frac{1}{2m}\sum_{i=1}^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \fr
 
 ### Dropout Regularization
 
+
+#### Implementing Dropout
+Illustrate with the layer l= 3. The keep_prop is 0.8.
+
+$$d3 = np.random.rand(a3.shape[0], a3.shape[1]) < keep_prop$$ <br>
