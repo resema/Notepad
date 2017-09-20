@@ -12,7 +12,7 @@ categories:
   - machinelearning
 tags: MachineLearning Introduction Coursera
 ---
->&quot;Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.&quot;
+>&quot;Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
 ## 
