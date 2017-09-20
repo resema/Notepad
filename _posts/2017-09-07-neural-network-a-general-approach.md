@@ -11,6 +11,8 @@ categories:
   - personal
   - neuralnetworks
 tags: NeuralNetworks Methodology
+modified: ''
+imagefeature: ''
 ---
 >&quot;Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
@@ -108,4 +110,4 @@ Frobenius norm used to regularize neural networks. Weight decay is also a key wo
 ![NN_regularization.png]({{site.baseurl}}/images/posts/NN_regularization.png)
 
 #### Implementation
-$$J(w,b) = \frac{\lambda}{2m}\sum_{i=1]^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \fac{\lambda}{2m}\left{||}w\right{||}_2^2$$
+$$J(w,b) = \frac{\lambda}{2m}\sum_{i=1]^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \fac{\lambda}{2m}w_2^2$$
