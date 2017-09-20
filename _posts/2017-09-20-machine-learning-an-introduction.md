@@ -25,4 +25,13 @@ tags: MachineLearning Introduction Coursera
 ### Problem of Overfitting
 If we have too many features, the learned hypthesis may fit the training set very well ( $$ J(\theta) = \frac{1}{2m}\sum_{i=1}^m(h_\theta(x^{(i)}) - y^{(i)})^2 = 0 $$ ), but fail to generalize to new examples (predict prices on new examples).
 
+#### Adressing overfitting
+Options:
+1. Reduce number of features
+  - Manually select which features to keep
+  - Model selection algorithm
+2. Regularization
+  - Keep all the features, but reduce magnitude/values of parameters $$\theta_j$$.
+  - Works well when we have a lot of features, each of which contributes a bit to predicting $$y$$.
+
 The two terms of Bias and Variance are important for solving this issue.
