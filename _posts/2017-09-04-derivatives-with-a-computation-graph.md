@@ -6,8 +6,7 @@ featured: false
 comments: true
 title: The Basic Formulas in Neural Networks using Computation Graph
 categories:
-  - Mathematics
-  - Calculus
+  - calculus
   - Neural Network
 tags: Calculus Mathematics Coursera
 description: Notes to the Coursera courser "DeepLearning.ai"
