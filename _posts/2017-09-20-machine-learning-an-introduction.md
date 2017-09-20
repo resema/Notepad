@@ -8,6 +8,7 @@ title: Machine Learning - An Introduction
 description: General Introduction to use Machine Learning
 headline: Introduction
 categories:
+  - personal
   - calculus
   - machinelearning
 tags: MachineLearning Introduction Coursera
@@ -16,3 +17,4 @@ tags: MachineLearning Introduction Coursera
 ><small><cite title="Einstein">Einstein</cite></small>
 
 ## Multiclass Classification
+![multiclass_classification.png]({{site.baseurl}}/images/posts/multiclass_classification.png)
