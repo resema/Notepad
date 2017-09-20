@@ -113,25 +113,25 @@ prose:
           value: personal
           options:
             - name: "Personal"
-              value: personal
+              value: Personal
             - name: "Engineering"
-              value: engineering
+              value: Engineering
             - name: "Physics"
-              value: physics
+              value: Physics
             - name: "Psychology"
-              value: psychology
+              value: Psychology
             - name: "Interesting"
-              value: interesting
+              value: Interesting
             - name: "Web-Development"
-              value: web development
+              value: WebDevelopment
             - name: "Calculus"
-              value: calculus
+              value: Calculus
             - name: "Neural Networks"
-              value: neural networks
+              value: NeuralNetworks
             - name: "Machine Learning"
-              value: machine learning
+              value: MachineLearning
             - name: "Mathematics"
-              value: mathematics
+              value: Mathematics
           alterable: true
       - name: "tags"
         field:
