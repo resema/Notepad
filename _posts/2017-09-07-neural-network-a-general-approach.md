@@ -110,4 +110,4 @@ Frobenius norm used to regularize neural networks. Weight decay is also a key wo
 ![NN_regularization.png]({{site.baseurl}}/images/posts/NN_regularization.png)
 
 #### Implementation
-$$J(w,b) = \frac{\lambda}{2m}\sum_{i=1}^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \frac{\lambda}{2m}\sum_l\Vert((w^{[l]})\Vert)$$
+$$J(w,b) = \frac{\lambda}{2m}\sum_{i=1}^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \frac{\lambda}{2m}\sum_l\Vert w^{[l]}\Vert_F^2$$
