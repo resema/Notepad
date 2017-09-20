@@ -8,7 +8,6 @@ title: Neural Network - An Introduction
 description: General methodology to build a Neural Network
 headline: Introduction
 categories:
-  - personal
   - calculus
   - neuralnetworks
 tags: NeuralNetworks Introduction Coursera
