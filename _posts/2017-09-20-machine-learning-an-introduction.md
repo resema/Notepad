@@ -17,4 +17,6 @@ tags: MachineLearning Introduction Coursera
 ><small><cite title="Einstein">Einstein</cite></small>
 
 ## Multiclass Classification
+
+### One-vs-All
 ![multiclass_classification.png]({{site.baseurl}}/images/posts/multiclass_classification.png)
