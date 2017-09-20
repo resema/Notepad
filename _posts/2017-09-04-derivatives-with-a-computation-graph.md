@@ -3,10 +3,9 @@ layout: post
 published: true
 mathjax: true
 featured: false
-comments: false
+comments: true
 title: The Basic Formulas in Neural Networks using Computation Graph
 categories:
-  - personal
   - Mathematics
   - Calculus
   - Neural Network
