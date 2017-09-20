@@ -3,7 +3,7 @@ layout: post
 published: true
 mathjax: true
 featured: false
-comments: false
+comments: true
 title: Neural Network - An Introduction
 description: General methodology to build a Neural Network
 headline: Introduction
