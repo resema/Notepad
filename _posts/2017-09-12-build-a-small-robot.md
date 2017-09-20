@@ -3,11 +3,10 @@ layout: post
 published: true
 mathjax: true
 featured: false
-comments: false
+comments: true
 title: 'chOpen2017: Robotic with JavaScript'
 description: Build a small robot with JavaScript
 categories:
-  - personal
   - Robotic
   - JavaScript
   - chOpen

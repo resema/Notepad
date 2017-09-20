@@ -3,10 +3,9 @@ layout: post
 published: true
 mathjax: true
 featured: false
-comments: false
+comments: true
 title: How to handle the Normal Equation in Machine Learning
 categories:
-  - personal
   - calculus
   - machinelearning
   - mathematics

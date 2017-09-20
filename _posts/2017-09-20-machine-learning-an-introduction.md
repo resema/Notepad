@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 mathjax: true
 featured: false
 comments: false
@@ -8,6 +8,7 @@ title: Machine Learning - An Introduction
 description: General Introduction to use Machine Learning
 headline: Introduction
 categories:
+  - personal
   - calculus
   - machinelearning
 tags: MachineLearning Introduction Coursera

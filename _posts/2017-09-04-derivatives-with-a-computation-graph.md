@@ -3,13 +3,11 @@ layout: post
 published: true
 mathjax: true
 featured: false
-comments: false
+comments: true
 title: The Basic Formulas in Neural Networks using Computation Graph
 categories:
-  - personal
-  - Mathematics
-  - Calculus
-  - Neural Network
+  - calculus
+  - neuralnetworks
 tags: Calculus Mathematics Coursera
 description: Notes to the Coursera courser "DeepLearning.ai"
 headline: What to remember from Mathematics in Forward and Backpropagation
