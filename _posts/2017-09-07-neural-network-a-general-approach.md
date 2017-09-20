@@ -8,6 +8,7 @@ title: Neural Network - An Introduction
 description: General methodology to build a Neural Network
 headline: Introduction
 categories:
+  - personal
   - calculus
   - neuralnetworks
 tags: NeuralNetworks Introduction Coursera
@@ -99,13 +100,14 @@ In a last example, we have a train set error of 0.5% and 1% dev set error. Here 
 - High bias $$\Rightarrow$$ Bigger network, train longer, NN architecture
 - High variance $$\Rightarrow$$ More data, regularization, NN architecture
 
-### Regularization
+## Regularizing Your Neural Network
 Regularize the logistic regression cost function $$J(w,b)$$.
 ![L2_regularization.png]({{site.baseurl}}/images/posts/L2_regularization.png)
 
-#### Neural Network
 Frobenius norm used to regularize neural networks. Weight decay is also a key word in this field.
 ![NN_regularization.png]({{site.baseurl}}/images/posts/NN_regularization.png)
 
-#### Implementation
+### Implementation
 $$J(w,b) = \frac{1}{2m}\sum_{i=1}^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \frac{\lambda}{2m}\sum_l^L\Vert w^{[l]}\Vert_F^2$$
+
+### Dropout Regularization
