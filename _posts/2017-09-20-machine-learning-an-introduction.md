@@ -24,6 +24,6 @@ tags: MachineLearning Introduction Coursera
 ![multiclass_classification.png]({{site.baseurl}}/images/posts/multiclass_classification.png)
 
 ### Problem of Overfitting
-If we have too many features, the learned hypthesis may fit the training set very well ($$J(\theta) = \frac{1}{2m}\sum_{i=1}^m(h_\theta(x^{(i)}) - y^{(i)})^2 = 0$$), but fail to generalize to new examples (predict prices on new examples).
+If we have too many features, the learned hypthesis may fit the training set very well ( $$J(\theta) = \frac{1}{2m}\sum_{i=1}^m(h_\theta(x^{(i)}) - y^{(i)})^2 = 0$$ ), but fail to generalize to new examples (predict prices on new examples).
 
 The two terms of Bias and Variance are important for solving this issue.
