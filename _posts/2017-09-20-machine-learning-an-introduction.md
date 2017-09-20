@@ -15,4 +15,4 @@ tags: MachineLearning Introduction Coursera
 >&quot;Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
-## 
+## Multiclass Classification
