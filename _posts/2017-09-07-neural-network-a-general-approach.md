@@ -110,4 +110,22 @@ Frobenius norm used to regularize neural networks. Weight decay is also a key wo
 $$J(w,b) = \frac{1}{2m}\sum_{i=1}^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \frac{\lambda}{2m}\sum_l^L\Vert w^{[l]}\Vert_F^2$$
 
 ### Dropout Regularization
+Go through all layers of the network, and flipping a coin if the node is going to be eliminated or not.
+![dropout_regularization.png]({{site.baseurl}}/images/posts/dropout_regularization.png)
+
+#### Basic Principles Why Dropout Works
+Intuition: Can't rely on any one feature, so have to spread out weights. This shrinks the importance of single weights.
+Keep-Probabilities "keep_probs" can vary for different layer. Usually larger layers have a smaller probability than smaller layers. The downside is that this increases the hyper-parameters of the network.
+Dropout is mostly used in image recognition areas, where we always have to few data.
+Downside: Cost function $$J$$ is less defined. 
+
+#### Implementing Dropout
+Illustrate with the layer l= 3. The keep_prob is 0.8 and d3 is the dropout matrix, with a 80% chance to be 1 and 20% to be 0 and therefore be eliminated.
+
+Step 1: Create a random matrix if nodes be eliminated or not.
+$$d3 = np.random.rand(a3.shape[0], a3.shape[1]) < keep\_prob$$ <br>
+Step 2: Eliminated the nodes in the activation layer a3.
+$$a3 = np.multiply(a3, d3)$$ <br>
+Step 3: Scaling up the remaining values due to the loss by eliminating nodes.
+$$ a3 /= keep\_prob$$ <br>
 
