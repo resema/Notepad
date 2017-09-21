@@ -42,4 +42,4 @@ Small values for parameters $$\theta_0$$, $$\theta_1$$, ..., $$\theta_n$$
   - less prone to overfitting
 
 #### Implementation
-$$J(\theta) = \frac{1}{2m} \[ \sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y`{(i)})^2 + \lambda \sum_{j=1}^n \theta_j^2 \]
+$$J(\theta) = \frac{1}{2m} \[ \sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y`{(i)})^2 + \lambda \sum_{j=1}^n \theta_j^2 \]$$
