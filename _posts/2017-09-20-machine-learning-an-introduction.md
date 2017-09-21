@@ -28,10 +28,18 @@ If we have too many features, the learned hypthesis may fit the training set ver
 #### Adressing overfitting
 Options:
 1. Reduce number of features
-  - Manually select which features to keep
+  - Manually select which features to keep 
   - Model selection algorithm
 2. Regularization
   - Keep all the features, but reduce magnitude/values of parameters $$\theta_j$$.
   - Works well when we have a lot of features, each of which contributes a bit to predicting $$y$$.
 
 The two terms of Bias and Variance are important for solving this issue.
+
+### Regularization
+Small values for parameters $$\theta_0$$, $$\theta_1$$, ..., $$\theta_n$$
+  - "simpler" hypothesis
+  - less prone to overfitting
+
+#### Implementation
+$$J(\theta) = \frac{1}{2m} \[ \sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y`{(i)})^2 + \lambda \sum_{j=1}^n \theta_j^2 \]
