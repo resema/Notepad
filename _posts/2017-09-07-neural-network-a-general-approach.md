@@ -133,3 +133,5 @@ $$ a3 /= keep\_prob$$ <br>
 Stopping learning at the best point.
 Downside is that it couples the optimizing and the not-overfitting tools. Relates to Orthogonalization.
 ![early_stopping.png]({{site.baseurl}}/images/posts/NeuralNetwork_AnIntroduction/early_stopping.png)
+
+## Normalizing Input Data
