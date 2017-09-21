@@ -110,7 +110,8 @@ Frobenius norm used to regularize neural networks. Weight decay is also a key wo
 $$J(w,b) = \frac{1}{2m}\sum_{i=1}^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \frac{\lambda}{2m}\sum_l^L\Vert w^{[l]}\Vert_F^2$$
 
 ### Dropout Regularization
-
+Go through all layers of the network, and flipping a coin if the node is going to be eliminated or not.
+![dropout_regularization.png]({{site.baseurl}}/images/posts/dropout_regularization.png)
 
 #### Implementing Dropout
 Illustrate with the layer l= 3. The keep_prob is 0.8.
