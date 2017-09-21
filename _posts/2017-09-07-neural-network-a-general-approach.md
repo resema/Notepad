@@ -106,10 +106,10 @@ Regularize the logistic regression cost function $$J(w,b)$$.
 Frobenius norm used to regularize neural networks. Weight decay is also a key word in this field.
 ![NN_regularization.png]({{site.baseurl}}/images/posts/NN_regularization.png)
 
-### Implementation
+#### Implementation
 $$J(w,b) = \frac{1}{2m}\sum_{i=1}^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \frac{\lambda}{2m}\sum_l^L\Vert w^{[l]}\Vert_F^2$$
 
-### Dropout Regularization
+### Dropout
 Go through all layers of the network, and flipping a coin if the node is going to be eliminated or not.
 ![dropout_regularization.png]({{site.baseurl}}/images/posts/dropout_regularization.png)
 
@@ -128,4 +128,8 @@ Step 2: Eliminated the nodes in the activation layer a3.
 $$a3 = np.multiply(a3, d3)$$ <br>
 Step 3: Scaling up the remaining values due to the loss by eliminating nodes.
 $$ a3 /= keep\_prob$$ <br>
+
+### Early Stopping
+Stopping learning at the best point.
+Downside is that it couples the optimizing and the not-overfitting tools. Relates to Orthogonalization.
 
