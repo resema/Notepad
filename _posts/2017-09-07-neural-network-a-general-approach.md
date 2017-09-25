@@ -150,5 +150,7 @@ Xavier et al. showed that in case of $$tan(h)$$ activation function is is better
 
 ## Gradient Checking
 Take $$W^{[1]}$$, $$b^{[1]}$$, ..., $$dW^{[L]}$$, $$b^{[L]}$$ and reshape into a big vector $$\theta$$. <br>
-Take $$dW^{[1]}$$, $$db^{[1]}$$, ..., $$dW^{[L]}$$, $$db^{[L]}$$ and reshape into a big vector $$d\theta$$.
+Take $$dW^{[1]}$$, $$db^{[1]}$$, ..., $$dW^{[L]}$$, $$db^{[L]}$$ and reshape into a big vector $$d\theta$$. <br>
+
+
 
