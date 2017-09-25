@@ -140,6 +140,10 @@ Downside is that it couples the optimizing and the not-overfitting tools. Relate
 ### Weight Initialization for Deep Networks
 In very deep neural networks a problem named vaninshing/exploding gradients has to be faced. One possible approach to this is a more specific initialization of the weights.
 
-We are looking for weights that are not to larger or to small. Therefore we initialize the Matrix $$W$$ with values related to $$\frac{1}{n}.
+We are looking for weights that are not to larger or to small. Therefore we initialize the Matrix $$W$$ with values related to $$Var(w) = \frac{1}{n}.
 
 $$W^l = np.random.randn(shape) * np.sqrt(\frac{1}{n^{[l-1]}}$$ <br>
+
+Side mark: If we use a ReLU activation function we use $$ Var(w) = \frac{2}{n}$$.
+
+Xavier et al. showed that in case of $$tan(h)$$ activation function is is better to use $$Var(w) = \frac{1}{n^{[n-l]}$$.
