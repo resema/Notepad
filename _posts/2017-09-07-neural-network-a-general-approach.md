@@ -149,4 +149,6 @@ Side mark: If we use a ReLU activation function we use $$ Var(w) = \frac{2}{n}$$
 Xavier et al. showed that in case of $$tan(h)$$ activation function is is better to use $$Var(w) = \frac{1}{n^{[n-l]}$$.
 
 ## Gradient Checking
-Take $$W^{[1]}$$, $$b^{[1]}$$, ..., $$"^{[L]}$$, $$b^{[L]}$$ and reshape inot a big vector $$\theta$$.
+Take $$W^{[1]}$$, $$b^{[1]}$$, ..., $$dW^{[L]}$$, $$b^{[L]}$$ and reshape into a big vector $$\theta$$. <br>
+Take $$dW^{[1]}$$, $$db^{[1]}$$, ..., $$dW^{[L]}$$, $$db^{[L]}$$ and reshape into a big vector $$d\theta$$.
+
