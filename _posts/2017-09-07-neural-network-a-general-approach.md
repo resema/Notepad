@@ -135,3 +135,9 @@ Downside is that it couples the optimizing and the not-overfitting tools. Relate
 ![early_stopping.png]({{site.baseurl}}/images/posts/NeuralNetwork_AnIntroduction/early_stopping.png)
 
 ## Normalizing Input Data
+![normalize_data.png]({{site.baseurl}}/images/posts/NeuralNetwork_AnIntroduction/normalize_data.png)
+
+### Weight Initialization for Deep Networks
+In very deep neural networks a problem named vaninshing/exploding gradients has to be faced. One possible approach to this is a more specific initialization of the weights.
+
+
