@@ -147,3 +147,6 @@ $$W^l = np.random.randn(shape) * np.sqrt(\frac{1}{n^{[l-1]}}$$ <br>
 Side mark: If we use a ReLU activation function we use $$ Var(w) = \frac{2}{n}$$.
 
 Xavier et al. showed that in case of $$tan(h)$$ activation function is is better to use $$Var(w) = \frac{1}{n^{[n-l]}$$.
+
+## Gradient Checking
+Take $$W^{[1]}$$, $$b^{[1]}$$, ..., $$"^{[L]}$$, $$b^{[L]}$$ and reshape inot a big vector $$\theta$$.
