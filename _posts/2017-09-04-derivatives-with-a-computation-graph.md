@@ -90,6 +90,6 @@ $$b^{[i]} = b^{[i]} - \alpha * db^{[i]}$$ <br>
 
 ### L2 Regularization
 The standard way to avoid overfitting is called **L2 regularization**. It consits of appropriately modifying your cost function. <br>
-$$J=-\frac{1}{m}\sum_{i=1}^m[y^{(i)}log(a^{[L](i)}) +(1-y^{(i)})log(1-a{[L]^(i)})]$$ <br>
+$$J=-\frac{1}{m}\sum_{i=1}^m[y^{(i)}log(a^{[L](i)}) +(1-y^{(i)})log(1-a^{[L](i)})]$$ <br>
 to: <br>
-$$J_{regularized}=-\frac{1}{m}\sum_{i=1}^m[y^{(i)}log(a^{[L](i)}) +(1-y^{(i)})log(1-a{[L]^(i)})] + frac{1}{m}\frac{\lambda}{2}\sum_l\sum_k\sum_jW_{j,k}^{[l]2}$$ <br>
+$$J_{regularized}=-\frac{1}{m}\sum_{i=1}^m[y^{(i)}log(a^{[L](i)}) +(1-y^{(i)})log(1-a^{[L](i)})] + frac{1}{m}\frac{\lambda}{2}\sum_l\sum_k\sum_jW_{j,k}^{[l]2}$$ <br>
