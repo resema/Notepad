@@ -44,17 +44,5 @@ Small values for parameters $$\theta_0$$, $$\theta_1$$, ..., $$\theta_n$$
 #### Implementation
 $$J(\theta) = \frac{1}{2m} \[ \sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})^2 + \lambda \sum_{j=1}^n \theta_j^2 \]$$
 
-```
-for each i:
-	dTheta_approx[i] = 1/2*Epsilon * ( J(theta_1, theta_2, ..., theta_i + Epsilon) - J(theta_1, theata_2, ..., theta_i - Epsilon) );
-    CheckEuclideanDist((dTheta_approx - dTheta) / (dTheta_approx + dTheta))
-```
 
-Epsilon $$\epsilon$$ should be in the range of $$10^{-7}$$.
-
-#### Additional Implementation Notes
-- Don't use in training - only to debug
-- If algorithm fails grad check, look at components to try to identify bug
-- Remember regularization
-- Doesn't work with dropout
-- Run at random initialization; perhabs again after some training
+#### Regularized Logistic Regression
