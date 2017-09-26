@@ -93,3 +93,9 @@ The standard way to avoid overfitting is called **L2 regularization**. It consit
 $$J=-\frac{1}{m}\sum_{i=1}^m[y^{(i)}log(a^{[L](i)}) +(1-y^{(i)})log(1-a^{[L](i)})]$$ <br>
 to: <br>
 $$J_{regularized}=-\frac{1}{m}\sum_{i=1}^m[y^{(i)}log(a^{[L](i)}) +(1-y^{(i)})log(1-a^{[L](i)})] + \frac{1}{m}\frac{\lambda}{2}\sum_l\sum_k\sum_jW_{j,k}^{[l]2}$$ <br>
+
+#### Implementation Details
+To calculate $$\sum_k\sum_j W_{k,j}^{[l]2}$$ use
+```
+np.sum(np.square(W1))
+```
