@@ -95,6 +95,10 @@ to: <br>
 $$J_{regularized}=-\frac{1}{m}\sum_{i=1}^m[y^{(i)}log(a^{[L](i)}) +(1-y^{(i)})log(1-a^{[L](i)})] + \frac{1}{m}\frac{\lambda}{2}\sum_l\sum_k\sum_jW_{j,k}^{[l]2}$$ <br>
 The first term is named **cross-entropy cost** and the second term **L2 regularization cost**.
 
+#### Observations
+- The value of $$\lambda$$ is a hyperparameter that you can tune using a dev set.
+- L2 regularization makes your decision boundary smoother. If $$\lambda$$ is too large, it is also possible to *oversmooth*, resulting in a model with high bias.
+
 #### Implementation Details
 To calculate $$\sum_k\sum_j W_{k,j}^{[l]2}$$ use
 ```
