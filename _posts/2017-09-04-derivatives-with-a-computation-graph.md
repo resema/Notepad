@@ -100,3 +100,6 @@ To calculate $$\sum_k\sum_j W_{k,j}^{[l]2}$$ use
 ```
 np.sum(np.square(W1))
 ```
+#### Backpropagation With Regularization
+For each node we have to add teh regularization term's gradient $$(\frac{d}{dW}(\frac{1}{2}\frac{\lambda}{m}W^2) = \frac{\lambda}{m}W$$.
+
