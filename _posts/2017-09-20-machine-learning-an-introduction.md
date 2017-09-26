@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 mathjax: true
 featured: false
 comments: true
@@ -46,3 +46,7 @@ $$J(\theta) = \frac{1}{2m} \[ \sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})^2 + 
 
 
 #### Regularized Logistic Regression
+Recall that our cost function for logistic regression was:
+$$J(\theta) = -\frac{1}{m}\, \sum_{i=1}^{m}[y^{(i)}log(h_{\theta}(x^{(i)})) + (1-y^{(i)})log(1-h_{\theta}(y^{(i)}))]$$ <br>
+We can regularize this equation by adding a termn to the end:
+$$J(\theta) = -\frac{1}{m}\, \sum_{i=1}^{m}[y^{(i)}log(h_{\theta}(x^{(i)})) + (1-y^{(i)})log(1-h_{\theta}(y^{(i)}))] + \frac{\lambda}{2m}\sum_{j=1}^n \theta_j^2$$ <br>
