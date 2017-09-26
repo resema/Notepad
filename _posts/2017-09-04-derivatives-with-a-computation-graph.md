@@ -4,7 +4,7 @@ published: true
 mathjax: true
 featured: false
 comments: true
-title: The Basic Formulas in Neural Networks using Computation Graph
+title: The Basic Formulas in Neural Networks
 categories:
   - calculus
   - neuralnetworks
