@@ -78,6 +78,9 @@ $$b^{[2]} = np.zeros((n_y,1))$$ <br>
 
 Where does the constant 0.01 comes from? We prefer to use very small initialization values. This means we will not start at the flat parts of the curve.
 
+##### Xavier or He Initialization
+Xavier initialization uses the factor $$\sqrt{\frac{1}{n_x}}$$ instead of 0.01. And He et al. proposed the slightly adapted factor $$\sqrt{\frac{2}{n_x}}$$.
+
 ### General Gradient Descent Rule
 $$\theta = \theta - \alpha\frac{\partial{J}}{\partial{\theta}}$$ <br>
 
