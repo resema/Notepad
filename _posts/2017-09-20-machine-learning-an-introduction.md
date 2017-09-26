@@ -50,3 +50,5 @@ Recall that our cost function for logistic regression was:
 $$J(\theta) = -\frac{1}{m}\, \sum_{i=1}^{m}[y^{(i)}log(h_{\theta}(x^{(i)})) + (1-y^{(i)})log(1-h_{\theta}(y^{(i)}))]$$ <br>
 We can regularize this equation by adding a termn to the end:
 $$J(\theta) = -\frac{1}{m}\, \sum_{i=1}^{m}[y^{(i)}log(h_{\theta}(x^{(i)})) + (1-y^{(i)})log(1-h_{\theta}(y^{(i)}))] + \frac{\lambda}{2m}\sum_{j=1}^n \theta_j^2$$ <br>
+The second sum $$\sum_{j=1}^n \theta_j^2$$ means to explicitly exclude the bias term $$\theta_0$$. I.e. the $$\theta$$ vector is indexed from 0 to n (holding n+1 values, $$\theta_0$$ through $$\theta_n$$, by running from 1 to n, skipping 0. Thus, when computing the equation, we should continuously update the two following equations:
+
