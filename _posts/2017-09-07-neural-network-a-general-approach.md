@@ -113,6 +113,11 @@ $$J(w,b) = \frac{1}{2m}\sum_{i=1}^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \fr
 Go through all layers of the network, and flipping a coin if the node is going to be eliminated or not.
 ![dropout_regularization.png]({{site.baseurl}}/images/posts/dropout_regularization.png)
 
+#### Usage
+- Use dropout only during training. Don't use it during test time.
+- Apply dropout both during forward and backward propagation
+- During training time, divide each dropout layer by keep_prob to keep the same expected value for the activations. For example, if keep_prob is 0.5, then we will on average shut down half the nodes, so the output will be scaled by 0.5 since only the remaining half are contributing to the solution. Dividing by 0.5 is equivalent to multiplying by 2. Hence, the output now has the same expected value. You can check that this works even when keep_prob is other values than 0.5.
+
 #### Basic Principles Why Dropout Works
 Intuition: Can't rely on any one feature, so have to spread out weights. This shrinks the importance of single weights.
 Keep-Probabilities "keep_probs" can vary for different layer. Usually larger layers have a smaller probability than smaller layers. The downside is that this increases the hyper-parameters of the network.
