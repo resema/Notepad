@@ -170,4 +170,4 @@ Epsilon $$\epsilon$$ should be in the range of $$10^{-7}$$.
 - Run at random initialization; perhabs again after some training
 
 ### Used within Back Propagation
-$$\frac{\grad{J}{\grad{\theta}} = \lim_{\epsilon\to0}\frac{J(\theta + \epsilon) - J(\theta - \epsion)}{2\epsilon}$$ <br>
+$$\frac{\grad{J}}{\grad{\theta}} = \lim_{\epsilon\to0}\frac{J(\theta + \epsilon) - J(\theta - \epsion)}{2\epsilon}$$ <br>
