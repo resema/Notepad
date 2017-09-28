@@ -176,3 +176,6 @@ $$\frac{\partial{J}}{\partial{\theta}} = \lim_{\epsilon\to0}\frac{J(\theta + \ep
 
 ### Relative Difference
 difference $$ = \frac{\Vert{grad - grad_{approx}}\Vert_2}{\Vert{grad}\Vert_2 + \Vert{grad_{approx}}\Vert_2} $$ <br>
+
+#### Implementation Notes
+$$\Vert{grad - grad_{approx}}\Vert_2 = np.linalg.norm(grad - grad_{approx}) $$ <br>
