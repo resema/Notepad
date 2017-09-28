@@ -113,6 +113,11 @@ $$J(w,b) = \frac{1}{2m}\sum_{i=1}^{n_x}\mathcal{L}(\hat{y}^{[i]}, y^{[i]}) + \fr
 Go through all layers of the network, and flipping a coin if the node is going to be eliminated or not.
 ![dropout_regularization.png]({{site.baseurl}}/images/posts/dropout_regularization.png)
 
+#### Usage
+- Use dropout only during training. Don't use it during test time.
+- Apply dropout both during forward and backward propagation.
+- During training time, divide each dropout layer by keep_prob to keep the same expected value for the activations. For example, if keep_prob is 0.5, then we will on average shut down half the nodes, so the output will be scaled by 0.5 since only the remaining half are contributing to the solution. Dividing by 0.5 is equivalent to multiplying by 2. Hence, the output now has the same expected value. You can check that this works even when keep_prob is other values than 0.5.
+
 #### Basic Principles Why Dropout Works
 Intuition: Can't rely on any one feature, so have to spread out weights. This shrinks the importance of single weights.
 Keep-Probabilities "keep_probs" can vary for different layer. Usually larger layers have a smaller probability than smaller layers. The downside is that this increases the hyper-parameters of the network.
@@ -152,11 +157,8 @@ Xavier et al. showed that in case of $$tan(h)$$ activation function is is better
 Take $$W^{[1]}$$, $$b^{[1]}$$, ..., $$dW^{[L]}$$, $$b^{[L]}$$ and reshape into a big vector $$\theta$$. <br>
 Take $$dW^{[1]}$$, $$db^{[1]}$$, ..., $$dW^{[L]}$$, $$db^{[L]}$$ and reshape into a big vector $$d\theta$$. <br>
 
-```
-for each i:
-	dTheta_approx[i] = 1/2*Epsilon * ( J(theta_1, theta_2, ..., theta_i + Epsilon) - J(theta_1, theata_2, ..., theta_i - Epsilon) );
-    CheckEuclideanDist((dTheta_approx - dTheta) / (dTheta_approx + dTheta))
-```
+$$ for\, each\, i: $$<br>
+$$\,\,\,\,\,\,\,\,\,\,\theta_{approx}[i] = 1/2*\epsilon * ( J(\theta_1,\, \theta_2,\ ...,\, \theta_i + \epsilon) - J(\theta_1, \theta_2, ..., \theta_i - \epsilon) ); $$<br> $$CheckEuclideanDist((d\theta_{approx} - d\theta) / (d\theta_{approx} + d\theta))$$ <br>
 
 Epsilon $$\epsilon$$ should be in the range of $$10^{-7}$$.
 
@@ -166,3 +168,9 @@ Epsilon $$\epsilon$$ should be in the range of $$10^{-7}$$.
 - Remember regularization
 - Doesn't work with dropout
 - Run at random initialization; perhabs again after some training
+
+### Used within Back Propagation
+$$\frac{\partial{J}}{\partial{\theta}} = \lim_{\epsilon\to0}\frac{J(\theta + \epsilon) - J(\theta - \epsilon)}{2\epsilon}$$ <br>
+
+### Relative Difference
+difference $$ = \frac{\Vert{grad - grad_{approx}}\Vert_2}{\Vert{grad}\Vert_2 + \Vert{grad_{approx}}\Vert_2} $$ <br>

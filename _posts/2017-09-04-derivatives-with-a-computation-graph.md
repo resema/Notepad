@@ -46,6 +46,9 @@ Logistic Regression Cost Function $$J(w,b) = 1/m * \sum_{i=1}^m \mathcal{L}(\hat
 #### Vectorized implementation
 $$J(w,b) = -1/m * np.sum(np.multiply(Y, np.log(A^{[L]})) + np.multiply((1 - Y),np.log(1-A^{[L]})))$$
 
+#### Forward Propagation with Dropout
+Create matrix $$D^{[i]}$$ with the same dimension as the corresponding activation matrix $$A^{[i]}$$ and initialize it randomly. Then set all values to 0 or 1 regarding the *keep probability*. Then multiply the activation matrix with the dropout matrix and divide the remaining values by the *keep probability*.
+
 ### Summary of gradient descent (Backpropagation)
 $$dz^{[2]} = a^{[2]} - y$$ <br>
 $$dW^{[2]} = dz^{[2]}a^{[1]^T}$$ <br>
@@ -107,3 +110,5 @@ np.sum(np.square(W1))
 #### Backpropagation With Regularization
 For each node we have to add teh regularization term's gradient $$(\frac{d}{dW}(\frac{1}{2}\frac{\lambda}{m}W^2) = \frac{\lambda}{m}W$$.
 
+#### Backpropagation with Dropout
+Multiply the derivative $$dA^{[i]}$$ with the corresponding droupout matrix cached in the forward propagation. Finally divide the remaining values in the activation matrix by the *keep probablity*.
