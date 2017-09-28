@@ -115,7 +115,7 @@ Go through all layers of the network, and flipping a coin if the node is going t
 
 #### Usage
 - Use dropout only during training. Don't use it during test time.
-- Apply dropout both during forward and backward propagation
+- Apply dropout both during forward and backward propagation.
 - During training time, divide each dropout layer by keep_prob to keep the same expected value for the activations. For example, if keep_prob is 0.5, then we will on average shut down half the nodes, so the output will be scaled by 0.5 since only the remaining half are contributing to the solution. Dividing by 0.5 is equivalent to multiplying by 2. Hence, the output now has the same expected value. You can check that this works even when keep_prob is other values than 0.5.
 
 #### Basic Principles Why Dropout Works
