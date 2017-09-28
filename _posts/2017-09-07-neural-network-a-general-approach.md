@@ -173,5 +173,4 @@ Epsilon $$\epsilon$$ should be in the range of $$10^{-7}$$.
 $$\frac{\partial{J}}{\partial{\theta}} = \lim_{\epsilon\to0}\frac{J(\theta + \epsilon) - J(\theta - \epsilon)}{2\epsilon}$$ <br>
 
 ### Relative Difference
-$$ difference = \Vert{grad}
 $$ difference = \frac{\Vert{grad} - \Vert{grad_{approx}}_2}{\Vert{grad}_2 + \Vert{grad_{approx}}_2} $$ <br>
