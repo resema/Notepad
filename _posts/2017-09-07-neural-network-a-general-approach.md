@@ -157,11 +157,8 @@ Xavier et al. showed that in case of $$tan(h)$$ activation function is is better
 Take $$W^{[1]}$$, $$b^{[1]}$$, ..., $$dW^{[L]}$$, $$b^{[L]}$$ and reshape into a big vector $$\theta$$. <br>
 Take $$dW^{[1]}$$, $$db^{[1]}$$, ..., $$dW^{[L]}$$, $$db^{[L]}$$ and reshape into a big vector $$d\theta$$. <br>
 
-```
-for each i:
-	dTheta_approx[i] = 1/2*Epsilon * ( J(theta_1, theta_2, ..., theta_i + Epsilon) - J(theta_1, theata_2, ..., theta_i - Epsilon) );
-    CheckEuclideanDist((dTheta_approx - dTheta) / (dTheta_approx + dTheta))
-```
+$$ for\, each\, i: $$<br>
+\,\, $$\theta_approx[i] = 1/2*\epsilon * ( J(\theta_1,\, \theta_2,\ ...,\, \theta_i + \epsilon) - J(\theta_1, \theata_2, ..., \theta_i - \epsilon) ); <br> CheckEuclideanDist((dTheta_approx - dTheta) / (d\theta_approx + d\theta)) <br>
 
 Epsilon $$\epsilon$$ should be in the range of $$10^{-7}$$.
 
