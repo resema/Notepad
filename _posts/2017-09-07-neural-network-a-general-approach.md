@@ -174,4 +174,4 @@ $$\frac{\partial{J}}{\partial{\theta}} = \lim_{\epsilon\to0}\frac{J(\theta + \ep
 
 ### Relative Difference
 $$ difference = \Vert{grad}
-$$ difference = \frac{\Vert grad - grad_{approx}\Vert_2}{\Vert{grad}_2 + \Vert{grad_{approx}}_2 $$ <br>
+$$ difference = \frac{\Vert{grad} - \Vert{grad_{approx}}_2}{\Vert{grad}_2 + \Vert{grad_{approx}}_2} $$ <br>
