@@ -158,7 +158,8 @@ Take $$W^{[1]}$$, $$b^{[1]}$$, ..., $$dW^{[L]}$$, $$b^{[L]}$$ and reshape into a
 Take $$dW^{[1]}$$, $$db^{[1]}$$, ..., $$dW^{[L]}$$, $$db^{[L]}$$ and reshape into a big vector $$d\theta$$. <br>
 
 $$ for\, each\, i: $$<br>
-\,\, $$\theta_approx[i] = 1/2*\epsilon * ( J(\theta_1,\, \theta_2,\ ...,\, \theta_i + \epsilon) - J(\theta_1, \theata_2, ..., \theta_i - \epsilon) ); $$<br> $$CheckEuclideanDist((dTheta_approx - dTheta) / (d\theta_approx + d\theta))$$ <br>
+$$\,\,\theta_approx[i] = 1/2*\epsilon * ( J(\theta_1,\, \theta_2,\ ...,\, \theta_i + \epsilon) - J(\theta_1, \theata_2, ..., \theta_i - \epsilon) ); $$<br> <br>
+$$CheckEuclideanDist((dTheta_approx - dTheta) / (d\theta_approx + d\theta))$$ <br>
 
 Epsilon $$\epsilon$$ should be in the range of $$10^{-7}$$.
 
