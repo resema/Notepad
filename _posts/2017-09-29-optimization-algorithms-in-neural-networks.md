@@ -30,3 +30,5 @@ $$\,\,\,\, $$ Backprop to compute gradients cost $$ J^{\{t\}} $$ (using ($$(X^{\
 $$\,\,\,\, W^{[l]} = W^{[l]} - \alpha\,dW^{[l]}$$<br>
 $$\,\,\,\, b^{[l]} = b^{[l]} - \alpha\,db^{[l]}$$ <br>
 
+### Mini-batch Size
+![mini-batch_size.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/mini-batch_size.png)
