@@ -22,8 +22,8 @@ Mini-batch Gradient Descent splits up the data samples into baby batches.
 Mini-batch t $$= X^{\{t\}}$$ <br>
 
 ## How It Works
-$$ for \, t = 1, ..., 500 $$<br>            $$ \,\,\,\,\,\,\,\, Forward-Prop\, on\, X^{\{t\}}$$ <br>
-$$\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\, Z^{[1]} = W^{(1)}X^{\{t\}} + b^{[1]}^$$ <br>
+$$ for \, t = 1, ..., 500 $$<br>            $$ \,\,\,\,\,\,\,\, Forward\,Prop\, on\, X^{\{t\}}$$ <br>
+$$ \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, Z^{[1]} = W^{(1)}X^{\{t\}} + b^{[1]}^$$ <br>
 \,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\, A^{[1]} = g^{[1]}(Z^{[1]})$$<br> $$ \,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\, ... $$ <br> $$\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\, A^{[l]} = g^{[l]}(Z^{[l]}^) $$ <br>
 $$ \,\,\,\,\,\,\,\, Compute Cost J = \frac{1}{1000}\sum_{i=0}^l\mathcal{L}(\hat{y}^{(i)}, y^{(i)}) + \frac{\lambda}{2*1000}\sum_l\Vert{W^{[l]}\Vert_F^2$$ <br>
 $$\,\,\,\,\,\,\,\, $$ Backprop to compute gradients cost $$ J^{\{t\}} $$ (using ($$(X^{\{t\}}, Y^{\{t\}}))$$) <br>
