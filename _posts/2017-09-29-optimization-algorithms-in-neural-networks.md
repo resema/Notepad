@@ -43,3 +43,9 @@ $$\beta$$ is a hyperparameter.
 ### How It Works
 $$ V_t = \beta\, V_{t-1} + (1 - \beta)\theta_t$$ <br>
 $$ V_100 = 0.1 * \theta_{100} + 0.1 * 0.9 * \theta_{99} + 0.1 * (0.9)^2 * \theta_{98} + 0.1 * (0.9)^3 * \theta_{97} + ...$$ <br>
+This is an exponentially decaying function and this becomes to $$V_{100}$$.
+
+### Implementation Notes
+$$ Repeat $$ <br>
+$$ \,\,\,\, Get\, next\, \theta_t$$ <br>
+$$ \,\,\,\, V_{\theta} = \beta V_{\theta} + (1-\beta) \theta_t $$ <br>
