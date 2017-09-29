@@ -51,4 +51,6 @@ $$ \,\,\,\, Get\, next\, \theta_t$$ <br>
 $$ \,\,\,\, V_{\theta} = \beta V_{\theta} + (1-\beta) \theta_t $$ <br>
 
 ### Bias Correction in Exponentially Weighted Average
+The curve from the above equation starts very low due to the initialization of $$V_0$$ with 0.
 
+$$\frac{V_t}{1-\beta^t}$$ is used for bias correction. But bias correction is not applied very often.
