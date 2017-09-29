@@ -14,8 +14,9 @@ tags: NeuralNetworks Introduction Coursera
 ---
 >&quot;Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
-## A Introduction Sample
 
+## A Introduction Sample
+![nn_simple_sample.png]({{site.baseurl}}/images/posts/NeuralNetwork_AnIntroduction/nn_simple_sample.png)
 
 ## General Steps
 Applied deep learning is a very empirical process. From an idea, code a solution and test it on an experiment.	
