@@ -19,4 +19,9 @@ tags: coursera neural network machinelearning calculus
 Looking back to Batch Gradient Descent, Vectorization allows us to efficiently compute on *m* examples. But if *m* is big it is still very slow because you have to train the complete training set.
 
 Mini-batch Gradient Descent splits up the data samples into baby batches.
-Mini-batch i $$= X^{\{i\}}$$ <br>
+Mini-batch t $$= X^{\{t\}}$$ <br>
+
+## How It Works
+$$ for \, t = 1, ..., 500 $$<br>            $$ \,\,\,\,\,\,\,\, Forward-Prop on X^{\{t\}}$$ <br>
+$$\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\, Z^{[1]} = W^{(1)}X^{\{t\}} + b{[1]}^$$ <br>
+\,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\, A^{[1]} = g^{[1]}(Z^{[1]})$$<br> $$ \,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\, ... $$ <br> \,\,\,\,\,\,\,\, \,\,\,\,\,\,\,\, $$A^{[l]} = g^{[l]}(Z`{[l]}^) $$ <br>
