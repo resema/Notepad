@@ -11,7 +11,7 @@ categories:
   - Calculus
   - NeuralNetworks
   - MachineLearning
-tags: coursera neural network machinelearning calculus
+tags: coursera neuralnetwork machinelearning calculus
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 
