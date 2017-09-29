@@ -39,3 +39,7 @@ Make sure that the mini-batch fits in the CPU/GPU memory (64, 128, 256, 512).
 $$ V_t = \beta\, V_{t-1} + (1 - \beta)\theta_t$$ <br>
 While $$\beta \to 1$$ we are averaging over larger data. 
 $$\beta$$ is a hyperparameter.
+
+### How It Works
+$$ V_t = \beta\, V_{t-1} + (1 - \beta)\theta_t$$ <br>
+$$ V_100 = 0.1 \theta_{100} + 0.1 * 0.9 * \theta_{99} + 0.1 * (0.9)^2 * \theta_{98} + 0.1 * (0.9)^3 * \theta_{97} + ...$$ <br>
