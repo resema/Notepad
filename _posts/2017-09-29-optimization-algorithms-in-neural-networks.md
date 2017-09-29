@@ -37,4 +37,5 @@ Make sure that the mini-batch fits in the CPU/GPU memory (64, 128, 256, 512).
 
 ## Exponentially Weightd Averages
 $$ V_t = \beta\, V_{t-1} + (1 - \beta)\theta_t$$ <br>
-While $$\beta \to 1$$ we are averaging over larger data.
+While $$\beta \to 1$$ we are averaging over larger data. 
+$$\beta$$ is a hyperparameter.
