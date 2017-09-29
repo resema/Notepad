@@ -15,6 +15,9 @@ tags: NeuralNetworks Introduction Coursera
 >&quot;Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
+## A Introduction Sample
+![nn_simple_sample.png]({{site.baseurl}}/images/posts/NeuralNetwork_AnIntroduction/nn_simple_sample.png)
+
 ## General Steps
 Applied deep learning is a very empirical process. From an idea, code a solution and test it on an experiment.	
 
@@ -151,9 +154,11 @@ $$W^l = np.random.randn(shape) * np.sqrt(\frac{1}{n^{[l-1]}}$$ <br>
 
 Side mark: If we use a ReLU activation function we use $$ Var(w) = \frac{2}{n}$$.
 
-Xavier et al. showed that in case of $$tan(h)$$ activation function is is better to use $$Var(w) = \frac{1}{n^{[n-l]}$$.
+Xavier et al. showed that in case of $$tan(h)$$ activation function is is better to use $$Var(w) = \frac{1}{n^{[n-l]}}$$.
 
 ## Gradient Checking
+![n-dimensional_gradient_checking.png]({{site.baseurl}}/images/posts/NeuralNetwork_AnIntroduction/n-dimensional_gradient_checking.png)
+
 Take $$W^{[1]}$$, $$b^{[1]}$$, ..., $$dW^{[L]}$$, $$b^{[L]}$$ and reshape into a big vector $$\theta$$. <br>
 Take $$dW^{[1]}$$, $$db^{[1]}$$, ..., $$dW^{[L]}$$, $$db^{[L]}$$ and reshape into a big vector $$d\theta$$. <br>
 
@@ -174,3 +179,6 @@ $$\frac{\partial{J}}{\partial{\theta}} = \lim_{\epsilon\to0}\frac{J(\theta + \ep
 
 ### Relative Difference
 difference $$ = \frac{\Vert{grad - grad_{approx}}\Vert_2}{\Vert{grad}\Vert_2 + \Vert{grad_{approx}}\Vert_2} $$ <br>
+
+#### Implementation Notes
+$$\Vert{grad - grad_{approx}}\Vert_2 = np.linalg.norm(grad - grad_{approx}) $$ <br>
