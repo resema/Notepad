@@ -29,3 +29,4 @@ $$ \,\,\,\,$$ Compute Cost $$ J = \frac{1}{1000}\sum_{i=0}^l\mathcal{l}(\hat{y}^
 $$\,\,\,\, $$ Backprop to compute gradients cost $$ J^{\{t\}} $$ (using ($$(X^{\{t\}}, Y^{\{t\}}))$$) <br>
 $$\,\,\,\, W^{[l]} = W^{[l]} - \alpha\,dW^{[l]}$$<br>
 $$\,\,\,\, b^{[l]} = b^{[l]} - \alpha\,db^{[l]}$$ <br>
+
