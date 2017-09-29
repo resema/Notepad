@@ -32,3 +32,5 @@ $$\,\,\,\, b^{[l]} = b^{[l]} - \alpha\,db^{[l]}$$ <br>
 
 ### Mini-batch Size
 ![mini-batch_size.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/mini-batch_size.png)
+
+Make sure that the mini-batch fits in the CPU/GPU memory (64, 128, 256, 512).
