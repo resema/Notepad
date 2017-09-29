@@ -21,7 +21,7 @@ Looking back to Batch Gradient Descent, Vectorization allows us to efficiently c
 Mini-batch Gradient Descent splits up the data samples into baby batches.
 Mini-batch t $$= X^{\{t\}}$$ <br>
 
-## How It Works
+### How It Works
 $$ for \, t = 1, ..., 500 $$<br>            $$ \,\,\,\,$$ Forward-Prop on $$X^{\{t\}}$$ <br>
 $$ \,\,\,\,\,\,\,\, Z^{[1]} = W^{(1)}X^{\{t\}} + b^{[1]}$$ <br>
 $$\,\,\,\,\,\,\,\, A^{[1]} = g^{[1]}(Z^{[1]})$$<br> $$ \,\,\,\, ... $$ <br> $$\,\,\,\,\,\,\,\, A^{[l]} = g^{[l]}(Z^{[l]}) $$ <br>
@@ -33,4 +33,7 @@ $$\,\,\,\, b^{[l]} = b^{[l]} - \alpha\,db^{[l]}$$ <br>
 ### Mini-batch Size
 ![mini-batch_size.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/mini-batch_size.png)
 
-Make sure that the mini-batch fits in the CPU/GPU memory (64, 128, 256, 512).
+Make sure that the mini-batch fits in the CPU/GPU memory (64, 128, 256, 512). 
+
+## Exponentially Weightd Averages
+$$ V_t = \beta\, V_{t-1} + (1 - \beta)\theta_t$$ <br>
