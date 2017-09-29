@@ -49,3 +49,6 @@ This is an exponentially decaying function and this becomes to $$V_{100}$$.
 $$ Repeat $$ <br>
 $$ \,\,\,\, Get\, next\, \theta_t$$ <br>
 $$ \,\,\,\, V_{\theta} = \beta V_{\theta} + (1-\beta) \theta_t $$ <br>
+
+### Bias Correction in Exponentially Weighted Average
+
