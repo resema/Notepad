@@ -72,7 +72,7 @@ Look at it as a ball is rolling down a bowl, where $$V_{dW}$$ and $$V_{db}$$ are
 This introduces a new hyperparameter $$\beta$$ to the existing $$\alpha$$. Normally start with $$\beta = 0.9$$.
 
 ## RMSprop
-
+![RMSprop.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/RMSprop.png)
 
 $$On\, iteration\, t:$$ <br>
 $$\,\,\,\, Corporate\, dW,\, db\ on\, current\, mini batch$$ <br>
