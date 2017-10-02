@@ -64,3 +64,6 @@ $$\,\,\,\, Corporate\, dW,\, db\ on\, current\, mini batch$$ <br>
 $$\,\,\,\, V_{dW} = \beta V_{dW} + (1-\beta)dW$$ <br>
 $$\,\,\,\, V_{db} = \beta V_{db} + (1-\beta)db$$ <br>
 $$\,\,\,\, W = W - \alpha V_{dW}; b = b - \alpha V_{db}$$<br>
+
+### Physical Description
+Look at it as a ball is rolling down a bowl, where $$V_{dW}$$ and $$V_{db}$$ are the velocities, the derivatives the gaining acceleration and $$\beta$$ the friction. It is easy to imagine how the ball is rolling down.
