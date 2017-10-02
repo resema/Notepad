@@ -60,7 +60,7 @@ Used to prevent diverting and/or overshooting gradient descent. The goal is to a
 
 ### Average Steps
 $$On\, iteration\, t:$$ <br>
-$$\,\,\,\, Corporate\, dW,\, db\ on\, current\, mini batch$$ <br>
+$$\,\,\,\, Compute\, dW,\, db\ on\, current\, mini batch$$ <br>
 $$\,\,\,\, V_{dW} = \beta V_{dW} + (1-\beta)dW$$ <br>
 $$\,\,\,\, V_{db} = \beta V_{db} + (1-\beta)db$$ <br>
 $$\,\,\,\, W = W - \alpha V_{dW}; b = b - \alpha V_{db}$$<br>
@@ -70,3 +70,52 @@ Look at it as a ball is rolling down a bowl, where $$V_{dW}$$ and $$V_{db}$$ are
 
 ### Hyperparameters
 This introduces a new hyperparameter $$\beta$$ to the existing $$\alpha$$. Normally start with $$\beta = 0.9$$.
+
+## RMSprop
+![RMSprop.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/RMSprop.png)
+
+$$On\, iteration\, t:$$ <br>
+$$\,\,\,\, Compute\, dW,\, db\ on\, current\, mini batch$$ <br>
+$$\,\,\,\, S_{dW} = \beta S_{dW} + (1-\beta)dW^2$$ <br>
+$$\,\,\,\, S_{db} = \beta S_{db} + (1-\beta)db^2$$ <br>
+$$\,\,\,\, W = W - \alpha \frac{dW}{\sqrt{S_{dW}}}; b = b - \alpha \frac{db}{\sqrt{S_{db}}}$$<br>
+
+Element-wise squaring of the acceleration.
+
+## Adam Optimization Algorithm
+Adam := Adaptive Moment Estimation
+This is a combination of gradient descent with momentum and RMSprop. 
+
+### Implementation
+$$V_{dW} = 0, S_{dW} = 0, V_{db} =, S_{db} = 0$$ <br>
+$$On\, iteration\, t:$$ <br>
+$$\,\,\,\, Compute\, dW,\, db\ using\, current\, mini batch$$ <br>
+$$\,\,\,\, V_{dW} = \beta_1 V_{dW} + (1-\beta_1)dW$$ <br>
+$$\,\,\,\, V_{db} = \beta_1 V_{db} + (1-\beta_1)db$$ <br>
+$$\,\,\,\, S_{dW} = \beta_2 S_{dW} + (1-\beta_2)dW^2$$ <br>
+$$\,\,\,\, S_{db} = \beta_2 S_{db} + (1-\beta_2)db^2$$ <br>
+$$\,\,\,\, V_{dW}^{corrected} = \frac{V_{dW}}{(1 - \beta_1^t)}, V_{db}^{corrected} = \frac{V_{db}}{(1 - \beta_1^t)}$$ <br>
+$$\,\,\,\, S_{dW}^{corrected} = \frac{S_{dW}}{(1 - \beta_2^t)}, \,\,\,\, S_{db}^{corrected} = \frac{S_{db}}{(1 - \beta_2^t)}$$ <br>
+$$\,\,\,\, W = W - \alpha \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}} + \epsilon}, b = b - \alpha \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}} + \epsilon}$$ <br>
+
+### Hyperparameters Choice
+$$\alpha$$ := needs to be tuned <br>
+$$\beta_1 := 0.9$$ <br>
+$$\beta_2 := 0.999$$ <br>
+$$\epsilon := 10^{-8}$$ <br>
+
+## Learning Rate Decay
+One epoch is 1 pass through the data.
+
+$$ \alpha = \frac{1}{1 + decayRate * epochNum} * \alpha_0$$ <br>
+
+$$Epoch \to \alpha$$ <br>
+$$ 1 \to 0.1$$ <br>
+$$ 2 \to 0.067$$ <br>
+$$ 3 \to 0.05$$ <br>
+$$ 4 \to 0.04$$ <br>
+
+### Other Methods
+$$\alpha = 0.95^{epochNum} * \alpha_0$$ <br>
+$$\alpha = \frac{k}{\sqrt{epochNum}} * \alpha_0$$ <br>
+
