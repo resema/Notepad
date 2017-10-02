@@ -125,4 +125,4 @@ $$\alpha = \frac{k}{\sqrt{epochNum}} * \alpha_0$$ <br>
 Other possiblities are sattel point, meaning it is shaped as a horse sattel and therefore zero points are no always local or global minimas.
 ![sattle.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/sattle.png)
 
-Platforms can make learning very slow and then ADAM and likewise can't really speed up the training.
+Platforms can make learning very slow and then ADAM and likewise can really help to speed up the training.
