@@ -93,9 +93,6 @@ $$\,\,\,\, V_{dW} = \beta_1 V_{dW} + (1-\beta_1)dW$$ <br>
 $$\,\,\,\, V_{db} = \beta_1 V_{db} + (1-\beta_1)db$$ <br>
 $$\,\,\,\, S_{dW} = \beta_2 S_{dW} + (1-\beta_2)dW^2$$ <br>
 $$\,\,\,\, S_{db} = \beta_2 S_{db} + (1-\beta_2)db^2$$ <br>
-$$\,\,\,\, V_{dW}^{corrected} = \frac{V_{dW}}{(1 - \beta_1^t)}$$ <br>
-$$\,\,\,\, V_{db}^{corrected} = \frac{V_{db}}{(1 - \beta_1^t)}$$ <br>
-$$\,\,\,\, S_{dW}^{corrected} = \frac{S_{dW}}{(1 - \beta_2^t)}$$ <br>
-$$\,\,\,\, S_{db}^{corrected} = \frac{S_{db}}{(1 - \beta_2^t)}$$ <br>
-$$\,\,\,\, W = W - \alpha \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}} + \epsilon}$$ <br>
-$$\,\,\,\, b = b - \alpha \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}} + \epsilon}$$ <br>
+$$\,\,\,\, V_{dW}^{corrected} = \frac{V_{dW}}{(1 - \beta_1^t)}, V_{db}^{corrected} = \frac{V_{db}}{(1 - \beta_1^t)}$$ <br>
+$$\,\,\,\, S_{dW}^{corrected} = \frac{S_{dW}}{(1 - \beta_2^t)}, \,\,\,\, S_{db}^{corrected} = \frac{S_{db}}{(1 - \beta_2^t)}$$ <br>
+$$\,\,\,\, W = W - \alpha \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}} + \epsilon}, b = b - \alpha \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}} + \epsilon}$$ <br>
