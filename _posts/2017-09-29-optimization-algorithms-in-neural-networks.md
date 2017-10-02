@@ -67,3 +67,6 @@ $$\,\,\,\, W = W - \alpha V_{dW}; b = b - \alpha V_{db}$$<br>
 
 ### Physical Description
 Look at it as a ball is rolling down a bowl, where $$V_{dW}$$ and $$V_{db}$$ are the velocities, the derivatives the gaining acceleration and $$\beta$$ the friction. It is easy to imagine how the ball is rolling down.
+
+### Hyperparameters
+This introduces a new hyperparameter $$\beta$$ to the existing $$\alpha$$. Normally start with $$\beta = 0.9$$.
