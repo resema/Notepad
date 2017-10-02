@@ -115,3 +115,7 @@ $$ 2 \to 0.067$$ <br>
 $$ 3 \to 0.05$$ <br>
 $$ 4 \to 0.04$$ <br>
 
+### Other Methods
+$$\alpha = 0.95^{epochNum} * \alpha_0$$ <br>
+$$\alpha = \frac{k}{\sqrt{epochNum}}} * \alpha_0$$ <br>
+
