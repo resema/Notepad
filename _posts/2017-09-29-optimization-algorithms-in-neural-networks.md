@@ -98,3 +98,4 @@ $$\,\,\,\, V_{db}^{corrected} = \frac{V_{db}}{(1 - \beta_1^t)}$$ <br>
 $$\,\,\,\, S_{dW}^{corrected} = \frac{S_{dW}}{(1 - \beta_2^t)}$$ <br>
 $$\,\,\,\, S_{db}^{corrected} = \frac{S_{db}}{(1 - \beta_2^t)}$$ <br>
 $$\,\,\,\, W = W - \alpha \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}} + \epsilon}$$ <br>
+$$\,\,\,\, b = b - \alpha \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}} + \epsilon}$$ <br>
