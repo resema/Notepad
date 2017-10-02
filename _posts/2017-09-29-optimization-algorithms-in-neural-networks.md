@@ -70,3 +70,14 @@ Look at it as a ball is rolling down a bowl, where $$V_{dW}$$ and $$V_{db}$$ are
 
 ### Hyperparameters
 This introduces a new hyperparameter $$\beta$$ to the existing $$\alpha$$. Normally start with $$\beta = 0.9$$.
+
+## RMSprop
+
+
+$$On\, iteration\, t:$$ <br>
+$$\,\,\,\, Corporate\, dW,\, db\ on\, current\, mini batch$$ <br>
+$$\,\,\,\, S_{dW} = \beta S_{dW} + (1-\beta)dW^2$$ <br>
+$$\,\,\,\, S_{db} = \beta S_{db} + (1-\beta)db^2$$ <br>
+$$\,\,\,\, W = W - \alpha \frac{dW}{\sqrt{S_{dW}}}; b = b - \alpha \frac{db}{\sqrt{S_{db}}}$$<br>
+
+Element-wise squarring of the acceleration.
