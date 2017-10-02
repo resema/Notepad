@@ -119,3 +119,5 @@ $$ 4 \to 0.04$$ <br>
 $$\alpha = 0.95^{epochNum} * \alpha_0$$ <br>
 $$\alpha = \frac{k}{\sqrt{epochNum}} * \alpha_0$$ <br>
 
+## Problem of Local Optima
+
