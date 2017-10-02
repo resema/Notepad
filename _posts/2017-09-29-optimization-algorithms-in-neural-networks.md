@@ -56,3 +56,11 @@ The curve from the above equation starts very low due to the initialization of $
 $$\frac{V_t}{1-\beta^t}$$ is used for bias correction. But bias correction is not applied very often.
 
 ## Gradient Descent With Momentum
+Used to prevent diverting and/or overshooting gradient descent. The goal is to achieve a specific gradient descent faster in broader elipses and slower in narrower elipses
+
+### Average Steps
+$$On\, iteration\, t:$$ <br>
+$$\,\,\,\, Corporate\, dW,\, db\ on\, current\, mini bath$$ <br>
+$$\,\,\,\, V_{dW} = \beta V_{dW} + (1-\beta}dW$$ <br>
+$$\,\,\,\, V_{db} = \beta V_{db} + (1-\beta}db$$ <br>
+$$\,\,\,\, W = W - \alpha V_{dW}; b = b - \alpha V_{db}$$<br>
