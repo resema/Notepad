@@ -108,6 +108,8 @@ $$\epsilon := 10^{-8}$$ <br>
 One epoch is 1 pass through the data.
 
 $$ \alpha = \frac{1}{1 + decayRate * epochNum} * \alpha_0$$ <br>
+
+$$Epoch \to \alpha$$ <br>
 $$ 1 \to 0.1$$ <br>
 $$ 2 \to 0.067$$ <br>
 $$ 3 \to 0.05$$ <br>
