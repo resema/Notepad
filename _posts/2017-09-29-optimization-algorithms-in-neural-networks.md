@@ -83,6 +83,7 @@ $$\,\,\,\, W = W - \alpha \frac{dW}{\sqrt{S_{dW}}}; b = b - \alpha \frac{db}{\sq
 Element-wise squaring of the acceleration.
 
 ## Adam Optimization Algorithm
+Adam := Adaptive Moment Estimation
 This is a combination of gradient descent with momentum and RMSprop. 
 
 ### Implementation
