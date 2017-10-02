@@ -11,7 +11,7 @@ categories:
   - Calculus
   - NeuralNetworks
   - MachineLearning
-tags: coursera neural network machinelearning calculus
+tags: coursera neuralnetwork machinelearning calculus
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 
@@ -49,3 +49,24 @@ This is an exponentially decaying function and this becomes to $$V_{100}$$.
 $$ Repeat $$ <br>
 $$ \,\,\,\, Get\, next\, \theta_t$$ <br>
 $$ \,\,\,\, V_{\theta} = \beta V_{\theta} + (1-\beta) \theta_t $$ <br>
+
+### Bias Correction in Exponentially Weighted Average
+The curve from the above equation starts very low due to the initialization of $$V_0$$ with 0.
+
+$$\frac{V_t}{1-\beta^t}$$ is used for bias correction. But bias correction is not applied very often.
+
+## Gradient Descent With Momentum
+Used to prevent diverting and/or overshooting gradient descent. The goal is to achieve a specific gradient descent faster in broader elipses and slower in narrower elipses
+
+### Average Steps
+$$On\, iteration\, t:$$ <br>
+$$\,\,\,\, Corporate\, dW,\, db\ on\, current\, mini batch$$ <br>
+$$\,\,\,\, V_{dW} = \beta V_{dW} + (1-\beta)dW$$ <br>
+$$\,\,\,\, V_{db} = \beta V_{db} + (1-\beta)db$$ <br>
+$$\,\,\,\, W = W - \alpha V_{dW}; b = b - \alpha V_{db}$$<br>
+
+### Physical Description
+Look at it as a ball is rolling down a bowl, where $$V_{dW}$$ and $$V_{db}$$ are the velocities, the derivatives the gaining acceleration and $$\beta$$ the friction. It is easy to imagine how the ball is rolling down.
+
+### Hyperparameters
+This introduces a new hyperparameter $$\beta$$ to the existing $$\alpha$$. Normally start with $$\beta = 0.9$$.
