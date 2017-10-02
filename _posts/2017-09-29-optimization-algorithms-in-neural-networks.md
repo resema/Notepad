@@ -60,7 +60,7 @@ Used to prevent diverting and/or overshooting gradient descent. The goal is to a
 
 ### Average Steps
 $$On\, iteration\, t:$$ <br>
-$$\,\,\,\, Corporate\, dW,\, db\ on\, current\, mini bath$$ <br>
-$$\,\,\,\, V_{dW} = \beta V_{dW} + (1-\beta}dW$$ <br>
-$$\,\,\,\, V_{db} = \beta V_{db} + (1-\beta}db$$ <br>
+$$\,\,\,\, Corporate\, dW,\, db\ on\, current\, mini batch$$ <br>
+$$\,\,\,\, V_{dW} = \beta V_{dW} + (1-\beta)dW$$ <br>
+$$\,\,\,\, V_{db} = \beta V_{db} + (1-\beta)db$$ <br>
 $$\,\,\,\, W = W - \alpha V_{dW}; b = b - \alpha V_{db}$$<br>
