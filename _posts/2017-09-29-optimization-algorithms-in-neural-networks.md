@@ -103,3 +103,13 @@ $$\alpha$$ := needs to be tuned <br>
 $$\beta_1 := 0.9$$ <br>
 $$\beta_2 := 0.999$$ <br>
 $$\epsilon := 10^{-8}$$ <br>
+
+## Learning Rate Decay
+One epoch is 1 pass through the data.
+
+$$ \alpha = \frac{1}{1 + decayRate * epochNum} * \alpha_0$$ <br>
+$$ 1 \to 0.1$$ <br>
+$$ 2 \to 0.067$$ <br>
+$$ 3 \to 0.05$$ <br>
+$$ 4 \to 0.04$$ <br>
+
