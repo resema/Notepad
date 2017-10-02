@@ -80,4 +80,4 @@ $$\,\,\,\, S_{dW} = \beta S_{dW} + (1-\beta)dW^2$$ <br>
 $$\,\,\,\, S_{db} = \beta S_{db} + (1-\beta)db^2$$ <br>
 $$\,\,\,\, W = W - \alpha \frac{dW}{\sqrt{S_{dW}}}; b = b - \alpha \frac{db}{\sqrt{S_{db}}}$$<br>
 
-Element-wise squarring of the acceleration.
+Element-wise squaring of the acceleration.
