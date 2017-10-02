@@ -120,4 +120,5 @@ $$\alpha = 0.95^{epochNum} * \alpha_0$$ <br>
 $$\alpha = \frac{k}{\sqrt{epochNum}} * \alpha_0$$ <br>
 
 ## Problem of Local Optima
-
+![local_optima.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/local_optima.png)
+Other possiblities are sattel point, meaning it is shaped as a horse sattel and therefore zero points are no always local or global minimas.
