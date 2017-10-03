@@ -65,7 +65,7 @@ $$dW^{[1]} = dz^{[1]}x^T$$<br>
 $$db^{[1]} = dz^{[1]}$$ <br>
 $$dA^{[l-1]} = \frac{\partial{\mathcal{L}}}{\partial{A^{[l-1]}}} = W^{[l]^T}dZ^{[l]}$$<br>
 
-##### Vectorized implementation example
+#### Vectorized implementation example
 $$dZ^{[2]} = A^{[2]} - Y$$ <br>
 $$dW^{[2]} = \frac{1}{m} dZ^{[2]}A^{[1]^T}$$ <br>
 $$db^{[2]} = \frac{1}{m} np.sum(dZ^{[2]}, axis=1, keepdims=True)$$<br>
