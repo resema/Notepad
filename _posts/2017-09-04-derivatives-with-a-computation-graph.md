@@ -54,7 +54,7 @@ $$dZ{[l]} = \frac{\partial{\mathcal{L}}}{\partial{Z^{[l]}}} $$ <br><br>
 
 $$dW^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} dZ^{[l]}A^{[l-1]T}$$ <br>
 $$db^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} \sum_{i=1}^{m}dZ^{[l](i)}$$ <br>
-$$dA^{[l-1]} = \frac{\partial{\mathcal{L}}}{\partial{A^{[l-1]}}}} = W^{[l]T}dZ^{[l]}$$ <br>
+$$dA^{[l-1]} = \frac{\partial{\mathcal{L}}}{\partial{A^{[l-1]}}} = W^{[l]T}dZ^{[l]}$$ <br>
 
 ### Summary of gradient descent (Backpropagation)
 $$dz^{[2]} = a^{[2]} - y$$ <br>
