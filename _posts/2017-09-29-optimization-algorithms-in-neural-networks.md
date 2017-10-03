@@ -14,6 +14,7 @@ categories:
 tags: coursera neuralnetwork machinelearning calculus
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
+><small><cite title="Einstein">Einstein</cite></small>
 
 ## Mini-batch Gradient Descent
 Looking back to Batch Gradient Descent, Vectorization allows us to efficiently compute on *m* examples. But if *m* is big it is still very slow because you have to train the complete training set.
@@ -121,4 +122,8 @@ $$\alpha = \frac{k}{\sqrt{epochNum}} * \alpha_0$$ <br>
 
 ## Problem of Local Optima
 ![local_optima.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/local_optima.png)
+
 Other possiblities are sattel point, meaning it is shaped as a horse sattel and therefore zero points are no always local or global minimas.
+![sattle.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/sattle.png)
+
+Platforms can make learning very slow and then ADAM and likewise can really help to speed up the training.
