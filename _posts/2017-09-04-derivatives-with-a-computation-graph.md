@@ -56,7 +56,7 @@ $$dW^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} dZ^{[
 $$db^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} \sum_{i=1}^{m}dZ^{[l](i)}$$ <br>
 $$dA^{[l-1]} = \frac{\partial{\mathcal{L}}}{\partial{A^{[l-1]}}} = W^{[l]T}dZ^{[l]}$$ <br>
 
-#### Summary of gradient descent (Backpropagation)
+#### Summary of gradient descent
 $$dz^{[2]} = a^{[2]} - y$$ <br>
 $$dW^{[2]} = dz^{[2]}a^{[1]^T}$$ <br>
 $$db^{[2]} = dz^{[2]}$$ <br>
