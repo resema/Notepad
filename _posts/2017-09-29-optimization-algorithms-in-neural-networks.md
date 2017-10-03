@@ -37,10 +37,10 @@ $$\,\,\,\, b^{[l]} = b^{[l]} - \alpha\,db^{[l]}$$ <br>
 Make sure that the mini-batch fits in the CPU/GPU memory (64, 128, 256, 512). 
 
 ### Shuffling
-
+![mb_shuffling.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/mb_shuffling.png)
 
 ### Partition
-
+![mb_partition.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/mb_partition.png)
 
 ## Exponentially Weighted Averages
 $$ V_t = \beta\, V_{t-1} + (1 - \beta)\theta_t$$ <br>
