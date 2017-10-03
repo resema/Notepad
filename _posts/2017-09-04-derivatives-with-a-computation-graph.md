@@ -50,7 +50,7 @@ $$J(w,b) = -1/m * np.sum(np.multiply(Y, np.log(A^{[L]})) + np.multiply((1 - Y),n
 Create matrix $$D^{[i]}$$ with the same dimension as the corresponding activation matrix $$A^{[i]}$$ and initialize it randomly. Then set all values to 0 or 1 regarding the *keep probability*. Then multiply the activation matrix with the dropout matrix and divide the remaining values by the *keep probability*.
 
 ### Backward Propagation
-$$dZ{[l]} = \frac{\partial{\mathcal{L}}}{\partial{Z^{[l]}}}
+$$dZ{[l]} = \frac{\partial{\mathcal{L}}}{\partial{Z^{[l]}}} $$ <br><br>
 
 $$dW^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} dZ^{[l]}A^{[l-1]T}$$ <br>
 $$db^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} \sum_{i=1}^{m}dZ^{[l](i)}$$ <br>
