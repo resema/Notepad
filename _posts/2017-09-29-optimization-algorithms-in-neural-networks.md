@@ -14,6 +14,7 @@ categories:
 tags: coursera neuralnetwork machinelearning calculus
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
+><small><cite title="Einstein">Einstein</cite></small>
 
 ## Mini-batch Gradient Descent
 Looking back to Batch Gradient Descent, Vectorization allows us to efficiently compute on *m* examples. But if *m* is big it is still very slow because you have to train the complete training set.
