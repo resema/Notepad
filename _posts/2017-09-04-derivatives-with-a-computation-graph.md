@@ -55,6 +55,10 @@ Suppose you have already calculated the derivative $$dZ{[l]} = \frac{\partial{\m
 $$dW^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} dZ^{[l]}A^{[l-1]T}$$ <br>
 $$db^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} \sum_{i=1}^{m}dZ^{[l](i)}$$ <br>
 $$dA^{[l-1]} = \frac{\partial{\mathcal{L}}}{\partial{A^{[l-1]}}} = W^{[l]T}dZ^{[l]}$$ <br>
+where <br>
+$$dZ^{[l-1]} = W^{[l]^T}dZ^{[l]} * g'^{[l-1]}(Z^{[l]})$$<br>
+$$dZ^{[L]} = A^{[L]} - Y$$<br>
+
 
 #### Summary of gradient descent
 $$dz^{[2]} = a^{[2]} - y$$ <br>
