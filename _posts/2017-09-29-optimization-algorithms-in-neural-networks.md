@@ -95,6 +95,12 @@ Adam := Adaptive Moment Estimation
 This is a combination of gradient descent with momentum and RMSprop. 
 
 ### Implementation
+1. It calculates an exponentially weighted average of past gradients, and stores it in variables $$v$$ (before bias correction) and $$v^{corrected}$$ (with bias correction).
+2. It calculates an exponentially weighted average of the squares of the past gradients, and stores it in variables $$s$ and $$s^{corrected}$$.
+3. It updates parameters in a direction based on combining information from "1" and "2".
+
+The update rul is, for $$l = 1, ..., L$$: <br>
+
 $$V_{dW} = 0, S_{dW} = 0, V_{db} =, S_{db} = 0$$ <br>
 $$On\, iteration\, t:$$ <br>
 $$\,\,\,\, Compute\, dW,\, db\ using\, current\, mini batch$$ <br>
