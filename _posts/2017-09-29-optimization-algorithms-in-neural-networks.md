@@ -99,7 +99,7 @@ This is a combination of gradient descent with momentum and RMSprop.
 2. It calculates an exponentially weighted average of the squares of the past gradients, and stores it in variables $$s$ and $$s^{corrected}$$.
 3. It updates parameters in a direction based on combining information from "1" and "2".
 
-The update rul is, for $$l = 1, ..., L$$: <br>
+The update rule is, for $$l = 1, ..., L$$: <br>
 
 $$V_{dW} = 0, S_{dW} = 0, V_{db} =, S_{db} = 0$$ <br>
 $$On\, iteration\, t:$$ <br>
