@@ -112,7 +112,7 @@ $$\,\,\,\, V_{dW}^{corrected} = \frac{V_{dW}}{(1 - \beta_1^t)}, V_{db}^{correcte
 $$\,\,\,\, S_{dW}^{corrected} = \frac{S_{dW}}{(1 - \beta_2^t)}, \,\,\,\, S_{db}^{corrected} = \frac{S_{db}}{(1 - \beta_2^t)}$$ <br>
 $$\,\,\,\, W = W - \alpha \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}} + \epsilon}, b = b - \alpha \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}} + \epsilon}$$ <br>
 
-where:
+where: <br>
 - $$\beta_1$$ and $$\beta_2$$ are hyperparameters that control the two exponentially weighted averages
 - $$\alpha$$ is the learning rate
 - $$\epsilon$$ is a very small number to avoid diving by zero
