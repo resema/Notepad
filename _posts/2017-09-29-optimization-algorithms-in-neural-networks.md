@@ -156,7 +156,7 @@ Platforms can make learning very slow and then ADAM and likewise can really help
 - Use a logarthmic scale to chose from for the learning rate $$\alpha$$.
 
 Possible implementation in Python:
-```python
-    r = -4 * np.random.rand()	% Values between     0.0001 and 1
-    learning_rate = np.power(10, r)
-```
+{% highlight python linenos %}
+r = -4 * np.random.rand()	% Values between     0.0001 and 1
+learning_rate = np.power(10, r)
+{% endhighlight %}
