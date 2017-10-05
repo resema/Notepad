@@ -163,8 +163,5 @@ def scaleLearningRate:
    learning_rate = np.power(10, r)
 {% endhighlight %}
 
-{% highlight c++ linenos %}
-void func(int a);
-{% endhighlight %}
 
 
