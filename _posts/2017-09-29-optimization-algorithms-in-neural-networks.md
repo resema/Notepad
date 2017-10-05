@@ -161,9 +161,9 @@ r = -4 * np.random.rand()	% Values between 0.0001 and 1
 learning_rate = np.power(10, r)
 {% endhighlight %}
 
-{% highlight c++ linenos %}
+```python
 r = -4 * np.random.rand()	% Values between 0.0001 and 1
 learning_rate = np.power(10, r)
-{% endhighlight %}
+```
 
 
