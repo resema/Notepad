@@ -113,6 +113,7 @@ $$\,\,\,\, S_{dW}^{corrected} = \frac{S_{dW}}{(1 - \beta_2^t)}, \,\,\,\, S_{db}^
 $$\,\,\,\, W = W - \alpha \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}} + \epsilon}, b = b - \alpha \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}} + \epsilon}$$ <br>
 
 where: <br>
+- $$t$$ counts the number of steps taken of Adam
 - $$\beta_1$$ and $$\beta_2$$ are hyperparameters that control the two exponentially weighted averages
 - $$\alpha$$ is the learning rate
 - $$\epsilon$$ is a very small number to avoid diving by zero
