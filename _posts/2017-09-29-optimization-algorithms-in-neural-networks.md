@@ -148,4 +148,15 @@ Other possiblities are sattel point, meaning it is shaped as a horse sattel and 
 Platforms can make learning very slow and then ADAM and likewise can really help to speed up the training.
 
 ## Tuning Process
-The following hyperparameters can be tuned: $$\alpha$$, $$\beta$$, #layers, #hidden units, learning rate decay, mini-batch size.
+- The following hyperparameters can be tuned: $$\alpha$$, $$\beta$$, #layers, #hidden units, learning rate decay, mini-batch size.
+- It is better to try random values instead of using a parameter grid.
+- We should use a coarse to fine sampling scheme
+
+### Appropriate Scale To Pick Hyperparameters
+- Use a logarthmic scale to chose from for the learning rate $$\alpha$$.
+
+Possible implementation in Python:
+```
+r = -4 * np.random.rand()	% Values between 0.0001 and 1
+learning_rate = np.power(10, r)
+```
