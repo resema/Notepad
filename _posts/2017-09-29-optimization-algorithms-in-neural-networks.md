@@ -148,4 +148,4 @@ Other possiblities are sattel point, meaning it is shaped as a horse sattel and 
 Platforms can make learning very slow and then ADAM and likewise can really help to speed up the training.
 
 ## Tuning Process
-The following hyperparameters can be tuned: $$\alpha$$, $$\beta$$, $$#layers$$, $$#hidden\, units$$, learning rate decay, mini-batch size.
+The following hyperparameters can be tuned: $$\alpha$$, $$\beta$$, #layers, #hidden units, learning rate decay, mini-batch size.
