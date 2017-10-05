@@ -4,7 +4,7 @@ published: true
 mathjax: true
 featured: false
 comments: true
-title: Optimization Algorithms in Neural Networks
+title: Optimization in Neural Networks
 description: Quick reference about how to optimize neural networks
 headline: Optimization Algorithms in Neural Networks
 categories:
@@ -146,3 +146,6 @@ Other possiblities are sattel point, meaning it is shaped as a horse sattel and 
 ![sattle.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/sattle.png)
 
 Platforms can make learning very slow and then ADAM and likewise can really help to speed up the training.
+
+## Tuning Process
+The following hyperparameters can be tuned: $$\alpha$$, $$\beta$$, $$#layers$$, $$#hidden\, units$$, learning rate decay, mini-batch size.
