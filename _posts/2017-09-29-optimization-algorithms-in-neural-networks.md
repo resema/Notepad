@@ -161,5 +161,4 @@ Possible implementation in Python:
 def scaleLearningRate:
    r = -4 * np.random.rand()	
    learning_rate = np.power(10, r)
-   print("hello world")
 {% endhighlight %}
