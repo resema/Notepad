@@ -69,6 +69,9 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: class
 
+plugins:
+  - jekyll-seo-tag
+
 prose:
   rooturl: '_posts'
   siteurl: 'https://resema.github.io/'
