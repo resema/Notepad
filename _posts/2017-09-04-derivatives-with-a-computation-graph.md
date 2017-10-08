@@ -49,7 +49,18 @@ $$J(w,b) = -1/m * np.sum(np.multiply(Y, np.log(A^{[L]})) + np.multiply((1 - Y),n
 #### Forward Propagation with Dropout
 Create matrix $$D^{[i]}$$ with the same dimension as the corresponding activation matrix $$A^{[i]}$$ and initialize it randomly. Then set all values to 0 or 1 regarding the *keep probability*. Then multiply the activation matrix with the dropout matrix and divide the remaining values by the *keep probability*.
 
-### Summary of gradient descent (Backpropagation)
+### Backward Propagation
+Suppose you have already calculated the derivative $$dZ{[l]} = \frac{\partial{\mathcal{L}}}{\partial{Z^{[l]}}} $$, then you want to get $$dW^{[l]}$$, $$db^{[l]}$$ and $$dA^{[l-1]}$$. <br>
+
+$$dW^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} dZ^{[l]}A^{[l-1]T}$$ <br>
+$$db^{[l]} = \frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} = \frac{1}{m} \sum_{i=1}^{m}dZ^{[l](i)}$$ <br>
+$$dA^{[l-1]} = \frac{\partial{\mathcal{L}}}{\partial{A^{[l-1]}}} = W^{[l]T}dZ^{[l]}$$ <br>
+where <br>
+$$dZ^{[l-1]} = W^{[l]^T}dZ^{[l]} * g'^{[l-1]}(Z^{[l]})$$<br>
+$$dZ^{[L]} = A^{[L]} - Y$$<br>
+
+
+#### Summary of gradient descent
 $$dz^{[2]} = a^{[2]} - y$$ <br>
 $$dW^{[2]} = dz^{[2]}a^{[1]^T}$$ <br>
 $$db^{[2]} = dz^{[2]}$$ <br>
@@ -58,7 +69,7 @@ $$dW^{[1]} = dz^{[1]}x^T$$<br>
 $$db^{[1]} = dz^{[1]}$$ <br>
 $$dA^{[l-1]} = \frac{\partial{\mathcal{L}}}{\partial{A^{[l-1]}}} = W^{[l]^T}dZ^{[l]}$$<br>
 
-#### Vectorized implementation
+#### Vectorized implementation example
 $$dZ^{[2]} = A^{[2]} - Y$$ <br>
 $$dW^{[2]} = \frac{1}{m} dZ^{[2]}A^{[1]^T}$$ <br>
 $$db^{[2]} = \frac{1}{m} np.sum(dZ^{[2]}, axis=1, keepdims=True)$$<br>

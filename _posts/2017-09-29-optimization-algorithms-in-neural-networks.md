@@ -4,7 +4,7 @@ published: true
 mathjax: true
 featured: false
 comments: true
-title: Optimization Algorithms in Neural Networks
+title: Optimization in Neural Networks
 description: Quick reference about how to optimize neural networks
 headline: Optimization Algorithms in Neural Networks
 categories:
@@ -35,6 +35,12 @@ $$\,\,\,\, b^{[l]} = b^{[l]} - \alpha\,db^{[l]}$$ <br>
 ![mini-batch_size.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/mini-batch_size.png)
 
 Make sure that the mini-batch fits in the CPU/GPU memory (64, 128, 256, 512). 
+
+### Shuffling
+![mb_shuffling.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/mb_shuffling.png)
+
+### Partition
+![mb_partition.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/mb_partition.png)
 
 ## Exponentially Weighted Averages
 $$ V_t = \beta\, V_{t-1} + (1 - \beta)\theta_t$$ <br>
@@ -85,9 +91,16 @@ Element-wise squaring of the acceleration.
 
 ## Adam Optimization Algorithm
 Adam := Adaptive Moment Estimation
+
 This is a combination of gradient descent with momentum and RMSprop. 
 
 ### Implementation
+1. It calculates an exponentially weighted average of past gradients, and stores it in variables $$v$$ (before bias correction) and $$v^{corrected}$$ (with bias correction).
+2. It calculates an exponentially weighted average of the squares of the past gradients, and stores it in variables $$s$$ and $$s^{corrected}$$.
+3. It updates parameters in a direction based on combining information from "1" and "2".
+
+The update rule is: <br>
+
 $$V_{dW} = 0, S_{dW} = 0, V_{db} =, S_{db} = 0$$ <br>
 $$On\, iteration\, t:$$ <br>
 $$\,\,\,\, Compute\, dW,\, db\ using\, current\, mini batch$$ <br>
@@ -98,6 +111,12 @@ $$\,\,\,\, S_{db} = \beta_2 S_{db} + (1-\beta_2)db^2$$ <br>
 $$\,\,\,\, V_{dW}^{corrected} = \frac{V_{dW}}{(1 - \beta_1^t)}, V_{db}^{corrected} = \frac{V_{db}}{(1 - \beta_1^t)}$$ <br>
 $$\,\,\,\, S_{dW}^{corrected} = \frac{S_{dW}}{(1 - \beta_2^t)}, \,\,\,\, S_{db}^{corrected} = \frac{S_{db}}{(1 - \beta_2^t)}$$ <br>
 $$\,\,\,\, W = W - \alpha \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}} + \epsilon}, b = b - \alpha \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}} + \epsilon}$$ <br>
+
+where: <br>
+- $$t$$ counts the number of steps taken of Adam
+- $$\beta_1$$ and $$\beta_2$$ are hyperparameters that control the two exponentially weighted averages
+- $$\alpha$$ is the learning rate
+- $$\epsilon$$ is a very small number to avoid diving by zero
 
 ### Hyperparameters Choice
 $$\alpha$$ := needs to be tuned <br>
@@ -127,3 +146,19 @@ Other possiblities are sattel point, meaning it is shaped as a horse sattel and 
 ![sattle.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/sattle.png)
 
 Platforms can make learning very slow and then ADAM and likewise can really help to speed up the training.
+
+## Tuning Process
+- The following hyperparameters can be tuned: $$\alpha$$, $$\beta$$, #layers, #hidden units, learning rate decay, mini-batch size.
+- It is better to try random values instead of using a parameter grid.
+- We should use a coarse to fine sampling scheme
+
+### Appropriate Scale To Pick Hyperparameters
+- Use a logarthmic scale to chose from for the learning rate $$\alpha$$.
+
+Possible implementation in Python:
+{% highlight python linenos %}
+# Values between 0.0001 and 1
+def scaleLearningRate:
+   r = -4 * np.random.rand()	
+   learning_rate = np.power(10, r)
+{% endhighlight %}
