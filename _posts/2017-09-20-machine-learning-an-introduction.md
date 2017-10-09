@@ -64,6 +64,6 @@ The number of input units is related to the dimensions of features $$x^{(i)}$$. 
 1. Randomly initialize weights
 2. Implement forward propagation to get $$h_\sigma(x^{(i)})$$ for any $$x^{(i)}$$
 3. Implement code to compute cost function $$J(\sigma)$$ 
-4. Implement backprop to compute partial derivates $$\frac{\partial{}}{\partial{\sigma_{jk}^{(l)}}J(\sigma)$$
+4. Implement backprop to compute partial derivates $$\frac{\partial{}}{\partial{\sigma_{jk}^{(l)}}}J(\sigma)$$
 
 
