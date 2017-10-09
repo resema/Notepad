@@ -67,3 +67,17 @@ The number of input units is related to the dimensions of features $$x^{(i)}$$. 
 4. Implement backprop to compute partial derivates $$\frac{\partial{}}{\partial{\Theta{jk}^{(l)}}}J(\Theta)$$
 5. Use gradient checking to compare $$\frac{\partial{}}{\partial{\Theta{jk}^{(l)}}}J(\Theta)$$ computed using backpropagation vs. using numerical estimate of gradient $$J(\Theta)$$. Then disable gradient checking code.
 6. Use gradient descent or advanced optimization method with backpropagation to try to minimize $$J(\Theta)$$ as a function of parameters $$\Theta$$.
+
+### Debugging A Learning Algorithm
+Suppose you have implemented regularized linear regression to predict something. However, when you test your hypothesis on a new set of houses, you find that it makes unacceptable large error in its predictions. What should we try next?
+- Get more training examples
+- Try smaller sets of features
+- Try getting additional features
+- Try adding polynomial features
+- Try decreasing $$\lambda$$
+- Try increasing $$\lambda$$
+
+#### Machine Learning Diagostic
+Diagnotis: A test that you can run to gain insight what is/isn't working with a learning algorithm, and gain guidance as to how best to improve its performance.
+
+Diagnostics can take time to implement, but doing so can be very good use of your time.
