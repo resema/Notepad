@@ -203,4 +203,18 @@ for t = 1 ... numMiniBatches
         gamma_l = gamma_l - alpha * dGamma_l    
 {% endhighlight %}
 
+##### Learning On Shifting Input Distribution
+A trained NN can not be easilier applied to a shifted version of training data. This is called **covariance shift**.
 
+Image an deeper NN where the later hidden layers would perfectly fit the problem, but the first few hidden layer not, we would have to shift the NN to fit the new  problem. This can be done by **Batch Norm**.
+
+A second effect coming from batch norm:
+- Each mini-batch is scaled by the mean/veriance omputed on just that mini-batch
+- This adds some noise to the values $$z^{[l]}$$ within that minibatch. So similar to dropout, it adds some noise to each hidden layer's activation
+- This has a slight regularization effect.
+
+##### Batch Norm At The Test
+$$\mu = \frac{1}{m} \sum_i z^{(i)}$$ <br>
+$$\sigma^2 = \frac{1}{m} \sum_i (z^{(i)} - \mu)^2$$ <br>
+$$z_{norm}^{(i)} = \frac{z^{(i)} - \mu}{\sqrt{\sigma^2 + \epsilon}}$$ <br>
+$$\tilde{z}^{(i)} = \gamma z_{norm}^{(i)} + \beta$$<br>
