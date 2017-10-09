@@ -174,6 +174,7 @@ There is a another approach which not always fits the problem we are facing. It 
 #### Batch Normalization
 Batch normalization allows to train deeper neural networks, makes the hyperparameter search more easier
 and the network much more robust.
+Usually it is used with mini-batches. Batch norm are used per mini-batch and so on.
 
 ##### Idea
 Normalized inputs speed up learning. The question is *can we normalize* $$a^{[2]}$$ *so as to train *$$W^{[3]}$$, $$b^{[3]}$$ *faster*? This is what Batch Normalization is doing.
@@ -190,3 +191,5 @@ where
 - $$ \gamma = \sqrt{\sigma^2 + \epsilon}$$
 - $$\beta = \mu$$
 - Use $$\tilde{Z}^{[l](i)}$$ instead of $$Z^{[l](i)}$$
+
+
