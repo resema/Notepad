@@ -177,7 +177,7 @@ and the network much more robust.
 Usually it is used with mini-batches. Batch norm are used per first mini-batch, then second and so on.
 
 ##### Idea
-Normalized inputs speed up learning. The question is *can we normalize* $$a^{[2]}$$ *so as to train *$$W^{[3]}$$, $$b^{[3]}$$ *faster*? This is what Batch Normalization is doing.
+Normalized inputs speed up learning. The question is *can we normalize* $$a^{[2]}$$ *so as to train* $$W^{[3]}$$, $$b^{[3]}$$ *faster*? This is what Batch Normalization is doing.
 
 ##### Implementation
 Given some intermediate values in my NN $$z^{(i)}, ..., z^{(m)}$$ <br>
@@ -192,7 +192,7 @@ where
 - $$\beta = \mu$$
 - Use $$\tilde{Z}^{[l](i)}$$ instead of $$Z^{[l](i)}$$
 
-{% highlight python linenos %}
+{% highlight linenos %}
 for t = 1 ... numMiniBatches
 	Compute forward prop on X_T
     	In each hidden layer, use N to replace z_l with zTilde_l
