@@ -62,8 +62,8 @@ The number of input units is related to the dimensions of features $$x^{(i)}$$. 
 
 #### Training A Neural Network
 1. Randomly initialize weights
-2. Implement forward propagation to get $$h_\sigma(x^{(i)})$$ for any $$x^{(i)}$$
-3. Implement code to compute cost function $$J(\sigma)$$ 
-4. Implement backprop to compute partial derivates $$\frac{\partial{}}{\partial{\sigma_{jk}^{(l)}}}J(\sigma)$$
+2. Implement forward propagation to get $$h_\Sigma(x^{(i)})$$ for any $$x^{(i)}$$
+3. Implement code to compute cost function $$J(\Sigma)$$ 
+4. Implement backprop to compute partial derivates $$\frac{\partial{}}{\partial{\sigma_{jk}^{(l)}}}J(\Sigma)$$
 
 
