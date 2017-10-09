@@ -220,5 +220,5 @@ $$z_{norm}^{(i)} = \frac{z^{(i)} - \mu}{\sqrt{\sigma^2 + \epsilon}}$$ <br>
 $$\tilde{z}^{(i)} = \gamma z_{norm}^{(i)} + \beta$$<br>
 
 The first two equation cannot be computed during test time, therefore we estimate $$\mu$$ and $$\sigma^2$$ using exponentially weigthed average (across mini-batches).
-
+Most frameworks offers an interface to create $$\mu$$ and $$\simga$$.
 
