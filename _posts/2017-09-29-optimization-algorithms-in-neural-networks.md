@@ -213,7 +213,7 @@ A second effect coming from batch norm:
 - This adds some noise to the values $$z^{[l]}$$ within that minibatch. So similar to dropout, it adds some noise to each hidden layer's activation
 - This has a slight regularization effect.
 
-##### Batch Norm At The Test
+##### Batch Norm At Test Time
 $$\mu = \frac{1}{m} \sum_i z^{(i)}$$ <br>
 $$\sigma^2 = \frac{1}{m} \sum_i (z^{(i)} - \mu)^2$$ <br>
 $$z_{norm}^{(i)} = \frac{z^{(i)} - \mu}{\sqrt{\sigma^2 + \epsilon}}$$ <br>
