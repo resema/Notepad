@@ -56,4 +56,14 @@ The second sum $$\sum_{j=1}^n \theta_j^2$$ means to explicitly exclude the bias 
 ### Neural Network
 ![1L-neural-network.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/1L-neural-network.png)
 
-The image shows a simple one-layer neural network.
+The image shows a simple neural network with one hidden layer. This is also the most reasonable default architecture, or if more than 1 hidden layer is used, they all have the some numbers of hidden units in every layer (usually the more the better).
+
+The number of input units is related to the dimensions of features $$x^{(i)}$$. As well as the number of output units is related to the number of classes.
+
+#### Training A Neural Network
+1. Randomly initialize weights
+2. Implement forward propagation to get $$h_\sigma(x^{(i)})$$ for any $$x^{(i)}$$
+3. Implement code to compute cost function $$J(\sigma)$$ 
+4. Implement backprop to compute partial derivates $$\frac{\partial{}}{\partial{\sigma_{jk}^{(l)}}J(\sigma)$$
+
+
