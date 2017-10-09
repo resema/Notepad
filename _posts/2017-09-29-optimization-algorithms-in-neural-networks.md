@@ -174,7 +174,7 @@ There is a another approach which not always fits the problem we are facing. It 
 #### Batch Normalization
 Batch normalization allows to train deeper neural networks, makes the hyperparameter search more easier
 and the network much more robust.
-Usually it is used with mini-batches. Batch norm are used per mini-batch and so on.
+Usually it is used with mini-batches. Batch norm are used per first mini-batch, then second and so on.
 
 ##### Idea
 Normalized inputs speed up learning. The question is *can we normalize* $$a^{[2]}$$ *so as to train *$$W^{[3]}$$, $$b^{[3]}$$ *faster*? This is what Batch Normalization is doing.
@@ -191,5 +191,16 @@ where
 - $$ \gamma = \sqrt{\sigma^2 + \epsilon}$$
 - $$\beta = \mu$$
 - Use $$\tilde{Z}^{[l](i)}$$ instead of $$Z^{[l](i)}$$
+
+{% highlight python linenos %}
+for t = 1 ... numMiniBatches
+	Compute forward prop on X_T
+    	In each hidden layer, use N to replace z_l with zTilde_l
+    Use back prop to compute dW_l, db_l, dBeta_l, dGamma_l
+    Update the parameters 
+    	W_l = W - alpha * dW_l
+        beta_l = beta_l - alpha * dBeta_l
+        gamma_l = gamma_l - alpha * dGamma_l    
+{% endhighlight %}
 
 
