@@ -65,5 +65,5 @@ The number of input units is related to the dimensions of features $$x^{(i)}$$. 
 2. Implement forward propagation to get $$h_\Sigma(x^{(i)})$$ for any $$x^{(i)}$$
 3. Implement code to compute cost function $$J(\Sigma)$$ 
 4. Implement backprop to compute partial derivates $$\frac{\partial{}}{\partial{\sigma_{jk}^{(l)}}}J(\Sigma)$$
-
-
+5. Use gradient checking to compare $$\frac{\partial{}}{\partial{\sigma_{jk}^{(l)}}}J(\Sigma)$$ computed using backpropagation vs. using numerical estimate of gradient $$J(\Sigma)$$. Then disable gradient checking code.
+6. Use gradient descent or advanced optimization method with backpropagation to try to minimize $$J(\Sigma)$$ as a function of parameters $$\Sigma$$.
