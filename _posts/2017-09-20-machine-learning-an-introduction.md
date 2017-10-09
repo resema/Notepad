@@ -62,8 +62,8 @@ The number of input units is related to the dimensions of features $$x^{(i)}$$. 
 
 #### Training A Neural Network
 1. Randomly initialize weights
-2. Implement forward propagation to get $$h_\Omega(x^{(i)})$$ for any $$x^{(i)}$$
-3. Implement code to compute cost function $$J(\Omega)$$ 
-4. Implement backprop to compute partial derivates $$\frac{\partial{}}{\partial{\Omega{jk}^{(l)}}}J(\Omega)$$
-5. Use gradient checking to compare $$\frac{\partial{}}{\partial{\Omega{jk}^{(l)}}}J(\Omega)$$ computed using backpropagation vs. using numerical estimate of gradient $$J(\Omega)$$. Then disable gradient checking code.
-6. Use gradient descent or advanced optimization method with backpropagation to try to minimize $$J(\Omega)$$ as a function of parameters $$\Omega$$.
+2. Implement forward propagation to get $$h_\Theta(x^{(i)})$$ for any $$x^{(i)}$$
+3. Implement code to compute cost function $$J(\Theta)$$ 
+4. Implement backprop to compute partial derivates $$\frac{\partial{}}{\partial{\Theta{jk}^{(l)}}}J(\Theta)$$
+5. Use gradient checking to compare $$\frac{\partial{}}{\partial{\Theta{jk}^{(l)}}}J(\Theta)$$ computed using backpropagation vs. using numerical estimate of gradient $$J(\Theta)$$. Then disable gradient checking code.
+6. Use gradient descent or advanced optimization method with backpropagation to try to minimize $$J(\Theta)$$ as a function of parameters $$\Theta$$.
