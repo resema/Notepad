@@ -183,10 +183,10 @@ Given some intermediate values in my NN $$z^{(i)}, ..., z^{(m)}$$ <br>
 $$\mu = \frac{1}{m}\sum_i z^{(i)}$$ <br>
 $$\sigma^2 = \frac{1}{m}\sum_i(z_i - \mu)^2$$ <br>
 $$Z_{norm}^{(i)} = \frac{z^{(i)} - \mu}{\sqrt{\sigma^2 + \epsilon}}$$ <br>
-$$\tilde{z^{(i)}} = \gamma z_{norm}^{(i)} + \beta$$<br>
+$$\tilde{z}^{(i)} = \gamma z_{norm}^{(i)} + \beta$$<br>
 
 where
 - $$\gamma$$ and $$\beta$$ are learnable hyperparameters of the model
 - $$ \gamma = \sqrt{\sigma^2 + \epsilon}$$
 - $$\beta = \mu$$
-- Use $$\tilde{Z^{[l](i)}}$$ instead of $$Z^{[l](i)}$$
+- Use $$\tilde{Z}^{[l](i)}$$ instead of $$Z^{[l](i)}$$
