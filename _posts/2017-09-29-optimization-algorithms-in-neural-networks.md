@@ -162,3 +162,31 @@ def scaleLearningRate:
    r = -4 * np.random.rand()	
    learning_rate = np.power(10, r)
 {% endhighlight %}
+
+In pratice, hyperparameters can be tuned by means of Pandas or Caviar. It's good pratice to re-evaluate the parameters every month or so. 
+
+During development a model can be *babysit one model*. Another approach would be to train many models in parallel. The first *babysitting* approach is callend Panda and the second is the Caviar approach.
+
+This mainly depends on the resources we have at hand and the size of data to be processed.
+
+There is a another approach which not always fits the problem we are facing. It is possible to normalize the activations in a network.
+
+#### Batch Normalization
+Batch normalization allows to train deeper neural networks, makes the hyperparameter search more easier
+and the network much more robust.
+
+##### Idea
+Normalized inputs speed up learning. The question is *can we normalize* $$a^{[2]}$$ *so as to train *$$W^{[3]}$$, $$b^{[3]}$$ *faster*? This is what Batch Normalization is doing.
+
+##### Implementation
+Given some intermediate values in my NN $$z^{(i)}, ..., z^{(m)}$$ <br>
+$$\mu = \frac{1}{m}\sum_i z^{(i)}$$ <br>
+$$\sigma^2 = \frac{1}{m}\sum_i(z_i - \mu)^2$$ <br>
+$$Z_{norm}^{(i)} = \frac{z^{(i)} - \mu}{\sqrt{\sigma^2 + \epsilon}}$$ <br>
+$$\tilde{z^{(i)}} = \gamma z_{norm}^{(i)} + \beta$$<br>
+
+where
+- $$\gamma$$ and $$\beta$$ are learnable hyperparameters of the model
+- $$ \gamma = \sqrt{\sigma^2 + \epsilon}$$
+- $$\beta = \mu$$
+- Use $$\tilde{Z^{[l](i)}}$$ instead of $$Z^{[l](i)}$$
