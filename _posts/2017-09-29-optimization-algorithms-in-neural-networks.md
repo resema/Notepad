@@ -251,4 +251,5 @@ Separate the date into for example three different classes, where the softmax la
 Softmax regression generalizes logistic regression to *C* classes. If $$C = 2$$, softmax reduces to logistic regression. We would have to compute only one output.
 
 ###Los Functino
-$$\matcal{L}(\tilde{y},y) = - \sum_{j=1}^{m} y_i\,log\tilde{y}_j$$ <br>
+$$\mathcal{L}(\tilde{y},y) = - \sum_{j=1}^{m} y_i\,log\tilde{y}_j$$ <br>
+
