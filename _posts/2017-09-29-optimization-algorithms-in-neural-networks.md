@@ -239,7 +239,7 @@ e^y_1 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
 e^y_2 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
 e^y_3 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
 e^y_4 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
-\end{matrix}
+\end{matrix}$$
 
 ### Examples
 ![softmax-3.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/softmax-3.png)
