@@ -225,7 +225,17 @@ Most frameworks offers an interface to create $$\mu$$ and $$\sigma$$.
 ## Softmax Layer
 The softmax layer function has the special ability to take a vector as input instead of a single value. Otherwise it is similar to the activation function.
 
+The names come from the *hard max* approach where a multiclass classification results are mapped to a vector, eg. for being a result of the first class of 4:
+$$\begin{matrix}
+1\\
+0\\
+0\\
+0\\
+$$\end{matrix}
+
 ### Examples
 ![softmax-3.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/softmax-3.png)
 
 Separate the date into for example three different classes, where the softmax layer can be seen as a generaization of the logistic regression.
+
+### Training A Softmax Classifier
