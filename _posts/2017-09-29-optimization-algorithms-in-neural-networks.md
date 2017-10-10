@@ -234,6 +234,7 @@ $$\begin{bmatrix}
 \end{bmatrix}$$ <br>
 
 Softmax is normalizing the classification values instead of the above mentioned hard coded vector.
+
 $$ a^{[l]} = g^{[l]}(z^{[l]}) = \begin{matrix}
 e^y_1 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
 e^y_2 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
