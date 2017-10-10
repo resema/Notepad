@@ -81,3 +81,6 @@ Suppose you have implemented regularized linear regression to predict something.
 Diagnotis: A test that you can run to gain insight what is/isn't working with a learning algorithm, and gain guidance as to how best to improve its performance.
 
 Diagnostics can take time to implement, but doing so can be very good use of your time.
+
+### Model Selection
+Split the data into three parts train, cross-validation and test data set. Now we use the cv set for model selection, the train set for training and the test set for validation.
