@@ -235,12 +235,12 @@ $$\begin{bmatrix}
 
 Softmax is normalizing the classification values instead of the above mentioned hard coded vector.
 
-$$ a^{[l]} = g^{[l]}(z^{[l]}) = \begin{matrix}
+$$ a^{[l]} = g^{[l]}(z^{[l]}) = \begin{bmatrix}
 e^y_1 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
 e^y_2 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
 e^y_3 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
 e^y_4 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
-\end{matrix}$$
+\end{bmatrix}$$
 
 ### Examples
 ![softmax-3.png]({{site.baseurl}}/images/posts/NeuralNetwork_OptimizationAlgorithms/softmax-3.png)
@@ -248,3 +248,7 @@ e^y_4 / (e^y_1 + e^y_2 + e^y_3 + e^y_4) \\
 Separate the date into for example three different classes, where the softmax layer can be seen as a generaization of the logistic regression.
 
 ### Training A Softmax Classifier
+Softmax regression generalizes logistic regression to *C* classes. If $$C = 2$$, softmax reduces to logistic regression. We would have to compute only one output.
+
+###Los Functino
+$$\matcal{L}(\tilde{y},y) = - \sum_{j=1}^{m} y_i\,log\tilde{y}_j$$ <br>
