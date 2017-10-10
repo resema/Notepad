@@ -222,3 +222,10 @@ $$\tilde{z}^{(i)} = \gamma z_{norm}^{(i)} + \beta$$<br>
 The first two equation cannot be computed during test time, therefore we estimate $$\mu$$ and $$\sigma^2$$ using exponentially weigthed average (across mini-batches).
 Most frameworks offers an interface to create $$\mu$$ and $$\sigma$$.
 
+## Softmax Layer
+The softmax layer function has the special ability to take a vector as input instead of a single value. Otherwise it is similar to the activation function.
+
+### Examples
+
+
+Separate the date into for example three different classes, where the softmax layer can be seen as a generaization of the logistic regression.
