@@ -25,7 +25,7 @@ import numpy as np
 import tensorflow as tf
 
 w = tf.Variable(0,dtype=tf.float32)
-%cost = tf.add(tf.add(w**2,tf.multiply(-10,w)),25)
+% cost = tf.add(tf.add(w**2,tf.multiply(-10,w)),25)
 cost = w**2 - 10*w + 25 % Possible due to overloading
 train = tf.train.GradientDescentOptimizer(0.01).minimize(cost)
 
@@ -42,8 +42,8 @@ for i in range(1000):
 print(session.run(w))	% Output: 4.99999
 {% endhighlight %}
 
-Now we extend the example:
-```python
+Now we extend the example a little bit:
+{% highlight python linenos %}
 coefficient = np.array([1.], [-20], [100.]])
 w = tf.Variable(0,dtype=tf.float32)
 % Placeholder are variables in TF you provide later
@@ -54,9 +54,10 @@ cost = x[0][0]*w*2 + x[1][0]*w + x[2][0]
 train = tf.train.GradientDescentOptimizer(0.01).minimize(cost)
 
 init = tf.global_variables_inittializer()
-session = tf.Session()
-session.run(init)
-print(session.run(w))	% Output: 0.0
+% improve the session running
+with tf.Session() as session:
+	session.run(init)
+	print(session.run(w))	% Output: 0.0
 
 session.run(train, feed_dict=(x:coefficients))
 print(session.run(w))	% Output: 0.2
@@ -64,4 +65,4 @@ print(session.run(w))	% Output: 0.2
 for i in range(1000):
 	session.run(train, feed_dict=(x:coefficients))
 print(session.run(w))	% Output: 9.99998
-```
+{% endhighlight %}
