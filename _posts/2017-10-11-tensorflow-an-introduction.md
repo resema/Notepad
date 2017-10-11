@@ -66,3 +66,6 @@ for i in range(1000):
 	session.run(train, feed_dict=(x:coefficients))
 print(session.run(w))	% Output: 9.99998
 {% endhighlight %}
+
+What is this programm really doing?
+TensorFlow is in this case calculating the forward calculation of the cost function $$cost$$. And the nice thing is that due to implementing forward propagation, TensorFlow has already build in the backward propagation. So you don't need to implement backprop. This makes the frameworks very powerful and helpful.
