@@ -46,6 +46,7 @@ Now we extend the example:
 ```python
 coefficient = np.array([1.], [-20], [100.]])
 w = tf.Variable(0,dtype=tf.float32)
+% Placeholder are variables in TF you provide later
 x = tf.placeholder(tf.float32, [3,1])
 
 % replace the coefficient by data
