@@ -60,11 +60,11 @@ with tf.Session() as session:
 	print(session.run(w))	% Output: 0.0
 
 session.run(train, feed_dict=(x:coefficients))
-print(session.run(w))	% Output: 0.2
+print(session.run(w))		% Output: 0.2
 
 for i in range(1000):
 	session.run(train, feed_dict=(x:coefficients))
-print(session.run(w))	% Output: 9.99998
+print(session.run(w))		% Output: 9.99998
 {% endhighlight %}
 
 What is this programm really doing?
