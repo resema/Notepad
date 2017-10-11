@@ -1,12 +1,17 @@
 ---
 layout: post
-published: true
+published: false
 mathjax: true
 featured: false
-comments: false
+comments: true
 title: TensorFlow - An Introduction
+description: An introduction to programming frameworks
+headline: TensorFlow - An Introduction
+categories:
+  - NeuralNetworks
+  - MachineLearning
+tags: coursera NeuralNetworks MachineLearning TensorFlow
 ---
 
 ## TensorFlow
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
