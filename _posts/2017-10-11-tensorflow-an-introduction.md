@@ -12,7 +12,7 @@ categories:
   - MachineLearning
 tags: coursera NeuralNetworks MachineLearning TensorFlow
 ---
->&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
-><small><cite title="Einstein">Einstein</cite></small>
+>&quot;Optimization limits the evolution.&quot;
+><small><cite title="unknown">unkown</cite></small>
 
 ## TensorFlow
