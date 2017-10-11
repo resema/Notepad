@@ -18,7 +18,9 @@ tags: coursera NeuralNetworks MachineLearning TensorFlow
 ## TensorFlow
 As an example we start by using the following simple cost function $$J(w) = w^2 - 10w + 25$$.
 
-{% highlight python %}
+Let us look at a simple example works in Python:
+
+{% highlight python linenos %}
 import numpy as np
 import tensorflow as tf
 
@@ -39,3 +41,26 @@ for i in range(1000):
 	session.run(train)
 print(session.run(w))	% Output: 4.99999
 {% endhighlight %}
+
+Now we extend the example:
+```python
+coefficient = np.array([1.], [-20], [100.]])
+w = tf.Variable(0,dtype=tf.float32)
+x = tf.placeholder(tf.float32, [3,1])
+
+% replace the coefficient by data
+cost = x[0][0]*w*2 + x[1][0]*w + x[2][0]
+train = tf.train.GradientDescentOptimizer(0.01).minimize(cost)
+
+init = tf.global_variables_inittializer()
+session = tf.Session()
+session.run(init)
+print(session.run(w))	% Output: 0.0
+
+session.run(train, feed_dict=(x:coefficients))
+print(session.run(w))	% Output: 0.2
+
+for i in range(1000):
+	session.run(train, feed_dict=(x:coefficients))
+print(session.run(w))	% Output: 9.99998
+```
