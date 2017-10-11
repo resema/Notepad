@@ -86,3 +86,8 @@ Diagnostics can take time to implement, but doing so can be very good use of you
 Split the data into three parts train, cross-validation and test data set. Now we use the cv set for model selection, the train set for training and the test set for validation.
 
 ### Diagnosing Bias vs. Variance Problems
+![bias_vs_variance.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/bias_vs_variance.png)
+
+#### Combining With Regularization
+What is the effect of regularization to the bias vs. variance problem?
+
