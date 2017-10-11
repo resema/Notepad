@@ -84,3 +84,5 @@ Diagnostics can take time to implement, but doing so can be very good use of you
 
 ### Model Selection
 Split the data into three parts train, cross-validation and test data set. Now we use the cv set for model selection, the train set for training and the test set for validation.
+
+### Diagnosing Bias vs. Variance Problems
