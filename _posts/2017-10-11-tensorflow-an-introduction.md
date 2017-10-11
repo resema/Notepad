@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 mathjax: true
 featured: false
 comments: true
@@ -16,3 +16,18 @@ tags: coursera NeuralNetworks MachineLearning TensorFlow
 ><small><cite title="unknown">unkown</cite></small>
 
 ## TensorFlow
+As an example we start by using the following simple cost function $$J(w) = w^2 - 10w + 25$$.
+
+{% highlight python %}
+import numpy as np
+import tensorflow as tf
+
+w = tf.Variable(0,dtype=tf.float32)
+cost = tf.add(tf.add(w**2,tf.multiply(-10,w)),25)
+train = tf.train.GradientDescentOptimizer(0.01).minimize(cost)
+
+init = tf.global_variables_inittializer()
+session = tf.Session()
+session.run(init)
+print(session.run(w))
+{% endhighlight %}
