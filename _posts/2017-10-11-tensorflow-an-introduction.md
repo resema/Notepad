@@ -25,7 +25,7 @@ import numpy as np
 import tensorflow as tf
 
 w = tf.Variable(0,dtype=tf.float32)
-% cost = tf.add(tf.add(w**2,tf.multiply(-10,w)),25)
+# cost = tf.add(tf.add(w**2,tf.multiply(-10,w)),25)
 cost = w**2 - 10*w + 25 % Possible due to overloading
 train = tf.train.GradientDescentOptimizer(0.01).minimize(cost)
 
@@ -46,15 +46,15 @@ Now we extend the example a little bit:
 {% highlight python linenos %}
 coefficient = np.array([1.], [-20], [100.]])
 w = tf.Variable(0,dtype=tf.float32)
-% Placeholder are variables in TF you provide later
+# Placeholder are variables in TF you provide later
 x = tf.placeholder(tf.float32, [3,1])
 
-% replace the coefficient by data
+# replace the coefficient by data
 cost = x[0][0]*w*2 + x[1][0]*w + x[2][0]
 train = tf.train.GradientDescentOptimizer(0.01).minimize(cost)
 
 init = tf.global_variables_inittializer()
-% improve the session running
+# improve the session running
 with tf.Session() as session:
 	session.run(init)
 	print(session.run(w))	% Output: 0.0
