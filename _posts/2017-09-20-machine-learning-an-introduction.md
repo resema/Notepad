@@ -102,6 +102,8 @@ Learning curves can give us a feeling for the size of training data and the hypo
 
 There is a similiar effect regarding high variance. An overfitted graph will get stuck with high error with the cross-validation set, BUT it will constantly but slowly reduce. And there increasing the data set helps to improve the hypothesis.
 
+
+
 ## Debugging A Learning Algorithm
 - Get more training examples $$\to$$ fixes high variance
 - Try smaller sets of features $$\to$$ fixes high variance
