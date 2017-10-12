@@ -91,3 +91,11 @@ Split the data into three parts train, cross-validation and test data set. Now w
 #### Combining With Regularization
 What is the effect of regularization to the bias vs. variance problem?
 
+### Learning Curves
+Learning curves can give us a feeling for the size of training data and the hypothesis we are choosing. At some point the bias remains at height even if we increase the training data set.
+
+
+
+There is a similiar effect regarding high variance. An overfitted graph will get stuck with high error with the cross-validation set, BUT it will constantly but slowly reduce. And there increasing the data set helps to improve the hypothesis.
+
+
