@@ -73,9 +73,9 @@ TensorFlow is in this case calculating the forward calculation of the cost funct
 ## Useful Commands From API
 {% highlight python linenos %}
 # constants, variable, placeholders
-tf.constants(val,name)
-tf.Variable(val,name)
-tf.placeholder(tf.float32,name)
+tf.constant(val,shape,name)
+tf.Variable(val,shape,name)
+tf.placeholder(tf.float32,shape,name)
 
 # computes the cost using a sigmoid cross entropy
 tf.nn.sigmoid_cross_entropy_with_logits(logit, labels)
