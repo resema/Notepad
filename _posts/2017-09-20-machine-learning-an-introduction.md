@@ -101,3 +101,11 @@ Learning curves can give us a feeling for the size of training data and the hypo
 ![learning_curve_variance.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/learning_curve_variance.png)
 
 There is a similiar effect regarding high variance. An overfitted graph will get stuck with high error with the cross-validation set, BUT it will constantly but slowly reduce. And there increasing the data set helps to improve the hypothesis.
+
+## Debugging A Learning Algorithm
+- Get more training examples $$\to$$ fixes high variance
+- Try smaller sets of features $$\to$$ fixes high variance
+- Try getting additional features $$\to$$ fixes high bias
+- Try adding polynominal features $$\to$$ fixes high bias
+- Try decreasing $$\lambda$$ $$\to$$ fixes high bias
+- Try increasing $$\lambda$$ $$\to$$ fixes high variance
