@@ -53,7 +53,7 @@ x = tf.placeholder(tf.float32, [3,1])
 cost = x[0][0]*w*2 + x[1][0]*w + x[2][0]
 train = tf.train.GradientDescentOptimizer(0.01).minimize(cost)
 
-init = tf.global_variables_inittializer()
+init = tf.global_variables_initializer()
 # improve the session running
 with tf.Session() as session:
 	session.run(init)
@@ -72,6 +72,11 @@ TensorFlow is in this case calculating the forward calculation of the cost funct
 
 ## Useful Commands From API
 {% highlight python linenos %}
+# constants, variable, placeholders
+tf.constants(val,name)
+tf.Variable(val,name)
+tf.placeholder(tf.float32,name)
+
 # computes the cost using a sigmoid cross entropy
 tf.nn.sigmoid_cross_entropy_with_logits(logit, labels)
 
