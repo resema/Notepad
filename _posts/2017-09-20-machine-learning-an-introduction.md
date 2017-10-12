@@ -96,11 +96,13 @@ What is the effect of regularization to the bias vs. variance problem?
 ![learning_curve_bias.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/learning_curve_bias.png)
 
 Learning curves can give us a feeling for the size of training data and the hypothesis we are choosing. At some point the bias remains at height even if we increase the training data set.
+For evaluation it is important that both errors are high.
 
 ### High Variance
 ![learning_curve_variance.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/learning_curve_variance.png)
 
 There is a similiar effect regarding high variance. An overfitted graph will get stuck with high error with the cross-validation set, BUT it will constantly but slowly reduce. And there increasing the data set helps to improve the hypothesis.
+For evaluation it is important that there is a gap between cross-validation and test error.
 
 ![NN_overfitting.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/NN_overfitting.png)
 
