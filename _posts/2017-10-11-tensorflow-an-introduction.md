@@ -63,7 +63,7 @@ session.run(train, feed_dict=(x:coefficients))
 print(session.run(w))		% Output: 0.2
 
 for i in range(1000):
-	session.run(train, feed_dict=(x:coefficients))
+	session.run(train, feed_dict={x:coefficients})
 print(session.run(w))		% Output: 9.99998
 {% endhighlight %}
 
