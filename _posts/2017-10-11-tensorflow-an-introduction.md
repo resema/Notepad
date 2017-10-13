@@ -82,7 +82,7 @@ tf.get_variable(name, shape, initializer)
 
 # creating and using a session
 with tf.Session() as session:
-	psession.run(func, feed_dict={x:data_x, y:data_y})
+	psession.run([optimizer, func], feed_dict={x:data_x, y:data_y})
 
 # create a hard max tensor
 tf.one_hot(indices, depth, axis)
