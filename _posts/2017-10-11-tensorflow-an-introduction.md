@@ -84,6 +84,9 @@ tf.get_variable(name, shape, initializer)
 with tf.Session() as session:
 	psession.run(func, feed_dict={x:data_x, y:data_y})
 
+# create a hard max tensor
+tf.one_hot(indices, depth, axis)
+
 # initialize data for ML
 tf.zeros_initializer()
 tf.contrib.layers.xavier_initializer   # "Xavier" initialization for weights
@@ -94,6 +97,11 @@ tf.nn.relu(features, name)
 # computes the cost using a sigmoid cross entropy
 tf.nn.sigmoid_cross_entropy_with_logits(logit, labels)
 
-# create a hard max tensor
-tf.one_hot(indices, depth, axis)
+# computes the cost using a softmax cross entropy
+tf.nn.softmax_cross_entropy_with_logits(logit, labes)
+
+# Compute mean of elements across a tensor.
+tf.reduce_mean(tensor, axis, name)
 {% endhighlight %}
+
+
