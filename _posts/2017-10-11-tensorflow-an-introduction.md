@@ -102,6 +102,9 @@ tf.nn.softmax_cross_entropy_with_logits(logit, labes)
 
 # Compute mean of elements across a tensor.
 tf.reduce_mean(tensor, axis, name)
+
+# optimizer
+tf.train.GradientDesentOptiizer(learning_rate).minimize(func)
 {% endhighlight %}
 
 
