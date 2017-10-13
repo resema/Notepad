@@ -59,7 +59,7 @@ with tf.Session() as session:
 	session.run(init)
 	print(session.run(w))	% Output: 0.0
 
-session.run(train, feed_dict=(x:coefficients))
+session.run(train, feed_dict={x:coefficients})
 print(session.run(w))		% Output: 0.2
 
 for i in range(1000):
@@ -76,6 +76,10 @@ TensorFlow is in this case calculating the forward calculation of the cost funct
 tf.constant(val,shape,name)
 tf.Variable(val,shape,name)
 tf.placeholder(tf.float32,shape,name)
+
+# creating and using a session
+with tf.Session() as session:
+	psession.run(func, feed_dict={x:data_x, y:data_y})
 
 # computes the cost using a sigmoid cross entropy
 tf.nn.sigmoid_cross_entropy_with_logits(logit, labels)
