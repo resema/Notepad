@@ -77,9 +77,16 @@ tf.constant(val,shape,name)
 tf.Variable(val,shape,name)
 tf.placeholder(tf.float32,shape,name)
 
+# get an existing variable with these parameters or create a new one.
+tf.get_variable(name, shape, initializer)
+
 # creating and using a session
 with tf.Session() as session:
 	psession.run(func, feed_dict={x:data_x, y:data_y})
+
+# initialize data for ML
+tf.zeros_initializer()
+tf.contrib.layers.xavier_initializer   # "Xavier" initialization for weights
 
 # computes the cost using a sigmoid cross entropy
 tf.nn.sigmoid_cross_entropy_with_logits(logit, labels)
