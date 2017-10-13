@@ -88,6 +88,9 @@ with tf.Session() as session:
 tf.zeros_initializer()
 tf.contrib.layers.xavier_initializer   # "Xavier" initialization for weights
 
+# ReLU activation
+tf.nn.relu(features, name)
+
 # computes the cost using a sigmoid cross entropy
 tf.nn.sigmoid_cross_entropy_with_logits(logit, labels)
 
