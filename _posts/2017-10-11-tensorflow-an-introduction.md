@@ -70,7 +70,7 @@ print(session.run(w))		% Output: 9.99998
 What is this programm really doing?
 TensorFlow is in this case calculating the forward calculation of the cost function $$cost$$. And the nice thing is that due to implementing forward propagation, TensorFlow has already build in the backward propagation. So you don't need to implement backprop. This makes the frameworks very powerful and helpful.
 
-## Useful Commands From API
+## Small API Outtakes
 {% highlight python linenos %}
 # constants, variable, placeholders
 tf.constant(val,shape,name)
