@@ -13,4 +13,4 @@ headline: Structuring ML Projects
 
 ## Orthogonalization
 Knowing what to tune in order to try to achieve one effect. This is a process we call orthogonalization.
-
+The different effects should be orthogonal to each other, meaning there should be NO interferences between different features.
