@@ -11,5 +11,6 @@ headline: Structuring ML Projects
 >&quot;Nothing that I can do will change the structure of the universe.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
-## Structuring Machine Learning Projects
+## Orthogonalization
+Knowing what to tune in order to try to achieve one effect. This is a process we call orthogonalization.
 
