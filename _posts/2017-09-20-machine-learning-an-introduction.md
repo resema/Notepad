@@ -121,4 +121,4 @@ For evaluation it is important that there is a gap between cross-validation and 
 - Error analysis: Manually examine the examples(in cross validation set) that your algorith made errors on. See if you spot any systematic trend in what type of examples it is making errors on.
 
 ## Precision And Recall
-
+![precision_recall.png]({{site.baseurl}}/images/posts/MachineLearning_AnIntroduction/precision_recall.png)
