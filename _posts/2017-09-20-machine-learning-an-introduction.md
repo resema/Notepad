@@ -119,3 +119,6 @@ For evaluation it is important that there is a gap between cross-validation and 
 - Start with a simple algorithm that you can implement quickly. Implement it and test it on your cross-validation data.
 - Plot learning curves to decide if more data, more features, etc. are likely to help.
 - Error analysis: Manually examine the examples(in cross validation set) that your algorith made errors on. See if you spot any systematic trend in what type of examples it is making errors on.
+
+## Precision And Recall
+
