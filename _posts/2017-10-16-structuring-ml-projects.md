@@ -32,7 +32,7 @@ where P is **Precision** and R is **Recall**.
 
 **False Positive** is the parameter of recognizing an entity even if it is not.
 
-## Train/Dev/Test Distribution And Siz
+## Train/Dev/Test Distribution And Size
 The distribution has a large impact on the project. The dev set is also called hold out cross validation set.
 Dev and test set should come from the same distribution.
 
