@@ -126,4 +126,4 @@ For evaluation it is important that there is a gap between cross-validation and 
 ### F1 Score
 How can we compare precision and recall nubmers? A possibility is to take the average of those numbers. But this is not such a good solution, since extremas have a too big impact on the average.
 
-$$F_1$$ Score: $$2\frac{PR}{P+R}$$ <br>
+$$F_1$$ Score $$:= 2\frac{PR}{P+R}$$ <br>
