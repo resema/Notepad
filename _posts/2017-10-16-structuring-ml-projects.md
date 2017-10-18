@@ -38,3 +38,12 @@ Dev and test set should come from the same distribution.
 
 ### Guideline
 Choose a dev set and test set to reflect data you expect to get in the future and consider important to do well on.
+
+### Splitting Data
+In the old days it has been normal to split data to 
+70% train and 30% test or 60% train, 20% dev and 20% test. 
+But in modern times where we might have millions examples in our sets. Then it has become common to split into 98% train, 1%dev and 1% test set. 
+The rule of thumb is to set our test set to be big enough to give high confidence in the overall performance of our system.
+There are possibilities where we don't need a test set and we can split only into train/dev set. The purpose of the test set is to help us evaluate our final cost buys of the system.
+
+
