@@ -10,7 +10,7 @@ headline: Introduction
 categories:
   - calculus
   - machinelearning
-tags: MachineLearning Introduction Coursera
+tags: machinelearning introduction coursera
 ---
 >&quot;Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
