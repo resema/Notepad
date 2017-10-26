@@ -10,7 +10,7 @@ headline: Structuring ML Projects
 categories:
   - NeuralNetworks
   - MachineLearning
-tags: coursera neuralnetwork machinelearning
+tags: Coursera NeuralNetwork MachineLearning
 ---
 >&quot;Nothing that I can do will change the structure of the universe.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
