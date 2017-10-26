@@ -35,4 +35,4 @@ $$ f_1 = similarity(x,l^{(1)})$$ <br>
 $$ f_2 = similarity(x,l^{(2)})$$ <br>
 ... <br>
 
-In a **Gaussian Kernel** similarity corresponds to: $$ exp(-\frac{\vert x - l^{(i)}\vert^2}{2\sigma^2}
+In a **Gaussian Kernel** similarity corresponds to: $$ exp(-\frac{\vert x - l^{(i)}\vert^2}{2\sigma^2}$$
