@@ -44,4 +44,6 @@ Given $$x$$, compute features $$f \in \mathbb{R}^{m+1}$$ <br>
 	Predict $$y=1$$ if $$\theta^{T}f \ge 0$$
     
 **Training**:<br>
-$$min\, C \sum_{i=1}^{m}\left[ y^{(i)} cost_1(\theta^T x^{(i)}) + (1-y^{(i)} cost_0(\theta^T x^{(i)})\right] + \frac{1}{2}\sum_{i=1}^n \theta_j^2$$
+$$min\, C \sum_{i=1}^{m}\left[ y^{(i)} cost_1(\theta^T f^{(i)}) + (1-y^{(i)} cost_0(\theta^T f^{(i)})\right] + \frac{1}{2}\sum_{i=1}^n \theta_j^2$$
+
+By solving this minimization problem, we get our parameters for the support vector machine.
