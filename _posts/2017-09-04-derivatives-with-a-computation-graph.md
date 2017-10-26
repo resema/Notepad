@@ -8,7 +8,7 @@ title: The Basic Formulas in Neural Networks
 categories:
   - calculus
   - neuralnetworks
-tags: Calculus Mathematics Coursera
+tags: calculus mathematics coursera
 description: Notes to the Coursera courser "DeepLearning.ai"
 headline: What to remember from Mathematics in Forward and Backpropagation
 ---
