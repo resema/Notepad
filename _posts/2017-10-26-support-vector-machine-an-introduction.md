@@ -47,3 +47,15 @@ Given $$x$$, compute features $$f \in \mathbb{R}^{m+1}$$ <br>
 $$min\, C \sum_{i=1}^{m}\left[ y^{(i)} cost_1(\theta^T f^{(i)}) + (1-y^{(i)} cost_0(\theta^T f^{(i)})\right] + \frac{1}{2}\sum_{i=1}^n \theta_j^2$$
 
 By solving this minimization problem, we get our parameters for the support vector machine.
+
+### Implementation Detail
+The last parameter is usually implemented as $$\theta^T\theta$$, while ignoring $$\theta_0$$. This also corresponds to $$\Vert \theta \Vert^2. This is done due to large numbers of features n, to reduce its computation time.
+
+## SVM Parameters
+$$C = \frac{1}{\lambda}$$. <br>
+- Large C: Lower bias, high variance.
+- Small C: Higher bias, low variance.
+
+$$\sigma^2$$ <br>
+- Large $$\sigma^2$$: Features $$f_i$$ vary more smoothly. Higher bias, lower variance.
+- Small $$\sigma^2$$: Features $$f_i$$ vary less smoothly. Lower bias, high variance.
