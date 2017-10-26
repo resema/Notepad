@@ -10,7 +10,7 @@ headline: TensorFlow - An Introduction
 categories:
   - NeuralNetworks
   - MachineLearning
-tags: coursera NeuralNetworks MachineLearning TensorFlow
+tags: Coursera NeuralNetworks MachineLearning TensorFlow
 ---
 >&quot;Optimization limits the evolution.&quot;
 ><small><cite title="unknown">unkown</cite></small>
@@ -106,5 +106,3 @@ tf.reduce_mean(tensor, axis, name)
 # optimizer
 tf.train.GradientDesentOptiizer(learning_rate).minimize(func)
 {% endhighlight %}
-
-
