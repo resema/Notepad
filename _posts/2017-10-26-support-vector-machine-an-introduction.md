@@ -26,3 +26,13 @@ $$min\, C \sum_{i=1}^{m}\left[ y^{(i)} cost_1(\theta^T x^{(i)}) + (1-y^{(i)} cos
 
 ## Kernels
 ![kernel_landmarks.png]({{site.baseurl}}/images/posts/SupportVectorMachine_AnIntroduction/kernel_landmarks.png)
+
+###But How To Get Those Landmarks?
+The training example are exactly the landmarks with the corresponding values (0 or 1) to which category they belong to.
+
+Given example *x*:
+$$ f_1 = similarity(x,l^{(1)})$$ <br>
+$$ f_2 = similarity(x,l^{(2)})$$ <br>
+... <br>
+
+In a **Gaussian Kernel** similarity corresponds to: $$ exp(-\frac{x^{(i)-l^{(i)}}{2\sigma^2}
