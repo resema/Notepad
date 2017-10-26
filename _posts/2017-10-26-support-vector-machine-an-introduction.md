@@ -30,9 +30,18 @@ $$min\, C \sum_{i=1}^{m}\left[ y^{(i)} cost_1(\theta^T x^{(i)}) + (1-y^{(i)} cos
 ###But How To Get Those Landmarks?
 The training example are exactly the landmarks with the corresponding values (0 or 1) to which category they belong to.
 
-Given example *x*:
+Given example *x*: <br>
 $$ f_1 = similarity(x,l^{(1)})$$ <br>
 $$ f_2 = similarity(x,l^{(2)})$$ <br>
 ... <br>
 
-In a **Gaussian Kernel** similarity corresponds to: $$ exp\left(-\frac{\vert x - l^{(i)}\vert^2}{2\sigma^2}\right)$$
+In a **Gaussian Kernel** similarity corresponds to: $$ exp\left(-\frac{\Vert x - l^{(i)}\Vert^2}{2\sigma^2}\right)$$
+
+All the $$f_{(i)}$$ are grouped for each training example $$(x^{(i)}, y^{(i)}) in a feature vector $$f^{(i)}$$ with the first entry $$f_0^{(i)} = 1$$.
+
+**Hypothesis**:<br>
+Given $$x$$, compute features $$f \in \mathbb{R}^{m+1}$$ <br>
+	Predict $$y=1$$ if $$\theta^{T}f \ge 0$$
+    
+**Training**:<br>
+$$min\, C \sum_{i=1}^{m}\left[ y^{(i)} cost_1(\theta^T x^{(i)}) + (1-y^{(i)} cost_0(\theta^T x^{(i)})\right] + \frac{1}{2}\sum_{i=1}^n \theta_j^2$$
