@@ -49,7 +49,7 @@ $$min\, C \sum_{i=1}^{m}\left[ y^{(i)} cost_1(\theta^T f^{(i)}) + (1-y^{(i)} cos
 By solving this minimization problem, we get our parameters for the support vector machine.
 
 ### Implementation Detail
-The last parameter is usually implemented as $$\theta^T\theta$$, while ignoring $$\theta_0$$. This also corresponds to $$\Vert \theta \Vert^2. This is done due to large numbers of features n, to reduce its computation time.
+The last parameter is usually implemented as $$\theta^T\theta$$, while ignoring $$\theta_0$$. This also corresponds to $$\Vert \theta \Vert^2$$. This is done due to large numbers of features n, to reduce its computation time.
 
 ## SVM Parameters
 $$C = \frac{1}{\lambda}$$. <br>
