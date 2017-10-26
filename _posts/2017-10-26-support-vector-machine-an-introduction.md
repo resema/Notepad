@@ -37,7 +37,7 @@ $$ f_2 = similarity(x,l^{(2)})$$ <br>
 
 In a **Gaussian Kernel** similarity corresponds to: $$ exp\left(-\frac{\Vert x - l^{(i)}\Vert^2}{2\sigma^2}\right)$$
 
-All the $$f_{(i)}$$ are grouped for each training example $$(x^{(i)}, y^{(i)}) in a feature vector $$f^{(i)}$$ with the first entry $$f_0^{(i)} = 1$$.
+All the $$f_{(i)}$$ are grouped for each training example $$(x^{(i)}, y^{(i)})$$ in a feature vector $$f^{(i)}$$ with the first entry $$f_0^{(i)} = 1$$.
 
 **Hypothesis**:<br>
 Given $$x$$, compute features $$f \in \mathbb{R}^{m+1}$$ <br>
