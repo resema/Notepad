@@ -11,7 +11,7 @@ categories:
   - interesting
   - machinelearning
   - chOpen
-tags: chOpen2017 MachineLearning
+tags: chOpen2017 machinelearning
 ---
 >&quot;If A is a success in life, then A equals X plus Y plus Z. Work is X; Y is play, and Z is keeping your mouth shut.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
