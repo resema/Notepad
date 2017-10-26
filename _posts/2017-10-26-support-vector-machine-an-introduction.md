@@ -25,4 +25,4 @@ Also helpfull is the concept of **large margins** or **decision boundaries** to 
 $$min C \sum_{i=1}^{m}\left y^{(i)} cost_1(\theta^T x^{(i)}) + (1-y^{(i)} cost_0(\theta^T x^{(i)})\right + \frac{1}{2}\sum_{i=1}^n \theta_j^2$$
 
 ## Kernels
-
+![kernel_landmarks.png]({{site.baseurl}}/images/posts/SupportVectorMachine_AnIntroduction/kernel_landmarks.png)
