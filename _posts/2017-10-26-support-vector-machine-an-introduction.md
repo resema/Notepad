@@ -1,10 +1,15 @@
 ---
 layout: post
-published: true
+published: false
 mathjax: true
 featured: false
-comments: false
+comments: true
 title: Support Vector Machine - An Introduction
+description: An introduction to SVM
+headline: Support Vector Machine - An Introduction
+categories:
+  - MachineLearning
+tags: Coursera MachineLearning
 ---
 >&quot;Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
@@ -20,3 +25,4 @@ Also helpfull is the concept of **large margins** or **decision boundaries** to 
 $$min C \sum_{i=1}^{m}\left y^{(i)} cost_1(\theta^T x^{(i)}) + (1-y^{(i)} cost_0(\theta^T x^{(i)})\right + \frac{1}{2}\sum_{i=1}^n \theta_j^2$$
 
 ## Kernels
+
