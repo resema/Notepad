@@ -11,7 +11,7 @@ categories:
   - Calculus
   - NeuralNetworks
   - MachineLearning
-tags: coursera neuralnetwork machinelearning mini-batch momentum softmax
+tags: Coursera NeuralNetworks MachineLearning mini-batch momentum softmax
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
