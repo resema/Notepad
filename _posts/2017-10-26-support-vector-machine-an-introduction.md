@@ -12,6 +12,8 @@ title: Support Vector Machine - An Introduction
 ## Support Vector Machine
 SVM is an alternative view for logistic regression. Starting from logistic regression we can derive a good understanding of basic SVM.
 
+
+
 Also helpfull is the concept of **large margins** or **decision boundaries** to help understand what SVM's are doing under the hood.
 
 ### SVM Decision Boundary
