@@ -74,7 +74,7 @@ And note, that we do perform feature scaling before using the Gaussian kernel.
 All valid similarity functions used in kernels have to satisfy the technical condition called **Mercer's Theorem**.
 
 #### Off-The-Shell Kernels
-- Polynomial kernel $$k(x,l) = (x^T l + constant)^{degree}
+- Polynomial kernel $$k(x,l) = (x^T l + constant)^{degree}$$
 - String kernel
 - Chi-square kernel
 - Histogram intersection kernel
