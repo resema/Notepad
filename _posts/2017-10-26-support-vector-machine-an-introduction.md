@@ -59,3 +59,27 @@ $$C = \frac{1}{\lambda}$$. <br>
 $$\sigma^2$$ <br>
 - Large $$\sigma^2$$: Features $$f_i$$ vary more smoothly. Higher bias, lower variance.
 - Small $$\sigma^2$$: Features $$f_i$$ vary less smoothly. Lower bias, high variance.
+
+## SVM Software Packages
+- liblinear
+- libsvm
+
+If we use existing SVM's we have to specify:
+- Choice of parameter C
+- Choice of kernel (similarity function), eg. no kernel means linear kernel and it predicts $$y = 1$$ if $$\theta^Tx \ge 0$$.
+
+In many frameworks we have to define the Kernel function, e.g. in Octave/Matlab
+And note, that we do perform feature scaling before using the Gaussian kernel.
+
+All valid similarity functions used in kernels have to satisfy the technical condition called **Mercer's Theorem**.
+
+#### Off-The-Shell Kernels
+- Polynomial kernel $$k(x,l) = (x^T l + constant)^{degree}
+- String kernel
+- Chi-square kernel
+- Histogram intersection kernel
+
+### Multi-Class Classification
+Many SVM packages already have built-in multi-class classification functionalty.
+
+
