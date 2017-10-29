@@ -52,7 +52,7 @@ There are few different ways, but there is one method which is most often recomm
 - Set $$\mu_1, ..., \mu_K$$ equal to these *K* examples.
 
 #### Local Optima
-Due to various initializations the algorithm can be stucked in local optimas.
+Due to various initializations the algorithm can be stucked in local optimas. To not get stuck in such a local optima, run the algorithm between 50 to 1000 times and take the parameter which create the lowest cost.
 
 {% highlight cpp %}
 for i = 1 to 100 {
