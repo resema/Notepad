@@ -58,6 +58,9 @@ Due to various initializations the algorithm can be stucked in local optimas.
 for i = 1 to 100 {
     Randomly initialize K-means
     Run K-Means. Get c^(i), ..., c^(m), mu_1, ..., mu_K.
-    Compute cost function (distorsion) J(c^(i), ..., c^(m), mu_1, ..., mu_K)
+    Compute cost function (distorsion) 
+        J(c^(i), ..., c^(m), mu_1, ..., mu_K)
 }
+
+Pick clustering that gave lowest cost J(c^(i), ..., c^(m), mu_1, ..., mu_K)
 {% endhighlight %}
