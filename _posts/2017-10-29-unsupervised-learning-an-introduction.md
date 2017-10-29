@@ -19,7 +19,7 @@ Data sets which are not labeled or group are classified by means of unsupervised
 
 One such approach is **Clustering** and the most common used algorithm is k-Means.
 
-## K- Means Algorithm,
+### K- Means Algorithm,
 {% highlight %}
 Input:
 	*N* number of clusters
