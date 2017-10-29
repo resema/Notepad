@@ -34,3 +34,6 @@ Repeat {
     	mu_k := average (mean) of points assigned to cluster *k*
 }
 {% endhighlight %}
+
+### Optimization Objective
+
