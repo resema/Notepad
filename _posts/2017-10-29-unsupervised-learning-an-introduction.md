@@ -22,18 +22,20 @@ One such approach is **Clustering** and the most common used algorithm is k-Mean
 ### K- Means Algorithm,
 {% highlight %}
 Input:
-	*N* number of clusters
+	*K* number of clusters
     Training set x^1, x^2, ... x^m
 	drop x_0 =1 convention
 
-Randomly initialize N cluster centroids mu_1, \mu_2, ..., \mu_N
+Randomly initialize N cluster centroids mu_1, \mu_2, ..., \mu_K
 Repeat {
 	for i = 1 to m
     	c^(i) := index (from 1 to N) of cluster centroid closest to x^(i)
-    for k = 1 to N
+    for k = 1 to K
     	mu_k := average (mean) of points assigned to cluster *k*
 }
 {% endhighlight %}
 
 ### Optimization Objective
-
+$$c^{(i)}$$ = index of cluster (1,2,...,*K*) to which example $$x^{(i)}$$ is currently assigned
+$$\mu_k$$ = cluster centroid *k* ($$\mu_k \in \mathbb{R}^n$$)
+$$\mu_{c^{(i)}}$$ = cluster centroid of clluster to which example $$x^{(i)}$$ has been assigned
