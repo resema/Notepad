@@ -62,5 +62,6 @@ for i = 1 to 100 {
         J(c^(i), ..., c^(m), mu_1, ..., mu_K)
 }
 
-Pick clustering that gave lowest cost J(c^(i), ..., c^(m), mu_1, ..., mu_K)
+Pick clustering that gave lowest cost 
+    J(c^(i), ..., c^(m), mu_1, ..., mu_K)
 {% endhighlight %}
