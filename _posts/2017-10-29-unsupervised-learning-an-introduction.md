@@ -18,8 +18,8 @@ tags: Coursera MachineLearning UnsupervisedLearning
 Data sets which are not labeled or group are classified by means of unsupervised learning, e.g. market segmentation or social network analysis.
 
 One such approach is **Clustering** and the most common used algorithm is k-Means.
-\
-\## K- Means Algorithm,gori2hm, ..., gorimhm}$$
+
+## K- Means Algorithm,
 {% highlight %}
 Input:
 	*N* number of clusters
