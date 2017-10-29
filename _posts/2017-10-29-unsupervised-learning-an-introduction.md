@@ -24,7 +24,7 @@ One such approach is **Clustering** and the most common used algorithm is k-Mean
 Input:
 	*K* number of clusters
     Training set x^1, x^2, ... x^m
-	drop x_0 =1 convention
+	drop x_0 = 1 convention
 
 Randomly initialize N cluster centroids mu_1, mu_2, ..., mu_K
 Repeat {
