@@ -50,3 +50,14 @@ There are few different ways, but there is one method which is most often recomm
 - Should have *K* < *m*
 - Randomly pick *K* training examples
 - Set $$\mu_1, ..., \mu_K$$ equal to these *K* examples.
+
+#### Local Optima
+Due to various initializations the algorithm can be stucked in local optimas.
+
+{% highlight cpp %}
+for i = 1 to 100 {
+    Randomly initialize K-means
+    Run K-Means. Get c^(i), ..., c^(m), mu_1, ..., mu_K.
+    Compute cost function (distorsion) J(c^(i), ..., c^(m), mu_1, ..., mu_K)
+}
+{% endhighlight %}
