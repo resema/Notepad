@@ -22,13 +22,13 @@ One such approach is **Clustering** and the most common used algorithm is k-Mean
 ### K- Means Algorithm
 {% highlight cpp %}
 Input:
-	*K* number of clusters
+*K* number of clusters
     Training set x^1, x^2, ... x^m
 	drop x_0 = 1 convention
 
 Randomly initialize N cluster centroids mu_1, mu_2, ..., mu_K
 Repeat {
-	for i = 1 to m
+for i = 1 to m
     	c^(i) := index (from 1 to N) of cluster centroid closest to x^(i)
     for k = 1 to K
     	mu_k := average (mean) of points assigned to cluster *k*
