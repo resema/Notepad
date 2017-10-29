@@ -42,4 +42,4 @@ $$\mu_{c^{(i)}}$$ = cluster centroid of clluster to which example $$x^{(i)}$$ ha
 
 **Optimization objective:** <br>
 $$J(c^{(1)}, c^{(m)}, \mu_1,...,\mu_K) = \frac{1}{m}\sum_{i=1}^m\Vert x^{(i)} - \mu_{c^{(i)}}\Vert^2$$ <br>
-$$min J(c^{(1)}, c^{(m)}, \mu_1,...,\mu_K)$$ <br>
+$$min J(c^{(1)}, c^{(m)}, \mu_1,...,\mu_K)$$ regarding $$c^{(i)}$$ and $$\mu_k$$<br>
