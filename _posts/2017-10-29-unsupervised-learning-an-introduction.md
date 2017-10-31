@@ -145,4 +145,4 @@ Mapping $$x^{(i)} \to z^{(i)}$$ should be **defined** by running PCA **only** on
 ### Bad Use Of PCA
 Do **not** use PCA to prevent overfitting! This might work OK, but it isn't a good way to address overfitting. We should use **regularization** instead.
 
-Reminder on regularization: $$min_\sigma \frac{1}{2m} \sum_{i=1}^m(h_\sigma(x^{(i)} - y^{(i)})^2 + \frac{\lambda}{2m}\sum_{j=1}^n\sigma_j^2$$
+Reminder on regularization: $$\min_\theta \frac{1}{2m} \sum_{i=1}^m(h_\theta(x^{(i)} - y^{(i)})^2 + \frac{\lambda}{2m}\sum_{j=1}^n\theta^2$$
