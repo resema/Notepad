@@ -78,5 +78,7 @@ Pick clustering that gave lowest cost
 ### Principal Component Analysis
 PCA helps us to reduce multi-dimensional data to 2 or 3d data. It searches for a sub-structure in our data set and our data is projected onto this structure.
 
+#### PCA Problem Formulation
 Reduce from n-dimenisional to k-dimenstional: Find *k* vectors $$u^{(1)}, u^{(2)}, ..., u^{(k)}$$ onto which to project the data, so as to minimize the projection error.
 
+*Remember:* PCA is not linear! It projects **orthogonal** onto the sub-strucure!
