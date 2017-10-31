@@ -89,7 +89,7 @@ Reduce from n-dimenisional to k-dimenstional: Find *k* vectors $$u^{(1)}, u^{(2)
 We pre-process the training set by feature scaling and mean normalization: $$\mu_j = \frac{1}{m}\sum_{i=1}^m x_j^{(i)}$$. Then we replace each $$x_j^{(i)}$$ with $$x_j - \mu_j$$. If different features on different scales (eg. $$x_1$$ = size of house, $$x_2$$ = number of bedrooms), we should scale features to have **comparable** range of values.
 
 ### PCA Algorithm
-Our goal is to reduce from *n*-dimensions to *k*-dimensions. 
+Our goal is to reduce from *n*-dimensions to *k*-dimensions.
 
 For that we have to compute the **covariance matrix**: <br>
 $$\Sigma = \frac{1}{m}\sum_{i=1}^n(x^{(i)})(x^{(i)})^T$$ <br>
