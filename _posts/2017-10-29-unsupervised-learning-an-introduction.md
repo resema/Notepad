@@ -95,7 +95,7 @@ For that we have to compute the **covariance matrix**: <br>
 $$\Sigma = \frac{1}{m}\sum_{i=1}^n(x^{(i)})(x^{(i)})^T$$ <br>
 Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <br>
 
-{% highlight python %}
+{% highlight matlab %}
 [U,S,V] = svd(Sigma); 
     #svd := single value decomposition
 {% endhighlight %}
