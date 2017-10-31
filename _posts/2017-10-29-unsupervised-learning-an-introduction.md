@@ -97,7 +97,7 @@ Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <
 
 {% highlight matlab %}
 [U,S,V] = svd(Sigma); 
-    #svd := single value decomposition
+    %svd := single value decomposition
 {% endhighlight %}
 
 #### Matrices Dimensions
