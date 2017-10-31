@@ -117,5 +117,5 @@ Like this: $$x_{approx} = U_{reduce} * z^{(i)}$$
 - Average squared projection error: $$\frac{1}{m}\sum_{i=1}^m \Vert x^{(i)} -x_{approx}^{(i)} \Vert^2$$ <br>
 - Total variation in the data: $$\frac{1}{m}\sum_{i=1}^m \Vert x^{(i)} \Vert^2$$ <br>
 
-Typically, we choose *k* to be smallest value so that 99% of the variance is retained:
+Typically, we choose *k* to be smallest value so that 99% of the variance is retained: <br>
 $$ \frac{\frac{1}{m}\sum_{i=1}^m \Vert x^{(i)} -x_{approx}^{(i)} \Vert^2}{\frac{1}{m}\sum_{i=1}^m \Vert x^{(i)} \Vert^2} \le 0.01$$
