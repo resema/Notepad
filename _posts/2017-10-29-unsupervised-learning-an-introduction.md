@@ -99,6 +99,10 @@ Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <
     #svd := single value decomposition
 {% endhighlight %}
 
+![singlevaluedecomposition.png]({{site.baseurl}}/images/posts/UnsupervisedLearning_AnIntroduction/singlevaluedecomposition.png)
 
-
-
+{% highlight octave %}
+[U,S,V] = svd(Sigma); 
+U_reduce  =U(:,1:k);
+z = U_reduce' * x;
+{% endhighlight %}
