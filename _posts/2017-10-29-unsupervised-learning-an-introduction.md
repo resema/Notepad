@@ -142,4 +142,5 @@ Mapping $$x^{(i)} \to z^{(i)}$$ should be **defined** by running PCA **only** on
 - Visualization
   - Chosse *k* equals 2 or 3
 
-
+### Bad Use Of PCA
+Do **not** use PCA to prevent overfitting! This might work OK, but it isn't a good way to address overfitting. We should use **regularization** instead.
