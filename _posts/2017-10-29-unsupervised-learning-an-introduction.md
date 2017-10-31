@@ -94,14 +94,14 @@ Our goal is to reduce from *n*-dimensions to *k*-dimensions.
 For that we have to compute the **covariance matrix**: <br>
 $$\Sigma = \frac{1}{m}\sum_{i=1}^n(x^{(i)})(x^{(i)})^T$$ <br>
 Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <br>
-{% highlight matlab %}
+{% highlight python %}
 [U,S,V] = svd(Sigma); 
     #svd := single value decomposition
 {% endhighlight %}
 
 ![singlevaluedecomposition.png]({{site.baseurl}}/images/posts/UnsupervisedLearning_AnIntroduction/singlevaluedecomposition.png)
 
-{% highlight matlab %}
+{% highlight python %}
 [U,S,V] = svd(Sigma); 
 U_reduce  =U(:,1:k);
 z = U_reduce' * x;
