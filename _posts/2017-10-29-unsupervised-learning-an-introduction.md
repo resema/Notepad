@@ -130,4 +130,4 @@ Is most common to tell about the percentage of the retained variance as to talk 
 *S* is a diagonal matrix and for a given *k* we can compute $$ \frac{\frac{1}{m}\sum_{i=1}^m \Vert x^{(i)} -x_{approx}^{(i)} \Vert^2}{\frac{1}{m}\sum_{i=1}^m \Vert x^{(i)} \Vert^2} \le 0.01$$ with: <br>
 $$1 - \frac{\sum_{i=1}^k S_{ii}}{\sum_{i=1}^n S_{ii}} \le 0.01$$ <br>
 Or even a bit easier: <br>
-\frac{\sum_{i=1}^k S_{ii}}{\sum_{i=1}^n S_{ii}} \ge 0.99$$
+$$\frac{\sum_{i=1}^k S_{ii}}{\sum_{i=1}^n S_{ii}} \ge 0.99$$
