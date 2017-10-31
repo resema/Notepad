@@ -105,6 +105,6 @@ Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <
 
 {% highlight matlab %}
 [U,S,V] = svd(Sigma); 
-U_reduce  =U(:,1:k);
+U_reduce = U(:,1:k);
 z = U_reduce' * x;
 {% endhighlight %}
