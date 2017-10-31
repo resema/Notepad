@@ -51,7 +51,16 @@ There are few different ways, but there is one method which is most often recomm
 - Randomly pick *K* training examples
 - Set $$\mu_1, ..., \mu_K$$ equal to these *K* examples.
 
+#### Choosing The Number Of Clusters
+There is not a perfect approach to choose the correct number of clusters. But there is the **Elbow Method** which can help. 
+
+To use the **Elbow** method, we have to iterate over the number of clusters and calculate the cost function for each of them. We then choose the elbow of this curve as our number of clusters.
+
+Sometimes, we are running k-Means to get clusters to use for some later or downstream purpose. In those cases we evaluate K-Means based on a metric for how well it performs for later purpose.
+
 #### Local Optima
+
+
 Due to various initializations the algorithm can be stucked in local optimas. To not get stuck in such a local optima, run the algorithm between 50 to 1000 times and take the parameter which create the lowest cost.
 
 {% highlight cpp %}
