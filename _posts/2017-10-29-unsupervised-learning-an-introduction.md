@@ -103,7 +103,7 @@ Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <
 #### Matrices Dimensions
 ![singlevaluedecomposition.png]({{site.baseurl}}/images/posts/UnsupervisedLearning_AnIntroduction/singlevaluedecomposition.png)
 
-{% highlight cpp %}
+{% highlight python %}
 [U,S,V] = svd(Sigma); 
 U_reduce  =U(:,1:k);
 z = U_reduce' * x;
