@@ -84,3 +84,9 @@ PCA helps us to reduce multi-dimensional data to 2 or 3d data. It searches for a
 Reduce from n-dimenisional to k-dimenstional: Find *k* vectors $$u^{(1)}, u^{(2)}, ..., u^{(k)}$$ onto which to project the data, so as to minimize the projection error.
 
 *Remember:* PCA is not linear regression! It projects **orthogonal** onto the sub-strucure!
+
+#### Data Pre-Processing
+We pre-process the training set by feature scaling/mean normalization
+$$\mu_j = \frac{1}{m}\sum_{i=1}^m x_j^{(i)}$$ <br>
+Then we replace each $$x_j^{(i)}$$ with $$x_j - \mu_j$$ <br>
+If different features on different scales (eg. $$x_1$$ = size of house, $$x_2$$ = number of bedrooms), we should scale features to have **comparable** range of values.
