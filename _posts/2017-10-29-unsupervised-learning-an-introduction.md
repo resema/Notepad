@@ -131,3 +131,15 @@ Is most common to tell about the percentage of the retained variance as to talk 
 $$1 - \frac{\sum_{i=1}^k S_{ii}}{\sum_{i=1}^n S_{ii}} \le 0.01$$ <br>
 Or even a bit easier: <br>
 $$\frac{\sum_{i=1}^k S_{ii}}{\sum_{i=1}^n S_{ii}} \ge 0.99$$
+
+### Advice for Applying PCA
+Mapping $$x^{(i)} \to z^{(i)}$$ should be **defined** by running PCA **only** on the training set. This mapping can be **applied** as well to the examples $$x_{cv}^{(i)}$$ and $$x_{test}^{(i)}$$ in the cross validation and test sets.
+
+- Compression
+  - Reduce memory/disk needed to store data
+  - Speed up learning algorithm
+  - Choose *k* by % of variance retain
+- Visualization
+  - Chosse *k* equals 2 or 3
+
+
