@@ -108,3 +108,7 @@ Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <
 U_reduce = U(:,1:k);
 z = U_reduce' * x;
 {% endhighlight %}
+
+#### Reconstruction From Compressed Representation
+How do we go back from $$z = U_{reduce}^T*x$$?
+$$x_{approx} = U_{reduce} * z^{(i)}$$
