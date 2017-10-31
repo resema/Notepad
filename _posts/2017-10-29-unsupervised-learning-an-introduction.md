@@ -111,4 +111,4 @@ z = U_reduce' * x;
 
 #### Reconstruction From Compressed Representation
 How do we go back from $$z = U_{reduce}^T*x$$?
-$$x_{approx} = U_{reduce} * z^{(i)}$$
+Like this: $$x_{approx} = U_{reduce} * z^{(i)}$$
