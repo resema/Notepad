@@ -59,7 +59,7 @@ To use the **Elbow** method, we have to iterate over the number of clusters and 
 Sometimes, we are running k-Means to get clusters to use for some later or downstream purpose. In those cases we evaluate K-Means based on a metric for how well it performs for later purpose.
 
 #### Local Optima
-
+![k-means_localoptima.png]({{site.baseurl}}/images/posts/UnsupervisedLearning_AnIntroduction/k-means_localoptima.png)
 
 Due to various initializations the algorithm can be stucked in local optimas. To not get stuck in such a local optima, run the algorithm between 50 to 1000 times and take the parameter which create the lowest cost.
 
