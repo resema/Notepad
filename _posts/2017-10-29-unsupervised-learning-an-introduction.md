@@ -99,6 +99,7 @@ Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <
     #svd := single value decomposition
 {% endhighlight %}
 
+#### Matrices Dimensions
 ![singlevaluedecomposition.png]({{site.baseurl}}/images/posts/UnsupervisedLearning_AnIntroduction/singlevaluedecomposition.png)
 
 {% highlight python %}
