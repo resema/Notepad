@@ -147,4 +147,4 @@ Do **not** use PCA to prevent overfitting! This might work OK, but it isn't a go
 
 Reminder on regularization: $$\min_\theta \frac{1}{2m} \sum_{i=1}^m(h_\theta(x^{(i)} - y^{(i)})^2 + \frac{\lambda}{2m}\sum_{j=1}^n\theta^2$$
 
-**Before** implementing PCA, we should first try running whatever we want to do withthe original/raw data $$x^{(i)}$$. ONly if that doesn't do what we want, then we implement PCA and consider using $$z^{(i)}$$.
+**Before** implementing PCA, we should first try running whatever we want to do with the original/raw data $$x^{(i)}$$. Only if that doesn't do what we want, then we implement PCA and consider using $$z^{(i)}$$.
