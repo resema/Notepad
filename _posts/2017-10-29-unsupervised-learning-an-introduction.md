@@ -93,8 +93,10 @@ We pre-process the training set by feature scaling and mean normalization: $$\mu
 ### PCA Algorithm
 Our goal is to reduce from *n*-dimensions to *k*-dimensions.
 
-For that we have to compute the **covariance matrix**: <br>
+For that we have to compute the **covariance matrix**:
+
 $$\Sigma = \frac{1}{m}\sum_{i=1}^n(x^{(i)})(x^{(i)})^T$$ <br>
+
 Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <br>
 
 {% highlight matlab %}
