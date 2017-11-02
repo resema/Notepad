@@ -97,6 +97,10 @@ For that we have to compute the **covariance matrix**:
 
 $$\Sigma = \frac{1}{m}\sum_{i=1}^n(x^{(i)})(x^{(i)})^T$$ <br>
 
+If the data is arranged in a matrix with rows as examples and columns as features (*ex* x *fe*), we compute the covariance matrix as such:
+
+$$ \Sigma = \frac{1}{m} * X^TX$$ <br>
+
 Then we have to compute the **eigenvectors** of the matrix $$\Sigma$$ (Sigma): <br>
 
 {% highlight matlab %}
