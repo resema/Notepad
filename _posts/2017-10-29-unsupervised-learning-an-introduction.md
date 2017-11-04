@@ -117,6 +117,8 @@ U_reduce = U(:,1:k);
 z = U_reduce' * x;
 {% endhighlight %}
 
+We have to be careful regarding the dimension of data set tensors. We have to multiply each example with its features with the eigenvector to reduce it to K dimensions. This means that the above code snipped is **not** always correct.
+
 #### Reconstruction From Compressed Representation
 How do we go back from $$z = U_{reduce}^T*x$$?
 Like this: $$x_{approx} = U_{reduce} * z^{(i)}$$
