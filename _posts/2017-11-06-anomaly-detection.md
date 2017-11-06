@@ -16,4 +16,6 @@ categories:
 ## Anomaly Detection
 $$x$$ is distributed Gaussian with mean $$\mu$$ and variance $$\sigma^2$$. Also called the normal distribution.
 
+![gaussian_distribution.png]({{site.baseurl}}/images/posts/Anomaly Detection/gaussian_distribution.png)
+
 $$\sigma$$ is the with of the Gaussian curve and $$\mu$$ is where the Gaussian curve is centered.
