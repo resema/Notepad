@@ -87,4 +87,8 @@ determinate = det(Sigma)
 {% endhighlight %}
 
 #### Shifting And Distorsion
+![Gaussian_Distribution1.png]({{site.baseurl}}/images/posts/Anomaly Detection/Gaussian_Distribution1.png)
 
+![Gaussian_Distribution2.png]({{site.baseurl}}/images/posts/Anomaly Detection/Gaussian_Distribution2.png)
+
+![Gaussian_Distribution3.png]({{site.baseurl}}/images/posts/Anomaly Detection/Gaussian_Distribution3.png)
