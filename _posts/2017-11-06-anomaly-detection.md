@@ -65,3 +65,8 @@ Arrange the data in a Gaussian bell like curve. Use different transformation to 
 % show the data as a histogram
 hist(x);
 {% end highlight %}
+
+### Error Analysis
+We want *p(x)* to be large for normal examples *x* and *p(x)* small for anomalous examples *x*.
+
+The most common problem to that is, that *p(x)* is comparable (say, both large) for nomal and anomalous examples.
