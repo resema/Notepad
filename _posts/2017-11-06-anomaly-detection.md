@@ -86,3 +86,5 @@ $$\vert\Sigma\vert$$ is the determinate and can be computed in Matlab/Octave by
 determinate = det(Sigma)
 {% endhighlight %}
 
+#### Shifting And Distorsion
+
