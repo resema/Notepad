@@ -21,8 +21,8 @@ $$x$$ is distributed Gaussian with mean $$\mu$$ and variance $$\sigma^2$$. Also 
 $$\sigma$$ is the with of the Gaussian curve and $$\mu$$ is where the Gaussian curve is centered.
 
 ### Parameter Estimation
-$$\mu = \frac{1}{m}\sum_{i=1}^m x^{(i)}$$<br>
-$$\sigma^2 = \frac{1}{m}\sum_{i=1}^m(x^{(i)} - \mu)^2$$<br>
+$$\mu _j= \frac{1}{m}\sum_{i=1}^m x_j^{(i)}$$<br>
+$$\sigma_j^2 = \frac{1}{m}\sum_{i=1}^m(x_j^{(i)} - \mu_j)^2$$<br>
 
 This is called **Maximum Likely-Hood Estimation** in statistics.
 
