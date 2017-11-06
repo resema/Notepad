@@ -35,3 +35,25 @@ $$p(x) = \prod_{j=1}^n p(x_j; \mu_j, \sigma_j^2)$$ <br>
 ### Detection Algorithm
 ![AnomalyDetection.png]({{site.baseurl}}/images/posts/Anomaly Detection/AnomalyDetection.png)
 
+### Developing and Evaluating An Anomaly Detection System
+When we develope a learning algorithm (choosing features, etc.), making a decision is much easier if we have a way of **evaluating our learning algorithm**.
+
+Assume we have some labeled data of anomalous (*y = 1*) and non-anomalous (*y = 0* if normal) examples.
+
+We have a larger number of normal examples and some anomalous examples. We divide them as usual into train, cross-validation and test set.
+
+#### Algorithm Evaluation
+Possible evaluation metrics:
+- True positive, false positive, false negative, true negative
+- Precision/Recall
+- $$F_1$$ Score
+
+##### Anomaly Detetion
+- Fraud detectino
+- Manufacturing (e.g. aircraft engines)
+- Monitoring machines in a data center
+
+##### Supervised Learing
+- Email spam classification
+- Weather prediction (sunny, rainy, etc.)
+- Cancer classification
