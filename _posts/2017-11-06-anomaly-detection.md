@@ -57,3 +57,10 @@ Possible evaluation metrics:
 - Email spam classification
 - Weather prediction (sunny, rainy, etc.)
 - Cancer classification
+
+### Choosing What Features to Use
+Arrange the data in a Gaussian bell like curve. Use different transformation to make the data more gaussian, e.g. $$log(x)$$ or $$log(x + c)$$ or $$x^{\frac{1}{3}}.
+
+{% highlight matlab %}
+hist(x);
+{% end highlight %}
