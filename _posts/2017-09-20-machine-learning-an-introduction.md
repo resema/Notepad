@@ -9,6 +9,7 @@ description: General Introduction to use Machine Learning
 headline: Introduction
 tags: machinelearning introduction coursera
 categories:
+  - Calculus
   - MachineLearning
 ---
 >&quot;Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.&quot;
