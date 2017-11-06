@@ -5,12 +5,12 @@ mathjax: true
 featured: false
 comments: true
 title: The Basic Formulas in Neural Networks
-categories:
-  - calculus
-  - neuralnetworks
 tags: calculus mathematics coursera
 description: Notes to the Coursera courser "DeepLearning.ai"
 headline: What to remember from Mathematics in Forward and Backpropagation
+categories:
+  - Calculus
+  - NeuralNetworks
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
