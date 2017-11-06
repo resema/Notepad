@@ -72,3 +72,9 @@ We want *p(x)* to be large for normal examples *x* and *p(x)* small for anomalou
 #### Common Problem
 The most common problem to that is, that *p(x)* is comparable (say, both large) for nomal and anomalous examples.
 A possible solution to this is trying to come up with more features to distinguish between the normal and the anomalous examples.
+
+### Multivariate Gaussian Distribution
+$$x \in \mathbb{R}^n$$ <br>
+We don't model $$p(x_1), p(x_2), ...$$ separately, instead we model $$p(x)$$ all in one go.
+Parameters: $$\mu \in \mathbb{R}^n, \Sigma \in \mathbb{R}^{nxn}$$ (covariance matrix).
+
