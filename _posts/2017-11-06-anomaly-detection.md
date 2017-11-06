@@ -79,3 +79,10 @@ We don't model $$p(x_1), p(x_2), ...$$ separately, instead we model $$p(x)$$ all
 Parameters: $$\mu \in \mathbb{R}^n, \Sigma \in \mathbb{R}^{n\,x\,n}$$ (covariance matrix).
 
 ![multivariante_gaussian_distr.png]({{site.baseurl}}/images/posts/Anomaly Detection/multivariante_gaussian_distr.png)
+
+$$\Vert\Sigma\Vert\\ is the determinate and can be computed in Matlab/Octave by
+
+{% highlight matlab %}
+determinate = det(Sigma)
+{% endhighlight %}
+
