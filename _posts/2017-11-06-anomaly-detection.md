@@ -76,6 +76,6 @@ A possible solution to this is trying to come up with more features to distingui
 ### Multivariate Gaussian Distribution
 $$x \in \mathbb{R}^n$$ <br>
 We don't model $$p(x_1), p(x_2), ...$$ separately, instead we model $$p(x)$$ all in one go.
-Parameters: $$\mu \in \mathbb{R}^n, \Sigma \in \mathbb{R}^{nxn}$$ (covariance matrix).
+Parameters: $$\mu \in \mathbb{R}^n, \Sigma \in \mathbb{R}^{n\,x\,n}$$ (covariance matrix).
 
 ![multivariante_gaussian_distr.png]({{site.baseurl}}/images/posts/Anomaly Detection/multivariante_gaussian_distr.png)
