@@ -59,7 +59,7 @@ Possible evaluation metrics:
 - Cancer classification
 
 ### Choosing What Features to Use
-Arrange the data in a Gaussian bell like curve. Use different transformation to make the data more gaussian, e.g. $$log(x)$$ or $$log(x + c)$$ or $$x^{\frac{1}{3}}.
+Arrange the data in a Gaussian bell like curve. Use different transformation to make the data more gaussian, e.g. $$log(x)$$ or $$log(x + c)$$ or $$x^{\frac{1}{3}}$$.
 
 {% highlight matlab %}
 % show the data as a histogram
