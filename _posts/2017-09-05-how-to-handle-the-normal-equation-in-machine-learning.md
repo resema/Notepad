@@ -5,13 +5,13 @@ mathjax: true
 featured: false
 comments: true
 title: How to handle the Normal Equation in Machine Learning
-categories:
-  - calculus
-  - machinelearning
-  - mathematics
 tags: MachineLearning Calculus
 description: Computing parameter analytically in the normal equation
 headline: Normal Equation
+categories:
+  - Calculus
+  - MachineLearning
+  - Mathematics
 ---
 >&quot;God does not care about our mathematical difficulties. He integrates empirically.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
