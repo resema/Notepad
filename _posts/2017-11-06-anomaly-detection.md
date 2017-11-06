@@ -33,4 +33,5 @@ $$p(x) = p(x_1; \mu_1,\sigma_1^2)*p(x_2; \mu_3,\sigma_2^2)*...*p(x_n; \mu_n,\sig
 $$p(x) = \prod_{j=1}^n p(x_j; \mu_j, \sigma_j^2)$$ <br>
 
 ### Detection Algorithm
+![AnomalyDetection.png]({{site.baseurl}}/images/posts/Anomaly Detection/AnomalyDetection.png)
 
