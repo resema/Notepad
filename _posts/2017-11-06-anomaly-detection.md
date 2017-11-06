@@ -9,9 +9,6 @@ description: Using Machine Learning for Anomaly Detection
 headline: Anomaly Detection
 categories:
   - MachineLearning
-modified: ''
-tags: ''
-imagefeature: ''
 ---
 >&quot;I very rarely think in words at all. A thought comes, and I may try to express in words afterwards.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
@@ -28,3 +25,9 @@ $$\mu = \frac{1}{m}\sum_{i=1}^m x^{(i)}$$<br>
 $$\sigma^2 = \frac{1}{m}\sum_{i=1}^m(x^{(i)} - \mu)^2$$<br>
 
 This is called **Maximum Likely-Hood Estimation** in statistics.
+
+### Density Estimation
+By using the Gaussian distribution to estimate the density of our samples.
+
+$$p(x) = p(x_1; \mu_1,\sigma_1^2)*p(x_2; \mu_3,\sigma_2^2)*...*p(x_n; \mu_n,\sigma_n^2)$$ <br>
+$$p(x) = \prod_{j=1}^n p(x_j; \mu_j, \sigma_j^2)$$ <br>
