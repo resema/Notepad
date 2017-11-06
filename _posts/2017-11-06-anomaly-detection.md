@@ -80,7 +80,7 @@ Parameters: $$\mu \in \mathbb{R}^n, \Sigma \in \mathbb{R}^{n\,x\,n}$$ (covarianc
 
 ![multivariante_gaussian_distr.png]({{site.baseurl}}/images/posts/Anomaly Detection/multivariante_gaussian_distr.png)
 
-$$\Vert\Sigma\Vert\\$$ is the determinate and can be computed in Matlab/Octave by
+$$\Vert\Sigma\Vert\$$ is the determinate and can be computed in Matlab/Octave by
 
 {% highlight matlab %}
 determinate = det(Sigma)
