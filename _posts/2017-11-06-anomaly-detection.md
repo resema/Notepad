@@ -69,4 +69,5 @@ hist(x);
 ### Error Analysis
 We want *p(x)* to be large for normal examples *x* and *p(x)* small for anomalous examples *x*.
 
+#### Common Problem
 The most common problem to that is, that *p(x)* is comparable (say, both large) for nomal and anomalous examples.
