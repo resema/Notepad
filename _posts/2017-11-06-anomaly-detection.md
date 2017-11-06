@@ -25,6 +25,6 @@ $$\sigma$$ is the with of the Gaussian curve and $$\mu$$ is where the Gaussian c
 
 ### Parameter Estimation
 $$\mu = \frac{1}{m}\sum_{i=1}^m x^{(i)}$$<br>
-$$\sigma^2 = \frac{1}{m}\sum_{i=1}^m(x^{(i)} - \mu^)^2$$<br>
+$$\sigma^2 = \frac{1}{m}\sum_{i=1}^m(x^{(i)} - \mu)^2$$<br>
 
 This is called **Maximum Likely-Hood Estimation** in statistics.
