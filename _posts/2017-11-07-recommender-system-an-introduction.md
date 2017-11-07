@@ -40,3 +40,18 @@ Use linear regression with some simplifications
 ![recommender_system.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_system.PNG)
 
 ![recommender_update.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_update.PNG)
+
+## Collaborative Filtering
+We have no information about the classification of our movies. So what do we do? How to we calculate $$\theta^{(j)}$$?
+
+From the data of our user we can get the parameters for the $$\theta$$ vectors.
+
+### Learn The Feature Vector *x*
+Given $$\theta^{(1)},...,\theta^{(n_u)}$$ to learn $$x^{(1)},..., x^{(n_m)}$$
+
+![collaborative_filtering.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering.png)
+
+### How To Solve The Chicken Or Egg Problem
+Both $$x^{(i)}$$ and $$\theta^{(i)}$$ can be extracted from the data set.
+Guess $$\theta \to x \to \theta \to x \to ...$$ <br>
+
