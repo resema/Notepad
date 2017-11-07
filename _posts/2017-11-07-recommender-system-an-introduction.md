@@ -63,3 +63,7 @@ This going back and forth to estimate the two parameters is not the fastest appr
 
 ### How To Apply The Algorithm
 ![collaborative_filtering_algorithm.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_algorithm.png)
+
+## Low Rank Matrix Factorization
+Stacking all movie ratings into matrix *X* with each movie per row (transposed) and all user ratings into matrix $$\theta$$ with each user per row (transposed), the resulting matrix is called a **Low Rank Matrix**.
+
