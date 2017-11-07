@@ -61,3 +61,4 @@ This going back and forth to estimate the two parameters is not the fastest appr
 
 ![collaborative_filtering_optimization_simultanously.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_optimization_simultanously.png)
 
+![collaborative_filtering_algorithm.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_algorithm.png)
