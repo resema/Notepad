@@ -73,5 +73,5 @@ Stacking all movie ratings into matrix *X* with each movie per row (transposed) 
 For each product *i*, we learn a feature vector $$x^{(i)} \in \mathbb{R}^n$$.
 
 How to find movies *j* related to movie *i* ?<br>
-5 most similiar movies to movie *i*: <br>
+5 most similiar movies to movie *i* : <br>
 Find the 5 movies *j* with the smallest $$\Vert x^{(i)} - x^{(j)}\Vert$$.
