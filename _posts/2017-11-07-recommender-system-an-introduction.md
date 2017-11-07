@@ -22,3 +22,18 @@ tags: Coursera MachineLearning
 - $$r(i,j)$$ is 1 if user *j* has rated movie *i*
 - $$y^{(i,j)}$$ is rating given by user *j* to movie *i* (defined only *r(i,j) = 1*)
 
+## Content Based Recommendations
+
+### Problem Formulation
+$$r(i,j)$$ is 1 if user *j* has rated movie *i*
+$$y^{(i,j)}$$ is rating given by user *j* to movie *i* 
+
+$$\theta^{(i)}$$ = parameter vector for user *j*
+$$x^{(i)}$$ = feature vector for movie *i*
+For user *j*, movie *i*, predicted rating: $$(\theta^{(j)}^T(x^{(i)})$$ <br>
+
+$$m^{(j)}$$ = no. of movies rated by user *j*
+
+To learn $$\theta^{(j)}$$:
+Use linear regression with some simplifications
+
