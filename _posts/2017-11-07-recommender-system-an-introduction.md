@@ -58,5 +58,4 @@ Guess $$\theta \to x \to \theta \to x \to ...$$ <br>
 ![collaborative_filtering_optimization1.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_optimization1.png)
 
 This going back and forth to estimate the two parameters is not the fastest approach. There are also others as the proposed simultanous approach:
-
 ![collaborative_filtering_optimization_simultanously.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_optimization_simultanously.png)
