@@ -92,3 +92,13 @@ determinate = det(Sigma)
 ![Gaussian_Distribution2.png]({{site.baseurl}}/images/posts/Anomaly Detection/Gaussian_Distribution2.png)
 
 ![Gaussian_Distribution3.png]({{site.baseurl}}/images/posts/Anomaly Detection/Gaussian_Distribution3.png)
+
+### Anomaly Detection With The Multivariate Gaussian
+1. Fit model *p(x)* by setting
+$$\mu = \frac{1}{m}\sum_{i=1}^m x^{(i)}$$ <br>
+$$\Sigma = \frac{1}{m}\sum_{i=1}^m (x^{(i)} - \mu)(x^{(i)} - \mu)^T$$ <br>
+2. Given a new example *x*, we compute *p(x)* 
+
+![multivariante_gaussian_distr.png]({{site.baseurl}}/images/posts/Anomaly Detection/multivariante_gaussian_distr.png)
+
+And flag an anomaly if $$p(x) \lt \epsilon$$.
