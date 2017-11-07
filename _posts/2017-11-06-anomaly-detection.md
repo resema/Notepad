@@ -102,3 +102,17 @@ $$\Sigma = \frac{1}{m}\sum_{i=1}^m (x^{(i)} - \mu)(x^{(i)} - \mu)^T$$ <br>
 ![multivariante_gaussian_distr.png]({{site.baseurl}}/images/posts/Anomaly Detection/multivariante_gaussian_distr.png)
 
 And flag an anomaly if $$p(x) \lt \epsilon$$.
+
+### Original Model
+$$p(x) = p(x_1; \mu_1,\sigma_1^2)*p(x_2; \mu_3,\sigma_2^2)*...*p(x_n; \mu_n,\sigma_n^2)$$
+
+Manually create features to cature anomalies where $$x_1$$, $$x_2$$ take unusual combinations of values.
+
+Computationally cheaper ( alternatively, scales better to large *n*).
+
+### Multivariate Gaussian
+![multivariante_gaussian_distr.png]({{site.baseurl}}/images/posts/Anomaly Detection/multivariante_gaussian_distr.png)
+
+Automatically captures correlations between features.
+
+Computationally more expensive.
