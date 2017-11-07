@@ -37,3 +37,6 @@ $$m^{(j)}$$ = no. of movies rated by user *j*
 To learn $$\theta^{(j)}$$:
 Use linear regression with some simplifications
 
+![recommender_system.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_system.PNG)
+
+![recommender_update.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_update.PNG)
