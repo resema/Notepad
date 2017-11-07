@@ -49,3 +49,4 @@ From the data of our user we can get the parameters for the $$\theta$$ vectors.
 ### Learn The Feature Vector *x*
 Given $$\theta^{(1)},...,\theta^{(n_u)}$$ to learn $$x^{(1)},..., x^{(n_m)}$$
 
+![collaborative_filtering.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering.png)
