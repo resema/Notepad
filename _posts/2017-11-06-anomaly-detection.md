@@ -110,9 +110,13 @@ Manually create features to cature anomalies where $$x_1$$, $$x_2$$ take unusual
 
 Computationally cheaper ( alternatively, scales better to large *n*).
 
+OK even if *m* (trainings set size) is small
+
 ### Multivariate Gaussian
 ![multivariante_gaussian_distr.png]({{site.baseurl}}/images/posts/Anomaly Detection/multivariante_gaussian_distr.png)
 
 Automatically captures correlations between features.
 
 Computationally more expensive.
+
+Must have $$m \gt n$$, or else $$\Sigma$$ is non-invertible.
