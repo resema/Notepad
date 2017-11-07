@@ -55,8 +55,8 @@ Given $$\theta^{(1)},...,\theta^{(n_u)}$$ to learn $$x^{(1)},..., x^{(n_m)}$$
 Both $$x^{(i)}$$ and $$\theta^{(i)}$$ can be extracted from the data set.
 Guess $$\theta \to x \to \theta \to x \to ...$$ <br>
 
-
+![collaborative_filtering_optimization1.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_optimization1.png)
 
 This going back and forth to estimate the two parameters is not the fastest approach. There are also others.
 
-
+![collaborative_filtering_optimization_simultanously.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_optimization_simultanously.png)
