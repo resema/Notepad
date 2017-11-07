@@ -40,3 +40,12 @@ Use linear regression with some simplifications
 ![recommender_system.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_system.PNG)
 
 ![recommender_update.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_update.PNG)
+
+## Collaborative Filtering
+We have no information about the classification of our movies. So what do we do? How to we calculate $$\theta^{(j)}$$?
+
+From the data of our user we can get the parameters for the $$\theta$$ vectors.
+
+### Learn The Feature Vector *x*
+Given $$\theta^{(1)},...,\theta^{(n_u)}$$ to learn $$x^{(1)},..., x^{(n_m)}$$
+
