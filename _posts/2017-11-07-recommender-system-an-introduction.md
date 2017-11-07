@@ -17,7 +17,7 @@ tags: Coursera MachineLearning
 ### Example: Predicting Movie Ratings
 - User rates movies using zero to five stars
 - 5x movies and 4x persons
-- $$\n_u$$ is no. of users
+- $$n_u$$ is no. of users
 - $$n_m$$ is no. of movies
 - $$r(i,j)$$ is 1 if user *j* has rated movie *i*
 - $$y^{(i,j)}$$ is rating given by user *j* to movie *i* (defined only *r(i,j) = 1*)
