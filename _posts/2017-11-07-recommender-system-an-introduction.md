@@ -50,3 +50,8 @@ From the data of our user we can get the parameters for the $$\theta$$ vectors.
 Given $$\theta^{(1)},...,\theta^{(n_u)}$$ to learn $$x^{(1)},..., x^{(n_m)}$$
 
 ![collaborative_filtering.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering.png)
+
+### How To Solve The Chicken Or Egg Problem
+Both $$x^{(i)}$$ and $$\theta^{(i)}$$ can be extracted from the data set.
+Guess $$\theta \to x \to \theta \to x \to ...$$ <br>
+
