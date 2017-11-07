@@ -55,3 +55,8 @@ Given $$\theta^{(1)},...,\theta^{(n_u)}$$ to learn $$x^{(1)},..., x^{(n_m)}$$
 Both $$x^{(i)}$$ and $$\theta^{(i)}$$ can be extracted from the data set.
 Guess $$\theta \to x \to \theta \to x \to ...$$ <br>
 
+
+
+This going back and forth to estimate the two parameters is not the fastest approach. There are also others.
+
+
