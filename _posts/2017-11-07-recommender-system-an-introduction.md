@@ -68,3 +68,6 @@ This going back and forth to estimate the two parameters is not the fastest appr
 Stacking all movie ratings into matrix *X* with each movie per row (transposed) and all user ratings into matrix $$\theta$$ with each user per row (transposed), the resulting matrix is called a **Low Rank Matrix**.
 
 ![low_rank_matrix.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/low_rank_matrix.png)
+
+### Finding a Feature Vector
+For each product *i*, we learn a feature vector $$x^{(i)} \in \matbb{R}^n$$.
