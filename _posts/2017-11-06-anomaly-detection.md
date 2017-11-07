@@ -107,17 +107,18 @@ And flag an anomaly if $$p(x) \lt \epsilon$$.
 
 $$p(x) = p(x_1; \mu_1,\sigma_1^2)*p(x_2; \mu_3,\sigma_2^2)*...*p(x_n; \mu_n,\sigma_n^2)$$
 
-Manually create features to cature anomalies where $$x_1$$, $$x_2$$ take unusual combinations of values.
+- Manually create features to cature anomalies where $$x_1$$, $$x_2$$ take unusual combinations of values.
+$$x_3 = \frac{x_1}{x_2} = \frac{CPU\, load}{memory}$$ <br>
 
-Computationally cheaper ( alternatively, scales better to large *n*).
+- Computationally cheaper ( alternatively, scales better to large *n*).
 
-OK even if *m* (trainings set size) is small
+- OK even if *m* (trainings set size) is small
 
 ### Multivariate Gaussian
 ![multivariante_gaussian_distr.png]({{site.baseurl}}/images/posts/Anomaly Detection/multivariante_gaussian_distr.png)
 
-Automatically captures correlations between features.
+- Automatically captures correlations between features.
 
-Computationally more expensive.
+- Computationally more expensive.
 
-Must have $$m \gt n$$, or else $$\Sigma$$ is non-invertible.
+- Must have $$m \gt n$$, or else $$\Sigma$$ is non-invertible.
