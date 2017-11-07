@@ -71,3 +71,7 @@ Stacking all movie ratings into matrix *X* with each movie per row (transposed) 
 
 ### Finding a Feature Vector
 For each product *i*, we learn a feature vector $$x^{(i)} \in \matbb{R}^n$$.
+
+How to find movies *j* related to movie *i*?
+5 most similiar movies to movie *i*:
+Find the 5 movies *j* with the smalles $$\Vert x^{(i)} - x^{(j)}\Vert$$.
