@@ -77,3 +77,7 @@ How to find movies *j* related to movie *i* ?<br>
 Find the 5 movies *j* with the smallest $$\Vert x^{(i)} - x^{(j)}\Vert$$.
 
 ### Mean Normalization
+What if a user has not rated any movies? The first term in the minimization algorithm therefore doesn't play any role and the $$\theta^{(5)}$$ is a zero vector for this user.
+
+**BUT** this above described approach doesn't seem to be a good way...
+
