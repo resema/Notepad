@@ -81,6 +81,6 @@ What if a user has not rated any movies? The first term in the minimization algo
 
 **BUT** this above described approach doesn't seem to be a good way...
 
-We should apply a **mean normalization**:
+We should apply a **mean normalization** to get the initial ratings for a user without any ratings:
 
 ![collaborative_filtering_mean_normalization.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_mean_normalization.png)
