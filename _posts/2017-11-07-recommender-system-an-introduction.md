@@ -81,3 +81,5 @@ What if a user has not rated any movies? The first term in the minimization algo
 
 **BUT** this above described approach doesn't seem to be a good way...
 
+We should apply a **mean normalization**:
+
