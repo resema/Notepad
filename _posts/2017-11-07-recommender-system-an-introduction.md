@@ -83,3 +83,4 @@ What if a user has not rated any movies? The first term in the minimization algo
 
 We should apply a **mean normalization**:
 
+![collaborative_filtering_mean_normalization.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_mean_normalization.png)
