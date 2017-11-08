@@ -64,14 +64,20 @@ This going back and forth to estimate the two parameters is not the fastest appr
 ### How To Apply The Algorithm
 ![collaborative_filtering_algorithm.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_algorithm.png)
 
-## Low Rank Matrix Factorization
+### Low Rank Matrix Factorization
 Stacking all movie ratings into matrix *X* with each movie per row (transposed) and all user ratings into matrix $$\theta$$ with each user per row (transposed), the resulting matrix is called a **Low Rank Matrix**.
 
 ![low_rank_matrix.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/low_rank_matrix.png)
 
-### Finding a Feature Vector
+#### Finding a Feature Vector
 For each product *i*, we learn a feature vector $$x^{(i)} \in \mathbb{R}^n$$.
 
 How to find movies *j* related to movie *i* ?<br>
 5 most similiar movies to movie *i* : <br>
 Find the 5 movies *j* with the smallest $$\Vert x^{(i)} - x^{(j)}\Vert$$.
+
+### Mean Normalization
+What if a user has not rated any movies? The first term in the minimization algorithm therefore doesn't play any role and the $$\theta^{(5)}$$ is a zero vector for this user.
+
+**BUT** this above described approach doesn't seem to be a good way...
+
