@@ -38,6 +38,8 @@ Use linear regression with some simplifications
 
 ![recommender_system.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_system.PNG)
 
+The cost function for the collaborative filtering looks like this. This one contains the regularization term.
+
 ![recommender_update.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_update.PNG)
 
 ## Collaborative Filtering
