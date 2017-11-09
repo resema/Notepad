@@ -38,9 +38,6 @@ Use linear regression with some simplifications
 
 ![recommender_system.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_system.PNG)
 
-The below shown cost function for the collaborative filtering looks like this. This one contains the regularization term.
-Be aware of only using elements (movies) to sum up for the cost function which have been **rated by a user**.
-
 ![recommender_update.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_update.PNG)
 
 ## Collaborative Filtering
@@ -62,6 +59,9 @@ Guess $$\theta \to x \to \theta \to x \to ...$$ <br>
 This going back and forth to estimate the two parameters is not the fastest approach. There are also others as the proposed simultanous approach:
 
 ![collaborative_filtering_optimization_simultanously.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_optimization_simultanously.png)
+
+The above shown **cost function** for the collaborative filtering looks like this. This one contains the regularization term.
+Be aware of only using elements (movies) to sum up for the cost function which have been **rated by a user**.
 
 ### How To Apply The Algorithm
 ![collaborative_filtering_algorithm.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_algorithm.png)
