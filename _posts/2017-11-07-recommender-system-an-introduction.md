@@ -63,6 +63,14 @@ This going back and forth to estimate the two parameters is not the fastest appr
 The above shown **cost function** for the collaborative filtering looks like this. This one contains the regularization term.
 Be aware of only using elements (movies) to sum up for the cost function which have been **rated by a user**.
 
+{% highlight matlab %}
+% Multiply the squared body of the function
+%  by the matrix containing the values R_ij,
+%  where R_ij = 1 if i-th movie was rated by
+%  the j-th user
+J = (1/2) * sum(sum(R .* SquardBody));
+{% endhighlight %}
+
 ### How To Apply The Algorithm
 ![collaborative_filtering_algorithm.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_algorithm.png)
 
