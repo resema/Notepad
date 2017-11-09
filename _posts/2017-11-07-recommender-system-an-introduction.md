@@ -26,8 +26,7 @@ tags: Coursera MachineLearning
 
 ### Problem Formulation
 $$r(i,j)$$ is 1 if user *j* has rated movie *i*
-$$y^{(i,j)}$$ is rating given by user *j* to movie *i* 
-
+$$y^{(i,j)}$$ is rating given by user *j* to movie *i* <br>
 $$\theta^{(i)}$$ = parameter vector for user *j* <br>
 $$x^{(i)}$$ = feature vector for movie *i*
 For user *j*, movie *i*, predicted rating: $$(\theta^{(j)})^T \cdot (x^{(i)})$$ <br>
