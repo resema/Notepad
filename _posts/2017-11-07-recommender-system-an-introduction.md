@@ -61,7 +61,7 @@ This going back and forth to estimate the two parameters is not the fastest appr
 ![collaborative_filtering_optimization_simultanously.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_optimization_simultanously.png)
 
 The above shown **cost function** for the collaborative filtering looks like this. This one contains the regularization term.
-Be aware of only using elements (movies) to sum up for the cost function which have been **rated by a user**.
+Be aware of only using elements (movies) to sum up for the cost function which have been **rated by a user**. The same has to be done for the calculation of the gradients!
 
 {% highlight matlab %}
 % Multiply the squared body of the function
