@@ -46,7 +46,17 @@ We have a larger number of normal examples and some anomalous examples. We divid
 Possible evaluation metrics for a treshold $$\epsilon$$:
 - True positive, false positive, false negative, true negative
 - Precision/Recall
-- $$F_1$$ Score
+- $$F_1$$ Score (tells you the ground truth anomalies given a certain threshold)
+
+$$F_1 = \frac{2 \cdot prec \cdot rec}{prec + rec}$$ <br>
+We compute *precision* and *recall* with:
+$$prec = \frac{tp}{tp + fp}$$ <br>
+$$rec = \frac{tp}{tp + fn}$$ <br>
+where
+- tp is the number of true positives: the ground truth label says it's an anomaly and our algorithm correctly classified it as an anomaly.
+- fp is the number of false positives: the ground truth label says it's not an anomaly, but our algorithm incorrectly classified it as an anomaly.
+- fn is the number of false negatives: the ground truth label says it's ananomaly, but our algorithm incorrectly classified it as not being anoma-
+lous.
 
 ##### Anomaly Detetion
 - Fraud detectino
