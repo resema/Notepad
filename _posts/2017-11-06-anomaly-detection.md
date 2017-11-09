@@ -49,7 +49,7 @@ Possible evaluation metrics for a treshold $$\epsilon$$:
 - $$F_1$$ Score (tells you the ground truth anomalies given a certain threshold)
 
 $$F_1 = \frac{2 \cdot prec \cdot rec}{prec + rec}$$ <br>
-We compute *precision* and *recall* with:
+We compute *precision* and *recall* with: <br>
 $$prec = \frac{tp}{tp + fp}$$ <br>
 $$rec = \frac{tp}{tp + fn}$$ <br>
 where
