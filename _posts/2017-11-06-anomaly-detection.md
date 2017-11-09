@@ -43,7 +43,7 @@ Assume we have some labeled data of anomalous (*y = 1*) and non-anomalous (*y = 
 We have a larger number of normal examples and some anomalous examples. We divide them as usual into train, cross-validation and test set.
 
 #### Algorithm Evaluation
-Possible evaluation metrics:
+Possible evaluation metrics for a treshold $$\epsilon$$:
 - True positive, false positive, false negative, true negative
 - Precision/Recall
 - $$F_1$$ Score
