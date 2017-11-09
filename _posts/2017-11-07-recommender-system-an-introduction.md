@@ -37,6 +37,7 @@ To learn $$\theta^{(j)}$$:
 Use linear regression with some simplifications
 
 ![recommender_system.PNG]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/recommender_system.PNG)
+Be aware of only using elements (movies) to sum up for the cost function which have been **rated by a user**.
 
 The cost function for the collaborative filtering looks like this. This one contains the regularization term.
 
