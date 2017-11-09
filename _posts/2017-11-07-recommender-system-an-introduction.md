@@ -25,7 +25,7 @@ tags: Coursera MachineLearning
 ## Content Based Recommendations
 
 ### Problem Formulation
-$$r(i,j)$$ is 1 if user *j* has rated movie *i*
+$$r(i,j)$$ is 1 if user *j* has rated movie *i* <br>
 $$y^{(i,j)}$$ is rating given by user *j* to movie *i* <br>
 $$\theta^{(i)}$$ = parameter vector for user *j* <br>
 $$x^{(i)}$$ = feature vector for movie *i*
