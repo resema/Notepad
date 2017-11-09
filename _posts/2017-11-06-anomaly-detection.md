@@ -55,8 +55,7 @@ $$rec = \frac{tp}{tp + fn}$$ <br>
 where
 - tp is the number of true positives: the ground truth label says it's an anomaly and our algorithm correctly classified it as an anomaly.
 - fp is the number of false positives: the ground truth label says it's not an anomaly, but our algorithm incorrectly classified it as an anomaly.
-- fn is the number of false negatives: the ground truth label says it's ananomaly, but our algorithm incorrectly classified it as not being anoma-
-lous.
+- fn is the number of false negatives: the ground truth label says it's ananomaly, but our algorithm incorrectly classified it as not being anomalous.
 
 ##### Anomaly Detetion
 - Fraud detectino
