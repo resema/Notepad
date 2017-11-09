@@ -30,7 +30,7 @@ $$y^{(i,j)}$$ is rating given by user *j* to movie *i*
 
 $$\theta^{(i)}$$ = parameter vector for user *j*
 $$x^{(i)}$$ = feature vector for movie *i*
-For user *j*, movie *i*, predicted rating: $$(\theta^{(j)}^T(x^{(i)})$$ <br>
+For user *j*, movie *i*, predicted rating: $$(\theta^{(j)}^T \cdot (x^{(i)})$$ <br>
 
 $$m^{(j)}$$ = no. of movies rated by user *j*
 
