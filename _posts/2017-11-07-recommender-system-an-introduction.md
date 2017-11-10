@@ -74,6 +74,23 @@ J = (1/2) * sum(sum(R .* SquardBody));
 ### How To Apply The Algorithm
 ![collaborative_filtering_algorithm.png]({{site.baseurl}}/images/posts/RecommenderSystems_AnIntroduction/collaborative_filtering_algorithm.png)
 
+{% highlight matlab %}
+% For every feature vector x_i calulate the following gradient
+X_grad(i,:) = (X(i,:) * Theta_tmp' - Y_tmp) .* Theta_tmp;
+{% endhighlight %}
+
+#### Vectorized Approach
+{% highlight matlab %}
+% Calculating the gradient for all feature vectors
+% Notes: X - num_movies  x num_features matrix of movie features
+%   Theta - num_users  x num_features matrix of user features
+%   Y - num_movies x num_users matrix of user ratings of movies
+%   R - num_movies x num_users matrix, where R(i, j) = 1 if the 
+%      i-th movie was rated by the j-th user
+X_grad = (R .* ((X * Theta') - Y)) * Theta; 
+Theta_grad = (R .* ((X * Theta') - Y))' * X;
+{% endhighlight %}
+
 ### Low Rank Matrix Factorization
 Stacking all movie ratings into matrix *X* with each movie per row (transposed) and all user ratings into matrix $$\theta$$ with each user per row (transposed), the resulting matrix is called a **Low Rank Matrix**.
 
