@@ -38,3 +38,6 @@ $$\theta_j := \theta_j - \alpha \frac{1}{400}(temp_j^{(1)} + temp_j^{(2)} + temp
 where $$j = 0, ..., n)$$
 
 And this last equation is equal to the first equation of Batch Gradient Descent.
+
+### Summation
+Many learning algorithms can be expressed as computing sums of functions over the trainging set.
