@@ -32,3 +32,7 @@ $$temp_j^{(201)} = \sum_{i=201}^{300}(h_{\theta}(x^{(i)}) - y^{(i)})\,x_j^{(i)}$
 
 Machine 4: Use $$(x^{(301)}, y^{(301)}), ... ,(x^{(400)}, y^{(400)})$$ <br>
 $$temp_j^{(301)} = \sum_{i=301}^{400}(h_{\theta}(x^{(i)}) - y^{(i)})\,x_j^{(i)}$$ <br>
+
+At the end send all these results to a master server and combine: <br>
+$$\theta_j := \theta_j - \alpha \frac{1}{400}(temp_j^{(1)} + temp_j^{(2)} + temp_j^{(3)} + temp_j^{(4)}) $$ <br>
+where $$j = 0, ..., n)$$
