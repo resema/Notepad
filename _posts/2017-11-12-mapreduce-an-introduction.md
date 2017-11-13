@@ -35,7 +35,8 @@ $$temp_j^{(301)} = \sum_{i=301}^{400}(h_{\theta}(x^{(i)}) - y^{(i)})\,x_j^{(i)}$
 
 At the end send all these results to a master server and combine: <br>
 $$\theta_j := \theta_j - \alpha \frac{1}{400}(temp_j^{(1)} + temp_j^{(2)} + temp_j^{(3)} + temp_j^{(4)}) $$ <br>
-where $$j = 0, ..., n)$$
+where <br>
+$$j = (0, ..., n)$$
 
 And this last equation is equal to the first equation of Batch Gradient Descent.
 
