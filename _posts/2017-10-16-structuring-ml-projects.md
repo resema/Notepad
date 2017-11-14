@@ -64,25 +64,25 @@ Mix the images from the different sources and shuffle it. Then take as usual a t
 ### Cat Classifier Example
 Assume humans get $$\approx 0%$$ error 
 
-Training error .... *1%*
-Dev error      .... *10%*
+Training error .... *1%* <br>
+Dev error      .... *10%* <br>
 
 Training-dev set: Same distribution as training set, but not used for training
 
 ![mismatchedDataDistr.png]({{site.baseurl}}/images/posts/StructuringMLProjects/mismatchedDataDistr.png)
 
-Training error     .... *1%*   .... *1%*
-Training-dev error .... *9%*   .... *1.5%*
-Dev error          .... *10%*  .... *10%*
+Training error     .... *1%*   .... *1%* <br>
+Training-dev error .... *9%*   .... *1.5%* <br>
+Dev error          .... *10%*  .... *10%* <br>
 
 This tells us that we have a **variance** problem.
 
 The second column is a second example and it shows a **data mismatch** problem.
 
-Human error        .... *0%*   .... *0%*
-Training error     .... *10%*  .... *10%*
-Training-dev error .... *11%*  .... *11%*
-Dev errror         .... *12%*  .... *20%*
+Human error        .... *0%*   .... *0%* <br>
+Training error     .... *10%*  .... *10%* <br>
+Training-dev error .... *11%*  .... *11%* <br>
+Dev errror         .... *12%*  .... *20%* <br>
 
 This example shows a **bias** problem and the second column shows a **bias** and a **data mismatch** problem.
 
