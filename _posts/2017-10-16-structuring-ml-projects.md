@@ -46,4 +46,7 @@ But in modern times where we might have millions examples in our sets. Then it h
 The rule of thumb is to set our test set to be big enough to give high confidence in the overall performance of our system.
 There are possibilities where we don't need a test set and we can split only into train/dev set. The purpose of the test set is to help us evaluate our final cost buys of the system.
 
+### Human-Level Performance
+Human-Level Performance is a approximation to **Bayes** error. It helps to decide if Bias or Variance has to be optimized.
 
+#### Reducing (Avoidable) Bias and Variance
