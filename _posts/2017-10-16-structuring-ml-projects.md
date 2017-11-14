@@ -87,4 +87,6 @@ Dev errror         .... *12%*  .... *20%*
 This example shows a **bias** problem and the second column shows a **bias** and a **data mismatch** problem.
 
 ### Overall Sense
+![overallSense.png]({{site.baseurl}}/images/posts/StructuringMLProjects/overallSense.png)
 
+#### More General Formulation
