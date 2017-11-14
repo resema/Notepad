@@ -51,3 +51,10 @@ Human-Level Performance is a approximation to **Bayes** error. It helps to decid
 
 #### Reducing (Avoidable) Bias and Variance
 ![human_level_performance.png]({{site.baseurl}}/images/posts/StructuringMLProjects/human_level_performance.png)
+
+### Approach
+We should build our system quickly and the iterate over it.
+
+### Training And Testing On Different Distributions
+More and more teams are using different data sets for training and testing ML algorithms.
+Mix the images from the different sources and shuffle it. Then take as usual a train/dev/test data from this dataset.
