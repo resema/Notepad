@@ -50,3 +50,4 @@ There are possibilities where we don't need a test set and we can split only int
 Human-Level Performance is a approximation to **Bayes** error. It helps to decide if Bias or Variance has to be optimized.
 
 #### Reducing (Avoidable) Bias and Variance
+![human_level_performance.png]({{site.baseurl}}/images/posts/StructuringMLProjects/human_level_performance.png)
