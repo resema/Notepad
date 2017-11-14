@@ -90,3 +90,4 @@ This example shows a **bias** problem and the second column shows a **bias** and
 ![overallSense.png]({{site.baseurl}}/images/posts/StructuringMLProjects/overallSense.png)
 
 #### More General Formulation
+![generalFormulation.png]({{site.baseurl}}/images/posts/StructuringMLProjects/generalFormulation.png)
