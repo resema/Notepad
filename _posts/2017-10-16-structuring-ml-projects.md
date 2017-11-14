@@ -58,3 +58,13 @@ We should build our system quickly and the iterate over it.
 ### Training And Testing On Different Distributions
 More and more teams are using different data sets for training and testing ML algorithms.
 Mix the images from the different sources and shuffle it. Then take as usual a train/dev/test data from this dataset.
+
+## Bias And Variance With Mismatched Data Distributions
+
+### Cat Classifier Example
+Assume humans get $$\approx 0%$$ error 
+
+Training error .... *1%*
+Dev error      .... *10%*
+
+Training-dev set: Same distribution as training set, but not used for training
