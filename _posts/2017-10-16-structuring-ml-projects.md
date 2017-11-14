@@ -69,6 +69,7 @@ Dev error      .... *10%*
 
 Training-dev set: Same distribution as training set, but not used for training
 
+![mismatchedDataDistr.png]({{site.baseurl}}/images/posts/StructuringMLProjects/mismatchedDataDistr.png)
 
 Training error     .... *1%*   .... *1%*
 Training-dev error .... *9%*   .... *1.5%*
@@ -77,3 +78,13 @@ Dev error          .... *10%*  .... *10%*
 This tells us that we have a **variance** problem.
 
 The second column is a second example and it shows a **data mismatch** problem.
+
+Human error        .... *0%*   .... *0%*
+Training error     .... *10%*  .... *10%*
+Training-dev error .... *11%*  .... *11%*
+Dev errror         .... *12%*  .... *20%*
+
+This example shows a **bias** problem and the second column shows a **bias** and a **data mismatch** problem.
+
+### Overall Sense
+
