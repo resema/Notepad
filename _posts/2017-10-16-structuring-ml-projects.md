@@ -62,7 +62,7 @@ Mix the images from the different sources and shuffle it. Then take as usual a t
 ## Bias And Variance With Mismatched Data Distributions
 
 ### Cat Classifier Example
-Assume humans get $$\approx 0%$$ error 
+Assume humans get $$\approx 0\%$$ error 
 
 Training error .... *1%* <br>
 Dev error      .... *10%* <br>
