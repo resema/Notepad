@@ -90,3 +90,13 @@ This example shows a **bias** problem and the second column shows a **bias** and
 ![overallSense.png]({{site.baseurl}}/images/posts/StructuringMLProjects/overallSense.png)
 
 ![generalFormulation.png]({{site.baseurl}}/images/posts/StructuringMLProjects/generalFormulation.png)
+
+### Addressing Data Mismatch
+- Carry out manual error analysis to try to understand difference between training and dev/test sets, e.g. noisy $$\to$$ car noise
+- Make training data more similar or collect more data similar to dev/test set, e.g. simulate noise in data
+
+#### Artificial Data Synthesis
+For example: Add some noise to a recording speech to simulate an in-car audio.
+Let's say we have *10,000* hours of recorded speech but only *1* hour of noise. If we now apply the same noise to every example, we will **overfit** to the car noise we added.
+
+The challenge is normally for the human ear to recognize a repeating data to prevent **overfitting**.
