@@ -24,3 +24,4 @@ In real word examples computer vision has to work on images with a size of 1000x
 Classical problem fields are **computer vision** or **edge detection**.
 
 ### Edge Detection
+![vertEdgeDetection.png]({{site.baseurl}}/images/posts/ConvolutionalNN/vertEdgeDetection.png)
