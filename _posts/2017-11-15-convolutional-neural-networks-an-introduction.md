@@ -30,8 +30,14 @@ There are multiple filters developed in the past. But there is also the possibil
 In this sense neural networks can learn low-level features, such as edge detection.
 
 ### Padding
+
+
 If we have a *nxn* image and a *fxf* filter, the result will be a *n-f+1 x n-f+1* matrix.
 
 To solve this **shrinking output** we use padding. Otherwise if every layer would shrink our image, we would loose a lot of information.
 
 By adding an additional pixel layer around the image, we can preserve the image size. In this case the Padding p=1 and their value is *zero*.
+
+#### Valid And Same Convolutions
+- Valid: no padding
+- Same: Pad so that output size is the same as the input size
