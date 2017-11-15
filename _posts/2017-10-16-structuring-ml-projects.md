@@ -131,3 +131,5 @@ traffic lights $$\to$$ 1 <br>
 - Usually: Amount of data you have for each task is quite similar
 - Can train a big enough neural network to do well on all the tasks.
 
+Remind: Multi-task learning is not so often used, except in the case of image recognition. In most other fields transfer learning is used more.
+
