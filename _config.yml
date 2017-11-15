@@ -136,6 +136,16 @@ prose:
               value: MachineLearning
             - name: "Mathematics"
               value: Mathematics
+            - name: "Computer Vision"
+              value: ComputerVision
+            - name: "C++"
+              value: C++
+            - name: "Python"
+              value: Python
+            - name: "Matlab/Octave"
+              value: MatlabOctave
+            - name: "Programming"
+              value: Programming
           alterable: true
       - name: "tags"
         field:
