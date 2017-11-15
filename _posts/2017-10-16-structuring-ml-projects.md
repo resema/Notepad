@@ -100,3 +100,29 @@ For example: Add some noise to a recording speech to simulate an in-car audio.
 Let's say we have *10,000* hours of recorded speech but only *1* hour of noise. If we now apply the same noise to every example, we will **overfit** to the car noise we added.
 
 The challenge is normally for the human ear to recognize a repeating data to prevent **overfitting**.
+
+## Learning From Multiple Tasks
+
+### Transfer Learning
+##### From Recognition To Radiology Diagnosis
+If our new data set is small the rule of thumb is to retrain only the last layer of the neural network. In the case of a large new data set the rule of thumb is to retain the whole neural network. 
+
+##### From Speech Recognition To Triggerword Detection
+We could retrain the whole neural network or only the last layer. We could also add new layers at the end to specify to the new goals.
+
+#### When Transfer Learning Makes Sense
+- Task A and B have the same input x
+- We have a lot more data for task A than task B
+- Low level features from A could be helpful for learning B
+
+### Multi-Task Learning
+Start simultanously learning instead of sequential learning.
+
+##### Simplified Autonomous Driving Example
+Image recognition on an image:
+Feature and appearance y
+pedestrian $$\to$$ 0 <br>
+car $$\to$$ 1 <br>
+stop signals $$\to$$ 1 <br> 
+traffic lights $$\to$$ 1 <br>
+
