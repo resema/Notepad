@@ -30,7 +30,7 @@ There are multiple filters developed in the past. But there is also the possibil
 In this sense neural networks can learn low-level features, such as edge detection.
 
 ### Padding
-
+![padding.png]({{site.baseurl}}/images/posts/ConvolutionalNN/padding.png)
 
 If we have a *nxn* image and a *fxf* filter, the result will be a *n-f+1 x n-f+1* matrix.
 
@@ -41,3 +41,4 @@ By adding an additional pixel layer around the image, we can preserve the image 
 #### Valid And Same Convolutions
 - Valid: no padding
 - Same: Pad so that output size is the same as the input size
+> To keep the input size while using a 5x5 filter, the padding would have to be p=2.
