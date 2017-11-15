@@ -126,12 +126,11 @@ car $$\to$$ 1 <br>
 stop signals $$\to$$ 1 <br> 
 traffic lights $$\to$$ 1 <br>
 
-
+![autonomousDrivingEx.png]({{site.baseurl}}/images/posts/StructuringMLProjects/autonomousDrivingEx.png)
 
 #### When Multi-Task Learning Makes Sense
 - Training on a set of tasks that could benefit from having shared lower-level features.
 - Usually: Amount of data you have for each task is quite similar
 - Can train a big enough neural network to do well on all the tasks.
 
-Remind: Multi-task learning is not so often used, except in the case of image recognition. In most other fields transfer learning is used more.
-
+Remind: Multi-task learning is not so often used, except in the case of computer vision / image recognition. In most other fields transfer learning is used more.
