@@ -10,7 +10,9 @@ headline: Structuring ML Projects
 categories:
   - NeuralNetworks
   - MachineLearning
-tags: Coursera NeuralNetwork MachineLearning
+tags: >-
+  Coursera NeuralNetwork MachineLearning Orthogonalization DistributionAndSize
+  MismatchedData
 ---
 >&quot;Nothing that I can do will change the structure of the universe.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
