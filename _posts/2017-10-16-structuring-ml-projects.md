@@ -136,3 +136,14 @@ traffic lights $$\to$$ 1 <br>
 - Can train a big enough neural network to do well on all the tasks.
 
 Remind: Multi-task learning is not so often used, except in the case of computer vision / image recognition. In most other fields transfer learning is used more.
+
+### End-To-End Deep Learning
+##### Pros:
+- Let the data speak
+- Less hand-designing of components needed
+
+##### Cons:
+- May need large amount of data
+- Excludes potentially useful hand-designed components
+
+Key question: Do we have sufficient data to learn a function of the complexity needed to map x to y
