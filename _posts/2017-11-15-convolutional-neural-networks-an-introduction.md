@@ -27,4 +27,4 @@ Classical problem fields are **computer vision** or **edge detection**.
 ![vertEdgeDetection.png]({{site.baseurl}}/images/posts/ConvolutionalNN/vertEdgeDetection.png)
 
 There are multiple filters developed in the past. But there is also the possibility to use **Backprop** to capture the values of this 3x3 filter matrix.
-In this sense neural networks can learn low-level features.
+In this sense neural networks can learn low-level features, such as edge detection.
