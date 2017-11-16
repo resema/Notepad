@@ -81,7 +81,27 @@ Bias: $$n_c^{[l]} - (1,1,1,n_c^{[l]})$$<br>
 #### Simple Convolutional Network Example
 ![exConvNet.png]({{site.baseurl}}/images/posts/ConvolutionalNN/exConvNet.png)
 
-####Types Of Layer In A Convolutional Network
+### Types Of Layer In A Convolutional Network
 - Convolution
 - Pooling
 - Fully connected
+
+#### Pooling Layer 
+##### Max Pooling
+Out the filter mask, we take the max of the values. In a simple example where the input data is a 4 x 4 matrix and the filter is a 2x2 mask, we take a step of size 2. This means we have the hyperparamters *f=2* and "s=2*.
+
+In the case of a multi dimensional input layer, we perform the computation described on each of the channels indepedently.
+
+##### Average Pooling
+A similar approach but in the difference of taking the average of the mask covered by the filter.
+
+##### Summary Of Pooling
+Hyperparameters:
+- f: filter size
+- s: stride
+- Max or Average pooling
+
+Often we don't use padding in case of max pooling.
+
+In pooling there are no parameters to learn. It is just a fixed function.
+
