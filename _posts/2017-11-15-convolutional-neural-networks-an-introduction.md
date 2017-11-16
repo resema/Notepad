@@ -105,3 +105,8 @@ Often we don't use padding in case of max pooling.
 
 In pooling there are no parameters to learn. It is just a fixed function.
 
+#### Neural Network Example
+
+
+
+where FC3 is a **Fully Connected** neural network as described in the last posts.
