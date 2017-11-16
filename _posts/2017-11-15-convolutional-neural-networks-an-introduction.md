@@ -79,5 +79,4 @@ Weights: $$f^{[l]} \times f^{[l]} \times n_c^{l-1]} \times n_c^{[l]}$$ <br>
 Bias: $$n_c^{[l]} - (1,1,1,n_c^{[l]})$$<br>
 
 #### Simple Convolutional Network Example
-
-
+![exConvNet.png]({{site.baseurl}}/images/posts/ConvolutionalNN/exConvNet.png)
