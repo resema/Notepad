@@ -13,7 +13,7 @@ categories:
   - ComputerVision
 tags: >-
   Coursera MachineLearning NeuralNetworks ConvolutionNeuralNetwork
-  ComputerVision Edge Detection
+  ComputerVision EdgeDetection
 ---
 >&quot;A person who never made a mistake never tried anything new.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
