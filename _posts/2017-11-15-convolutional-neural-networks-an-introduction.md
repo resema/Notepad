@@ -11,9 +11,7 @@ categories:
   - NeuralNetworks
   - MachineLearning
   - ComputerVision
-tags: >-
-  Coursera MachineLearning NeuralNetworks ConvolutionNeuralNetwork
-  ComputerVision EdgeDetection
+tags: Coursera ConvolutionNeuralNetwork ComputerVision
 ---
 >&quot;A person who never made a mistake never tried anything new.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
@@ -63,3 +61,13 @@ If we want to apply multiple filters such as vertical and horizontal edge detect
 
 #### Summary
 *n-f+1 x n-f+1 x n_c'*  where *n_c'*  is the amount of filters.
+
+### Convolution Layer
+$$f^{[l]}$$ = filter size<br>
+$$p^{[l]}$$ = padding<br>
+$$s^{[l]}$$ = stride<br>
+
+Input: $$ n_H^{[l-1]} x n_W^{[l-1]} x n_c^{[l-1]}$$<br>
+Output: $$n_H^{[l]} x n_W^{[l]} x n_c^{[l]}$$ <br>
+where<br>
+$$n_{H/W}^{[l]} = \frac{n_{H/W}^{[l-1]} + 2p^{[l]} - f^{[l]}}{s^{[l]}} + 1$$ <br>
