@@ -80,3 +80,8 @@ Bias: $$n_c^{[l]} - (1,1,1,n_c^{[l]})$$<br>
 
 #### Simple Convolutional Network Example
 ![exConvNet.png]({{site.baseurl}}/images/posts/ConvolutionalNN/exConvNet.png)
+
+####Types Of Layer In A Convolutional Network
+- Convolution
+- Pooling
+- Fully connected
