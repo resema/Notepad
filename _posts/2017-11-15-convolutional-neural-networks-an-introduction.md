@@ -77,3 +77,7 @@ Each filter is: $$f^{[l]} \times f{[l]} \times  n_c^{[l-1]}$$ <br>
 Activations: $$a^{[l]} \to n_H^{[l]} \times n_W^{[l]} \times n_c^{[l]}$$ <br>
 Weights: $$f^{[l]} \times f^{[l]} \times n_c^{l-1]} \times n_c^{[l]}$$ <br>
 Bias: $$n_c^{[l]} - (1,1,1,n_c^{[l]})$$<br>
+
+#### Simple Convolutional Network Example
+
+
