@@ -60,7 +60,7 @@ It is possible to choose by the 3D filter to switch between edge detection on si
 If we want to apply multiple filters such as vertical and horizontal edge detection. The results will be stacked into a multidimensional data stack with the corresponding amount of layers.
 
 #### Summary
-$$n-f+1 \times n-f+1 \times n_c'$$  where $$n_c'$$  is the amount of filters.
+$$(n-f+1) \times (n-f+1) \times n_c'$$  where $$n_c'$$  is the amount of filters.
 
 ### Convolution Layer
 $$f^{[l]}$$ = filter size<br>
