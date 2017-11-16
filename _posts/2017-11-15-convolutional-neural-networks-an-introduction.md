@@ -109,3 +109,5 @@ In pooling there are no parameters to learn. It is just a fixed function.
 ![exComplConvNet.png]({{site.baseurl}}/images/posts/ConvolutionalNN/exComplConvNet.png)
 
 where FC3 and FC4 are **Fully Connected** neural networks as described in the last posts.
+
+### Why Convolutions?
