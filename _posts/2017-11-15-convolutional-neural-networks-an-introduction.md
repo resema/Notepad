@@ -55,3 +55,5 @@ The convolution operation is also called **cross-correletion** in signal process
 The filter will be increased in the same dimension as the image data. In this case this is 3 dimensions, for the three color channels.
 
 
+
+It is possible to choose by the 3D filter to switch between edge detection on single channels or multiple.
