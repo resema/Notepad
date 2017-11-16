@@ -110,6 +110,8 @@ In pooling there are no parameters to learn. It is just a fixed function.
 
 where FC3 and FC4 are **Fully Connected** neural networks as described in the last posts.
 
+Putting all together we compute also a **cost** function and use **gradient descent** to optimize parameters to reduce cost *J*.
+
 ### Why Convolutions?
 - **Parameter sharing**: A featurer detector (edge detector) that's useful in one part of the image is probably useful in another part of the image.
 - **Sparsity of connections**: In each layer, ach output value depends only on asmall number of inputs.
