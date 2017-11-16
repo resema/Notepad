@@ -54,6 +54,12 @@ The convolution operation is also called **cross-correletion** in signal process
 #### Convolutions On RGB Images
 The filter will be increased in the same dimension as the image data. In this case this is 3 dimensions, for the three color channels.
 
-
+![convVol.png]({{site.baseurl}}/images/posts/ConvolutionalNN/convVol.png)
 
 It is possible to choose by the 3D filter to switch between edge detection on single channels or multiple.
+
+#### Multiple Filters
+If we want to apply multiple filters such as vertical and horizontal edge detection. The results will be stacked into a multidimensional data stack with the corresponding amount of layers.
+
+#### Summary
+*n-f+1 x n-f+1 x n_c'*  where *n_c'*  is the amount of filters.
