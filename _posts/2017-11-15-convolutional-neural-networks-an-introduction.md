@@ -44,3 +44,14 @@ By adding an additional pixel layer around the image, we can preserve the image 
 ><small> To keep the input size while using a 5x5 filter, the padding would have to be p=2, meaning 2 additional surrounding pixels.</small>
 
 ### Stride Convolution
+![stringing.png]({{site.baseurl}}/images/posts/ConvolutionalNN/stringing.png)
+
+#### Technical Note
+The convolution operation is also called **cross-correletion** in signal processing and math books. In this fields it's common to flip the filter in both dimensions.
+
+### Convolutions Over Volumes
+
+#### Convolutions On RGB Images
+The filter will be increased in the same dimension as the image data. In this case this is 3 dimensions, for the three color channels.
+
+
