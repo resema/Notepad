@@ -42,3 +42,5 @@ By adding an additional pixel layer around the image, we can preserve the image 
 - Valid: no padding
 - Same: Pad so that output size is the same as the input size
 ><small> To keep the input size while using a 5x5 filter, the padding would have to be p=2, meaning 2 additional surrounding pixels.</small>
+
+### Stride Convolution
