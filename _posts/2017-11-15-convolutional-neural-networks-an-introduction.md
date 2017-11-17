@@ -88,7 +88,7 @@ Bias: $$n_c^{[l]} - (1,1,1,n_c^{[l]})$$<br>
 
 #### Pooling Layer 
 $$n_{H/W} = \frac{n_{H/W_{prev}} - f}{stride} + 1$$ <br>
-$$n_C = n_C_{prev}$$ <br>
+$$n_C = n_{C_{prev}}$$ <br>
 
 ##### Max Pooling
 Out the filter mask, we take the max of the values. In a simple example where the input data is a 4 x 4 matrix and the filter is a 2x2 mask, we take a step of size 2. This means we have the hyperparamters *f=2* and "s=2*.
