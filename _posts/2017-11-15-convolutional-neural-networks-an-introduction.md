@@ -87,6 +87,9 @@ Bias: $$n_c^{[l]} - (1,1,1,n_c^{[l]})$$<br>
 - Fully connected
 
 #### Pooling Layer 
+$$n_{H/W} = \frac{n_{H/W_{prev}} - f}{stride} + 1$$ <br>
+$$n_C = n_C_{prev}$$ <br>
+
 ##### Max Pooling
 Out the filter mask, we take the max of the values. In a simple example where the input data is a 4 x 4 matrix and the filter is a 2x2 mask, we take a step of size 2. This means we have the hyperparamters *f=2* and "s=2*.
 
@@ -115,4 +118,3 @@ Putting all together we compute also a **cost** function and use **gradient desc
 ### Why Convolutions?
 - **Parameter sharing**: A featurer detector (edge detector) that's useful in one part of the image is probably useful in another part of the image.
 - **Sparsity of connections**: In each layer, ach output value depends only on asmall number of inputs.
-	
