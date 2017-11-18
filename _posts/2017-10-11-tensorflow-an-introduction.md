@@ -127,6 +127,6 @@ tf.nn.conv2d(input, filter, strides=[m,h,w,c], padding)
 tf.nn.max_pool(value, ksize=[m,h,w,c], strides=[m,h,w,c], padding)
 
 # Fully Connected Layer
-tf.contrib.layers.fully_connected(inputs, num_outputs, activation_fn=tf.nn.relu)
+tf.contrib.layers.fully_connected(inputs, num_outputs, activation_fn=tf.nn.relu)   # set activation_fn to 'NONE' to skip ReLU at the end
 
 {% endhighlight %}
