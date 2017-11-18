@@ -105,4 +105,17 @@ tf.reduce_mean(tensor, axis, name)
 
 # optimizer
 tf.train.GradientDesentOptiizer(learning_rate).minimize(func)
+
+# Convolution for NN
+tf.nn.conv2d(Xnput, filter, strides, padding)
+
+# Pooling
+tf.nn.max_pool(input, window_shape, pooling_type, padding)
+
+# Flattening
+tf.contrib.layers.flatten(P)   # Can be used after convolution and before FC
+
+# Fully Connected Layer
+tf.contrib.layers.fully_connected(inputs, num_outputs)
+
 {% endhighlight %}
