@@ -144,12 +144,15 @@ with tf.Session() as sess:
     #  Returns the output of the last Linear unit
     Z3 = forward_propagation(X, parameters)
     # Computes the cost =P
-    cost = tf.nn.softmax_cross_entropy_with_logits(logits = Z3, labels = Y)
+    cost = tf.nn.softmax_cross_entropy_with_logits(
+    		logits = Z3, labels = Y)
     init = tf.global_variables_initializer()
     sess.run(init)
     
     # Run a session with random data
-    a = sess.run(cost, {X: np.random.randn(4,64,64,3), Y: np.random.randn(4,6)})
+    a = sess.run(cost, 
+    		{X: np.random.randn(4,64,64,3), 
+        	Y: np.random.randn(4,6)})
     print("cost = " + str(a))
 
 {% endhighlight %}
