@@ -154,9 +154,9 @@ with tf.Session() as sess:
     		labels = Y)
     # Backpropagation: tensorflow optimizer
     optimizer =
-  		tf.train.AdamOptimizer(
-        	learning_rate=learning_rate)
-            .minimize(cost)
+		tf.train.AdamOptimizer(
+			learning_rate=learning_rate)
+			.minimize(cost)
             
     init = tf.global_variables_initializer()
     sess.run(init)
