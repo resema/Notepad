@@ -124,7 +124,7 @@ tf.train.GradientDescentOptimizer(learning_rate).minimize(func)
 tf.nn.conv2d(input, filter, strides=(m,h,w,c), padding)
 
 # Pooling
-tf.nn.max_pool(input, window_shape, pooling_type, padding)
+tf.nn.max_pool(value, ksiye, strides, padding)
 
 # Fully Connected Layer
 tf.contrib.layers.fully_connected(inputs, num_outputs)
