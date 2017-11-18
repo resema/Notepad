@@ -91,6 +91,17 @@ tf.one_hot(indices, depth, axis)
 tf.zeros_initializer()
 tf.contrib.layers.xavier_initializer   # "Xavier" initialization for weights
 
+# Compute mean of elements across a tensor.
+tf.reduce_mean(tensor, axis, name)
+
+# Flattening
+tf.contrib.layers.flatten(P)   # Can be used after convolution and before FC
+
+{% endhighlight %}
+
+### Neural Network Specific API
+{% highlight python linenos %}
+
 # ReLU activation
 tf.nn.relu(features, name)
 
@@ -100,20 +111,20 @@ tf.nn.sigmoid_cross_entropy_with_logits(logit, labels)
 # computes the cost using a softmax cross entropy
 tf.nn.softmax_cross_entropy_with_logits(logit, labes)
 
-# Compute mean of elements across a tensor.
-tf.reduce_mean(tensor, axis, name)
-
 # optimizer
-tf.train.GradientDesentOptimizer(learning_rate).minimize(func)
+tf.train.GradientDescentOptimizer(learning_rate).minimize(func)
+
+{% endhighlight %}
+
+
+### Convolution Specific API
+{% highlight python linenos %}
 
 # Convolution for NN
 tf.nn.conv2d(Xnput, filter, strides, padding)
 
 # Pooling
 tf.nn.max_pool(input, window_shape, pooling_type, padding)
-
-# Flattening
-tf.contrib.layers.flatten(P)   # Can be used after convolution and before FC
 
 # Fully Connected Layer
 tf.contrib.layers.fully_connected(inputs, num_outputs)
