@@ -117,11 +117,11 @@ tf.train.GradientDescentOptimizer(learning_rate).minimize(func)
 {% endhighlight %}
 
 
-### Convolution Specific API
+### Convolutional NN Specific API
 {% highlight python linenos %}
 
 # Convolution for NN
-tf.nn.conv2d(Xnput, filter, strides, padding)
+tf.nn.conv2d(input, filter, strides, padding)
 
 # Pooling
 tf.nn.max_pool(input, window_shape, pooling_type, padding)
