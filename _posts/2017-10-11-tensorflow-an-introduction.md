@@ -104,7 +104,7 @@ tf.nn.softmax_cross_entropy_with_logits(logit, labes)
 tf.reduce_mean(tensor, axis, name)
 
 # optimizer
-tf.train.GradientDesentOptiizer(learning_rate).minimize(func)
+tf.train.GradientDesentOptimizer(learning_rate).minimize(func)
 
 # Convolution for NN
 tf.nn.conv2d(Xnput, filter, strides, padding)
