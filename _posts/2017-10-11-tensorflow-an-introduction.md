@@ -162,7 +162,7 @@ with tf.Session() as sess:
     sess.run(init)
     
     # Run a session with random data
-    a = sess.run(cost, 
+    a = sess.run([optimizer, cost], 
     		{X: np.random.randn(4,64,64,3), 
         	Y: np.random.randn(4,6)})
     print("cost = " + str(a))
