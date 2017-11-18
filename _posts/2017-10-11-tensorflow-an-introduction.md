@@ -118,7 +118,7 @@ tf.train.GradientDescentOptimizer(learning_rate).minimize(func)
 
 
 ### Convolutional NN Specific API
-{% highlight python linenos %}
+{% highlight tensorflow linenos %}
 
 # Convolution for NN
 tf.nn.conv2d(input, filter, strides, padding)
