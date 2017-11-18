@@ -121,10 +121,10 @@ tf.train.GradientDescentOptimizer(learning_rate).minimize(func)
 {% highlight python linenos %}
 
 # Convolution for NN
-tf.nn.conv2d(input, filter, strides=(m,h,w,c), padding)
+tf.nn.conv2d(input, filter, strides=[m,h,w,c], padding)
 
 # Pooling
-tf.nn.max_pool(value, ksiye, strides, padding)
+tf.nn.max_pool(value, ksize=[m,h,w,c], strides=[m,h,w,c], padding)
 
 # Fully Connected Layer
 tf.contrib.layers.fully_connected(inputs, num_outputs)
