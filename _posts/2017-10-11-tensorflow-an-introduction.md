@@ -128,9 +128,9 @@ tf.nn.max_pool(value, ksize=[m,h,w,c], strides=[m,h,w,c], padding)
 
 # Fully Connected Layer
 tf.contrib.layers.fully_connected(
-		inputs,
-		num_outputs, 
-		activation_fn=tf.nn.relu)   
+	inputs,
+	num_outputs, 
+	activation_fn=tf.nn.relu)   
 # set activation_fn to None to skip ReLU at the end
 
 {% endhighlight %}
@@ -150,8 +150,8 @@ with tf.Session() as sess:
     # Computes the cost =P
     cost = 
     	tf.nn.softmax_cross_entropy_with_logits(
-    			logits = Z3, 
-                labels = Y)
+    		logits = Z3, 
+            labels = Y)
     init = tf.global_variables_initializer()
     sess.run(init)
     
