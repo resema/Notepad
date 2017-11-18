@@ -145,7 +145,7 @@ with tf.Session() as sess:
     parameters = initialize_parameters()
     # Function defined elsewhere
     #  Computes the complete NN
-    #  Returns the output of the last Linear unit
+    #  Returns output of the last Linear unit
     Z3 = forward_propagation(X, parameters)
     # Computes the cost =P
     cost = 
