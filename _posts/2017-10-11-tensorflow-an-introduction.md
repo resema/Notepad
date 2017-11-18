@@ -87,10 +87,6 @@ with tf.Session() as session:
 # create a hard max tensor
 tf.one_hot(indices, depth, axis)
 
-# initialize data for ML
-tf.zeros_initializer()
-tf.contrib.layers.xavier_initializer   # "Xavier" initialization for weights
-
 # Compute mean of elements across a tensor.
 tf.reduce_mean(tensor, axis, name)
 
@@ -101,6 +97,10 @@ tf.contrib.layers.flatten(P)   # Can be used after convolution and before FC
 
 ### Neural Network Specific API
 {% highlight python linenos %}
+
+# initialize data for ML
+tf.zeros_initializer()
+tf.contrib.layers.xavier_initializer   # "Xavier" initialization for weights
 
 # ReLU activation
 tf.nn.relu(features, name)
@@ -127,6 +127,29 @@ tf.nn.conv2d(input, filter, strides=[m,h,w,c], padding)
 tf.nn.max_pool(value, ksize=[m,h,w,c], strides=[m,h,w,c], padding)
 
 # Fully Connected Layer
-tf.contrib.layers.fully_connected(inputs, num_outputs, activation_fn=tf.nn.relu)   # set activation_fn to NONE to skip ReLU at the end
+tf.contrib.layers.fully_connected(inputs, num_outputs, activation_fn=tf.nn.relu)   # set activation_fn to None to skip ReLU at the end
+
+{% endhighlight %}
+
+#### Convolutional NN Example
+{% highlight python linenos %}
+
+with tf.Session() as sess:
+    np.random.seed(1)
+    # Placeholder variables defined later
+    X, Y = create_placeholders(64, 64, 3, 6)
+    parameters = initialize_parameters()
+    # Function defined elsewhere
+    #  Computes the complete NN
+    #  Returns the output of the last Linear unit
+    Z3 = forward_propagation(X, parameters)
+    # Computes the cost =P
+    cost = tf.nn.softmax_cross_entropy_with_logits(logits = Z3, labels = Y)
+    init = tf.global_variables_initializer()
+    sess.run(init)
+    
+    # Run a session with random data
+    a = sess.run(cost, {X: np.random.randn(4,64,64,3), Y: np.random.randn(4,6)})
+    print("cost = " + str(a))
 
 {% endhighlight %}
