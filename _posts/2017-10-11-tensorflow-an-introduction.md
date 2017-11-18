@@ -152,6 +152,12 @@ with tf.Session() as sess:
     	tf.nn.softmax_cross_entropy_with_logits(
     		logits = Z3, 
     		labels = Y)
+    # Backpropagation: tensorflow optimizer
+    optimizer =
+  		tf.train.AdamOptimizer(
+        	learning_rate=learning_rate)
+            .minimize(cost)
+            
     init = tf.global_variables_initializer()
     sess.run(init)
     
