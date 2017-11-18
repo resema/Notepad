@@ -151,7 +151,7 @@ with tf.Session() as sess:
     cost = 
     	tf.nn.softmax_cross_entropy_with_logits(
     		logits = Z3, 
-            labels = Y)
+    		labels = Y)
     init = tf.global_variables_initializer()
     sess.run(init)
     
