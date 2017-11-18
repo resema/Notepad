@@ -130,7 +130,7 @@ tf.nn.max_pool(value, ksize=[m,h,w,c], strides=[m,h,w,c], padding)
 tf.contrib.layers.fully_connected(
 		inputs,
 		num_outputs, 
-        activation_fn=tf.nn.relu)   
+		activation_fn=tf.nn.relu)   
 # set activation_fn to None to skip ReLU at the end
 
 {% endhighlight %}
@@ -148,8 +148,10 @@ with tf.Session() as sess:
     #  Returns the output of the last Linear unit
     Z3 = forward_propagation(X, parameters)
     # Computes the cost =P
-    cost = tf.nn.softmax_cross_entropy_with_logits(
-    		logits = Z3, labels = Y)
+    cost = 
+    	tf.nn.softmax_cross_entropy_with_logits(
+    			logits = Z3, 
+                labels = Y)
     init = tf.global_variables_initializer()
     sess.run(init)
     
