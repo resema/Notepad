@@ -253,7 +253,7 @@ Separate the date into for example three different classes, where the softmax la
 ### Training A Softmax Classifier
 Softmax regression generalizes logistic regression to *C* classes. If $$C = 2$$, softmax reduces to logistic regression. We would have to compute only one output.
 
-#### Lost Functino
+#### Lost Function
 $$\mathcal{L}(\tilde{y},y) = - \sum_{j=1}^{m} y_i\,log\tilde{y}_j$$ <br>
 
 #### Backward Propagation
