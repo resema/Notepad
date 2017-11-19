@@ -11,9 +11,7 @@ categories:
   - Calculus
   - NeuralNetworks
   - MachineLearning
-tags: >-
-  Coursera NeuralNetworks MachineLearning Mini-batch Momentum Softmax
-  AdamOptimizer
+tags: Coursera NN ML MiniBatch Momentum Softmax AdamOptimizer
 ---
 >&quot;Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
