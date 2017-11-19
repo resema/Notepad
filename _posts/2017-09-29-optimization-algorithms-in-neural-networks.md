@@ -51,8 +51,7 @@ $$\beta$$ is a hyperparameter.
 
 ### How It Works
 $$ V_t = \beta\, V_{t-1} + (1 - \beta)\theta_t$$ <br>
-$$ V_{100} = <br>
-0.1 * \theta_{100} + 0.1 * 0.9^1 * \theta_{99} <br + 0.1 * (0.9)^2 * \theta_{98} + ...$$ <br>
+$$ V_{100} = 0.1 * 0.9^0 \theta_{100} + 0.1 * 0.9^1 * \theta_{99} + ...$$ <br>
 This is an exponentially decaying function and this becomes to $$V_{100}$$.
 
 ### Implementation Notes
