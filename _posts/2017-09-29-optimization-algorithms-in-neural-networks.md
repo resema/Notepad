@@ -27,8 +27,9 @@ Mini-batch t $$= X^{\{t\}}$$ <br>
 ### How It Works
 $$ for \, t = 1, ..., 500 $$<br>            $$ \,\,\,\,$$ Forward-Prop on $$X^{\{t\}}$$ <br>
 $$ \,\,\,\,\,\,\,\, Z^{[1]} = W^{(1)}X^{\{t\}} + b^{[1]}$$ <br>
-$$\,\,\,\,\,\,\,\, A^{[1]} = g^{[1]}(Z^{[1]})$$<br> $$ \,\,\,\, ... $$ <br> $$\,\,\,\,\,\,\,\, A^{[l]} = g^{[l]}(Z^{[l]}) $$ <br>
-$$ \,\,\,\,$$ Compute Cost $$ J = \frac{1}{1000}\sum_{i=0}^l\mathcal{l}(\hat{y}^{(i)}, y^{(i)}) + \frac{\lambda}{2*1000}\sum_l\Vert{W^{[l]}}\Vert_F^2$$ <br>
+$$\,\,\,\,\,\,\,\, A^{[1]} = g^{[1]}(Z^{[1]})$$<br> $$ \,\,\,\, ... $$ <br> 
+$$\,\,\,\,\,\,\,\, A^{[l]} = g^{[l]}(Z^{[l]}) $$ <br>
+$$ \,\,\,\,$$ Compute Cost $$ J = \frac{1}{1000}\sum_{i=0}^l\mathcal{l}(\hat{y}, y^{(i)}) + \frac{\lambda}{2*1000}\sum_l\Vert{W^{[l]}}\Vert_F^2$$ <br>
 $$\,\,\,\, $$ Backprop to compute gradients cost $$ J^{\{t\}} $$ (using ($$(X^{\{t\}}, Y^{\{t\}}))$$) <br>
 $$\,\,\,\, W^{[l]} = W^{[l]} - \alpha\,dW^{[l]}$$<br>
 $$\,\,\,\, b^{[l]} = b^{[l]} - \alpha\,db^{[l]}$$ <br>
@@ -51,7 +52,7 @@ $$\beta$$ is a hyperparameter.
 
 ### How It Works
 $$ V_t = \beta\, V_{t-1} + (1 - \beta)\theta_t$$ <br>
-$$ V_{100} = 0.1 * 0.9^0 \theta_{100} + 0.1 * 0.9^1 * \theta_{99} + ...$$ <br>
+$$ V_{100} = 0.1 * 0.9^0 * \theta_{100} + 0.1 * 0.9^1 * \theta_{99} + ...$$ <br>
 This is an exponentially decaying function and this becomes to $$V_{100}$$.
 
 ### Implementation Notes
