@@ -131,3 +131,5 @@ More specifically, during gradient descent, as you backprop from the final layer
 
 We can solve this problem by building a **Residual Network**. In **ResNet**, a *shortut* or a *skip connection* allows the gradient to be directly backpropagated to earlier layers.
 
+![skip_connection_kiank.png]({{site.baseurl}}/images/posts/ConvolutionalNN/skip_connection_kiank.png)
+
