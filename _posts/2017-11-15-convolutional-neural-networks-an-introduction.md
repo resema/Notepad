@@ -121,3 +121,13 @@ Putting all together we compute also a **cost** function and use **gradient desc
 
 ### 1x1 Convolution
 This is also called a **Network in Network** and is used to decrease and/or increase the amount of channels by maintaining the size of the input data. They are used f.ex. in **inception networks**.
+
+## Very Deep Convolutional Networks By Means of Residual Networks
+In theory, very deep networks can represent very complex functions. But in practice, they are hard to train. **Residual Networks**, introduced by He et al., allow us to train much deeper networks than were previously practically feasible.
+
+A huge barrier to training them is vanishing gradients: very deep networks often have a gradient signal that goes to zero quickly, thus making gradient descent unbearably slow.
+
+More specifically, during gradient descent, as you backprop from the final layer back to the first layer, we are multiplying by the weight matrix on each step, and thus the gradient can decrease exponentially quickly to zero.
+
+We can solve this problem by building a **Residual Network**. In **ResNet**, a *shortut* or a *skip connection* allows the gradient to be directly backpropagated to earlier layers.
+
