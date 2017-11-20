@@ -168,3 +168,10 @@ with tf.Session() as sess:
     print("cost = " + str(temp_cost))
 
 {% endhighlight %}
+
+## Keras - A High-Level ML API
+Keras is build on top of ML Frameworks, per default TensorFlow. It helps in case of fast prototyping. A specific description can be found under *www.keras.io*.
+
+Remember how to code a model in Keras and the four steps leading to the evaluation of your model on the test set:
+
+Create $$\to$$ Compile $$\to$$ Fit/Train $$\to$$ Evaluate/Test

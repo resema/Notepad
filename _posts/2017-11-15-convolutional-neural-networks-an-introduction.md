@@ -118,3 +118,6 @@ Putting all together we compute also a **cost** function and use **gradient desc
 ### Why Convolutions?
 - **Parameter sharing**: A featurer detector (edge detector) that's useful in one part of the image is probably useful in another part of the image.
 - **Sparsity of connections**: In each layer, ach output value depends only on asmall number of inputs.
+
+### 1x1 Convolution
+This is also called a **Network in Network** and is used to decrease and/or increase the amount of channels by maintaining the size of the input data. They are used f.ex. in **inception networks**.
