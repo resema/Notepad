@@ -129,7 +129,9 @@ A huge barrier to training them is vanishing gradients: very deep networks often
 
 More specifically, during gradient descent, as you backprop from the final layer back to the first layer, we are multiplying by the weight matrix on each step, and thus the gradient can decrease exponentially quickly to zero.
 
-We can solve this problem by building a **Residual Network**. In **ResNet**, a *shortut* or a *skip connection* allows the gradient to be directly backpropagated to earlier layers.
+We can solve this problem by building a **Residual Network**. In **ResNet**, a *shortut* or a *skip connection* allows the gradient to be directly backpropagated to earlier layers. 
+
+After the shortcut the inputs are added to the input of the main path.
 
 ![skip_connection_kiank.png]({{site.baseurl}}/images/posts/ConvolutionalNN/skip_connection_kiank.png)
 
@@ -137,5 +139,3 @@ We can solve this problem by building a **Residual Network**. In **ResNet**, a *
 The identity block is the standard block usd in **ResNet**, and corresponds to the case where the input activation $$a^{[l]}$$ has the same dimension as the output activation $$a^{[l+2]}$$.
 
 ![idblock3_kiank.png]({{site.baseurl}}/images/posts/ConvolutionalNN/idblock3_kiank.png)
-
-
