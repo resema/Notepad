@@ -136,3 +136,6 @@ We can solve this problem by building a **Residual Network**. In **ResNet**, a *
 ### Identity Block
 The identity block is the standard block usd in **ResNet**, and corresponds to the case where the input activation $$a^{[l]}$$ has the same dimension as the output activation $$a^{[l+2]}$$.
 
+![idblock3_kiank.png]({{site.baseurl}}/images/posts/ConvolutionalNN/idblock3_kiank.png)
+
+
