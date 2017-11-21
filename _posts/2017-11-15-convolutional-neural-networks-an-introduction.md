@@ -139,3 +139,7 @@ After the shortcut the inputs are added to the input of the main path.
 The identity block is the standard block usd in **ResNet**, and corresponds to the case where the input activation $$a^{[l]}$$ has the same dimension as the output activation $$a^{[l+2]}$$.
 
 ![idblock3_kiank.png]({{site.baseurl}}/images/posts/ConvolutionalNN/idblock3_kiank.png)
+
+### Convolutional Block
+The convolutional black is the other type of block. We can use this type of block when the input and output dimensions don't match up. The difference with the identity block is that there is a *CONV2D* layer in the shortcut path.
+
