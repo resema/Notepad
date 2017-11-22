@@ -34,3 +34,4 @@ With the help of a **Convolutional Implementation** we can re-use different laye
 ### Convolutional Implementation Of Sliding Windows
 ![convImplEx.png]({{site.baseurl}}/images/posts/ObjectDetection/convImplEx.png)
 
+### Bounding Box Predictions
