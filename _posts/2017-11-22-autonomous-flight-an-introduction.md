@@ -8,6 +8,7 @@ title: Autonomous Flight - An Introduction
 headline: Autonomous Flight - An Introduction
 categories:
   - Engineering
+  - Robotics
 tags: Coursera Aerial Robotics
 description: Introduction to Aerial Robotics
 ---
@@ -24,4 +25,3 @@ description: Introduction to Aerial Robotics
 **SLAM** = **S**imultaneous **L**ocalization **A**nd **M**apping
 
 ![SLAM.png]({{site.baseurl}}/images/posts/AerialRobotics/SLAM.png)
-
