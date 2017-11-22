@@ -54,7 +54,7 @@ If an object is not easily classified to belong to one single grid cell. Multipl
 
 Cells with high IoU get darkened and the others highlighted. Then we suppress darkened cells and from the remaining we choose the cell with the highest probability.
 
-- Each output prediction is a vector $$[p_c, b_x, b_y, b_h, b_w]^T
+- Each output prediction is a vector $$[p_c, b_x, b_y, b_h, b_w]^T$$
 - Discard all boxes with $$p_c \le 0.6$$
   - Pick the box with the largest $$p_c$$ and output that as a prediction
   - Discard any remaining box with $$IoU \ge 0.5$$ with the box ourput in the previous step
