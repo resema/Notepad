@@ -58,3 +58,5 @@ Cells with high IoU get darkened and the others highlighted. Then we suppress da
 - Discard all boxes with $$p_c \le 0.6$$
   - Pick the box with the largest $$p_c$$ and output that as a prediction
   - Discard any remaining box with $$IoU \ge 0.5$$ with the box ourput in the previous step
+
+### Anchor Boxes
