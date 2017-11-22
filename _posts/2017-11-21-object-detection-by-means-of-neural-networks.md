@@ -65,3 +65,7 @@ In case of overlapping objects, the algorithm would have to choose between the o
 #### Algorithm
 - *Previously:* Each object in training image is assigned to grid cell that contains that object's midpoint.
 - *With two boxes:* Each object in training image is assigned to grid cell that contains object's midpoint and anchor box for the grid cell with highest IoU
+
+![anchorBox.png]({{site.baseurl}}/images/posts/ObjectDetection/anchorBox.png)
+
+More complex situations, such as three objects in the same place, have to be solved be more elaborated algorithms.
