@@ -32,3 +32,5 @@ Due to the huge number of the regions to check slows down the algorithm massivel
 With the help of a **Convolutional Implementation** we can re-use different layer's output.
 
 ### Convolutional Implementation Of Sliding Windows
+![convImplEx.png]({{site.baseurl}}/images/posts/ObjectDetection/convImplEx.png)
+
