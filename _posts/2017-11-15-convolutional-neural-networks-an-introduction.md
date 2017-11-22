@@ -12,6 +12,7 @@ categories:
   - MachineLearning
   - ComputerVision
 tags: Coursera ConvolutionNeuralNetwork ComputerVision
+modified: '2017-11-21'
 ---
 >&quot;A person who never made a mistake never tried anything new.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
@@ -142,4 +143,6 @@ The identity block is the standard block usd in **ResNet**, and corresponds to t
 
 ### Convolutional Block
 The convolutional black is the other type of block. We can use this type of block when the input and output dimensions don't match up. The difference with the identity block is that there is a *CONV2D* layer in the shortcut path.
+
+![convblock_kiank.png]({{site.baseurl}}/images/posts/ConvolutionalNN/convblock_kiank.png)
 
