@@ -23,3 +23,5 @@ description: Introduction to Aerial Robotics
 ### State Estimation
 **SLAM** = **S**imultaneous **L**ocalization **A**nd **M**apping
 
+![SLAM.png]({{site.baseurl}}/images/posts/AerialRobotics/SLAM.png)
+
