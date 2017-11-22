@@ -40,5 +40,4 @@ What if any of the BBox match with the object in the image? Is there a possibili
 #### YOLO Algorithm
 Divide the image with a grid and use the above mentioned algorithm in every grid cell.
 
-
 ![yoloEx.png]({{site.baseurl}}/images/posts/ObjectDetection/yoloEx.png)
