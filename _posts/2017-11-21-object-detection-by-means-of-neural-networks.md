@@ -21,3 +21,14 @@ A Convolution Network can output a softmax layer to indicate if an object, such 
 
 ## Landmark Detection
 For an example we'd like to find all the corners of the eyes on an image showing a face. The approach is similiar by outputting a vector with the parameter $$p_{face}, l_x, l_y, ...$$ with *l* as landmark parameter.
+
+## Object Detection
+
+### Car Detection Example
+We train a **ConvNet** with data labeled if there is a car or not. While scanning an image we use a **Sliding Window Detection** by passing just a square part of the image to the **ConvNet** and slide it through every region of the image. Then we repeat this procedure with a different size of the sliding window.
+
+#### Disadvantage Of Sliding Window Detection
+Due to the huge number of the regions to check slows down the algorithm massively. Fortunately this problem of computational cost has a pretty good solution.
+
+### Convolutional Implementation Of Sliding Windows
+
