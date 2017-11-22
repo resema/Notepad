@@ -46,3 +46,5 @@ Divide the image with a grid and use the above mentioned algorithm in every grid
 It computes the intersection over two bounding boxes.
 $$ IoU = \frac{size\,of\,intersection}{size\,of\area_{tot}}$$ <br>
 "Correct" if $$IoU \ge 0.5$$ <br>
+
+More generally, IoU is a measure of the overlap between two bounding boxes.
