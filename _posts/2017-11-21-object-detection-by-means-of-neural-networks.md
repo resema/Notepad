@@ -69,3 +69,5 @@ In case of overlapping objects, the algorithm would have to choose between the o
 ![anchorBox.png]({{site.baseurl}}/images/posts/ObjectDetection/anchorBox.png)
 
 More complex situations, such as three objects in the same place, have to be solved be more elaborated algorithms.
+
+### YOLO Example
