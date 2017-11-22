@@ -71,3 +71,8 @@ In case of overlapping objects, the algorithm would have to choose between the o
 More complex situations, such as three objects in the same place, have to be solved be more elaborated algorithms.
 
 ### YOLO Example
+![yoloEx1.png]({{site.baseurl}}/images/posts/ObjectDetection/yoloEx1.png)
+
+![yoloEx2.png]({{site.baseurl}}/images/posts/ObjectDetection/yoloEx2.png)
+
+![yoloEx3.png]({{site.baseurl}}/images/posts/ObjectDetection/yoloEx3.png)
