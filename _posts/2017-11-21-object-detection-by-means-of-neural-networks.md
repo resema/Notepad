@@ -37,7 +37,12 @@ With the help of a **Convolutional Implementation** we can re-use different laye
 ### Bounding Box Predictions
 What if any of the BBox match with the object in the image? Is there a possibility to get the algorithm more accurate?
 
-#### YOLO Algorithm
+#### YOLO Algorithm (YOLO := You Only Look Once)
 Divide the image with a grid and use the above mentioned algorithm in every grid cell.
 
 ![yoloEx.png]({{site.baseurl}}/images/posts/ObjectDetection/yoloEx.png)
+
+### Intersection Over Union (IoU)
+It computes the intersection over two bounding boxes.
+$$ IoU = \frac{size\,of\,intersection}{size\,of\area_{tot}}$$ <br>
+"Correct" if $$IoU \ge 0.5$$ <br>
