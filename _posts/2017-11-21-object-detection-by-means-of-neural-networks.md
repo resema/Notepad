@@ -35,3 +35,8 @@ With the help of a **Convolutional Implementation** we can re-use different laye
 ![convImplEx.png]({{site.baseurl}}/images/posts/ObjectDetection/convImplEx.png)
 
 ### Bounding Box Predictions
+What if any of the BBox match with the object in the image? Is there a possibility to get the algorithm more accurate?
+
+#### YOLO Algorithm
+Divide the image with a grid and use the above mentioned algorithm in every grid cell.
+
