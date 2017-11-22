@@ -44,7 +44,17 @@ Divide the image with a grid and use the above mentioned algorithm in every grid
 
 ### Intersection Over Union (IoU)
 It computes the intersection over two bounding boxes.
-$$ IoU = \frac{size\,of\,intersection}{size\,of\area_{tot}}$$ <br>
+$$ IoU = \frac{size\,of\,intersection}{size\,of\,area_{total}}$$ <br>
 "Correct" if $$IoU \ge 0.5$$ <br>
 
 More generally, IoU is a measure of the overlap between two bounding boxes.
+
+### Non-max Suppression
+If an object is not easily classified to belong to one single grid cell. Multiple grid cells will claim the center of object to their possession.
+
+Cells with high IoU get darkened and the others highlighted. Then we suppress darkened cells and from the remaining we choose the cell with the highest probability.
+
+- Each output prediction is a vector $$[p_c, b_x, b_y, b_h, b_w]^T
+- Discard all boxes with $$p_c \le 0.6$$
+  - Pick the box with the largest $$p_c$$ and output that as a prediction
+  - Discard any remaining box with $$IoU \ge 0.5$$ with the box ourput in the previous step
