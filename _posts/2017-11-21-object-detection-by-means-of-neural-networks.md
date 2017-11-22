@@ -60,3 +60,8 @@ Cells with high IoU get darkened and the others highlighted. Then we suppress da
   - Discard any remaining box with $$IoU \ge 0.5$$ with the box ourput in the previous step
 
 ### Anchor Boxes
+In case of overlapping objects, the algorithm would have to choose between the object to output. This can be solved by using **anchor boxes**.
+
+#### Algorithm
+- *Previously:* Each object in training image is assigned to grid cell that contains that object's midpoint.
+- *With two boxes:* Each object in training image is assigned to grid cell that contains object's midpoint and anchor box for the grid cell with highest IoU
