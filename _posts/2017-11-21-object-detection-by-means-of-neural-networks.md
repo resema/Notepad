@@ -29,6 +29,6 @@ We train a **ConvNet** with data labeled if there is a car or not. While scannin
 
 #### Disadvantage Of Sliding Window Detection
 Due to the huge number of the regions to check slows down the algorithm massively. Fortunately this problem of computational cost has a pretty good solution.
+With the help of a **Convolutional Implementation** we can re-use different layer's output.
 
 ### Convolutional Implementation Of Sliding Windows
-
