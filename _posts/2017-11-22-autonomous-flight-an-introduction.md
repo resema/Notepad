@@ -11,7 +11,7 @@ categories:
 tags: Coursera Aerial Robotics
 description: Introduction to Aerial Robotics
 ---
->&quot; blabla &quot;
+>&quot;It’s not that I’m so smart, it’s just that I stay with problems longer.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
 ## Key Components Of Autonomous Flight
