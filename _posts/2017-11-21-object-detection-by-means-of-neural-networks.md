@@ -29,6 +29,14 @@ We train a **ConvNet** with data labeled if there is a car or not. While scannin
 
 #### Disadvantage Of Sliding Window Detection
 Due to the huge number of the regions to check slows down the algorithm massively. Fortunately this problem of computational cost has a pretty good solution.
+With the help of a **Convolutional Implementation** we can re-use different layer's output.
 
 ### Convolutional Implementation Of Sliding Windows
+![convImplEx.png]({{site.baseurl}}/images/posts/ObjectDetection/convImplEx.png)
+
+### Bounding Box Predictions
+What if any of the BBox match with the object in the image? Is there a possibility to get the algorithm more accurate?
+
+#### YOLO Algorithm
+Divide the image with a grid and use the above mentioned algorithm in every grid cell.
 
