@@ -37,7 +37,31 @@ With the help of a **Convolutional Implementation** we can re-use different laye
 ### Bounding Box Predictions
 What if any of the BBox match with the object in the image? Is there a possibility to get the algorithm more accurate?
 
-#### YOLO Algorithm
+#### YOLO Algorithm (YOLO := You Only Look Once)
 Divide the image with a grid and use the above mentioned algorithm in every grid cell.
 
 ![yoloEx.png]({{site.baseurl}}/images/posts/ObjectDetection/yoloEx.png)
+
+### Intersection Over Union (IoU)
+It computes the intersection over two bounding boxes.
+$$ IoU = \frac{size\,of\,intersection}{size\,of\,area_{total}}$$ <br>
+"Correct" if $$IoU \ge 0.5$$ <br>
+
+More generally, IoU is a measure of the overlap between two bounding boxes.
+
+### Non-max Suppression
+If an object is not easily classified to belong to one single grid cell. Multiple grid cells will claim the center of object to their possession.
+
+Cells with high IoU get darkened and the others highlighted. Then we suppress darkened cells and from the remaining we choose the cell with the highest probability.
+
+- Each output prediction is a vector $$[p_c, b_x, b_y, b_h, b_w]^T$$
+- Discard all boxes with $$p_c \le 0.6$$
+  - Pick the box with the largest $$p_c$$ and output that as a prediction
+  - Discard any remaining box with $$IoU \ge 0.5$$ with the box ourput in the previous step
+
+### Anchor Boxes
+In case of overlapping objects, the algorithm would have to choose between the object to output. This can be solved by using **anchor boxes**.
+
+#### Algorithm
+- *Previously:* Each object in training image is assigned to grid cell that contains that object's midpoint.
+- *With two boxes:* Each object in training image is assigned to grid cell that contains object's midpoint and anchor box for the grid cell with highest IoU
