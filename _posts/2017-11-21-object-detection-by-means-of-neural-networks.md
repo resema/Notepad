@@ -18,3 +18,6 @@ tags: Coursera ML NN ComputerVision BoundingBox
 
 ## Object Localization
 A Convolution Network can output a softmax layer to indicate if an object, such as a car, is present in the image. We call this **Class Label**. Furthermore it can also output a **Bounding Box** (defined by $$b_x, b_y, b_h, b_w$$) around the object.
+
+## Landmark Detection
+For an example we'd like to find all the corners of the eyes on an image showing a face. The approach is similiar by outputting a vector with the parameter $$p_{face}, l_x, l_y, ...$$ with *l* as landmark parameter.
