@@ -146,6 +146,8 @@ prose:
               value: MatlabOctave
             - name: "Programming"
               value: Programming
+            - name: "Robotics"
+              value: Robotics
           alterable: true
       - name: "tags"
         field:
