@@ -94,3 +94,5 @@ The algorithm has to compute a function to define the degree of difference betwe
 
 ### Siamese Network
 
+
+with $$x^{(i)}$$ and $$x^{(j)}$$ are different images.
