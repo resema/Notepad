@@ -12,6 +12,7 @@ categories:
   - MachineLearning
   - ComputerVision
 tags: Coursera ML NN ComputerVision BoundingBox
+modified: '2017-11-24'
 ---
 >&quot;I have no special talent. I am only passionately curious.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
@@ -76,3 +77,20 @@ More complex situations, such as three objects in the same place, have to be sol
 ![yoloEx2.png]({{site.baseurl}}/images/posts/ObjectDetection/yoloEx2.png)
 
 ![yoloEx3.png]({{site.baseurl}}/images/posts/ObjectDetection/yoloEx3.png)
+
+## Face Recognition
+**Verification:**
+- Input image, name, ID
+- Output whether the input image is that of the claimed person
+
+**Recognition:**
+- Has a database of K persons
+- Get an input image
+- Output ID if the image is any of the K persons (or "not recognized")
+
+### One Shot Learning Problem
+Solve by getting only one example as a database. Learning from one example to recognize the person again.
+The algorithm has to compute a function to define the degree of difference between images and compare it to a threshold.
+
+### Siamese Network
+
