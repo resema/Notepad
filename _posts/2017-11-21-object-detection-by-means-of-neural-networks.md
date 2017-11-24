@@ -88,3 +88,6 @@ More complex situations, such as three objects in the same place, have to be sol
 - Get an input image
 - Output ID if the image is any of the K persons (or "not recognized")
 
+### One Shot Learning Problem
+Solve by getting only one example as a database. Learning from one example to recognize the person again.
+
