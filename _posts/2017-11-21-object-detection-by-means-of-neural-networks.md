@@ -90,4 +90,7 @@ More complex situations, such as three objects in the same place, have to be sol
 
 ### One Shot Learning Problem
 Solve by getting only one example as a database. Learning from one example to recognize the person again.
+The algorithm has to compute a function to define the degree of difference between images and compare it to a threshold.
+
+### Siamese Network
 
