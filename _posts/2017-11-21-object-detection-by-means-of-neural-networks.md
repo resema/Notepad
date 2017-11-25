@@ -12,7 +12,7 @@ categories:
   - MachineLearning
   - ComputerVision
 tags: Coursera ML NN ComputerVision BoundingBox
-modified: '2017-11-24'
+modified: '2017-11-25'
 ---
 >&quot;I have no special talent. I am only passionately curious.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
