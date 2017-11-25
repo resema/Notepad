@@ -150,7 +150,7 @@ $$J(G) = \alpha\, J_{content}(C,G) + \beta\, J_{style}(S,G)$$
 - Say we use hidden layer *l* to compute content cost
 - Use pre-trainend ConvNet, e.g. VGG network
 - Let $$a^{[l](C)}$$ and $$a^{[l](G)}$$ be the activation of layer *l* on the images
-- If $$a^{[l](C)}$$ and $$a^{[l](G)}$$ are similar, both images have similar content
+- If $$a^{[l](C)}$$ and $$a^{[l](G)}$$ are similar, both images have similar content <br>
   $$J_{content}(C,G) = \frac{1}{2}\Vert a^{[l](C)}$$ - $$a^{[l](G)} \Vert^2$$
 
 ### Style Cost Function
