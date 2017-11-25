@@ -173,7 +173,7 @@ $$G_{kk'}^{[l](S)}$$ <br>
 $$G_{kk'}^{[l](G)}$$ <br>
 
 and finally the **Style cost function**
-
+![styleCostFn.png]({{site.baseurl}}/images/posts/ObjectDetection/styleCostFn.png)
 
 To get better results we should summarize the cost function over multiple layers:
 
