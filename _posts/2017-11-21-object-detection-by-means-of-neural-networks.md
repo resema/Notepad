@@ -154,3 +154,14 @@ $$J(G) = \alpha\, J_{content}(C,G) + \beta\, J_{style}(S,G)$$
   $$J_{content}(C,G) = \frac{1}{2}\Vert a^{[l](C)}$$ - $$a^{[l](G)} \Vert^2$$
 
 ### Style Cost Function
+![styleOfImage.png]({{site.baseurl}}/images/posts/ObjectDetection/styleOfImage.png)
+
+#### Intuition
+How correlated are different channels in an image. Correlated means that if a part of the image has a certain component it appears with a second component. And therefore this two component are highly correlated. We can so measure the degree of correlation of an image and compare it with a generated image, which should have the same style.
+
+#### Style Matrix
+Let $$a_{i,j,k}^{[l]}$$ = activation at (i,j,k). $$G^{[l]}$$ is $$n_c^{[l]} \times n_c^{[l]}$$ <br>
+with i,j,k as height, width and channel <br>
+
+$$G_{kk'}^{[l]} = \sum_{i=1}^{n_H^{[l]}} \sum_{j=1}^{n_W^{[l]}} a_{ijk}^{[l]}\,a_{ijk'}^{[l]}$$ <br>
+with channel k to channel k' 
