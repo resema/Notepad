@@ -172,4 +172,5 @@ Now we calculate the so called **Gram matrix** <br>
 $$G_{kk'}^{[l](S)}$$ <br>
 $$G_{kk'}^{[l](G)}$$ <br>
 
-and finally
+and finally the **Style cost function**
+
