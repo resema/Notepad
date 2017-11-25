@@ -100,7 +100,7 @@ The algorithm has to compute a function to define the degree of difference betwe
 with $$x^{(i)}$$ and $$x^{(j)}$$ are different images.
 
 ### Triplet Loss
-The name comes from the point that we are always looking at three pictures: the **anchor**, the **positive** and the **negative**.
+The name comes from the point that we are always looking at three pictures: the **anchor (A)**, the **positive (P)** and the **negative (N)**.
 
 We now want the difference $$d(A,P) = \Vert f(A) - f(P) \Vert ^2$$ and $$d(A,N) = \Vert f(A) - f(N) \Vert ^2$$ that <br>
 $$d(A,P) \le d(A,N)$$ or <br>
