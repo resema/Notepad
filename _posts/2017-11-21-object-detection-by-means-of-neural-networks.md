@@ -150,4 +150,4 @@ $$J(G) = \alpha J_{content}(C,G) + \beta J_{style}(S,G)$$
 - Use pre-trainend ConvNet, e.g. VGG network
 - Let $$a^{[l](C)}$$ and $$a^{[l](G)}$$ be the activation of layer *l* on the images
 - If $$a^{[l](C)}$$ and $$a^{[l](G)}$$ are similar, both images have similar content
-  $$J_{content}(C,G) = \Vert a^{[l](C)}$$ - $$a^{[l](G)} \Vert^2$$
+  $$J_{content}(C,G) = \frac{1}{2}\Vert a^{[l](C)}$$ - $$a^{[l](G)} \Vert^2$$
