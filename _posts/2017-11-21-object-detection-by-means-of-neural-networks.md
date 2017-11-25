@@ -122,3 +122,7 @@ Finally the cost function $$J$$ gets
 - larger for images of different persons.
 
 ### Face Verification & Binary Classification
+
+The final logistic regression will output 0 or 1 for different or same person. There different possibilities to compute the green underlined formula.
+
+In this case we choose couplets of pictures showing the same person labeled by 1 and couplets showing two different persons labeld by 0.
