@@ -178,3 +178,6 @@ and finally the **Style cost function**
 To get better results we should summarize the cost function over multiple layers:
 
 $$J_{style}(S,G) = \sum_l \lambda^{[l]}\, J_{style}^{[l]}(S,G)$$<br>
+
+To create some artistic images we optimize <br>
+$$J(G) = \alpha \, J_{content}(C,G) + \beta \, J_{style}(S,G)$$
