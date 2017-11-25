@@ -93,6 +93,15 @@ Solve by getting only one example as a database. Learning from one example to re
 The algorithm has to compute a function to define the degree of difference between images and compare it to a threshold.
 
 ### Siamese Network
+![siameseNet.png]({{site.baseurl}}/images/posts/ObjectDetection/siameseNet.png)
 
+![siameseGoal.png]({{site.baseurl}}/images/posts/ObjectDetection/siameseGoal.png)
 
 with $$x^{(i)}$$ and $$x^{(j)}$$ are different images.
+
+### Triplet Loss
+The name comes from the point that we are always looking at three pictures: the **anchor**, the **positive** and the **negative**.
+
+We now want the difference $$d(A,P) = \Vert f(A) - f(P) \Vert ^2$$ and $$d(A,N) = \Vert f(A) - f(N) \Vert ^2$$ that <br>
+$$d(A,P) \le d(A,N)$$ or <br>
+$$\Vert f(A) - f(N) \Vert ^2 - \Vert f(A) - f(N) \Vert ^2 + \alpha \le 0$$ <br>
