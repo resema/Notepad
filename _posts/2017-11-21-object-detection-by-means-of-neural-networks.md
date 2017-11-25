@@ -12,7 +12,7 @@ categories:
   - MachineLearning
   - ComputerVision
 tags: Coursera ML NN ComputerVision BoundingBox
-modified: '2017-11-24'
+modified: '2017-11-25'
 ---
 >&quot;I have no special talent. I am only passionately curious.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
@@ -93,4 +93,36 @@ Solve by getting only one example as a database. Learning from one example to re
 The algorithm has to compute a function to define the degree of difference between images and compare it to a threshold.
 
 ### Siamese Network
+![siameseNet.png]({{site.baseurl}}/images/posts/ObjectDetection/siameseNet.png)
 
+![siameseGoal.png]({{site.baseurl}}/images/posts/ObjectDetection/siameseGoal.png)
+
+with $$x^{(i)}$$ and $$x^{(j)}$$ are different images.
+
+### Triplet Loss
+The name comes from the point that we are always looking at three pictures: the **anchor (A)**, the **positive (P)** and the **negative (N)**.
+
+We now want the difference $$d(A,P) = \Vert f(A) - f(P) \Vert ^2$$ and $$d(A,N) = \Vert f(A) - f(N) \Vert ^2$$ that <br>
+$$d(A,P) \le d(A,N)$$ or <br>
+$$\Vert f(A) - f(N) \Vert ^2 - \Vert f(A) - f(N) \Vert ^2 + \alpha \le 0$$ <br>
+with $$\alpha$$ as a margin parameter to push the positive and the negative images further apart.
+
+#### Loss Function
+Given 3 images A, P, N:
+$$\mathcal{L}(A,P,N) = max(\Vert f(A) - f(N) \Vert ^2 - \Vert f(A) - f(N) \Vert ^2 + \alpha, 0)$$<br>
+Cost $$J = \sum_{i=1}^m \mathcal{L}(A^{(i)}, P^{(i)}, N^{(i)})$$
+
+#### Choosing Triplets A, P, N
+During training, if A,P,N are chosen randomly $$d(A,P) + \alpha \le d(A,N)$$ is easily satisfied.
+
+Choose triplets that are "hard" to train. This is fullfilled by having $$d(A,P) \approx d(A,N)$$ so that the margin $$\alpha$$ gets to something.
+
+Finally the cost function $$J$$ gets 
+- small for images of the same person and
+- larger for images of different persons.
+
+### Face Verification & Binary Classification
+
+The final logistic regression will output 0 or 1 for different or same person. There different possibilities to compute the green underlined formula.
+
+In this case we choose couplets of pictures showing the same person labeled by 1 and couplets showing two different persons labeld by 0.
