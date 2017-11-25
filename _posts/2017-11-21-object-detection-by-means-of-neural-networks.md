@@ -143,3 +143,11 @@ with hyperparameters $$\alpha$$ and $$\beta$$.
 2. Use gradient descent to minimize $$J(G)$$
    $$G := G - \frac{\alpha}{\alpha G} J(G)$$
    
+
+### Content Cost Function
+$$J(G) = \alpha J_{content}(C,G) + \beta J_{style}(S,G)$$
+- Say we use hidden layer *l* to compute content cost
+- Use pre-trainend ConvNet, e.g. VGG network
+- Let $$a^{[l](C)}$$ and $$a^{[l](G)}$$ be the activation of layer *l* on the images
+- If $$a^{[l](C)}$$ and $$a^{[l](G)}$$ are similar, both images have similar content
+  $$J_{content}(C,G) = \Vert a^{[l](C)}$$ - $$a^{[l](G)} \Vert^2$$
