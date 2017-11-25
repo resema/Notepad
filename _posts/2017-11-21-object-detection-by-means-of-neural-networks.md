@@ -129,7 +129,7 @@ The final logistic regression will output 0 or 1 for different or same person. T
 In this case we choose couplets of pictures showing the same person labeled by 1 and couplets showing two different persons labeld by 0.
 
 ## Neural Style Transfer
-
+![neuralStyleTransfer.png]({{site.baseurl}}/images/posts/ObjectDetection/neuralStyleTransfer.png)
 
 ### Cost Function
 Cost $$J(G)$$ is minimized by **Gradient Descent**.
@@ -143,6 +143,7 @@ with hyperparameters $$\alpha$$ and $$\beta$$.
 2. Use gradient descent to minimize $$J(G)$$
    $$G := G - \frac{\alpha}{\alpha G} J(G)$$
    
+![generatedImage.png]({{site.baseurl}}/images/posts/ObjectDetection/generatedImage.png)
 
 ### Content Cost Function
 $$J(G) = \alpha\, J_{content}(C,G) + \beta\, J_{style}(S,G)$$
