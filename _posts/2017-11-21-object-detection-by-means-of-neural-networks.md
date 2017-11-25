@@ -11,7 +11,7 @@ categories:
   - NeuralNetworks
   - MachineLearning
   - ComputerVision
-tags: Coursera ML NN ComputerVision BoundingBox
+tags: Coursera ML NN ComputerVision Detection Recognition
 modified: '2017-11-25'
 ---
 >&quot;I have no special talent. I am only passionately curious.&quot;
