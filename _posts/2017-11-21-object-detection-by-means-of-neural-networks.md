@@ -164,4 +164,6 @@ Let $$a_{i,j,k}^{[l]}$$ = activation at (i,j,k). $$G^{[l]}$$ is $$n_c^{[l]} \tim
 with i,j,k as height, width and channel <br>
 
 $$G_{kk'}^{[l]} = \sum_{i=1}^{n_H^{[l]}} \sum_{j=1}^{n_W^{[l]}} a_{ijk}^{[l]}\,a_{ijk'}^{[l]}$$ <br>
-with channel k to channel k' 
+with channel k to channel k' and $$k = 1, ..., n_c^{[l]}$$ <br>
+
+
