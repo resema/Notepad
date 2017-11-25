@@ -145,7 +145,7 @@ with hyperparameters $$\alpha$$ and $$\beta$$.
    
 
 ### Content Cost Function
-$$J(G) = \alpha J_{content}(C,G) + \beta J_{style}(S,G)$$
+$$J(G) = \alpha\, J_{content}(C,G) + \beta\, J_{style}(S,G)$$
 - Say we use hidden layer *l* to compute content cost
 - Use pre-trainend ConvNet, e.g. VGG network
 - Let $$a^{[l](C)}$$ and $$a^{[l](G)}$$ be the activation of layer *l* on the images
