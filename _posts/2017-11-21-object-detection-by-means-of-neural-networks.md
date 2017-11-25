@@ -120,3 +120,5 @@ Choose triplets that are "hard" to train. This is fullfilled by having $$d(A,P) 
 Finally the cost function $$J$$ gets 
 - small for images of the same person and
 - larger for images of different persons.
+
+### Face Verification & Binary Classification
