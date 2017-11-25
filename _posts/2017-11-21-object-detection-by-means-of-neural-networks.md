@@ -166,4 +166,10 @@ with i,j,k as height, width and channel <br>
 $$G_{kk'}^{[l]} = \sum_{i=1}^{n_H^{[l]}} \sum_{j=1}^{n_W^{[l]}} a_{ijk}^{[l]}\,a_{ijk'}^{[l]}$$ <br>
 with channel k to channel k' and $$k = 1, ..., n_c^{[l]}$$ <br>
 
+Correlated style results in large $$G_{kk'}^{[l]}$$ and vice versa.
 
+Now we calculate the so called **Gram matrix** <br>
+$$G_{kk'}^{[l](S)}$$ <br>
+$$G_{kk'}^{[l](G)}$$ <br>
+
+and finally
