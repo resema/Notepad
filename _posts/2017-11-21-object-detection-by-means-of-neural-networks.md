@@ -122,7 +122,23 @@ Finally the cost function $$J$$ gets
 - larger for images of different persons.
 
 ### Face Verification & Binary Classification
+![binClass.png]({{site.baseurl}}/images/posts/ObjectDetection/binClass.png)
 
 The final logistic regression will output 0 or 1 for different or same person. There different possibilities to compute the green underlined formula.
 
 In this case we choose couplets of pictures showing the same person labeled by 1 and couplets showing two different persons labeld by 0.
+
+## Neural Style Transfer
+
+
+### Cost Function
+Cost $$J(G)$$ is minimized by **Gradient Descent**.
+
+$$J(G) = \alpha J_{Content}(C, G) + \beta J_{Style}(S, G)$$ <br>
+with hyperparameters $$\alpha$$ and $$\beta$$.
+
+#### Algorithm
+1. Initiate G randomly
+  G: $$100 \times 100 \times 3$$
+2. Use gradient descent to minimize $$J(G)$$
+   $$G := G - \frac{\alpha}{\alpha G} J(G)$$
