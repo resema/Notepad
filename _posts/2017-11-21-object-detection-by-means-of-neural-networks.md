@@ -138,7 +138,8 @@ $$J(G) = \alpha J_{Content}(C, G) + \beta J_{Style}(S, G)$$ <br>
 with hyperparameters $$\alpha$$ and $$\beta$$.
 
 #### Algorithm
-1. Initiate G randomly
-  G: $$100 \times 100 \times 3$$
+1. Initiate G randomly <br>
+   G: $$100 \times 100 \times 3$$
 2. Use gradient descent to minimize $$J(G)$$
    $$G := G - \frac{\alpha}{\alpha G} J(G)$$
+   
