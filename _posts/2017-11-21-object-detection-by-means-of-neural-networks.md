@@ -159,7 +159,7 @@ $$J_{content}(C,G) = \frac{1}{4 \times n_H \times n_W \times n_C} \sum_{\text{al
 
 For clarity, note that $$a^{(C/G)}$$ are the volumes corresponding to a hidden layer's activations. In order to compute the cost $$J_{content}(C,G)$$, it might be convenient to unroll these 3D volumes into a 2D matrix.
 
-$$n_W \times n_W \times n_C \to (n_H \times n_W) \times n_C$$
+$$\text{3D:} n_W \times n_W \times n_C \to \text{2D:}(n_H \times n_W) \times n_C$$
 
 ### Style Cost Function
 ![styleOfImage.png]({{site.baseurl}}/images/posts/ObjectDetection/styleOfImage.png)
