@@ -160,6 +160,8 @@ $$J_{content}(C,G) = \frac{1}{4 \times n_H \times n_W \times n_C} \sum_{\text{al
 
 For clarity, note that $$a^{(C/G)}$$ are the volumes corresponding to a hidden layer's activations. In order to compute the cost $$J_{content}(C,G)$$, it might be convenient to unroll these 3D volumes into a 2D matrix.
 
+![contentCost.png]({{site.baseurl}}/images/posts/ObjectDetection/contentCost.png)
+
 $$\text{3D:}\, n_H \times n_W \times n_C \to \text{2D: }\, (n_H \times n_W) \times n_C$$
 
 ### Style Cost Function
@@ -167,6 +169,7 @@ $$\text{3D:}\, n_H \times n_W \times n_C \to \text{2D: }\, (n_H \times n_W) \tim
 
 The **style matrix** is also called **Gram Matrix**. In linear algebra, the Gram matrix G of a set of vectors ($$v_1, \text{...}, v_n$$) is the **matrix of dot products**, whose entries are $$G_{ij} = v_i^T \dot v_j = \text{np.dot}(v_i, v_j)$$. 
 In other words, $$G_{ij}$$ compares how similar $$v_i$$ is to $$v_j$$: If they are highly similar, we would expect them to have a large dot product, and thus for $$G_{ij}$$ to be large.
+![styleMatrix.png]({{site.baseurl}}/images/posts/ObjectDetection/styleMatrix.png)
 
 #### Intuition
 How correlated are different channels in an image. Correlated means that if a part of the image has a certain component it appears with a second component. And therefore this two component are highly correlated. We can so measure the degree of correlation of an image and compare it with a generated image, which should have the same style.
