@@ -155,7 +155,11 @@ $$J(G) = \alpha\, J_{content}(C,G) + \beta\, J_{style}(S,G)$$
   $$J_{content}(C,G) = \frac{1}{2}\Vert a^{[l](C)}$$ - $$a^{[l](G)} \Vert^2$$
   
 We will define as the content cos function as:
-$$J_{content}(C,G) = \frac{1}{4 \times n_H \times n_W \times n_C} \sum_{\text{all entries}} (a^{(C)} - a^{(G)})^2$$
+$$J_{content}(C,G) = \frac{1}{4 \times n_H \times n_W \times n_C} \sum_{\text{all entries}} (a^{(C)} - a^{(G)})^2$$ <br>
+
+For clarity, note that $$a^{(C/G)}$$ are the volumes corresponding to a hidden layer's activations. In order to compute the cost $$J_{content}(C,G)$$, it might be convenient to unroll these 3D volumes into a 2D matrix.
+
+$$n_W \times n_W \times n_C \to (n_H \times n_W) \times n_C$$
 
 ### Style Cost Function
 ![styleOfImage.png]({{site.baseurl}}/images/posts/ObjectDetection/styleOfImage.png)
