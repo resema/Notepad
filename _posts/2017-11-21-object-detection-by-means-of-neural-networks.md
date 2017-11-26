@@ -155,7 +155,7 @@ $$J(G) = \alpha\, J_{content}(C,G) + \beta\, J_{style}(S,G)$$
   $$J_{content}(C,G) = \frac{1}{2}\Vert a^{[l](C)}$$ - $$a^{[l](G)} \Vert^2$$
   
 We will define as the content cos function as:
-$$J_{content}(C,G) = \frac{1}{4 \times n_H \times n_W \times n_C} \sum_{\text{all entries}} (d^{(C)} - a^{(G)})^2$$
+$$J_{content}(C,G) = \frac{1}{4 \times n_H \times n_W \times n_C} \sum_{\text{all entries}} (a^{(C)} - a^{(G)})^2$$
 
 ### Style Cost Function
 ![styleOfImage.png]({{site.baseurl}}/images/posts/ObjectDetection/styleOfImage.png)
