@@ -129,6 +129,7 @@ The final logistic regression will output 0 or 1 for different or same person. T
 In this case we choose couplets of pictures showing the same person labeled by 1 and couplets showing two different persons labeld by 0.
 
 ## Neural Style Transfer
+NST uses a previously trained convolutional network, and builds on top of that. The idea of using a network trained on a different task and applying it to a new task is called **transfer learning**.
 ![neuralStyleTransfer.png]({{site.baseurl}}/images/posts/ObjectDetection/neuralStyleTransfer.png)
 
 ### Cost Function
@@ -152,6 +153,9 @@ $$J(G) = \alpha\, J_{content}(C,G) + \beta\, J_{style}(S,G)$$
 - Let $$a^{[l](C)}$$ and $$a^{[l](G)}$$ be the activation of layer *l* on the images
 - If $$a^{[l](C)}$$ and $$a^{[l](G)}$$ are similar, both images have similar content <br>
   $$J_{content}(C,G) = \frac{1}{2}\Vert a^{[l](C)}$$ - $$a^{[l](G)} \Vert^2$$
+  
+We will define as the content cos function as:
+$$J_{content}(C,G) = \frac{1}{4 \times n_H \times n_W \times n_C} \sum_{\text{all entries}} (d^{(C)} - a^{(G)})^2$$
 
 ### Style Cost Function
 ![styleOfImage.png]({{site.baseurl}}/images/posts/ObjectDetection/styleOfImage.png)
