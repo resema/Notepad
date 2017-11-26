@@ -192,7 +192,7 @@ and finally the **Style cost function**
 
 If we are using a single layer $$a^{[l]}$$, and the corresponding style cost for this layer is defined as:
 
-$$J_{\text{style}}^{[l]}(S,G) = \frac{1}{4 \times n_C^2 \times (n_H \times n_W)^2} \sum_{i=1}^{n_C} \sum_{j=1}^{n_C} (G_{ij}^{(S)} - G_{ij}^(G))^2$$
+$$J_{\text{style}}^{[l]}(S,G) = \frac{1}{4 \times n_C^2 \times (n_H \times n_W)^2} \sum_{i=1}^{n_C} \sum_{j=1}^{n_C} (G_{ij}^{(S)} - G_{ij}^{(G)})^2$$
 
 To get better results we should summarize the cost function over multiple layers:
 
