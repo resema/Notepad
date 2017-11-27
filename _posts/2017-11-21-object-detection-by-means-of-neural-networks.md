@@ -197,6 +197,9 @@ $$J_{\text{style}}^{[l]}(S,G) = \frac{1}{4 \times n_C^2 \times (n_H \times n_W)^
 To get better results we should summarize the cost function over multiple layers:
 
 $$J_{style}(S,G) = \sum_l \lambda^{[l]}\, J_{style}^{[l]}(S,G)$$<br>
+where the values for $$\lambda^{[l]}$$ are **style layers**.
+
+Simply said, we calculate the style cost several times, and weight them using the values from the style layers.
 
 To create some artistic images we optimize <br>
 $$J(G) = \alpha \, J_{content}(C,G) + \beta \, J_{style}(S,G)$$
