@@ -202,4 +202,5 @@ where the values for $$\lambda^{[l]}$$ are **style layers**.
 Simply said, we calculate the style cost several times, and weight them using the values from the style layers.
 
 To create some artistic images we optimize <br>
-$$J(G) = \alpha \, J_{content}(C,G) + \beta \, J_{style}(S,G)$$
+$$J(G) = \alpha \, J_{content}(C,G) + \beta \, J_{style}(S,G)$$<br>
+where $$\alpha$$ and $$\beta$$ are hyperparameters that control the relative weighting between content and style.
