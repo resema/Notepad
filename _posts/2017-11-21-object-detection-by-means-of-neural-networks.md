@@ -104,7 +104,7 @@ The name comes from the point that we are always looking at three pictures: the 
 
 We now want the difference $$d(A,P) = \Vert f(A) - f(P) \Vert ^2$$ and $$d(A,N) = \Vert f(A) - f(N) \Vert ^2$$ that <br>
 $$d(A,P) \le d(A,N)$$ or <br>
-$$\Vert f(A) - f(N) \Vert ^2 - \Vert f(A) - f(N) \Vert ^2 + \alpha \le 0$$ <br>
+$$\Vert f(A) - f(P) \Vert ^2 - \Vert f(A) - f(N) \Vert ^2 + \alpha \le 0$$ <br>
 with $$\alpha$$ as a margin parameter to push the positive and the negative images further apart.
 
 #### Loss Function
