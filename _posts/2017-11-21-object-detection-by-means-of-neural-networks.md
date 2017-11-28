@@ -112,6 +112,8 @@ Given 3 images A, P, N:
 $$\mathcal{L}(A,P,N) = max(\Vert f(A) - f(N) \Vert ^2 - \Vert f(A) - f(N) \Vert ^2 + \alpha, 0)$$<br>
 Cost $$J = \sum_{i=1}^m \mathcal{L}(A^{(i)}, P^{(i)}, N^{(i)})$$
 
+Most implementations also normalize the encoding vectors to have norm equal one, i.e. $$\Vert f(\test{img})\Vert_2 = 1$$.
+
 #### Choosing Triplets A, P, N
 During training, if A,P,N are chosen randomly $$d(A,P) + \alpha \le d(A,N)$$ is easily satisfied.
 
