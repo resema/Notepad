@@ -128,7 +128,7 @@ neg_dist = tf.reduce_sum(tf.subtract(anchor, negative)**2)
 basic_loss = tf.add(tf.subtract(pos_dist, neg_dist), alpha)
 # Step 4: Take the maximum of basic_loss and 0.0.
 #  Sum over the training examples.
-loss = tf.reduce_sum(tf.maximum(basic_loss, 0.2))
+loss = tf.reduce_sum(tf.maximum(basic_loss, 0))
 {% endhighlight %}
 
 #### Choosing Triplets A, P, N
