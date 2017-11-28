@@ -123,7 +123,7 @@ Most implementations also normalize the encoding vectors to have norm equal one,
     basic_loss = tf.add(tf.subtract(pos_dist, neg_dist), alpha)
     # Step 4: Take the maximum of basic_loss and 0.0. Sum over the training examples.
     loss = tf.reduce_sum(tf.maximum(basic_loss, 0.2))
-{% end highlight %}
+{% endhighlight %}
 
 #### Choosing Triplets A, P, N
 During training, if A,P,N are chosen randomly $$d(A,P) + \alpha \le d(A,N)$$ is easily satisfied.
