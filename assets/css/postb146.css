@@ -197,7 +197,7 @@ html, body, .summer-post-container, .summer-post-header {
         color: #00b159; }
       .post-template .summer-post-content > div:not(.summer-post-title) ul, .post-template .summer-post-content > div:not(.summer-post-title) ol {
         padding-left: 1.25rem;
-        font-size: 1.125rem; }
+        font-size: 1.0rem; }
       .post-template .summer-post-content > div:not(.summer-post-title) h1, .post-template .summer-post-content > div:not(.summer-post-title) h2, .post-template .summer-post-content > div:not(.summer-post-title) h3, .post-template .summer-post-content > div:not(.summer-post-title) h4, .post-template .summer-post-content > div:not(.summer-post-title) h5, .post-template .summer-post-content > div:not(.summer-post-title) h6 {
         font-weight: bold; }
       .post-template .summer-post-content > div:not(.summer-post-title) h1, .post-template .summer-post-content > div:not(.summer-post-title) h2, .post-template .summer-post-content > div:not(.summer-post-title) h3, .post-template .summer-post-content > div:not(.summer-post-title) h4, .post-template .summer-post-content > div:not(.summer-post-title) h5, .post-template .summer-post-content > div:not(.summer-post-title) h6, .post-template .summer-post-content > div:not(.summer-post-title) ul, .post-template .summer-post-content > div:not(.summer-post-title) ol, .post-template .summer-post-content > div:not(.summer-post-title) blockquote, .post-template .summer-post-content > div:not(.summer-post-title) pre, .post-template .summer-post-content > div:not(.summer-post-title) hr {
@@ -207,7 +207,7 @@ html, body, .summer-post-container, .summer-post-header {
       .post-template .summer-post-content > div:not(.summer-post-title) p {
         margin: 0 auto 2em auto;
         max-width: 56.25rem;
-        font-size: 1.125rem; }
+        font-size: 1.0rem; }
         .post-template .summer-post-content > div:not(.summer-post-title) p:first-child {
           font-size: 1.375rem;
           font-weight: 300; }
