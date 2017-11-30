@@ -43,7 +43,7 @@ where **second order dynamic system** $$ u =\ddot{x}$$
 
 ##### Control Of A Linear Second-Order System
 ###### Problem
-Find a control input function *u(t)* so that *x(t)* follows the desired trajectory $$x^{des}(t)$$
+Find a control input function $$u(t)$$ so that $$x(t)$$ follows the desired trajectory $$x^{des}(t)$$
 ###### General Approach
 Define error $$e^{(t)} = x^{des}(t) - x(t)$$ <br>
 We want $$e(t)$$ to converge exponentially to zero
