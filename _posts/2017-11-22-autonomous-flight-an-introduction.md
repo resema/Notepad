@@ -39,3 +39,4 @@ $$\sum_{i=1}^4 k_F\omega_i^2 + mg = ma$$ <br>
 where $$ a = \frac{d^2x}{dt^2} = \ddot{x}$$ <br>
 becomes:
 $$ u = \frac{1}{m} \left[ \sum_{i=1}^4 k_F\omega_i^2 + mg\right] $$
+where $$ u =\ddot{x}$$ a **second order dynamic system**.
