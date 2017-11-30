@@ -48,7 +48,8 @@ Find a control input function *u(t)* so that *x(t)* follows the desired trajecto
 Define error $$e^{(t)} = x^{des}(t) - x(t)$$ <br>
 We want $$e(t)$$ to converge exponentially to zero
 ###### Strategy
-Find $$u(t)$$ such that $$\ddot{e} + K_v \dot{e} + K_pe = 0$$ <br>
+Find $$u(t)$$ such that<br>
+$$\ddot{e} + K_v \dot{e} + K_pe = 0$$ <br>
 where $$K_p, K_v > 0$$<br>
 
 
