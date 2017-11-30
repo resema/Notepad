@@ -54,4 +54,14 @@ where $$K_p, K_v > 0$$<br>
 and $$K_v$$ is the **Derivative Gain** <br>
 and $$K_p$$ is the **Proportional Gain**
 
+##### Proportional-Derivative Controller (PD)
 
+$$u(t) = \ddot{x}^{des}(t) + K_v \dot{e}(t) + K_p e(t)$$ <br>
+- Proportional control acts like a spring (capacitance response
+- Derivative control is a viscous dashpot (resistance) response
+- Large derivative gain makes the system overdamped and the system converges slowly
+
+##### Proportional-Integral-Derivate Controller (PID)
+In the presence of disturbances (e.g. wind) or modeling errors (e.g. unkown mass), it is often advantageous to use PID control:
+
+$$u(t) = \ddot{x}^{des}(t) + K_v \dot{e}(t) + K_p e(t) + K_i \int_0^t e(\tau)d\tau$$ <br>
