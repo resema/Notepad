@@ -40,3 +40,13 @@ where $$ a = \frac{d^2x}{dt^2} = \ddot{x}$$ <br>
 becomes:
 $$ u = \frac{1}{m} \left[ \sum_{i=1}^4 k_F\omega_i^2 + mg\right] $$
 where **second order dynamic system** $$ u =\ddot{x}$$
+
+##### Control Of A Linear Second-Order System
+###### Problem
+Find a control input function *u(t)* so that *x(t)* follows the desired trajectory $$x^{des}(t)$$
+###### General Approach
+Define error $$e^{(t)} = x^{des}(t) - x(t)$$ <br>
+We want $$e(t)$$ to converge exponentially to zero
+###### Strategy
+Find $$u(t)$$ such that $$\ddote + K_v \dot{e} + K_pe = 0$$ <br>
+where $$K_p, K_v > 0$$<br>
