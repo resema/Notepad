@@ -61,7 +61,10 @@ $$u(t) = \ddot{x}^{des}(t) + K_v \dot{e}(t) + K_p e(t)$$ <br>
 - Derivative control is a viscous dashpot (resistance) response
 - Large derivative gain makes the system overdamped and the system converges slowly
 
-##### Proportional-Integral-Derivate Controller (PID)
+##### Proportional-Integral-Derivative Controller (PID)
 In the presence of disturbances (e.g. wind) or modeling errors (e.g. unkown mass), it is often advantageous to use PID control:
 
 $$u(t) = \ddot{x}^{des}(t) + K_v \dot{e}(t) + K_p e(t) + K_i \int_0^t e(\tau)d\tau$$ <br>
+
+**PID** control generates a **third-order** closed-loop system. Integral control makes the steady-state error go to zero.
+
