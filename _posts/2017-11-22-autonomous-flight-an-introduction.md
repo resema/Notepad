@@ -37,5 +37,5 @@ Evoluton of these states over time is often given by a set of governing ordinary
 #### Control Of Height
 $$\sum_{i=1}^4 k_F\omega_i^2 + mg = ma$$ <br>
 where $$ a = \frac{d^2x}{dt^2} = \ddot{x}$$ <br>
-
+becomes:
 $$ u = \frac{1}{m} \left[ \sum_{i=1}^4 k_F\omega_i^2 + mg\right] $$
