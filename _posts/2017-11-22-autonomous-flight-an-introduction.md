@@ -25,3 +25,17 @@ description: Introduction to Aerial Robotics
 **SLAM** = **S**imultaneous **L**ocalization **A**nd **M**apping
 
 ![SLAM.png]({{site.baseurl}}/images/posts/AerialRobotics/SLAM.png)
+
+### Dynamical Systems
+Systems where the effects of actions do not occur immediately.
+Every dynamical system is defined by its states: a collection of vairables that completely characterizes the motion of a system.
+Evoluton of these states over time is often given by a set of governing ordinary differential equations. 
+- Example 1: Mass-Spring System
+  $$m\ddot{y}(t) + ky(t) = u(t)$$
+- Example 2: Quadrotor (facilitate)
+  
+#### Control Of Height
+$$\sum_{i=1}^4 k_F\omega_i^2 + mg = ma$$ <br>
+where $$ a = \frac{d^2x}{dt^2} = \ddot{x}$$ <br>
+
+$$ u = \frac{1}{m} \left \sum_{i=1}^4 k_F\omega_i^2 + mg\right $$
