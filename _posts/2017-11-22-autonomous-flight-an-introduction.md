@@ -68,3 +68,13 @@ $$u(t) = \ddot{x}^{des}(t) + K_v \dot{e}(t) + K_p e(t) + K_i \int_0^t e(\tau)d\t
 
 **PID** control generates a **third-order** closed-loop system. Integral control makes the steady-state error go to zero.
 
+#### Agility And Maneuverability
+Let's look at the situation from **Maximum Velocity to Rest**. Max deceleration is achieved by tilting the robot. But in this case the robot will also lose height.
+
+##### Agility
+Two key ideas:
+- Accelerate quickly by maximizing $$a_{max}$$ <br>
+  $$\text{maximize}\frac{u_{1,max}}{W}$$
+- Roll/Pitch quickly by maximizing $$\alpha_{max}$$ <br>
+  $$\text{maximize}\frac{u_{2,max}}{I_{xx}}$$
+  
