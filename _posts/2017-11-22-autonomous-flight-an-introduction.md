@@ -82,10 +82,10 @@ Two key ideas:
 ![effectSize.png]({{site.baseurl}}/images/posts/AerialRobotics/effectSize.png)
 
 - Froude scaling <br>
-  $$v \approx \sqrt{l}$$<br>
-  $$F \approx l^3$$<br>
-  $$ a \approx 1, \alpha \approx \frac{1}{l}$$
+  $$v \sim \sqrt{l}$$<br>
+  $$F \sim l^3$$<br>
+  $$ a \sim 1, \alpha \sim \frac{1}{l}$$
 - Mach scaling <br>
-  $$ v \approx 1$$<br>
-  $$ F \approx l^2$$<br>
-  $$a \approx \frac{1}{l}, \alpha \approx \frac{l}{l^2}$$
+  $$ v \sim 1$$<br>
+  $$ F \sim l^2$$<br>
+  $$a \sim \frac{1}{l}, \alpha \sim \frac{l}{l^2}$$
