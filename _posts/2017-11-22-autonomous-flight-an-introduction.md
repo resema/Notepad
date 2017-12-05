@@ -80,3 +80,12 @@ Two key ideas:
 
 #### Effects Of Size
 ![effectSize.png]({{site.baseurl}}/images/posts/AerialRobotics/effectSize.png)
+
+- Froude scaling
+  $$v \approx \sqrt{l}$$
+  $$F \approx l^3$$
+  $$ a \approx 1, \alpha \approx \frac{1}{l}$$
+- Mach scaling
+  $$ v \approx 1$$
+  $$ F \approx l^2$$
+  $$a \approx \frac{1}{l}, \alpha \approx \frac{l}{l^2}$$
