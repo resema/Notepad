@@ -77,4 +77,6 @@ Two key ideas:
   $$\text{maximize}\frac{u_{1,max}}{W}$$
 - Roll/Pitch quickly by maximizing $$\alpha_{max}$$ <br>
   $$\text{maximize}\frac{u_{2,max}}{I_{xx}}$$
-  
+
+#### Effects Of Size
+![effectSize.png]({{site.baseurl}}/images/posts/AerialRobotics/effectSize.png)
