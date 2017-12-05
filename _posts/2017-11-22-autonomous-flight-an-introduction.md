@@ -89,3 +89,13 @@ Two key ideas:
   $$ v \sim 1$$<br>
   $$ F \sim l^2$$<br>
   $$a \sim \frac{1}{l}, \alpha \sim \frac{l}{l^2}$$
+  
+### Quadrotor Kinematics
+##### Properties Of Rotation Matrix
+- Orthogonal
+  - Matrix times its transpose equals the identity
+- Special orthogonal
+  - Determinant is +1
+- Closed under multiplication
+  - Product of any two rotation matrices is another rotation matrix
+- Inverse of a rotation matrix is also a rotation matrix
