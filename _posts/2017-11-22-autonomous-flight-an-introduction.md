@@ -144,4 +144,9 @@ There will be at least one eigenvector for each eigenvalues.
 if some eigenvalues are repeated, there might be an infinite number of eigenvectors for that eigenvalue.
 
 #### Axis/Angle to Rotation Matrix
-Rotation of a generic vector *p* about *u* through $$\phi$$\
+Rotation of a generic vector *p* about *u* through $$\phi$$ <br>
+
+$$R_p = p \cos\phi + uu^T \, (1-\cos\phi)p + \hat{u}p \sin \phi$$ <br>
+where $$\hat{u}$$ is a skew-symmetric matrix or $$u\times$$. <br>
+
+A **skew-symmetric matrix** is a matrix where $$\mathbf{A}^T = -A$$ <br>
