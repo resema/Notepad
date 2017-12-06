@@ -105,3 +105,38 @@ Two key ideas:
 Euler angles are a composition of three rotations.
 Any rotation can be described by three successive rotations about linearly independent axes.
 This is only an **almost 1-1 transformation**.
+
+##### Axis/Angle Representations For Rotations
+
+###### Eigenvalues And Eigenvectors
+- Determinant is a scalar property of square matrices, denoted $$det(A)$$ or $$\vertA\vert$$ <br>
+  - Think of rows of an $$x \times x$$ matrix as n vectors in $$\mathbb{R}^n$$.<br>
+  - The determinant represents the *space contained* by these vectors
+
+The determinant of a 2x2 matrix represents the aera of the parallelogram. Likewise, the determinant of a 3x3 matrix is the volume of the cube.
+
+####### Definition
+**Eigenvectors** are vectors associated by a squared matrix that do not change in direction when multiplied by the matrix.
+
+**Eigenvalues** are scalar values representing how much each eigenvector changes in length.
+
+$$A\mathbf{v} = \lambda \mathbf{v}$$ <br>
+
+
+####### Finding Eigenvalues
+1. Calculate $$det(A - \lambda \mathbf{I})$$ <br>
+2. Find solutions to $$det(aA - \lambda \mathbf{I})=0$$ <br>
+
+There will be *n* eigenvalues for an n x n matrix, but not all of them have to be distinct or real values.
+
+
+
+####### Finding Eigenvectors
+1. For each eigenvalue, solve the equation
+   $$A\mathbf{v} = \lambda \mathbf{v}$$ <br>
+   or $$(A-\lambda\mathbf{I})\mathbf{v} = 0$$<br>
+
+There will be at least one eigenvector for each eigenvalues.
+if some eigenvalues are repeated, there might be an infinite number of eigenvectors for that eigenvalue.
+
+
