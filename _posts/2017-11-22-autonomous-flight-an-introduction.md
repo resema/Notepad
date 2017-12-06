@@ -167,4 +167,4 @@ A_{21} \\
 A_{1} \\
 A_{2} \\
 A_{3} \\
-\end{matrix}\right]
+\end{matrix}\right]$$
