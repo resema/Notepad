@@ -156,3 +156,15 @@ $$\left\begin{matrix}
 A_{21} & 0 & -A_{32} \\
 -A_{13} & A_{32} & 0 \\
 \end{matrix}\right$$ <br>
+
+We can concisely represent a skew-symmetric matrix as a **3x1 vector**:
+
+$$ a = \left [\begin{matrix}
+A_{32} \\
+A_{13} \\
+A_{21} \\
+\end{matrix}\right ] = \left [\begin{matrix}
+A_{1} \\
+A_{2} \\
+A_{3} \\
+\end{matrix}\right ]
