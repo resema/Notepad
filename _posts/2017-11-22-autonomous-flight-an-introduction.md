@@ -99,3 +99,9 @@ Two key ideas:
 - Closed under multiplication
   - Product of any two rotation matrices is another rotation matrix
 - Inverse of a rotation matrix is also a rotation matrix
+
+#### Rotations
+##### Euler Angles
+Euler angles are a composition of three rotations.
+Any rotation can be described by three successive rotations about linearly independent axes.
+This is only an **almost 1-1 transformation**.
