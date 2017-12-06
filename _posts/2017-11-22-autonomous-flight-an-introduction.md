@@ -150,3 +150,9 @@ $$R_p = p \cos\phi + uu^T \, (1-\cos\phi)p + \hat{u}p \sin \phi$$ <br>
 where $$\hat{u}$$ is a skew-symmetric matrix or $$u\times$$. <br>
 
 A **skew-symmetric matrix** is a matrix where $$\mathbf{A}^T = -A$$ <br>
+
+$$\left\begin{matrix}
+0 & -A_{21} & A_{13} \\
+A_{21} & 0 & -A_{32} \\
+-A_{13} & A_{32} & 0 \\
+\end{matrix}\right$$ <br>
