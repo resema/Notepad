@@ -121,22 +121,24 @@ The determinant of a 2x2 matrix represents the aera of the parallelogram. Likewi
 **Eigenvalues** are scalar values representing how much each eigenvector changes in length.
 
 $$A\mathbf{v} = \lambda \mathbf{v}$$ <br>
-
+![eigenvector.png]({{site.baseurl}}/images/posts/AerialRobotics/eigenvector.png)
 
 ####### Finding Eigenvalues
 1. Calculate $$det(A - \lambda \mathbf{I})$$ <br>
 2. Find solutions to $$det(aA - \lambda \mathbf{I})=0$$ <br>
 
+![eigenvalueEx1.png]({{site.baseurl}}/images/posts/AerialRobotics/eigenvalueEx1.png)
+
+![eigenvalueEx2.png]({{site.baseurl}}/images/posts/AerialRobotics/eigenvalueEx2.png)
+
 There will be *n* eigenvalues for an n x n matrix, but not all of them have to be distinct or real values.
-
-
 
 ####### Finding Eigenvectors
 1. For each eigenvalue, solve the equation
    $$A\mathbf{v} = \lambda \mathbf{v}$$ <br>
    or $$(A-\lambda\mathbf{I})\mathbf{v} = 0$$<br>
+   
+![eigenvectorEx.png]({{site.baseurl}}/images/posts/AerialRobotics/eigenvectorEx.png)
 
 There will be at least one eigenvector for each eigenvalues.
 if some eigenvalues are repeated, there might be an infinite number of eigenvectors for that eigenvalue.
-
-
