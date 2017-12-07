@@ -146,7 +146,7 @@ if some eigenvalues are repeated, there might be an infinite number of eigenvect
 #### Axis/Angle to Rotation Matrix
 Rotation of a generic vector *p* about *u* through $$\phi$$ <br>
 
-$$R_p = p \cos\phi + uu^T \, (1-\cos\phi)p + \hat{u}p \sin \phi$$ <br>
+$$Rp = p \cos\phi + uu^T \, (1-\cos\phi)p + \hat{u}p \sin \phi$$ <br>
 where $$\hat{u}$$ is a skew-symmetric matrix or $$u\times$$. <br>
 
 A **skew-symmetric matrix** is a matrix where $$\mathbf{A}^T = -A$$ <br>
@@ -175,7 +175,9 @@ Further is the *hat operator* also used to denote the cross product between two 
 $$ \mathbf{u} \times \mathbf{v} = \mathbf{\hat{u}v}$$ <br>
 
 Let's go back to our last formula:
-$$R_p = p \cos\phi + uu^T \, (1-\cos\phi)p + \hat{u}p \sin \phi$$ <br>
+$$Rp = p \cos\phi + uu^T \, (1-\cos\phi)p + \hat{u}p \sin \phi$$ <br>
 
 Removing the vector *p* from both sides results in the **rotation matrix**.
 $$\text{Rot}(u, \phi) = I\cos\phi + uu^T(1-\cos\phi) + \hat{u}\sin\phi$$<br>
+
+where $$u$ is the axis of rotation and $$\phi$$ the rotation angle.
