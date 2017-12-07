@@ -173,3 +173,6 @@ The *hat operator* is commonly used to seitch between these two representations.
 
 Further is the *hat operator* also used to denote the cross product between two vectors.
 $$ \mathbf{u} \times \mathbf{v} = \mathbf{\hat{u}v}$$ <br>
+
+Let's go back to our last formula:
+$$R_p = p \cos\phi + uu^T \, (1-\cos\phi)p + \hat{u}p \sin \phi$$ <br>
