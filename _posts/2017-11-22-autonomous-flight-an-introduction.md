@@ -167,4 +167,9 @@ A_{21} \\
 A_{1} \\
 A_{2} \\
 A_{3} \\
-\end{matrix}\right]$$
+\end{matrix}\right]$$ <br>
+
+The *hat operator* is commonly used to seitch between these two representations.
+
+Further is the *hat operator* also used to denote the cross product between two vectors.
+$$ \mathbf{u} \times \mathbf{v} = \mathbf{\hat{u}v}$$ <br>
