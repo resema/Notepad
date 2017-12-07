@@ -176,3 +176,6 @@ $$ \mathbf{u} \times \mathbf{v} = \mathbf{\hat{u}v}$$ <br>
 
 Let's go back to our last formula:
 $$R_p = p \cos\phi + uu^T \, (1-\cos\phi)p + \hat{u}p \sin \phi$$ <br>
+
+Removing the vector *p* from both sides results in the **rotation matrix**.
+$$\text{Rot}(u, \phi) = I\cos\phi + uu^T(1-\cos\phi) + \hat{u}\sin\phi$$<br>
