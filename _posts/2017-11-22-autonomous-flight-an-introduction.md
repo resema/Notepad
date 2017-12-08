@@ -235,3 +235,8 @@ where $$\dot{R}R^T$$ is referred to by $$\hat{\omega}^s$$. This encodes the angu
 Calculate the angular velocity for a rotation about the z-axis:
 ![angularVelocity.png]({{site.baseurl}}/images/posts/AerialRobotics/angularVelocity.png)
 
+## Quadrotor Dynamics
+The here used and described equations of motions are the **Newton and Euler Equations**.
+
+### Newton-Euler Equations
+We will use the **Z-X-Y rotation convention**. This means $$ \text{Yaw} \to \text{Roll} \to \text{Pitch}$$ <br>
