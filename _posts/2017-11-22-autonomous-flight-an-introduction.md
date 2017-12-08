@@ -218,3 +218,4 @@ $$R^TR \to \text{Derivation} \to \dot{R}^TR + R^T\dot{R} = 0$$>br>
 Due to the fact that the rotation matrix is **screw-symmetric** we can think in terms of **derivatives** not of matrices instead of the corresponding vectors.
 
 ##### Mathematical Explanation
+![derivMatrix.png]({{site.baseurl}}/images/posts/AerialRobotics/derivMatrix.png)
