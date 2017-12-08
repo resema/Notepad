@@ -187,3 +187,18 @@ Rodrigue's Rotation formula is:
 2. restricting angle to the intervall $$[0,\pi]$$ makes it 1-1, except for special cases <br>
    $$\phi = 0 \to \text{no unique axis}$$<br>
    $$\phi = \pi \to u \text{or} -u \,\text{both axis}$$<br>
+   
+#### Quaternion
+Quaternion is defined as:
+$$q = (q_0, q_1, q_2, q_3)$$<br>
+This can be interpreted as a constant + vector:
+$$q = (q_0,\mathbf{q})$$<br>
+
+##### Operations
+Addition:
+$$p \pm q = (p_0 \pm q_0, \mathbf{p} \pm \mathbf{q})$$ <br>
+Multiplication:
+$$pq = (p_0q_0 - \mathbf{p}^T\mathbf{q}, p_0\mathbf{q} + q_0\mathbf{p} + \mathbf{p} \times \mathbf{q})$$ <br>
+Inverse:
+$$q^{-1} = (q_0, -\mathbf{q})$$ <br>
+
