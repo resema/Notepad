@@ -240,3 +240,6 @@ The here used and described equations of motions are the **Newton and Euler Equa
 
 ### Newton-Euler Equations
 We will use the **Z-X-Y rotation convention**. This means $$ \text{Yaw} \to \text{Roll} \to \text{Pitch}$$ <br>
+
+- Newton's Equation of Motion for a Single Partile of mass *m* <br>
+$$\mathbf{F} = m\mathbf{a}$$<br>
