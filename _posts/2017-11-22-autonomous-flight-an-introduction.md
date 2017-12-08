@@ -243,3 +243,7 @@ We will use the **Z-X-Y rotation convention**. This means $$ \text{Yaw} \to \tex
 
 - Newton's Equation of Motion for a Single Partile of mass *m* <br>
 $$\mathbf{F} = m\mathbf{a}$$<br>
+
+#### System Of Particles
+First we have to define the center of mass by <br>
+$$ \mathbf{r}_c = \frac{1}{m} \sum_{i=1,N} m_i\mathbf{p}_i$$ <br>
