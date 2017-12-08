@@ -202,3 +202,9 @@ $$pq = (p_0q_0 - \mathbf{p}^T\mathbf{q}, p_0\mathbf{q} + q_0\mathbf{p} + \mathbf
 Inverse:
 $$q^{-1} = (q_0, -\mathbf{q})$$ <br>
 
+##### Vector Rotation With Quaternions
+To rotate a vector **p** in $$\mathbb{R}^3$$ by the quaternion *q*:
+1. Define quaternion: <br>
+   $$ p = (0,\mathbf{p})$$<br>
+2. The result after rotation is: <br>
+   $$p' = qpq^{-1} = (0, \mathbb{p}'$$<br>
