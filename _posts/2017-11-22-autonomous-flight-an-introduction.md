@@ -181,3 +181,9 @@ Removing the vector *p* from both sides results in the **rotation matrix**.
 $$\text{Rot}(u, \phi) = I\cos\phi + uu^T(1-\cos\phi) + \hat{u}\sin\phi$$<br>
 
 where $$u$$ is the axis of rotation and $$\phi$$ the rotation angle.
+
+Rodrigue's Rotation formula is:
+1. (axis, angle) to rotation matrix map is many to 1
+2. restricting angle to the intervall $$[0,\pi]$$ makes it 1-1, except for special cases <br>
+   $$\phi = 0 \to \text{no unique axis}$$<br>
+   $$\phi = \pi \to u \text{or} -u \,\text{both axis}$$<br>
