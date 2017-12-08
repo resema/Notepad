@@ -230,3 +230,6 @@ where $$R^T\dot{R}$$ is referred to by $$\hat{\omega}^b$$. This encodes the angu
 We can transform this into the **velocity in inertial frame** $$\dot{q}$$: <br>
 $$\dot{q} = \dot{R}R^Tq$$ <br>
 where $$\dot{R}R^T$$ is referred to by $$\hat{\omega}^s$$. This encodes the angular velocity in **inertial frame**.
+
+###### Example
+Calculate the angular velocity for a rotation about the z-axis:
