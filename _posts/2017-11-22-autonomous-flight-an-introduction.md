@@ -191,7 +191,7 @@ Rodrigue's Rotation formula is:
 #### Quaternion
 Quaternion is defined as:
 $$q = (q_0, q_1, q_2, q_3)$$<br>
-This can be interpreted as a constant + vector:
+This can be interpreted as a **constant + vector**:
 $$q = (q_0,\mathbf{q})$$<br>
 
 ##### Operations
