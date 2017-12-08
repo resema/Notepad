@@ -233,3 +233,5 @@ where $$\dot{R}R^T$$ is referred to by $$\hat{\omega}^s$$. This encodes the angu
 
 ###### Example
 Calculate the angular velocity for a rotation about the z-axis:
+![angularVelocity.png]({{site.baseurl}}/images/posts/AerialRobotics/angularVelocity.png)
+
