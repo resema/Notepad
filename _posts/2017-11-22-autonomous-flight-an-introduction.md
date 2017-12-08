@@ -251,4 +251,4 @@ $$ \mathbf{r}_c = \frac{1}{m} \sum_{i=1,N} m_i\mathbf{p}_i$$ <br>
 The center of mass for a system of particles, *S*, accelerates in an inertial frame (A) as if it were a single particle with mass *m* (equal to the total mass of the system) acted upon by a force equal to the net external force.
 
 Rate of change of linear momentum<br>
-$$\mathbf{F} = \frac{{}^Ad\mathbfL}{dt}$$ <br>
+$$\mathbf{F} = \frac{^Ad\mathbfL}{dt}$$ <br>
