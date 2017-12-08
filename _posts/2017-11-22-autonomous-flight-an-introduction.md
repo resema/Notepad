@@ -225,4 +225,8 @@ The velocity $$\dot{g}$$ in the inertial frame can be written as: <br>
 $$\dot{q} = \dot{R}p$$<br>
 This can be transformed by the multiplicating both sides with $$R^T$$. With this we get a better known form of the equation: <br>
 $$R^T\dot{q} = R^T\dot{R}p$$ <br>
-where $$R^T\dot{R}$$ is referred to by $$\hat{\omega}^b$$. This encodes the ngular velocity in **body-fixed frame**.
+where $$R^T\dot{R}$$ is referred to by $$\hat{\omega}^b$$. This encodes the angular velocity in **body-fixed frame**
+
+We can transform this into the **velocity in inertial frame** $$\dot{q}$$: <br>
+$$\dot{q} = \dot{R}R^Tq$$ <br>
+where $$\dot{R}R^T$$ is referred to by $$\hat{\omega}^s$$. This encodes the angular velocity in **inertial frame**.
