@@ -212,3 +212,9 @@ To rotate a vector **p** in $$\mathbb{R}^3$$ by the quaternion *q*:
 We can easily compose two rotations:
 $$q = q_2q_1$$
 
+#### Angular Velocity
+$$R^TR \to \text{Derivation} \to \dot{R}^TR + R^T\dot{R} = 0$$>br>
+
+Due to the fact that the rotation matrix is **screw-symmetric** we can think in terms of **derivatives** not of matrices instead of the corresponding vectors.
+
+##### Mathematical Explanation
