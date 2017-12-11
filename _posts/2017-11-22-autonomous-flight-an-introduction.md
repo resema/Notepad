@@ -275,4 +275,4 @@ with inerta tensor written as a 3x3 matrix with *C* as the origin.
 ![eulerEqu2.png]({{site.baseurl}}/images/posts/AerialRobotics/eulerEqu2.png)
 
 #### Equations
-
+![newtonEuler.png]({{site.baseurl}}/images/posts/AerialRobotics/newtonEuler.png)
