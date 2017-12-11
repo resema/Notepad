@@ -278,13 +278,16 @@ with inerta tensor written as a 3x3 matrix with *C* as the origin.
 ![newtonEuler.png]({{site.baseurl}}/images/posts/AerialRobotics/newtonEuler.png)
 
 ##### How To Estimate These Parameters
+State Vector: <br>
 $$q = \left[\begin{matrix}
 x\\ y\\ z\\ \Phi\\ \theta\\ \psi\\
 \end{matrix}\right], x = \left[\begin{matrix}q\\ \dot{q}\\ \end{matrix}\right]$$ <br>
-State Vector:
 - q describes the configuration (position) of the system
 - x descibesthe state of the system
 
+Equilibrium at Hover: <br>
 $$q_0 = \left[\begin{matrix}
 x_0\\ y_0\\ z_0\\ 0\\ 0\\ \psi_0\\
 \end{matrix}\right], x_e = \left[\begin{matrix}q_e\\ 0\\ \end{matrix}\right]$$ <br>
+- $$q_e$$ describes the equilibrium configuration of the system
+- $$x_e$$ describes the equilibrium state of the system
