@@ -257,3 +257,4 @@ with $$\mathbf{L}$$ as the linear momentum of the system of particles in the **i
 #### Rotational Equations
 The rate of change of **angular momemtum**of the rigid body *B* relative to *C* in *A* is **equal to the resultant moment of all external forces** acting on the body relative to *C*: <br>
 $$\mathbf{M}_C^B = \frac{^Ad\, ^A\mathbf{H}_C^B}{dt}$$ <br>
+with Angualr momemtum $$\mathbf{H}$$ of the rigid body *B* with the origin *C* in the inertial frame *A*
