@@ -284,3 +284,7 @@ x\\ y\\ z\\ \phi\\ \omega\\ \psi\\
 State Vector:
 - q describes the configuration (position) of the system
 - x descibesthe state of the system
+
+$$q_0 = \left[\begin{matrix}
+x_0\\ y_0\\ z_0\\ 0\\ 0\\ \psi_0\\
+\end{matrix}\right], x_e = \left[\begin{matrix}q_e\\ 0\\ \end{matrix}\right]$$ <br>
