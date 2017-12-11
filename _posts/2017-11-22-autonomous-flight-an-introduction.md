@@ -279,7 +279,7 @@ with inerta tensor written as a 3x3 matrix with *C* as the origin.
 
 ##### How To Estimate These Parameters
 $$q = \left[\begin{matrix}
-x\\ y\\ z\\ \phi\\ \omega\\ \psi\\
+x\\ y\\ z\\ \phi\\ \theta\\ \psi\\
 \end{matrix}\right], x = \left[\begin{matrix}q\\ \dot{q}\\ \end{matrix}\right]$$ <br>
 State Vector:
 - q describes the configuration (position) of the system
