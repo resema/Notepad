@@ -291,3 +291,5 @@ x_e\\ y_e\\ z_e\\ 0\\ 0\\ \psi_e\\
 \end{matrix}\right], x_e = \left[\begin{matrix}q_e\\ 0\\ \end{matrix}\right]$$ <br>
 - $$q_e$$ describes the equilibrium configuration of the system
 - $$x_e$$ describes the equilibrium state of the system
+
+
