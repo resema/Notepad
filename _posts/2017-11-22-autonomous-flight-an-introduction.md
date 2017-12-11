@@ -272,4 +272,3 @@ with inerta tensor written as a 3x3 matrix with *C* as the origin.
 
 ![eulerEqu.png]({{site.baseurl}}/images/posts/AerialRobotics/eulerEqu.png)
 
-$$\frac{^Bd\mathbf{H}_C}{dt} + ^A\omega^B \times \mathbf{H}_C = \mathbf{M}_C$$
