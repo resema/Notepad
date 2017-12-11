@@ -269,3 +269,5 @@ with inerta tensor written as a 3x3 matrix with *C* as the origin.
   There are **3 independent principal axes**
 - Principal moment of inertia
   The moment of inertia with respect to a principal axis, $$u \cdot I \cdot u$$, is called a **principal moment of inertia**.
+
+![eulerEqu.png]({{site.baseurl}}/images/posts/AerialRobotics/eulerEqu.png)
