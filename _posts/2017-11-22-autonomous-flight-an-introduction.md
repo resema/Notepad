@@ -260,4 +260,4 @@ $$\mathbf{M}_C^B = \frac{^Ad\, ^A\mathbf{H}_C^B}{dt}$$ <br>
 with Angualr momemtum $$\mathbf{H}$$ of the rigid body *B* with the origin *C* in the inertial frame *A*
 
 Angular momentum:
-$$^A\mathbf{H}_C^B = \mathbf{I}_C \dot ^A\omega^B$$ <br>
+$$^A\mathbf{H}_C^B = \mathbf{I}_C \cdot ^A\omega^B$$ <br>
