@@ -254,3 +254,6 @@ Rate of change of linear momentum<br>
 $$\mathbf{F} = \frac{^Ad\mathbf{L}}{dt} = \sum_{i=1}^{N}\mathbf{F}_i = m \frac{^Ad\,^A\mathbf{v}^c}{dt}$$ <br>
 with $$\mathbf{L}$$ as the linear momentum of the system of particles in the **inertial frame A**.
 
+#### Rotational Equations
+The rate of change of **angular momemtum**of the rigid body *B* relative to *C* in *A* is **equal to the resultant moment of all external forces** acting on the body relative to *C*: <br>
+$$\mathbf{M}_C^B = \frac{^Ad\, ^A\mathbf{H}_C^B}{dt}$$ <br>
