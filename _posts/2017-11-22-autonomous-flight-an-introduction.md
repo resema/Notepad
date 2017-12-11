@@ -261,4 +261,11 @@ with Angualr momemtum $$\mathbf{H}$$ of the rigid body *B* with the origin *C* i
 
 Angular momentum:
 $$^A\mathbf{H}_C^B = \mathbf{I}_C \cdot ^A\omega^B$$ <br>
-with inerta tensor written as a 3x3 matrix with C as the origin
+with inerta tensor written as a 3x3 matrix with *C* as the origin.
+
+##### Principal Axes and Principal Moments of Inertia
+- Principal axis of inertia <br>
+  $$u$$ is a unit vector along a principal axis if $$I \cdot u$$ is parallel to $$u$$.
+  There are **3 independent principal axes**
+- Principal moment of inertia
+  The moment of inertia with respect to a principal axis, $$u \cdot I \cdot u$$, is called a **principal moment of inertia**.
