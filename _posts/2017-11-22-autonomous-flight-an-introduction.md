@@ -261,3 +261,4 @@ with Angualr momemtum $$\mathbf{H}$$ of the rigid body *B* with the origin *C* i
 
 Angular momentum:
 $$^A\mathbf{H}_C^B = \mathbf{I}_C \cdot ^A\omega^B$$ <br>
+with inerta tensor written as a 3x3 matrix with C as the origin
