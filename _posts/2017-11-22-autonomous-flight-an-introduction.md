@@ -286,8 +286,8 @@ x\\ y\\ z\\ \varphi\\ \theta\\ \psi\\
 - x descibesthe state of the system
 
 Equilibrium at Hover: <br>
-$$q_0 = \left[\begin{matrix}
-x_0\\ y_0\\ z_0\\ 0\\ 0\\ \psi_0\\
+$$q_e = \left[\begin{matrix}
+x_e\\ y_e\\ z_e\\ 0\\ 0\\ \psi_e\\
 \end{matrix}\right], x_e = \left[\begin{matrix}q_e\\ 0\\ \end{matrix}\right]$$ <br>
 - $$q_e$$ describes the equilibrium configuration of the system
 - $$x_e$$ describes the equilibrium state of the system
