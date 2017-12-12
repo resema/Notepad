@@ -55,6 +55,10 @@ and $$K_v$$ is the **Derivative Gain** <br>
 and $$K_p$$ is the **Proportional Gain**
 
 ##### Proportional-Derivative Controller (PD)
+The dynamic equation for the motion of the quadrotor in the $$z$$ direction is<br>
+$$\ddot{z} = \frac{u}{m} - g$$ <br>
+
+Let us solve this for $$u$$, replace $$z$$ and calculate the error $$e$$ as indicated above.
 
 $$u(t) = \ddot{x}^{des}(t) + K_v \dot{e}(t) + K_p e(t)$$ <br>
 - Proportional control acts like a spring (capacitance) response
@@ -291,5 +295,3 @@ x_e\\ y_e\\ z_e\\ 0\\ 0\\ \psi_e\\
 \end{matrix}\right], x_e = \left[\begin{matrix}q_e\\ 0\\ \end{matrix}\right]$$ <br>
 - $$q_e$$ describes the equilibrium configuration of the system
 - $$x_e$$ describes the equilibrium state of the system
-
-
