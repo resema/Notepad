@@ -55,15 +55,18 @@ and $$K_v$$ is the **Derivative Gain** <br>
 and $$K_p$$ is the **Proportional Gain**
 
 ##### Proportional-Derivative Controller (PD)
-The dynamic equation for the motion of the quadrotor in the $$z$$ direction is<br>
-$$\ddot{z} = \frac{u}{m} - g$$ <br>
-
-Let us solve this for $$u$$, replace $$z$$ and calculate the error $$e$$ as indicated above.
 
 $$u(t) = \ddot{x}^{des}(t) + K_v \dot{e}(t) + K_p e(t)$$ <br>
 - Proportional control acts like a spring (capacitance) response
 - Derivative control is a viscous dashpot (resistance) response
 - Large derivative gain makes the system overdamped and the system converges slowly
+
+The dynamic equation for the motion of the quadrotor in the $$z$$ direction is<br>
+$$\ddot{z} = \frac{u}{m} - g$$ <br>
+
+Let us solve this for $$u$$, replace $$z$$ and calculate the error $$e$$ as indicated above resuts in:
+
+$$u = m(\ddot{z}_{des} + K_pe + K_v\dot{e} + g)$$ <br>
 
 ##### Proportional-Integral-Derivative Controller (PID)
 In the presence of disturbances (e.g. wind) or modeling errors (e.g. unkown mass), it is often advantageous to use PID control:
