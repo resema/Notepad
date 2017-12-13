@@ -47,3 +47,8 @@ and $$e_v = \matbf{\ddot{r}}_T(t) - \mathbf{\ddot{r}}<br>
 
 If we are following non-aggressive trajectories where the snap is small, we may approximate this as $$\ddot{\phi}_c = 0$$. Furthermore, we may "absorb" $$\mathbf{I}_{xx}$$ into the proportional and derivate gains. This gives us a new, **simpliefied** equation: <br>
 $$u_2 = k_{p,\phi}(\phi_c - \phi) + k_{d,\phi}(\dot{\phi}_c - \dot{\phi})$$<br>
+
+### Control Equations
+$$u_1 = m(g + \ddot{z}_{des} + k_{d,z}(\dot{z}_des - \dot{z}) + k_{p,z}(z_{des} - z))$$<br>
+$$u_2 = k_{p,\phi}(\phi_c - \phi) + k_{d,\phi}(\dot{\phi}_c - \dot{\phi})$$<br>
+$$\phi_c = -\frac{1}{g}(\ddot{y}_{des} + k_{d,y}(\dot{y}_{des} - \dot{y}) + k_{p,y}(y_{des} - y))$$<br>
