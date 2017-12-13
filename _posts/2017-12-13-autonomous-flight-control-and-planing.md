@@ -70,3 +70,7 @@ and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
 ### Nested Control Structure
 
 
+#### Control For Hovering
+Let's look at it in a special case, the **hovering**.
+
+
