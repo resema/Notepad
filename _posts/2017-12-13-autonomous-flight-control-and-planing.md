@@ -16,7 +16,7 @@ tags: Cousera Robotics
 >&quot;It’s not that I’m so smart, it’s just that I stay with problems longer.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
-## 2D Quadrotor Control
+## 2-D Quadrotor Control
 
 ### Equation Of Motion
 ![planarEquMotion.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/planarEquMotion.png)
@@ -54,3 +54,5 @@ So these are the three equations we can use to drive a quadrotor that is close t
 $$u_1 = m(g + \ddot{z}_{des} + k_{d,z}(\dot{z}_des - \dot{z}) + k_{p,z}(z_{des} - z))$$<br>
 $$u_2 = k_{p,\phi}(\phi_c - \phi) + k_{d,\phi}(\dot{\phi}_c - \dot{\phi})$$<br>
 $$\phi_c = -\frac{1}{g}(\ddot{y}_{des} + k_{d,y}(\dot{y}_{des} - \dot{y}) + k_{p,y}(y_{des} - y))$$<br>
+
+## 3-D Quadrotor Control
