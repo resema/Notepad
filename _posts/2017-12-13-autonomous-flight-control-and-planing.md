@@ -73,3 +73,5 @@ and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
 #### Control For Hovering
 Let's look at it in a special case, the **hovering**.
 
+We will now **linearize** the dynamics at the hover configuration:
+
