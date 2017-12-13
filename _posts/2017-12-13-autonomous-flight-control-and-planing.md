@@ -68,9 +68,8 @@ with $$e_p = \mathbf{r}_T(t) - \mathbf{r}$$<br>
 and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
 
 ### Nested Control Structure
-
+![nestedCtrlStrct3d.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/nestedCtrlStrct3d.png)
 
 #### Control For Hovering
 Let's look at it in a special case, the **hovering**.
-
 
