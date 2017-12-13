@@ -22,7 +22,7 @@ tags: Cousera Robotics
 ![planarEquMotion.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/planarEquMotion.png)
 
 Dynamics are non linear:<br>
-$$ddot{y} = -\frac{u_1}{m}\sin(\phi)$$<br>
+$$\ddot{y} = -\frac{u_1}{m}\sin(\phi)$$<br>
 $$\ddot{z} = -g + \frac{u_1}{m}\cos(\phi)$$<br>
 $$\ddot{\phi} = \frac{u_2}{I_{xx}}$$<br>
 
