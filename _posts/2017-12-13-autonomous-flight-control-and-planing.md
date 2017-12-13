@@ -29,7 +29,7 @@ $$\ddot{\phi} = \frac{u_2}{I_{xx}}$$<br>
 Equilibrium hover configuration:<br>
 $$y_0, z_0, \phi_0 = 0, u_{1,0} = mg, u_{2,0} = 0$$ <br>
 
-Linearized dynamics by replacing $$\sin\phi$$ by $$\phi$$ and $$\cos\phi$$ by 1$$: <br>
+Linearized dynamics by replacing $$\sin\phi$$ by $$\phi$$ and $$\cos\phi$$ by 1: <br>
 $$\ddot{y} = -g\phi$$<br>
 $$\ddot{z} = -g + \frac{u_1}{m}$$ <br>
 $$\ddot{\phi} = \frac{u_2}{I_{xx}}$$<br>
