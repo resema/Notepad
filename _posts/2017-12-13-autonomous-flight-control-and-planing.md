@@ -13,8 +13,10 @@ categories:
   - Robotics
 tags: Cousera Robotics
 ---
->&quot;"It’s not that I’m so smart, it’s just that I stay with problems longer."&quot;
+>&quot;It’s not that I’m so smart, it’s just that I stay with problems longer.&quot;
 ><small><cite title="Einstein">Einstein</cite></small>
 
 ## 2D Quadrotor Control
+
+### Equation Of Motion
 
