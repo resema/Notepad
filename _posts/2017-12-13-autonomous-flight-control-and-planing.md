@@ -36,3 +36,6 @@ $$\ddot{\phi} = \frac{u_2}{I_{xx}}$$<br>
 
 ### Trajectory Tracking
 $$r_T(t) = \left[\begin{matrix}y(t) \\ z(t)\end{matrix}\right]$$<br>
+
+The desired trajectory $$r(t)$$ with the corresponding position, velocity and acceleration can be achieved by the **commanded acceleration**, calculated by the controller using: <br>
+$$(\ddot{r}_T(t) - \ddot{r}_c= + \mathbf{K}_de_v + \mathbf{K}_pe_p = 0$$<br>
