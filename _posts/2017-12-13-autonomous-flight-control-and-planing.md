@@ -34,3 +34,5 @@ $$\ddot{y} = -g\phi$$<br>
 $$\ddot{z} = -g + \frac{u_1}{m}$$ <br>
 $$\ddot{\phi} = \frac{u_2}{I_{xx}}$$<br>
 
+### Trajectory Tracking
+$$r_T(t) = \left[\begin{matrix}y(t) \\ z(t)\end{matrix}\right]$$<br>
