@@ -56,3 +56,10 @@ $$u_2 = k_{p,\phi}(\phi_c - \phi) + k_{d,\phi}(\dot{\phi}_c - \dot{\phi})$$<br>
 $$\phi_c = -\frac{1}{g}(\ddot{y}_{des} + k_{d,y}(\dot{y}_{des} - \dot{y}) + k_{p,y}(y_{des} - y))$$<br>
 
 ## 3-D Quadrotor Control
+
+### Trajectory Tracking
+For the 2D quadrotor our trajectories were specified as a 2D vector $$[y(t), z(t)]^T$$. In the case of 3D the trajectories are specified as a **4D vector**.
+
+$$\mathbf{r}_T(t) = \left[\begin{matrix}x(t)\\y(t)\\z(t)\\\psi(t)\end{matrix}\right]$$ <br>
+
+
