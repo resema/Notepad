@@ -45,7 +45,7 @@ and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}<br>
 ### Nested Control Structure
 ![nestedCtrlStructure.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/nestedCtrlStructure.png)
 
-If we are following non-aggressive trajectories where the snap is small, we may approximate this as $$\ddot{\phi}_c = 0$$. Furthermore, we may "absorb" $$\mathbf{I}_{xx}$$ into the proportional and derivate gains. This gives us a new, **simpliefied** equation: <br>
+If we are following non-aggressive trajectories where the snap is small, we may approximate this as $$\ddot{\phi}_c = 0$$. Furthermore, we may "absorb" $$\mathbf{I}_{xx}$$ into the proportional and derivate gains. This gives us a new, **simplified** equation: <br>
 $$u_2 = k_{p,\phi}(\phi_c - \phi) + k_{d,\phi}(\dot{\phi}_c - \dot{\phi})$$<br>
 
 ### Control Equations
