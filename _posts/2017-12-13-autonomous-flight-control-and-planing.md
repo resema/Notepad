@@ -19,4 +19,6 @@ tags: Cousera Robotics
 ## 2D Quadrotor Control
 
 ### Equation Of Motion
+![planarEquMotion.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/planarEquMotion.png)
+
 
