@@ -67,5 +67,6 @@ $$(\ddot{r}_T(t) - \ddot{r}_c= + \mathbf{K}_de_v + \mathbf{K}_pe_p = 0$$<br>
 with $$e_p = \mathbf{r}_T(t) - \mathbf{r}$$<br>
 and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
 
+### Nested Control Structure
 
 
