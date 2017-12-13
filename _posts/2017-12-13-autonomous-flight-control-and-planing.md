@@ -39,7 +39,7 @@ $$r_T(t) = \left[\begin{matrix}y(t) \\ z(t)\end{matrix}\right]$$<br>
 
 The desired trajectory $$r(t)$$ with the corresponding position, velocity and acceleration can be achieved by the **commanded acceleration**, calculated by the controller using: <br>
 $$(\ddot{r}_T(t) - \ddot{r}_c= + \mathbf{K}_de_v + \mathbf{K}_pe_p = 0$$<br>
-with $$e_p = \mathbf{r}_T(t) - \mathbf(r)$$<br>
+with $$e_p = \mathbf{r}_T(t) - \mathbf{r}$$<br>
 and $$e_v = \matbf{\ddot{r}}_T(t) - \mathbf{\ddot{r}}<br>
 
 ### Nested Control Structure
