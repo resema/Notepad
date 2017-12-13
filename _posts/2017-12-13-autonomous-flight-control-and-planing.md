@@ -21,4 +21,13 @@ tags: Cousera Robotics
 ### Equation Of Motion
 ![planarEquMotion.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/planarEquMotion.png)
 
+Dynamics are non linear.
+
+Equilibrium hover configuration:
+$$y_0, z_0, \phi_0 = 0, u_{1,0} = mg, u_{2,0} = 0$$ <br>
+
+Linearized dynamics
+$$\ddot{y} = -g\phi$$<br>
+$$\ddot{z} = -g + \frac{u_1}{m}$$ <br>
+$$\ddot{\phi} = \frac{u_2}{I_{xx}}$$<br>
 
