@@ -74,4 +74,5 @@ and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
 Let's look at it in a special case, the **hovering**.
 
 We will now **linearize** the dynamics at the hover configuration:
+![hovering3D.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/hovering3D.png)
 
