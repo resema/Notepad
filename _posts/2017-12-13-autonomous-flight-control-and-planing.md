@@ -62,5 +62,10 @@ For the 2D quadrotor our trajectories were specified as a 2D vector $$[y(t), z(t
 
 $$\mathbf{r}_T(t) = \left[\begin{matrix}x(t)\\y(t)\\z(t)\\\psi(t)\end{matrix}\right]$$ <br>
 
+The desired trajectory $$r(t)$$ with the corresponding position, velocity and acceleration can be achieved by the **commanded acceleration**, calculated by the controller using: <br>
+$$(\ddot{r}_T(t) - \ddot{r}_c= + \mathbf{K}_de_v + \mathbf{K}_pe_p = 0$$<br>
+with $$e_p = \mathbf{r}_T(t) - \mathbf{r}$$<br>
+and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
+
 
 
