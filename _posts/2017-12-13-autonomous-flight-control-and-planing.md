@@ -72,10 +72,10 @@ and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
 
 Please keep in mind that the **angular velocity components** in body frame are as followed: <br>
 $$\left[\begin{matrix}p\\q\\r\end{matrix}\right] = \left[\begin{matrix}
-\cos\omega & 0 & -\cos\omega \\
+\cos\theta & 0 & -\cos\theta \\
 0 & 1 & \sin\varphi \\
-\sin\omega & 0 & \cos\varphi\cos\omega
-\end{matrix}\right]  \left[<begin{matrx}\dot{\varphi} \\ \dot{\omega} \\ \dot{\psi} \end{matrix}\right]$$ <br>
+\sin\theta & 0 & \cos\varphi\cos\theta
+\end{matrix}\right]  \left[<begin{matrx}\dot{\varphi} \\ \dot{\theta} \\ \dot{\psi} \end{matrix}\right]$$ <br>
 
 #### Control For Hovering
 Let's look at it in a special case, the **hovering**.
