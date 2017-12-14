@@ -75,7 +75,7 @@ $$\left[\begin{matrix}p\\q\\r\end{matrix}\right] = \left[\begin{matrix}
 \cos\omega & 0 & -\cos\omega \\
 0 & 1 & \sin\varphi \\
 \sin\omega & 0 & \cos\varphi\cos\omega
-\end{matrix}\right]$$ $$  \left[\dot{\varphi} \\ \dot{\omega} \\ \dot{\psi} \end{matrix}\right]$$ <br>
+\end{matrix}\right]  \left[<begin{matrx}\dot{\varphi} \\ \dot{\omega} \\ \dot{\psi} \end{matrix}\right]$$ <br>
 
 #### Control For Hovering
 Let's look at it in a special case, the **hovering**.
