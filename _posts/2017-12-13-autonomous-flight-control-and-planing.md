@@ -84,7 +84,9 @@ The inner loop corresponds to **attitude control**. The actual attitude and the 
 The outer loop is corresponding to **position control**. We look mainly at the actual position vector and the yaw angle.
 
 #### Control For Hovering
-Let's look at it in a special case, the **hovering**.
+Let's look at it in a special case, the **hovering**. <br>
+$$u_1 \sim mg,\, \theta \sim 0,\, \varphi \sim 0,\, \psi \sim \psi_0 $$<br>
+$$u_2 \sim 0,\, p \sim 0,\, q \sim 0,\, r \sim 0$$ <br>
 
 We will now **linearize** the dynamics at the hover configuration:
 ![hovering3D.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/hovering3D.png)
