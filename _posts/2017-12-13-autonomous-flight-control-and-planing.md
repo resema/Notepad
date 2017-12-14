@@ -77,4 +77,4 @@ We will now **linearize** the dynamics at the hover configuration:
 ![hovering3D.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/hovering3D.png)
 
 By means of these linearized equations we go further and look at the **nested control structure**.
-
+![nCtrlStructHover.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/nCtrlStructHover.png)
