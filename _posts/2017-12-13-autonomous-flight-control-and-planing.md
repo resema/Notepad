@@ -77,6 +77,12 @@ $$\left[\begin{matrix}p\\q\\r\end{matrix}\right] = \left[\begin{matrix}
 \sin\theta & 0 & \cos\varphi\cos\theta
 \end{matrix}\right]  \left[\begin{matrix}\dot{\varphi} \\ \dot{\theta} \\ \dot{\psi} \end{matrix}\right]$$ <br>
 
+#### Inner Loop
+The inner loop corresponds to **attitude control**. The actual attitude and the angular velocity, or the roll, pitch and yaw angles are feed back to calculate $$u_2$$.
+
+#### Outer Loop
+The outer loop is corresponding to **position control**. We look mainly at the actual position vector and the yaw angle.
+
 #### Control For Hovering
 Let's look at it in a special case, the **hovering**.
 
