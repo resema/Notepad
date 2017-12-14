@@ -70,12 +70,12 @@ and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
 ### Nested Control Structure
 ![nestedCtrlStrct3d.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/nestedCtrlStrct3d.png)
 
-Please keep in mind that the **angular velocity components** in body frame are as followed:
-$$\left[\begin{matrix}p\\q\\r\end{matrix}\right] $$ $$ = \left[\begin{matrix}
+Please keep in mind that the **angular velocity components** in body frame are as followed: <br>
+$$\left[\begin{matrix}p\\q\\r\end{matrix}\right] = \left[\begin{matrix}
 \cos\omega & 0 & -\cos\omega \\
 0 & 1 & \sin\varphi \\
 \sin\omega & 0 & \cos\varphi\cos\omega
-\end{matrix}\right]\left[\dot{\varphi} \\ \dot{\omega} \\ \dot{\psi} \end{matrix}\right]$$ <br>
+\end{matrix}\right]$$ $$  \left[\dot{\varphi} \\ \dot{\omega} \\ \dot{\psi} \end{matrix}\right]$$ <br>
 
 #### Control For Hovering
 Let's look at it in a special case, the **hovering**.
