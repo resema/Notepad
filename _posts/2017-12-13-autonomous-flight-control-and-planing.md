@@ -72,7 +72,7 @@ and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
 
 Please keep in mind that the **angular velocity components** in body frame are as followed:
 $$\left[\begin{matrix}p\\q\\r\end{matrix}\right] $$ $$ = \left[\begin{matrix}
-\cos\omega & 0 & -\cos\omage \\
+\cos\omega & 0 & -\cos\omega \\
 0 & 1 & \sin\varphi \\
 \sin\omega & 0 & \cos\varphi\cos\omega
 \end{matrix}\right]\left[\dot{\varphi} \\ \dot{\omega} \\ \dot{\psi} \end{matrix}\right]$$ <br>
