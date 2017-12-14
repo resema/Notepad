@@ -71,7 +71,7 @@ and $$e_v = \ddot{\mathbf{r}}_T(t) - \ddot{\mathbf{r}}$$<br>
 ![nestedCtrlStrct3d.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/nestedCtrlStrct3d.png)
 
 Please keep in mind that the **angular velocity components** in body frame are as followed:
-$$\left[\begin{matrix}p\\q\\r\end{matrix}\right] = \left[\begin{matrix}
+$$\left[\begin{matrix}p\\q\\r\end{matrix}\right] $$ $$ = \left[\begin{matrix}
 \cos\omega & 0 & -\cos\omage \\
 0 & 1 & \sin\varphi \\
 \sin\omega & 0 & \cos\varphi\cos\omega
