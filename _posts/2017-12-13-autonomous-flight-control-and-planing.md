@@ -77,6 +77,11 @@ $$\left[\begin{matrix}p\\q\\r\end{matrix}\right] = \left[\begin{matrix}
 \sin\theta & 0 & \cos\varphi\cos\theta
 \end{matrix}\right]  \left[\begin{matrix}\dot{\varphi} \\ \dot{\theta} \\ \dot{\psi} \end{matrix}\right]$$ <br>
 
+The quadrotor has two inputs: the thrust force ($$u_1$$) and the moment ($$u_2$$). $$u_1$$ is the sum of the thrusts at each rotor <br>
+$$ u_1 = \sum_{i=1}^2 F_i$$,<br>
+while $$u_2$$ is proportional to the difference between the thrusts of two rotors<br>
+$$u_2 = L(F_1 - F_2)$$ ($$L$$ is the arm lenght of the quadrotor). <br>
+
 #### Inner Loop
 The inner loop corresponds to **attitude control**. The actual attitude and the angular velocity, or the roll, pitch and yaw angles are feed back to calculate $$u_2$$.
 
