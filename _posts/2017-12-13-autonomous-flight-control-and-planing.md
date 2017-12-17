@@ -62,7 +62,7 @@ $$u_2 = k_{p,\phi}(\phi_c - \phi) + k_{d,\phi}(\dot{\phi}_c - \dot{\phi})$$<br>
 ### Control Equations
 So these are the three equations we can use to drive a quadrotor that is close to the operating point and stays on the y-z-plane.
 
-$$u_1 = m(g + \ddot{z}_{des} + k_{d,z}(\dot{z}_des - \dot{z}) + k_{p,z}(z_{des} - z))$$<br>
+$$u_1 = m(g + \ddot{z}_{des} + k_{d,z}(\dot{z}_des - \dot{z}) + k_{p,z}(z_{des} - z))$$ <div style="text-align: right">(1)</div> <br>
 $$u_2 = k_{p,\phi}(\phi_c - \phi) + k_{d,\phi}(\dot{\phi}_c - \dot{\phi})$$<br>
 $$\phi_c = -\frac{1}{g}(\ddot{y}_{des} + k_{d,y}(\dot{y}_{des} - \dot{y}) + k_{p,y}(y_{des} - y))$$<br>
 
