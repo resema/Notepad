@@ -27,6 +27,9 @@ $$u_2 = L(F_1 - F_2)$$ , where $$L$$ is the arm length of the quadrotor.
 ### Equation Of Motion
 ![planarEquMotion.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/planarEquMotion.png)
 
+The dynamic model of the quadrotor is nonlinear. However, a PD controller is designed for a linear system. To use a linear controller for our nonlinear system, we first need to lineariye the equation of motions about a equilibrium configuration.
+In this case of the quadrotor, the equilibrium configuration is the hover configuration at any arbitrary position with zero angle.
+
 Dynamics are non linear:<br>
 $$\ddot{y} = -\frac{u_1}{m}\sin(\phi)$$<br>
 $$\ddot{z} = -g + \frac{u_1}{m}\cos(\phi)$$<br>
