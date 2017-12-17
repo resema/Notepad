@@ -20,7 +20,7 @@ tags: Cousera Robotics
 In general the quadrotor has two inputs: the **thrust force** ($$u_1$$) and the **moment** ($$u_2$$). $$u_1$$ is the sum of the thrusts at each rotor <br>
 $$u_1 = \sum_{i=1}^2 F_i$$ ,<br>
 while $$u_2$$ is proportional to the difference between the thrusts of two rotors <br>
-$$u_2 = L(F_1 - F_2)$$ .
+$$u_2 = L(F_1 - F_2)$$ , where $$L$$ is the arm length of the quadrotor.
 
 ## 2-D Quadrotor Control
 
