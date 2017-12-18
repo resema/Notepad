@@ -115,4 +115,5 @@ A possible approach to tuning is to use the **Zeigler-Nichols** method of tuning
 
 1. Set all gains to zero and start with the **proportional gain** by setting it to a rather larger value like 100 or 1000. The goal is to provoque a sustained oscillation with a rather consistend time period.
 2. Once we find the $$K_p$$ value at which this happens, this becomes $$K_u$$. Also we need to find the time period of oscillations ($$T_u$$).
-3. Repeat this steps with each group such a $$y$$, $$z$$ and $$\phi$$.
+3. **Calculate** the other gains.
+4. Repeat this steps with each group such a $$y$$, $$z$$ and $$\phi$$.
