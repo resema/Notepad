@@ -136,7 +136,7 @@ A possible approach to tuning is to use the **Zeigler-Nichols** [[1]](https://en
 #### Calculus Of Variations
 ![calculusVaration.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/calculusVaration.png)
 
-#### Euler Lagrange Equation
+### Euler Lagrange Equation
 Necessary condition satisfied by the *optimal* function $$x(t)$$.
 
 $$\frac{d}{dt}\left(\frac{\partial{\mathcal{L}}}{\partial{\dot{x}}}\right) - \frac{\partial{\mathcal{L}}}{\partial{x}} = 0 $$<br>
