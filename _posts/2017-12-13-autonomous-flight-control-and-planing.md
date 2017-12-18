@@ -144,4 +144,4 @@ $$\frac{d}{dt}\left(\frac{\partial{\mathcal{L}}}{\partial{\dot{x}}}\right) - \fr
 #### Simple Examples
 ![eulerLagrange1.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/eulerLagrange1.png)
 
-
+![eulerLagrange2.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/eulerLagrange2.png)
