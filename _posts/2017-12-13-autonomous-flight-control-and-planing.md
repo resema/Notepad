@@ -117,3 +117,18 @@ A possible approach to tuning is to use the **Zeigler-Nichols** [[1]](https://en
 2. Once we find the $$K_p$$ value at which this happens, this becomes $$K_u$$. Also we need to find the time period of oscillations ($$T_u$$).
 3. **Calculate** the other gains.
 4. Repeat this steps with each group such a $$y$$, $$z$$ and $$\phi$$.
+
+## Planning
+
+### Time, Motion And Trajectories
+
+#### General Set Up
+- Start, goal positions (orientations)
+- Waypoint positions (orientations)
+- Smoothness criterion
+  - Generally translate to minimizing rate of change of "input"
+- Order of the system (n)
+    - Third order is called **yerk**
+    - Forth oder is called **snap**
+  - Order of the system determines the input
+  - Boundary conditions on $$(n-1)^{th} order and lower derivatives
