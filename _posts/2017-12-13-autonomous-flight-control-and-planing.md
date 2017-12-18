@@ -128,7 +128,9 @@ A possible approach to tuning is to use the **Zeigler-Nichols** [[1]](https://en
 - Smoothness criterion
   - Generally translate to minimizing rate of change of "input"
 - Order of the system (n)
-    - Third order is called **yerk**
-    - Forth oder is called **snap**
   - Order of the system determines the input
   - Boundary conditions on $$(n-1)^{th} order and lower derivatives
+    - Third order is called **yerk**
+    - Forth oder is called **snap**
+  
+### Calculus Of Variations
