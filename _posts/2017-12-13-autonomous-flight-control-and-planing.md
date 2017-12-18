@@ -111,7 +111,7 @@ By means of these linearized equations we go further and look at the **nested co
 ![nCtrlStructHover.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/nCtrlStructHover.png)
 
 ## Tuning PD & PID Controllers
-A possible approach to tuning is to use the **Zeigler-Nichols** method of tuning. https://en.wikipedia.org/wiki/Ziegler%E2%80%93Nichols_method
+A possible approach to tuning is to use the **Zeigler-Nichols** [[1]](https://en.wikipedia.org/wiki/Ziegler%E2%80%93Nichols_method) method of tuning. 
 
 1. Set all gains to zero and start with the **proportional gain** by setting it to a rather larger value like 100 or 1000. The goal is to provoque a sustained oscillation with a rather consistend time period.
 2. Once we find the $$K_p$$ value at which this happens, this becomes $$K_u$$. Also we need to find the time period of oscillations ($$T_u$$).
