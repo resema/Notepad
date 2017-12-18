@@ -142,5 +142,5 @@ Necessary condition satisfied by the *optimal* function $$x(t)$$.
 $$\frac{d}{dt}\left(\frac{\partial{\mathcal{L}}}{\partial{\dot{x}}}\right) - \frac{\partial{\mathcal{L}}}{\partial{x}} = 0 $$<br>
 
 #### Simple Example
-
+![eulerLagrange1.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/eulerLagrange1.png)
 
