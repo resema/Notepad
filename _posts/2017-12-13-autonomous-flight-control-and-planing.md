@@ -134,4 +134,4 @@ A possible approach to tuning is to use the **Zeigler-Nichols** [[1]](https://en
     - Forth oder is called **snap**
   
 ### Calculus Of Variations
-	
+![calculusVaration.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/calculusVaration.png)
