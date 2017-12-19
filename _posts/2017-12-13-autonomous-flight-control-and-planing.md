@@ -154,3 +154,5 @@ $$x(T) = c_n(T)^n + ... + c_1(T) + c_0$$ <br>
 
 With differentation we get: <br>
 $$\dot{x}(t) = nc_nt^n + ... + 2c_2t + c_1$$ <br>
+
+The same can be done with the acceleration and defining the corresponding boundary conditions.
