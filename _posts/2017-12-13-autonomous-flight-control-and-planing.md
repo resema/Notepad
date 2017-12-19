@@ -4,7 +4,7 @@ published: true
 mathjax: true
 featured: false
 comments: true
-title: Autonomous Flight - Control And Planing
+title: Autonomous Flight - Control And Planning
 description: Control and Planning of of Quadrotor
 headline: Autonomous Flight - Control And Planing
 categories:
