@@ -145,3 +145,9 @@ $$\frac{d}{dt}\left(\frac{\partial{\mathcal{L}}}{\partial{\dot{x}}}\right) - \fr
 ![eulerLagrange1.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/eulerLagrange1.png)
 
 ![eulerLagrange2.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/eulerLagrange2.png)
+
+By means of the six boundary conditions at start and end positions. 
+The position contraints looks as followed: <br>
+$$ x(t) = c_nt^n + c_4t^4 + ... + c_1t + c_0$$<br>
+$$x(0) = c_0 = a$$<br>
+$$x(T) = c_n(T)^n + ... + c_1(T) + c_0$$ <br>
