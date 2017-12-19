@@ -171,3 +171,4 @@ Therefore we should aimed for a smooth curve, called a **spline**.
 ![splineBoundaries.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/splineBoundaries.png)
 
 Finally, this leads us to **Minimum Snap  Trajectories**.
+$$x^{\star}(t) = \text{argmin}_{x(t)} \int_0^T\left(x^{(iv)}\right)^2 dt$$ <br>
