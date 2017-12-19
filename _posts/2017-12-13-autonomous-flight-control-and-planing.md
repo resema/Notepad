@@ -159,3 +159,15 @@ The same can be done with the acceleration and defining the corresponding bounda
 
 ![solvingEq.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/solvingEq.png)
 
+To solve this mathematical problem there are multiple possibilities. The one I'm using here is $$Ax = b$$ <br>
+$$x = A^{-1}b$$<br>
+We can find a equation $$x(t)$$ with reflects the **Minimum Jerk Trajectory**.
+
+### Waypoints
+In robotics it is not enough to calculate just the minimum jerk trajectory. It is necessary to calculate as well the intermediate points named **waypoints**.
+We can define **piecewise continous trajectories** between waypoints. Resulting in problems in to **kinks** of the connect pieces.
+Therefore we should aimed for a smooth curve, called a **spline**.
+
+
+
+Finally, this leads us to **minimum snap  trajectories**.
