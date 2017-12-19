@@ -172,3 +172,5 @@ Therefore we should aimed for a smooth curve, called a **spline**.
 
 Finally, this leads us to **Minimum Snap  Trajectories**.
 $$x^{\star}(t) = \text{argmin}_{x(t)} \int_0^T\left(x^{(iv)}\right)^2 dt$$ <br>
+
+The position control system is a fourth order system, therefore we want trajectories that can be differentiated four times.
