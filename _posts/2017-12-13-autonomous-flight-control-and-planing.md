@@ -170,4 +170,4 @@ Therefore we should aimed for a smooth curve, called a **spline**.
 
 ![splineBoundaries.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/splineBoundaries.png)
 
-Finally, this leads us to **minimum snap  trajectories**.
+Finally, this leads us to **Minimum Snap  Trajectories**.
