@@ -148,6 +148,9 @@ $$\frac{d}{dt}\left(\frac{\partial{\mathcal{L}}}{\partial{\dot{x}}}\right) - \fr
 
 By means of the six boundary conditions at start and end positions. 
 The position contraints looks as followed and the results becomes a linear problem: <br>
-$$ x(t) = c_nt^n + c_4t^4 + ... + c_1t + c_0$$<br>
+$$ x(t) = c_nt^n + c_{n-1}t^{n-1} + ... + c_1t + c_0$$<br>
 $$x(0) = c_0 = a$$<br>
 $$x(T) = c_n(T)^n + ... + c_1(T) + c_0$$ <br>
+
+With differentation we get: <br>
+$$\dot{x}(t) = nc_nt^n + ... + 2c_2t + c_1$$ <br>
