@@ -156,3 +156,6 @@ With differentation we get: <br>
 $$\dot{x}(t) = nc_nt^n + ... + 2c_2t + c_1$$ <br>
 
 The same can be done with the acceleration and defining the corresponding boundary conditions.
+
+![solvingEq.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/solvingEq.png)
+
