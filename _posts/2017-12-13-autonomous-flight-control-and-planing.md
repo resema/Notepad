@@ -168,6 +168,6 @@ In robotics it is not enough to calculate just the minimum jerk trajectory. It i
 We can define **piecewise continous trajectories** between waypoints. Resulting in problems in to **kinks** of the connect pieces.
 Therefore we should aimed for a smooth curve, called a **spline**.
 
-
+![splineBoundaries.png]({{site.baseurl}}/images/posts/AerialRobotics_ControlAndPlaning/splineBoundaries.png)
 
 Finally, this leads us to **minimum snap  trajectories**.
