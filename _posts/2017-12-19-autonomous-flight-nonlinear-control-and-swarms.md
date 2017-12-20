@@ -28,5 +28,9 @@ From the earlier posts we saw that we always granted that the movement of the ro
 #### Differential Flatness
 All state variables and the inputs can be written as smooth functions of **flat ouputs** and their derivatives.
 
+![differentialFlatness.png]({{site.baseurl}}/images/posts/AerialRobotics_NonlinearControl/differentialFlatness.png)
+
 Or the other way around:
 The flat outputs and their derivatives can be written as a function of the state, the inputs, and their derivatives.
+
+![differentialFlatness2.png]({{site.baseurl}}/images/posts/AerialRobotics_NonlinearControl/differentialFlatness2.png)
