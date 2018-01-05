@@ -13,7 +13,7 @@ categories:
   - Programming
 tags: Renderer Graphics
 ---
->&quot;It’s not that I’m so smart, it’s just that I stay with problems longer.&quot;><small><cite title="einstein">Einstein</cite></small>
+>&quot;It’s not that I’m so smart, it’s just that I stay with problems longer.&quot;<small><cite title="einstein">Einstein</cite></small>
 
 ## Graphic Pipeline - An Introduction
 Back in 2016 I found this little tutorial about the programming of a renderer. Due to other projects I could fullfil this one. And this is why I'm back on it.
