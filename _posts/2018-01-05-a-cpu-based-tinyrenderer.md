@@ -26,5 +26,3 @@ I will document my humble opinion and what I learnt from it here in this posts.
 
 ### Modelview Matrix
 Due to the camera position the new coordinate system of the objects has to be calculated.
-
-
