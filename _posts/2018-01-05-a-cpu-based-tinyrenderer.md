@@ -63,3 +63,6 @@ Matrix viewport(int x, int y, int w, int h) {
     return m;
 }
 {% endhighlight %}
+
+### Transformation Of Normal Vectors
+If we have a model and its normal vectors are given by the artist AND this model is transformed with an affine mapping, then normal vectors are to be transformed with a mapping, equal to the transposition of the inverse matrix of the original mapping matrix
