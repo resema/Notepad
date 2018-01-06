@@ -46,3 +46,20 @@ void lookat(Vec3f eye, Vec3f center, Vec3f up) {
     ModelView = Minv*Tr;
 }
 {% endhighlight %}
+
+### Viewport Matrix
+The **viewport** matrix maps a bi-unit square onto the image (screen). It means that the bi-unit cube $[-1,1] * [-1,1] * [-1,1]$ is mapped onto the screeen cube $[x, x+w]*[y, y+h] * [0, d]$. A cube and not a rectangle, this is because of the depth computations with the z-buffer.
+
+{% highlight cpp lineos %}
+Matrix viewport(int x, int y, int w, int h) {
+    Matrix m = Matrix::identity(4);
+    m[0][3] = x+w/2.f;
+    m[1][3] = y+h/2.f;
+    m[2][3] = depth/2.f;
+
+    m[0][0] = w/2.f;
+    m[1][1] = h/2.f;
+    m[2][2] = depth/2.f;
+    return m;
+}
+{% endhighlight %}
