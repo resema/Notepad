@@ -50,7 +50,7 @@ void lookat(Vec3f eye, Vec3f center, Vec3f up) {
 ### Viewport Matrix
 The **viewport** matrix maps a bi-unit square onto the image (screen). It means that the bi-unit cube $[-1,1] * [-1,1] * [-1,1]$ is mapped onto the screeen cube $[x, x+w]*[y, y+h] * [0, d]$. A cube and not a rectangle, this is because of the depth computations with the z-buffer.
 
-{% highlight cpp lineos %}
+{% highlight cpp linenos %}
 Matrix viewport(int x, int y, int w, int h) {
     Matrix m = Matrix::identity(4);
     m[0][3] = x+w/2.f;
