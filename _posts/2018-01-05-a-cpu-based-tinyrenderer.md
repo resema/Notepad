@@ -28,6 +28,8 @@ I will document my humble opinion and what I learnt from it here in this posts.
 Due to the camera position the new coordinate system of the objects has to be calculated.
 
 #### LookAt Method
+[[image]]
+
 The **lookAt** method calculates the **ModelView** matrix by means of the eye, its up vector and the center coordinates. With this three vectors we can calculate the inverse transformation matrix from the initial coordinate system to the model coordinate system.
 
 {% highlight cpp linenos %}
@@ -66,3 +68,7 @@ Matrix viewport(int x, int y, int w, int h) {
 
 ### Transformation Of Normal Vectors
 If we have a model and its normal vectors are given by the artist AND this model is transformed with an affine mapping, then normal vectors are to be transformed with a mapping, equal to the transposition of the inverse matrix of the original mapping matrix
+
+## Rendering Pipeline
+
+[[image]]
