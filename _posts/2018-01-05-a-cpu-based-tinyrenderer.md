@@ -28,7 +28,7 @@ I will document my humble opinion and what I learnt from it here in this posts.
 Due to the camera position the new coordinate system of the objects has to be calculated.
 
 #### LookAt Method
-[[image]]
+![lookat.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/lookat.png)
 
 The **lookAt** method calculates the **ModelView** matrix by means of the eye, its up vector and the center coordinates. With this three vectors we can calculate the inverse transformation matrix from the initial coordinate system to the model coordinate system.
 
