@@ -73,3 +73,12 @@ If we have a model and its normal vectors are given by the artist AND this model
 ![renderPipeline.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/renderPipeline.png)
 
 The used pipeline is similiar to OpenGL 2 and therefore only fragment and vertex shaders. In newer versions of OpenGL there are other shaders, e.g. to generate geometry on the fly.
+
+### Vertex Shader
+The main goal of the vertex shader is **to transform the coordinates of the vertices**. The secondary goal is to prepare data for the fragment shader.
+
+### Rasterizer
+The rasterizer calls the routine of the fragment shader for each pixel.
+
+### Fragment Shader
+The main goal of the fragment shader is **to determine the color of the current pixel**. The secondary goal is to discard current pixel by returning true.
