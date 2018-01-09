@@ -70,5 +70,6 @@ Matrix viewport(int x, int y, int w, int h) {
 If we have a model and its normal vectors are given by the artist AND this model is transformed with an affine mapping, then normal vectors are to be transformed with a mapping, equal to the transposition of the inverse matrix of the original mapping matrix
 
 ## Rendering Pipeline
+![renderPipeline.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/renderPipeline.png)
 
-[[image]]
+The used pipeline is similiar to OpenGL 2 and therefore only fragment and vertex shaders. In newer versions of OpenGL there are other shaders, e.g. to generate geometry on the fly.
