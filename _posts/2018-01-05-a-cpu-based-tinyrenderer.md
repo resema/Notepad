@@ -91,5 +91,14 @@ int y = p0.y*(1.-t) + p1.y*t;
 
 It turns out that $$(1-t, t)$$ are barycentric coordinates of the point $$(x,y)$$ with respect to the segment $$p_0, p_1$$: $$(x,y) = p_0*(1-t) + p_1*t$$.
 
+Finally the z-Buffer value has to be calculated by dividing by the 4th coordinate in barycentric coordinates.
+
+{% highlight cpp linenos %}
+Vec3f c = barycentric(proj<2>(pts[0] / pts[0][3]), proj<2>(pts[1] / pts[1][3]), proj<2>(pts[2] / pts[2][3]), P /*proj<2>(P)*/);
+float z = pts[0][2] * c.x + pts[1][2] * c.y + pts[2][2] * c.z;
+float w = pts[0][3] * c.x + pts[1][3] * c.y + pts[2][3] * c.z;
+int frag_depth = std::max(0, std::min(255, int(z / w + .5)));
+{% endhighlight %}
+
 ### Fragment Shader
 The main goal of the fragment shader is **to determine the color of the current pixel**. The secondary goal is to discard current pixel by returning true.
