@@ -89,7 +89,7 @@ int y = p0.y*(1.-t) + p1.y*t;
 // where y is the depth coord
 {% endhighlight %}
 
-It turns out that $$(1-t, t)$$ are barycentric coordinates of the point $(x,y)$ with respect to the segment $p0, p1$: $(x,y) = p0*(1-t) + p1*t.$
+It turns out that $$(1-t, t)$$ are barycentric coordinates of the point $$(x,y)$$ with respect to the segment $$p0, p1$$: $$(x,y) = p0*(1-t) + p1*t$$.
 
 ### Fragment Shader
 The main goal of the fragment shader is **to determine the color of the current pixel**. The secondary goal is to discard current pixel by returning true.
