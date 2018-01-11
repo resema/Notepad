@@ -131,4 +131,5 @@ The main goal of the fragment shader is **to determine the color of the current 
         // no, we do not discard this pixel
         return false;
     }
+};
 {% endhighlight %}
