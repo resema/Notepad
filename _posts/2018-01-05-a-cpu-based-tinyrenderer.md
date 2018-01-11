@@ -79,16 +79,20 @@ The main goal of the vertex shader is **to transform the coordinates of the vert
 
 #### Gouraud Shader As Example
 {% highlight cpp linenos %}
-Vec3f varying_intensity; // written by vertex shader, read by fragment shader
+struct GouraudShader : public IShader 
+{
+    Vec3f varying_intensity; // written by vertex shader, read by fragment shader
 
-virtual Vec4f vertex(int iface, int nthvert) {
-	// get diffuse lighting intensity
-	varying_intensity[nthvert] = std::max(0.f, model->normal(iface, nthvert) * light_dir); 
-	// read the vertex from .obj file
-	Vec4f gl_Vertex = embed<4>(model->vert(iface, nthvert));
-	//transform it to screen coordinates
-	return Viewport * Projection * ModelView * gl_Vertex;
-}
+	virtual Vec4f vertex(int iface, int nthvert) {
+		// get diffuse lighting intensity
+		varying_intensity[nthvert] = std::max(0.f, model->normal(iface, nthvert) * light_dir); 
+		// read the vertex from .obj file
+		Vec4f gl_Vertex = embed<4>(model->vert(iface, nthvert));
+		//transform it to screen coordinates
+		return Viewport * Projection * ModelView * gl_Vertex;
+	}
+    
+    // continued in fragment shader
 {% endhighlight %}
 
 ### Rasterizer
