@@ -83,14 +83,14 @@ struct GouraudShader : public IShader
 {
     Vec3f varying_intensity; // written by vertex shader, read by fragment shader
 
-	virtual Vec4f vertex(int iface, int nthvert) {
-		// get diffuse lighting intensity
-		varying_intensity[nthvert] = std::max(0.f, model->normal(iface, nthvert) * light_dir); 
-		// read the vertex from .obj file
-		Vec4f gl_Vertex = embed<4>(model->vert(iface, nthvert));
-		//transform it to screen coordinates
-		return Viewport * Projection * ModelView * gl_Vertex;
-	}
+    virtual Vec4f vertex(int iface, int nthvert) {
+        // get diffuse lighting intensity
+        varying_intensity[nthvert] = std::max(0.f, model->normal(iface, nthvert) * light_dir); 
+        // read the vertex from .obj file
+        Vec4f gl_Vertex = embed<4>(model->vert(iface, nthvert));
+        //transform it to screen coordinates
+        return Viewport * Projection * ModelView * gl_Vertex;
+    }
     
     // continued in fragment shader
 {% endhighlight %}
@@ -120,3 +120,15 @@ int frag_depth = std::max(0, std::min(255, int(z / w + .5)));
 
 ### Fragment Shader
 The main goal of the fragment shader is **to determine the color of the current pixel**. The secondary goal is to discard current pixel by returning true.
+
+#### Gouraud Shader As Example
+{% highlight cpp linenos %}
+    virtual bool fragment(Vec3f bar, TGAColor &color) {
+        // interpolate intensity for the current pixel
+        float intensity = varying_intensity * bar;
+        // calculate current color
+        color = TGAColor(255, 255, 255) * intensity;
+        // no, we do not discard this pixel
+        return false;
+    }
+{% endhighlight %}
