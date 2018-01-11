@@ -77,6 +77,20 @@ The used pipeline is similiar to OpenGL 2 and therefore only fragment and vertex
 ### Vertex Shader
 The main goal of the vertex shader is **to transform the coordinates of the vertices**. The secondary goal is to prepare data for the fragment shader.
 
+#### Gouraud Shader As Example
+{% highlight cpp linenos %}
+Vec3f varying_intensity; // written by vertex shader, read by fragment shader
+
+virtual Vec4f vertex(int iface, int nthvert) {
+		// get diffuse lighting intensity
+		varying_intensity[nthvert] = std::max(0.f, model->normal(iface, nthvert) * light_dir); 
+		// read the vertex from .obj file
+		Vec4f gl_Vertex = embed<4>(model->vert(iface, nthvert));
+		//transform it to screen coordinates
+		return Viewport * Projection * ModelView * gl_Vertex;
+	}
+{% endhighlight %}
+
 ### Rasterizer
 The rasterizer calls the routine of the fragment shader for each pixel.
 
