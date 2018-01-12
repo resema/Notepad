@@ -146,4 +146,4 @@ The **normal** of each vertex can be stored in a normal map using the RGB values
 
 Normally they are stored in **Darboux frame**. In Darboux frame the z-vector is normal to the object, x the principal curvature direction and y their cross product.
 
-
+![nmap_darboux.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/nmap_darboux.png)
