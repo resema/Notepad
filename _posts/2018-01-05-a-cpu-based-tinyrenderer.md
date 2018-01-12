@@ -95,6 +95,8 @@ struct GouraudShader : public IShader
     // continued in fragment shader
 {% endhighlight %}
 
+**varying** is a reserved keyword in GLSL language. In varying variables we store data to be interpolated inside the triangle, and the fragment shaders get the interpolated values (for current pixel).
+
 ### Rasterizer
 The rasterizer calls the routine of the fragment shader for each pixel.
 
@@ -123,6 +125,9 @@ The main goal of the fragment shader is **to determine the color of the current 
 
 #### Gouraud Shader As Example
 {% highlight cpp linenos %}
+    // written by vertex shader, read by fragment shader
+    // [...]
+    Vec3f varying_intensity; 
     virtual bool fragment(Vec3f bar, TGAColor &color) {
         // interpolate intensity for the current pixel
         float intensity = varying_intensity * bar;
