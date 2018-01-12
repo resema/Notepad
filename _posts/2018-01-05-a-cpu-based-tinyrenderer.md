@@ -138,3 +138,12 @@ The main goal of the fragment shader is **to determine the color of the current 
     }
 };
 {% endhighlight %}
+
+In this example the fragment shaders computes the interpolated intensity. In true GLSL, of course, fragment shaders receive ready interpolated values.
+
+### Normal Mapping
+The **normal** of each vertex can be stored in a normal map using the RGB values as xyz directions.
+
+Normally they are stored in **Darboux frame**. In Darboux frame the z-vector is normal to the object, x the principal curvature direction and y their cross product.
+
+⁄
