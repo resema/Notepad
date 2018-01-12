@@ -145,6 +145,6 @@ In this example the fragment shaders computes the interpolated intensity. In tru
 The **normal** of each vertex can be stored in a normal map using the RGB values as xyz directions.
 
 Normally they are stored in **Darboux frame**. In Darboux frame the coordinate system is aligned so that the z-vector is normal to the object, x the principal curvature direction and y their cross product.
-Due to this coordinate system it fascilitate the use of the vectors in the normal map, because their coordinate system is a **local coordinate system** per vertices.
+Due to this coordinate system it is a **local coordinate system** per vertices. We have therefore to map it to the global coordinate system to use with f.ex. lightning, but in case of **animations** this helps massively. We can also reduce the normal map of symmetric objects to the half.
 
 ![nmap_darboux.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/nmap_darboux.png)
