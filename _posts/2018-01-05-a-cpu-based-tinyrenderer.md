@@ -148,3 +148,8 @@ Normally they are stored in **Darboux frame**. In Darboux frame the coordinate s
 Due to this coordinate system it is a **local coordinate system** per vertices. We have therefore to map it to the global coordinate system to use with f.ex. lightning, but in case of **animations** this helps massively. We can also reduce the normal map of symmetric objects to the half.
 
 ![nmap_darboux.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/nmap_darboux.png)
+
+#### Transformation Of Normal Vectors
+If we have a model and its normal vectors are given by the artist AND this model is transformed with an affine mapping, then normal vectors are to be transformed with a mapping, equal to the transposition of the inverse matrix of the original mapping matrix.
+
+If we transfrom a fragment, we can not just transform the normal vector with the same transformation. We need to compute **new normal vectors** to the **transformed fragment**.
