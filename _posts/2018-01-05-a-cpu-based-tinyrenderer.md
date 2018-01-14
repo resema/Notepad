@@ -97,6 +97,8 @@ struct GouraudShader : public IShader
 
 **varying** is a reserved keyword in GLSL language. In varying variables we store data to be interpolated inside the triangle, and the fragment shaders get the interpolated values (for current pixel).
 
+**uniform** is a reserved keyword in GLSL, it allows to pass constants to the shaders.
+
 ### Rasterizer
 The rasterizer calls the routine of the fragment shader for each pixel.
 
