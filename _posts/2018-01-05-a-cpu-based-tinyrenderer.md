@@ -112,6 +112,7 @@ int y = p0.y*(1.-t) + p1.y*t;
 {% endhighlight %}
 
 It turns out that $$(1-t, t)$$ are barycentric coordinates of the point $$(x,y)$$ with respect to the segment $$p_0, p_1$$: $$(x,y) = p_0*(1-t) + p_1*t$$.
+So the idea is to take the barycentric coordinates version of triangle rasterization, and for every pixel we want to draw simply to multiply its barycentric coordinates by the z-values of the vertices of the triangle we rasterize.
 
 Finally the z-Buffer value has to be calculated by dividing by the 4th coordinate in barycentric coordinates.
 
