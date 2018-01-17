@@ -34,8 +34,8 @@ Then, we deform the scene to create a perspective deformation with **Projection*
 Finally, we draw the scene, and the matrix transforming clip coordinates to the **screen coordinates** is called **Viewport**.
 
 ##### Example
-A point $$v$$ from the .obj file undergoes the following chain of transformation:<br>
-$$Viewport \times Projection \times View \times Model \times v$$ <br>
+A point $$P$$ from the .obj file undergoes the following chain of transformation:<br>
+$$Viewport \times Projection \times View \times Model \times P$$ <br>
 
 
 #### LookAt Method
