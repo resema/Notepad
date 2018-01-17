@@ -27,6 +27,9 @@ I will document my humble opinion and what I learnt from it here in this posts.
 ### Modelview Matrix
 Due to the camera position the new coordinate system of the objects has to be calculated.
 
+#### Chain Of Coordinate Transformation
+Our models, e.g. characters, are created in their own local frame (**object coordinates**). They are inserted into a scene expressed in **world coordinates**. The transformation from one to another is made with matrix **Model**.
+
 #### LookAt Method
 ![lookat.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/lookat.png)
 
