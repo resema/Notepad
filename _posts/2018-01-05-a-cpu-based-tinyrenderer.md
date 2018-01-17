@@ -29,6 +29,14 @@ Due to the camera position the new coordinate system of the objects has to be ca
 
 #### Chain Of Coordinate Transformation
 Our models, e.g. characters, are created in their own local frame (**object coordinates**). They are inserted into a scene expressed in **world coordinates**. The transformation from one to another is made with matrix **Model**.
+Then, we want to express it in the camera frame (**eye coordinates**), the transformation is called **View**.
+Then, we deform the scene to create a perspective deformation with **Projection** matrix. This matrix transforms the scene to so-called **clip coordinates**.
+Finally, we draw the scene, and the matrix transforming clip coordinates to the **screen coordinates** is called **Viewport**.
+
+##### Example
+A point $$v$$ from the .obj file undergoes the following chain of transformation:<br>
+$$Viewport \times Projection \times View \times Model \times v$$ <br>
+
 
 #### LookAt Method
 ![lookat.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/lookat.png)
