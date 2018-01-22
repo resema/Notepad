@@ -167,3 +167,13 @@ Due to this coordinate system it is a **local coordinate system** per vertices. 
 If we have a model and its normal vectors are given by the artist AND this model is transformed with an affine mapping, then normal vectors are to be transformed with a mapping, equal to the transposition of the inverse matrix of the original mapping matrix.
 
 If we transfrom a fragment, we can not just transform the normal vector with the same transformation. We need to compute **new normal vectors** to the **transformed fragment**.
+
+### Shadow Mapping
+There are two different shadow mappings, **hard shadow** and **soft shadow**. In case of hard shadow, there is only one light source which results in a clear outline of the shadow. While in soft shadow mapping the light source is thought of not concentrated in a single point on therefore the shadow results in a blurred out area specially at the farther corners of it.
+
+#### Two-Pass Rendering
+The achieve a hard shadow mapping we will do a **two-pass rendering**. 
+
+First time we will render the image placing the camera at the light source position. It will allow to determine what parts are lit and what parts are hidden from the light. The result is written into the **depth buffer**.
+
+Then in the second pass we do a render taking in account the visibility information.
