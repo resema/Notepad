@@ -175,7 +175,7 @@ For **Diffuse Lighting** we take the dot product of vector $$\vec{n}$$ and $$\ve
 
 For specular lighting we compute the (cosine of) angle between vectors n and l. We walk twice this amount in the direction of $$\vec{n}$$ and subtract the  vector $$\vec{l}$$ to get the reflection vector $$\vec{r}$$. <br>
 
-$$\vec{r} = 2 * (\vec{n} \cross \vec{l}) - \vec{l}$$ <br>
+$$\vec{r} = 2 * (\vec{n} \times \vec{l}) - \vec{l}$$ <br>
 
 The amount of **Specular Light** calculated by the z-componented of the reflected light vector $$\vec{r}$$ and the value per pixel from the **specular map**.
 
