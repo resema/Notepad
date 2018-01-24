@@ -169,7 +169,7 @@ If we have a model and its normal vectors are given by the artist AND this model
 If we transfrom a fragment, we can not just transform the normal vector with the same transformation. We need to compute **new normal vectors** to the **transformed fragment**.
 
 ### Specular Map
-
+![phong.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/phong.png)
 
 #### Reflected Light
 ![reflectedLight.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/reflectedLight.png)
