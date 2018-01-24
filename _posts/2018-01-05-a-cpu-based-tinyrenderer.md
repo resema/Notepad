@@ -169,11 +169,17 @@ If we have a model and its normal vectors are given by the artist AND this model
 If we transfrom a fragment, we can not just transform the normal vector with the same transformation. We need to compute **new normal vectors** to the **transformed fragment**.
 
 #### Reflected Light
-
+![reflectedLight.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/reflectedLight.png)
 
 For diffuse lighting we compute the (cosine of) angle between vectors n and l. We walk twice this amount in the direction of $$\vec{n}$$ and subtract the  vector $$\vec{l}$$ to get the reflection vector $$\vec{r}$$. <br>
 
 $$\vec{r} = 2 * (\vec{n} \cross \vec{l}) - \vec{l}$$ <br>
+
+The amount of **Specular Light** calculated by the z-componented of the reflected light vector $$\vec{r}$$ and the value per pixel from the **specular map**.
+
+{% highlight cpp linenos %}
+float spec = pow(std::max(r.z, 0.f), model->specular(uv));
+{% endhighlight %}
 
 ### Shadow Mapping
 There are two different shadow mappings, **hard shadow** and **soft shadow**. In case of hard shadow, there is only one light source which results in a clear outline of the shadow. While in soft shadow mapping the light source is thought of not concentrated in a single point on therefore the shadow results in a blurred out area specially at the farther corners of it.
