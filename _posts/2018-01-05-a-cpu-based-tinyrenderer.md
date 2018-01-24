@@ -171,7 +171,9 @@ If we transfrom a fragment, we can not just transform the normal vector with the
 #### Reflected Light
 ![reflectedLight.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/reflectedLight.png)
 
-For diffuse lighting we compute the (cosine of) angle between vectors n and l. We walk twice this amount in the direction of $$\vec{n}$$ and subtract the  vector $$\vec{l}$$ to get the reflection vector $$\vec{r}$$. <br>
+For **Diffuse Lighting** we take the dot product of vector $$\vec{n}$$ and $$\vec{l}$$. This amount is used to calculate the final diffuse lighting.
+
+For specular lighting we compute the (cosine of) angle between vectors n and l. We walk twice this amount in the direction of $$\vec{n}$$ and subtract the  vector $$\vec{l}$$ to get the reflection vector $$\vec{r}$$. <br>
 
 $$\vec{r} = 2 * (\vec{n} \cross \vec{l}) - \vec{l}$$ <br>
 
