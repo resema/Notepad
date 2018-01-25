@@ -168,12 +168,30 @@ If we have a model and its normal vectors are given by the artist AND this model
 
 If we transfrom a fragment, we can not just transform the normal vector with the same transformation. We need to compute **new normal vectors** to the **transformed fragment**.
 
+### Specular Map
+![phong.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/phong.png)
+
+#### Reflected Light
+![reflectedLight.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/reflectedLight.png)
+
+For **Diffuse Lighting** we take the dot product of vector $$\vec{n}$$ and $$\vec{l}$$. This amount is used to calculate the final diffuse lighting.
+
+For specular lighting we compute the (cosine of) angle between vectors n and l. We walk twice this amount in the direction of $$\vec{n}$$ and subtract the  vector $$\vec{l}$$ to get the reflection vector $$\vec{r}$$. <br>
+
+$$\vec{r} = 2 * (\vec{n} \times \vec{l}) - \vec{l}$$ <br>
+
+The amount of **Specular Light** calculated by the z-componented of the reflected light vector $$\vec{r}$$ and the value per pixel from the **specular map**.
+
+{% highlight cpp linenos %}
+float spec = pow(std::max(r.z, 0.f), model->specular(uv));
+{% endhighlight %}
+
 ### Shadow Mapping
 There are two different shadow mappings, **hard shadow** and **soft shadow**. In case of hard shadow, there is only one light source which results in a clear outline of the shadow. While in soft shadow mapping the light source is thought of not concentrated in a single point on therefore the shadow results in a blurred out area specially at the farther corners of it.
 
 #### Two-Pass Rendering
 The achieve a hard shadow mapping we will do a **two-pass rendering**. 
 
-First time we will render the image placing the camera at the light source position. It will allow to determine what parts are lit and what parts are hidden from the light.
+First time we will render the image placing the camera at the light source position. It will allow to determine what parts are lit and what parts are hidden from the light. The result is written into the **depth buffer**.
 
 Then in the second pass we do a render taking in account the visibility information.
