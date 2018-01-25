@@ -199,3 +199,6 @@ The achieve a hard shadow mapping we will do a **two-pass rendering**.
 First time we will render the image placing the camera at the light source position. It will allow to determine what parts are lit and what parts are hidden from the light. The result is written into the **depth buffer**.
 
 Then in the second pass we do a render taking in account the visibility information.
+
+### Ambient Occlusion
+Why to choose a constant ambient component? There are other possibilities to simulate a more accurate **diffuse lighting**.
