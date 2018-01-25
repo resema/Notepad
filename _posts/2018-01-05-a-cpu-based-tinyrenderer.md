@@ -168,8 +168,12 @@ If we have a model and its normal vectors are given by the artist AND this model
 
 If we transfrom a fragment, we can not just transform the normal vector with the same transformation. We need to compute **new normal vectors** to the **transformed fragment**.
 
-### Specular Map
+### Phong Reflection Model
 ![phong.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/phong.png)
+
+This is a **local illumination model**. In other words, computing illumination of a current pixel doesn't take into account its neighbors.
+
+In this model the final illumination for a point is the sum of three components: **ambient intensitity** (constant for all points in the scene), **diffuse** and **specular** highlights (depending on normal vectors).
 
 #### Reflected Light
 ![reflectedLight.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/reflectedLight.png)
