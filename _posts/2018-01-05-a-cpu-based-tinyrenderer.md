@@ -202,3 +202,6 @@ Then in the second pass we do a render taking in account the visibility informat
 
 ### Ambient Occlusion
 Why to choose a constant ambient component? There are other possibilities to simulate a more accurate **diffuse lighting**.
+
+#### Brute Force Approach
+Choose an arbituary amount of light sources on a 
