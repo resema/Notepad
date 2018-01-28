@@ -204,7 +204,7 @@ Then in the second pass we do a render taking in account the visibility informat
 Why to choose a constant ambient component? There are other possibilities to simulate a more accurate **diffuse lighting**.
 
 #### Brute Force Approach
-
+![hemisphere.png]({{site.baseurl}}/images/posts/TinyRenderer_AnIntroduction/hemisphere.png)
 
 Choose an arbituary amount of light sources on a (hemi-)sphere. Use this light sources as eye point a calculate the **z-buffer** from this point of view.
 All pixels which are seeing from every *eye* point are drawn white into an **occlusion mask**. This mask is defined in the **uv space** similar to the diffusion mask.
