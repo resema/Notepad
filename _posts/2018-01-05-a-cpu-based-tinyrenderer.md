@@ -209,3 +209,6 @@ Why to choose a constant ambient component? There are other possibilities to sim
 Choose an arbituary amount of light sources on a (hemi-)sphere. Use this light sources as eye point a calculate the **z-buffer** from this point of view.
 All pixels which are seeing from every *eye* point are drawn white into an **occlusion mask**. This mask is defined in the **uv space** similar to the diffusion mask.
 **Summing up** these occlusion masks leads to the total ambient occlusion mask of the object.
+
+#### Screen Space Ambient Occlusion
+The brute force approach is an expensive thing, it requires visibility computations for many points. Let's find a **compromise between computing time and rendering quality**.
