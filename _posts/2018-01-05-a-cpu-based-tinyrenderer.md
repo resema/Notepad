@@ -218,4 +218,4 @@ While the shader only computes the z-buffer the **post-processing routine** will
 
 In the **post-processing**, we emit a number of rays in all directions around the pixel. The z-buffer is used as a **height map**.  We want to compute the **slope in each direction** from the current pixel.
 
-In theory we need to compute the **solid angle** for each point of the z-buffer. The solid angle can be **approximated** by a $$\frac{\sum{90-\text{max_elevation_angle}}}{\text{n-directions}}$$. 
+In theory we need to compute the **solid angle** for each point of the z-buffer. The solid angle can be **approximated** by $$\frac{\sum{90-\text{max_elevation_angle}}}{\text{n-directions}}$$. 
