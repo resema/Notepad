@@ -212,3 +212,10 @@ All pixels which are seeing from every *eye* point are drawn white into an **occ
 
 #### Screen Space Ambient Occlusion
 The brute force approach is an expensive thing, it requires visibility computations for many points. Let's find a **compromise between computing time and rendering quality**.
+
+##### Introducing a Post-Processing Routine
+While the shader only computes the z-buffer the **post-processing routine** will calculate the pixel's color value.
+
+In the **post-processing**, we emit a number of rays in all directions around the pixel. The z-buffer is used as a **height map**.  We want to compute the **slope in each direction** from the current pixel.
+
+In theory we need to compute the **solid angle** for each point of the z-buffer. The solid angle can be **approximated** by a $$\sum{90-\text{max_elevation_angle} / \text{n-directions}}$$. 
