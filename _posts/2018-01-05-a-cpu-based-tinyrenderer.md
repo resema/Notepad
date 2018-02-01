@@ -16,7 +16,7 @@ tags: Renderer Graphics
 >&quot;It’s not that I’m so smart, it’s just that I stay with problems longer.&quot;<small><cite title="einstein">Einstein</cite></small>
 
 ## Graphic Pipeline - An Introduction
-Back in 2016 I found this little tutorial[1](https://github.com/ssloy/tinyrenderer/wiki "TinyRenderer") about the programming of a renderer. Due to other projects I could fullfil this one. And this is why I'm back on it.
+Back in 2016 I found this little tutorial [(1)](https://github.com/ssloy/tinyrenderer/wiki "TinyRenderer") about the programming of a renderer. Due to other projects I could fullfil this one. And this is why I'm back on it.
 
 I love seeing computer creating virtual worlds and therefore I want to now what are the basics of it.
 
