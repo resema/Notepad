@@ -18,3 +18,6 @@ tags: 3DGraphics Tutorial OpenGL
 ## Tiny Real OpenGL Application
 After completing the tutorial about building my own graphics pipeline. I will continue my journey to trully understand 3D graphics by looking at OpenGL.
 
+### OpenGL Toolkit
+I'm using GLFW v3.2.1 as a toolkit to manage windows and user inputs. It has been installed by means of Home Brew.
+
