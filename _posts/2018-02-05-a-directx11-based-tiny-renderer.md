@@ -17,3 +17,5 @@ categories:
 ## Tiny DirectX11 Application
 I'm extending my journey into graphics renderering by DirectX11. I found this larger collection of [tutorials](http://www.rastertek.com/tutindex.html) and I will go through them as far as possible.
 I'll report here my findings and the most important points IMHO.
+
+### Creating A Framework and Window
