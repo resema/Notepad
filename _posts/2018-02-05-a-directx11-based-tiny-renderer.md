@@ -23,3 +23,15 @@ Missing description of long intialization.
 
 ### Initialize DirectX11
 Even longer description is missing.
+
+#### Projection Matrix
+The projection matrix is used to **translate the 3D scene into the 2D viewport space**.
+
+#### World Matrix
+This matrix is used to **convert the vertices of our objects into vertices in the 3D scene**.
+
+#### View Matrix
+The view matrix is used to **calculate the position of where we are looking at the scene from**.
+
+#### Orthographic Projection Matrix
+This matrix is used for **rendering 2D element like user interfaces on the screen** allowing us the skip the 3D rendering.
