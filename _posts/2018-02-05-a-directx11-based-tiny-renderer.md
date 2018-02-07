@@ -19,3 +19,7 @@ I'm extending my journey into graphics renderering by DirectX11. I found this la
 I'll report here my findings and the most important points IMHO.
 
 ### Creating A Framework and Window
+Missing description of long intialization.
+
+### Initialize DirectX11
+Even longer description is missing.
