@@ -81,3 +81,5 @@ void main()
 Remember forever:
 - if $$w == 1$$, then the vector $$(x,y,z,1)$$ is a **position in space**
 - if $$w == 0$$, then the vector $$(x,y,z,0)$$is a **direction in space**
+
+**Homogeneous coordinates** allow us to use a single mathematical formula to deal with these two cases.
