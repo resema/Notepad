@@ -24,7 +24,7 @@ I'm using GLFW v3.2.1 as a toolkit to manage windows and user inputs. It has bee
 ### Shaders
 Shaders have to be compiled at runtime. This usually happens at startup. 
 
-{% highlight c++ lineos %}
+{% highlight c++ linenos %}
 // if only one src code then sz=1 and length omitted
 glShaderSource(id, sz, ptr_to_code, length);
 // compile the src
@@ -35,7 +35,7 @@ glGetShaderInfoLog(id, log_length, msg_length /*NULL*/, ptr_to_msg);
 {% endhighlight %}
 
 After compiling the shader code, they have to be linked to a created programm.
-{% highlight c++ lineos %}
+{% highlight c++ linenos %}
 GLuint program_id = glCreateProgram();
 glAttachShader(program_id, vertex_shader_id);
 glAttachShader(program_id, fragment_shader_id);
@@ -46,7 +46,7 @@ glLinkProgram(program_id);
 
 ##### Vertex Shader
 
-{% highlight glsl lineos %}
+{% highlight glsl linenos %}
 // version description
 #version 330 core
 // location: buffer we use for the variable
@@ -64,7 +64,7 @@ void main()
 {% endhighlight %}
 
 ##### Fragment Shader
-{% highlight glsl lineos %}
+{% highlight glsl linenos %}
 // version description
 #version 330 core
 // out: output data
@@ -90,14 +90,22 @@ To go from **Model Space** (all vertices efined relatively to the cetner of the 
 #### View Matrix
 To go from **World Space** (all vertices defined relatively to the center of the world) to **Camera Space** (all vertices defined relatively to the camera, we have to multiply all vertices in World Space by the View Matrix.
 
+{% highlight c++ linenos %}
+glm::mat4 CameraMatrix = glm::lookAt(
+  cameraPosition, // the position of your camera, in world space
+  cameraTarget,   // where you want to look at, in world space
+  upVector        // probably glm::vec3(0,1,0), but (0,-1,0) would make you looking upside-down, which can be great too
+);
+{% endhighlight %}
+
 #### Projection Matrix
 In **Camera Space** a vertex that happens to have $$x==0$$ and $$y==0$$ should be rendered at the center of the screen. To take the depth into account we have to get into **Perspective Projection**. This is done by multiplying by the Projection Matrix.
 
 {% highlight c++ linenos %}
 // Generates a really hard-to-read matrix, but a normal, standard 4x4 matrix nonetheless
 glm::mat4 projectionMatrix = glm::perspective(
-  glm::radians(FoV), // The vertical Field of View, in radians: the amount of "zoom". Think "camera lens". Usually between 90° (extra wide) and 30° (quite zoomed in)
-  4.0f / 3.0f,       // Aspect Ratio. Depends on the size of your window. Notice that 4/3 == 800/600 == 1280/960, sounds familiar ?
+  glm::radians(FoV), // The vertical Field of View, in radians: the amount of "zoom". 
+  4.0f / 3.0f,       // Aspect Ratio. Depends on the size of your window.
   0.1f,              // Near clipping plane. Keep as big as possible, or you'll get precision issues.
   100.0f             // Far clipping plane. Keep as little as possible.
 );
