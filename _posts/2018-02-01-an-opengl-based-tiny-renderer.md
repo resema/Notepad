@@ -41,3 +41,7 @@ glAttachShader(program_id, vertex_shader_id);
 glAttachShader(program_id, fragment_shader_id);
 glLinkProgram(program_id);
 {% endhighlight %}
+
+```c_cpp
+x = x + 1;
+// hello ```
