@@ -13,7 +13,7 @@ categories:
   - Programming
 tags: 3DGraphics Tutorial OpenGL
 ---
->&quot;It’s not that I’m so smart, it’s just that I stay with problems longer.&quot;<small><cite title="einstein">Einstein</cite></small>
+>&quot;The engines don’t move the ship at all. The ship stays where it is and the engines move the universe around it.&quot;<small><cite title="futurama">Futurama</cite></small>
 
 ## Tiny Real OpenGL Application
 After completing the tutorial about building my own graphics pipeline. I will continue my journey to trully understand 3D graphics by looking at OpenGL.
