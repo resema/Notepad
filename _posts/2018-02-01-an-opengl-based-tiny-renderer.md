@@ -43,6 +43,9 @@ glLinkProgram(program_id);
 {% endhighlight %}
 
 #### GL Shader Language (GLSL)
+
+##### Vertex Shader
+
 {% highlight glsl lineos %}
 // version description
 #version 330 core
@@ -59,3 +62,18 @@ void main()
   gl_Position.w = 1.0;
 }
 {% endhighlight %}
+
+##### Fragment Shader
+{% highlight glsl lineos %}
+// version description
+#version 330 core
+// out: output data
+// vec3; data type
+out vec3 variable_name;
+// main
+void main()
+{
+variable_name = vec3(1,0,0);
+}
+{% endhighlight %}
+
