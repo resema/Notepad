@@ -24,6 +24,7 @@ I'm using GLFW v3.2.1 as a toolkit to manage windows and user inputs. It has bee
 ### Shaders
 Shaders have to be compiled at runtime. This usually happens at startup. 
 {% highlight cpp lineos}
-glShaderSource(id, sz, pointer_to_code);
+// if only one src code then sz=1 and length omitted
+glShaderSource(id, sz, pointer_to_code, length);
 glCompileShader(id);
 {% endhighlight %}
