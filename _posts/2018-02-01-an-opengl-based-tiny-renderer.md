@@ -21,3 +21,9 @@ After completing the tutorial about building my own graphics pipeline. I will co
 ### OpenGL Toolkit
 I'm using GLFW v3.2.1 as a toolkit to manage windows and user inputs. It has been installed by means of Home Brew.
 
+### Shaders
+Shaders have to be compiled at runtime. This usually happens at startup. 
+{% highlight cpp lineos}
+glShaderSource(id, sz, pointer_to_code);
+glCompileShader(id);
+{% endhighlight %}
