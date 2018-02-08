@@ -78,6 +78,6 @@ void main()
 {% endhighlight %}
 
 ### Homogeneous Coordinates
-Remember for ever:
+Remember forever:
 - if $$w == 1$$, then the vector $$(x,y,z,1)$$ is a **position in space**
 - if $$w == 0$$, then the vector $$(x,y,z,0)$$is a **direction in space**
