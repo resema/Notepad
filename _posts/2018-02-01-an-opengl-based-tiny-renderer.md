@@ -41,3 +41,21 @@ glAttachShader(program_id, vertex_shader_id);
 glAttachShader(program_id, fragment_shader_id);
 glLinkProgram(program_id);
 {% endhighlight %}
+
+#### GL Shader Language (GLSL)
+{% highlight glsl lineos %}
+// version description
+#version 330 core
+// location: buffer we use for the variable
+// in: input data (corresponding out)
+// vec3: data type
+layout(location = 0) in vec3 variable_name;
+
+// main
+void main()
+{
+  //  gl_Position: built-in variable 
+  gl_Position.xyz = variable_name;
+  gl_Position.w = 1.0;
+}
+{% endhighlight %}
