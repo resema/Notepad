@@ -24,7 +24,7 @@ I'm using GLFW v3.2.1 as a toolkit to manage windows and user inputs. It has bee
 ### Shaders
 Shaders have to be compiled at runtime. This usually happens at startup. 
 
-{% highlight c++ lineos %}
+{% highlight glsl lineos %}
 void compile()
 {
   // if only one src code then sz=1 and length omitted
@@ -38,7 +38,7 @@ void compile()
 {% endhighlight %}
 
 After compiling the shader code, they have to be linked to a created programm.
-{% highlight cpp lineos %}
+{% highlight c++ lineos %}
 void link()
 {
   GLuint program_id = glCreateProgram();
