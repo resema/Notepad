@@ -35,7 +35,7 @@ glGetShaderInfoLog(id, log_length, msg_length /*NULL*/, ptr_to_msg);
 {% endhighlight %}
 
 After compiling the shader code, they have to be linked to a created programm.
-{% highlight cpp lineos %}
+{% highlight c lineos %}
 GLuint program_id = glCreateProgram();
 glAttachShader(program_id, vertex_shader_id);
 glAttachShader(program_id, fragment_shader_id);
