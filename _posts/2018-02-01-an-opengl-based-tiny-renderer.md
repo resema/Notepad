@@ -38,7 +38,7 @@ void compile()
 {% endhighlight %}
 
 After compiling the shader code, they have to be linked to a created programm.
-{% highlight gpp lineos %}
+{% highlight cpp lineos %}
 void link()
 {
   GLuint program_id = glCreateProgram();
