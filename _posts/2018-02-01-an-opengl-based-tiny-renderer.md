@@ -44,4 +44,5 @@ glLinkProgram(program_id);
 
 ```c_cpp
 x = x + 1;
-// hello ```
+// hello 
+```
