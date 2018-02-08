@@ -73,7 +73,7 @@ out vec3 variable_name;
 // main
 void main()
 {
-variable_name = vec3(1,0,0);
+  variable_name = vec3(1,0,0);
 }
 {% endhighlight %}
 
