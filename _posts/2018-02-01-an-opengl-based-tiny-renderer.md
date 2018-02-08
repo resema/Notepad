@@ -94,7 +94,7 @@ To go from **World Space** (all vertices defined relatively to the center of the
 glm::mat4 CameraMatrix = glm::lookAt(
   cameraPosition, // the position of your camera, in world space
   cameraTarget,   // where you want to look at, in world space
-  upVector        // probably glm::vec3(0,1,0), but (0,-1,0) would make you looking upside-down, which can be great too
+  upVector        // probably glm::vec3(0,1,0)
 );
 {% endhighlight %}
 
@@ -105,7 +105,7 @@ In **Camera Space** a vertex that happens to have $$x==0$$ and $$y==0$$ should b
 // Generates a really hard-to-read matrix, but a normal, standard 4x4 matrix nonetheless
 glm::mat4 projectionMatrix = glm::perspective(
   glm::radians(FoV), // The vertical Field of View, in radians: the amount of "zoom". 
-  4.0f / 3.0f,       // Aspect Ratio. Depends on the size of your window.
+  4.0f / 3.0f,       // Aspect Ratio. Depends on the size of your window. 
   0.1f,              // Near clipping plane. Keep as big as possible, or you'll get precision issues.
   100.0f             // Far clipping plane. Keep as little as possible.
 );
