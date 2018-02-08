@@ -24,28 +24,22 @@ I'm using GLFW v3.2.1 as a toolkit to manage windows and user inputs. It has bee
 ### Shaders
 Shaders have to be compiled at runtime. This usually happens at startup. 
 
-{% highlight glsl lineos %}
-void compile()
-{
-  // if only one src code then sz=1 and length omitted
-  glShaderSource(id, sz, ptr_to_code, length);
-  // compile the src
-  glCompileShader(id); 
-  // to check for invalid values or errors
-  glGetShaderiv(id, flag, ptr_to_buffer);
-  glGetShaderInfoLog(id, log_length, msg_length /*NULL*/, ptr_to_msg);
-}
+{% highlight c++ lineos %}
+// if only one src code then sz=1 and length omitted
+glShaderSource(id, sz, ptr_to_code, length);
+// compile the src
+glCompileShader(id);
+// to check for invalid values or errors
+glGetShaderiv(id, flag, ptr_to_buffer);
+glGetShaderInfoLog(id, log_length, msg_length /*NULL*/, ptr_to_msg);
 {% endhighlight %}
 
 After compiling the shader code, they have to be linked to a created programm.
 {% highlight c++ lineos %}
-void link()
-{
-  GLuint program_id = glCreateProgram();
-  glAttachShader(program_id, vertex_shader_id);
-  glAttachShader(program_id, fragment_shader_id);
-  glLinkProgram(program_id);
-}
+GLuint program_id = glCreateProgram();
+glAttachShader(program_id, vertex_shader_id);
+glAttachShader(program_id, fragment_shader_id);
+glLinkProgram(program_id);
 {% endhighlight %}
 
 #### GL Shader Language (GLSL)
