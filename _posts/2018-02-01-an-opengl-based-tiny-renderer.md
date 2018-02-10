@@ -112,6 +112,38 @@ glm::mat4 projectionMatrix = glm::perspective(
 {% endhighlight %}
 
 #### Example Of Shaders
+The input variable to the shaders have to be passed and/or to be en-/disabled in the C++ code as follows:
+{% highlight c++ linenos %}
+GLuint program_id = LoadShaders("path/filename.vs", "path/filename.fs");
+
+// get a handle for our "MVP" uniform 
+GLuint matrix_id = glGetUniformLocation(program_id, "MVP");
+do {
+  glUseProgram(program_id);
+  
+  // send uniform variable to the shader
+  glUniformMatrix4fv(matrix_id, 1, GL_FALSE, pointer_matrix_begin);
+  
+  // enable connection
+  glEnableVertexAttribArray(0);		// layout location 0
+  glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer);
+  
+  glVertexAttribPointer(
+    0,          // attribute 0
+    3,          // size
+    GL_FLOAT,   // type
+    GL_FALSE,   // normalized
+    0,          // stride
+    (void*)0    // array buffer offset
+  );
+  
+  glDrawArrays(GL_TRIANGLES, 0, cnt);
+  
+  // disable connection
+  glDisableVertexAttribArray(0);
+  
+} while (true);
+
 {% highlight glsl linenos %}
 #version 330 core
 
