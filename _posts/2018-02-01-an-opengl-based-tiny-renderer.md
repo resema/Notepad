@@ -143,6 +143,7 @@ do {
   glDisableVertexAttribArray(0);
   
 } while (true);
+{% endhighlight %}
 
 {% highlight glsl linenos %}
 #version 330 core
