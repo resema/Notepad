@@ -35,3 +35,17 @@ The view matrix is used to **calculate the position of where we are looking at t
 
 #### Orthographic Projection Matrix
 This matrix is used for **rendering 2D element like user interfaces on the screen** allowing us the skip the 3D rendering.
+
+### Buffers, Shaders And HLSL
+
+#### Vertex Buffer
+An objects is composed of hundreds of triangles. Each of the triangles in the model has three points to it, they re called vertices. To render the object we need to put all vertices into a special array that we call **vertex buffer**.
+
+#### Index Buffers
+Index buffers are related to vertex buffers. Their purpose is to record the location of each vertex that is in the vertex buffer. They help find the vertex faster.
+
+#### Vertex Shaders
+Vertex shaders are small programms that are written maily for transforming the vertices from the vertex buffer into 3d space.
+
+#### Pixel Shaders
+Pixel shaders are small programs that are written for doing the coloring of the polygons that we draw. They are run by the GPU for every visible pixel.
