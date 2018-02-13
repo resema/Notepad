@@ -42,7 +42,7 @@ This matrix is used for **rendering 2D element like user interfaces on the scree
 An objects is composed of hundreds of triangles. Each of the triangles in the model has three points to it, they re called vertices. To render the object we need to put all vertices into a special array that we call **vertex buffer**.
 
 ##### Input Layout
-Direct3D uses what is called an **input layout**. An input layout is the layout of the data conaining the location and properties of a vertex.
+Direct3D uses what is called an **input layout**. An input layout is the layout of the data containing the location and properties of a vertex.
 
 Input layout let us select which information we want to use and send just that data. This enables us to send many more vertices between each frame.
 
