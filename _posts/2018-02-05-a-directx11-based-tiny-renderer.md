@@ -58,7 +58,7 @@ Pixel shaders are small programs that are written for doing the coloring of the 
 ### Shaders And HLSL
 The vertex and pixel shader are **COM objects**.
 
-{% highlight hlsl linenos %}
+{% highlight c++ linenos %}
 // global
 ID3D11VertexShader* pVS;
 ID3D11PixelShader* pPS;
@@ -79,4 +79,3 @@ void InitPipeline()
   devcon->PSSetShader(pPS, 0, 0);
 }
 {% endhighlight %}
-
