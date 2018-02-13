@@ -44,7 +44,7 @@ An objects is composed of hundreds of triangles. Each of the triangles in the mo
 ##### Input Layout
 Direct3D uses what is called an **input layout**. An input layout is the layout of the data conaining the location and properties of a vertex.
 
-Input layout let us select which information we want to use and send just that data.
+Input layout let us select which information we want to use and send just that data. This enables us to send many more vertices between each frame.
 
 #### Index Buffers
 Index buffers are related to vertex buffers. Their purpose is to record the location of each vertex that is in the vertex buffer. They help find the vertex faster.
