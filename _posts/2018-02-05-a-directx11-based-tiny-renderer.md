@@ -23,7 +23,7 @@ Missing description of long intialization.
 
 ### Initialize DirectX11
 {% highlight c++ linenos %}
-// COM interface objct used to change the back to the front buffer
+// COM interface object used to change the back to the front buffer
 IDXGISwapChain* SwapChain;
 // interface, which represents our hardware device (GPU)
 ID3D11Device* d3d11Device;
@@ -36,7 +36,7 @@ ID3D11RenderTargetView* renderTargetView;
 
 Create the **Swap Chain**, the **Back Buffer** and the **Render Target**. Then bind them to the **Output-Merger State** of the pipeline.
 
-{% highlight c++ linenos &}
+{% highlight c++ linenos %}
 // Create SwapChain
 hr = D3D11CreateDeviceAndSwapChain(
   NULL, 
