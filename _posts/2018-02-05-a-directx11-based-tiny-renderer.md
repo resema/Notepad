@@ -34,6 +34,37 @@ ID3D11DeviceContext* d3d11DevCon;
 ID3D11RenderTargetView* renderTargetView;
 {% endhighlight %}
 
+Create the **Swap Chain**, the **Back Buffer** and the **Render Target**. Then bind them to the **Output-Merger State** of the pipeline.
+
+{% highlight c++ linenos &}
+// Create SwapChain
+hr = D3D11CreateDeviceAndSwapChain(
+  NULL, 
+  D3D_DRIVER_TYPE_HARDWARE, 
+  NULL, 
+  NULL, 
+  NULL, 
+  NULL,
+  D3D11_SDK_VERSION, 
+  &swapChainDesc, 
+  &SwapChain, 
+  &d3d11Device, 
+  NULL, 
+  &d3d11DevCon
+  );
+  
+// Create BackBuffer
+ID3D11Texture2D* BackBuffer;
+hr = SwapChain->GetBuffer( 0, __uuidof( ID3D11Texture2D ), (void**)&BackBuffer );
+
+// Create Render Target
+hr = d3d11Device->CreateRenderTargetView( BackBuffer, NULL, &renderTargetView );
+BackBuffer->Release();
+
+// Bind  Render Target to Output-Merger state
+d3d11DevCon->OMSetRenderTargets( 1, &renderTargetView, NULL );
+{% endhighlight %}
+
 #### Projection Matrix
 The projection matrix is used to **translate the 3D scene into the 2D viewport space**.
 
