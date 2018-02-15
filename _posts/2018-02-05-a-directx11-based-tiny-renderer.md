@@ -32,7 +32,7 @@ ID3D11DeviceContext* d3d11DevCon;
 // interface object which is the render target view
 //  we write into this 2d texture and this texture is sent to the pipeline
 ID3D11RenderTargetView* renderTargetView;
-{% endhightlight %}
+{% endhighlight %}
 
 #### Projection Matrix
 The projection matrix is used to **translate the 3D scene into the 2D viewport space**.
