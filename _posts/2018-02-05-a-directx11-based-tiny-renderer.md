@@ -62,7 +62,12 @@ hr = SwapChain->GetBuffer(
   );
 
 // Create Render Target
-hr = d3d11Device->CreateRenderTargetView( BackBuffer, NULL, &renderTargetView );
+hr = d3d11Device->CreateRenderTargetView(
+  BackBuffer,        // pResource
+  NULL,              // pDesc
+  &renderTargetView  // pRTView
+  );
+// we don't need the backbuffer anymore
 BackBuffer->Release();
 
 // Bind  Render Target to Output-Merger state
