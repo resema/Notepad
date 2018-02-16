@@ -39,18 +39,18 @@ Create the **Swap Chain**, the **Back Buffer** and the **Render Target**. Then b
 {% highlight c++ linenos %}
 // Create SwapChain
 hr = D3D11CreateDeviceAndSwapChain(
-  NULL, 
-  D3D_DRIVER_TYPE_HARDWARE, 
-  NULL, 
-  NULL, 
-  NULL, 
-  NULL,
-  D3D11_SDK_VERSION, 
-  &swapChainDesc, 
-  &SwapChain, 
-  &d3d11Device, 
-  NULL, 
-  &d3d11DevCon
+  NULL,                     // pAdapter
+  D3D_DRIVER_TYPE_HARDWARE, // DriverType
+  NULL, 				    // Software
+  NULL, 				    // Flags
+  NULL, 					// pFeatureLvls
+  NULL,     				// FeatureLvls
+  D3D11_SDK_VERSION, 		// SDK Version
+  &swapChainDesc, 			// pSwapChainDesc
+  &SwapChain, 				// ppSwapChain Interface
+  &d3d11Device, 			// ppDevice
+  NULL, 					// pFeatureLvls
+  &d3d11DevCon				// ppImmediateContext
   );
   
 // Create BackBuffer
