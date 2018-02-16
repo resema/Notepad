@@ -78,6 +78,28 @@ d3d11DevCon->OMSetRenderTargets(
   );
 {% endhighlight %}
 
+### Rendering A Scene
+{% highlight c++ linenos %}
+void DrawScene()
+{
+  // clear backbuffer to color
+  D3DXCOLOR bgColor(red, green, blue, 1.f);
+  
+  d3d11DevCon->ClearRenderTargetView(
+    renderTargetView,
+    bgColor
+    );
+    
+  // present backbuffer to screen
+  SwapChain->Present(
+    0,
+    0
+    );
+}
+{% endhighlight %}
+
+### Matrices
+
 #### Projection Matrix
 The projection matrix is used to **translate the 3D scene into the 2D viewport space**.
 
