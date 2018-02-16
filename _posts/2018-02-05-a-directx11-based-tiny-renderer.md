@@ -58,7 +58,7 @@ ID3D11Texture2D* BackBuffer;
 hr = SwapChain->GetBuffer( 
   0,                            // first buffer 
   __uuidof( ID3D11Texture2D ),  // ref ID to type of interface
-  (void**)&BackBuffer           // Ptr to buffer
+  (void**)&BackBuffer           // ptr to buffer
   );
 
 // Create Render Target
