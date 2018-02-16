@@ -30,7 +30,7 @@ ID3D11Device* d3d11Device;
 //  2nd part of device interface, used to call rendering methods
 ID3D11DeviceContext* d3d11DevCon;
 // interface object which is the render target view
-//  we write into this 2d texture and this texture is sent to the pipeline
+//  we write into this 2D texture and this texture is sent to the pipeline
 ID3D11RenderTargetView* renderTargetView;
 {% endhighlight %}
 
