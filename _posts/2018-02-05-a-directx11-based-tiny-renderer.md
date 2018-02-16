@@ -41,24 +41,24 @@ Create the **Swap Chain**, the **Back Buffer** and the **Render Target**. Then b
 hr = D3D11CreateDeviceAndSwapChain(
   NULL,                     // pAdapter
   D3D_DRIVER_TYPE_HARDWARE, // DriverType
-  NULL, 				    // Software
-  NULL, 				    // Flags
-  NULL, 					// pFeatureLvls
-  NULL,     				// FeatureLvls
-  D3D11_SDK_VERSION, 		// SDK Version
-  &swapChainDesc, 			// pSwapChainDesc
-  &SwapChain, 				// ppSwapChain Interface
-  &d3d11Device, 			// ppDevice
-  NULL, 					// pFeatureLvls
-  &d3d11DevCon				// ppImmediateContext
+  NULL,                     // Software
+  NULL,                     // Flags
+  NULL,                     // pFeatureLvls
+  NULL,                     // FeatureLvls
+  D3D11_SDK_VERSION,        // SDK Version
+  &swapChainDesc,           // pSwapChainDesc
+  &SwapChain,               // ppSwapChain Interface
+  &d3d11Device,             // ppDevice
+  NULL,                     // pFeatureLvls
+  &d3d11DevCon              // ppImmediateContext
   );
   
 // Create BackBuffer
 ID3D11Texture2D* BackBuffer;
 hr = SwapChain->GetBuffer( 
-  0,							// first buffer 
+  0,                            // first buffer 
   __uuidof( ID3D11Texture2D ),  // reference ID to interface
-  (void**)&BackBuffer 			// Ptr to buffer
+  (void**)&BackBuffer           // Ptr to buffer
   );
 
 // Create Render Target
