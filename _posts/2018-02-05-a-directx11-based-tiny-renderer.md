@@ -21,7 +21,7 @@ I'll report here my findings and the most important points IMHO.
 ### Creating A Framework and Window
 Missing description of long intialization.
 
-### Initialize DirectX11
+### Basic Initialization Of DirectX11
 {% highlight c++ linenos %}
 // COM interface object used to change the back to the front buffer
 IDXGISwapChain* SwapChain;
