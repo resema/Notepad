@@ -34,7 +34,7 @@ ID3D11DeviceContext* d3d11DevCon;
 ID3D11RenderTargetView* renderTargetView;
 {% endhighlight %}
 
-Create the **Swap Chain**, the **Back Buffer** and the **Render Target**. Then bind them to the **Output-Merger State** of the pipeline.
+Create the **Swap Chain**, the **Back Buffer** and the **Render Target View**. Then bind them to the **Output-Merger State** of the pipeline.
 
 {% highlight c++ linenos %}
 // Create SwapChain
