@@ -86,14 +86,14 @@ void DrawScene()
   D3DXCOLOR bgColor(red, green, blue, 1.f);
   
   d3d11DevCon->ClearRenderTargetView(
-    renderTargetView,
-    bgColor
+    renderTargetView,  // pRenderTargetView
+    bgColor            // ColorRGBA
     );
     
   // present backbuffer to screen
   SwapChain->Present(
-    0,
-    0
+    0,                 // SyncInterval
+    0                  // Flags
     );
 }
 {% endhighlight %}
