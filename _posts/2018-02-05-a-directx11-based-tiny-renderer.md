@@ -72,7 +72,7 @@ BackBuffer->Release();
 
 // Bind  Render Target to Output-Merger state
 d3d11DevCon->OMSetRenderTargets(
-  1,                 //NumViews of render target views
+  1,                 // NumViews of render target views
   &renderTargetView, // ppRenderTargetViews
   NULL               // pDepthStencilView
   );
