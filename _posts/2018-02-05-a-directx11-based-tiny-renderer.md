@@ -57,7 +57,7 @@ hr = D3D11CreateDeviceAndSwapChain(
 ID3D11Texture2D* BackBuffer;
 hr = SwapChain->GetBuffer( 
   0,                            // first buffer 
-  __uuidof( ID3D11Texture2D ),  // reference ID to interface
+  __uuidof( ID3D11Texture2D ),  // ref ID to interface
   (void**)&BackBuffer           // Ptr to buffer
   );
 
