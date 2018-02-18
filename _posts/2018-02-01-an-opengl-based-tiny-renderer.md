@@ -210,4 +210,16 @@ glTexImage2D(
   GL_UNSIGNED_BYTE,   // data type
   data                // ptr to image data
   );
+  
+// CONFIGURE it (poor filtering)
+glTexParameteri(
+  GL_TEXTURE_2D,          // target texture
+  GL_TEXTURE_MAG_FILTER,  // symbolic name
+  GL_NEAREST              // value of name
+  );
+glTexParameteri(
+  GL_TEXTURE_2D,
+  GL_TEXTURE_MAG_FILTER,
+  GL_NEAREST
+  );
 {% endhighlight %}
