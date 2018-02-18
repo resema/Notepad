@@ -193,7 +193,7 @@ glGenTextures(
   &textureID  // array which stores the generated texture names
   );
 
-// "Bind" the newly created texture: all future texture functions will modify texture
+// BIND the newly created texture: all future texture functions will modify texture
 glBindTexture(
   GL_TEXTURE_2D,   // specify target
   textureID        // texture name
