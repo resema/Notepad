@@ -179,3 +179,8 @@ void main()
   color = fragmentColor;
 }
 {% endhighlight %}
+
+### Buffers And Textures
+Creating textures is very similar to creating vertex buffers: Create a texture, bind it, fill it, and configure it.
+
+In **glTexImage2D**, the GL_RGB indicates that we are talking about a 3-component color, and GL_BGR says how exactly it is represented in RAM. As a matter of fact, BMP does store $$\text{Blue}\to\text{Green}\to\text{Red}$$, and this has to be told to OpenGL.
