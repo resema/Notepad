@@ -225,5 +225,5 @@ glTexParameteri(
 {% endhighlight %}
 
 #### Compressed Textures
-A useful tool to create compressed textures, which are understood by the graphics hardware is (The Compressonator)[https://gpuopen.com/gaming-product/compressonator/]. It can produce mipmaps inthe formats DXT1, DXT3 or DXT5.
+A useful tool to create compressed textures, which are understood by the graphics hardware is [The Compressonator](https://gpuopen.com/gaming-product/compressonator/). It can produce mipmaps inthe formats DXT1, DXT3 or DXT5.
 Your graphics card provides dedicated hardware to decompress such file formats. Therefor using texture compression yields a 20% increase in performance.
