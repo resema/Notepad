@@ -223,3 +223,6 @@ glTexParameteri(
   GL_NEAREST
   );
 {% endhighlight %}
+
+#### Compressed Textures
+A useful tool to create compressed textures, which are understood by the graphics hardware is (The Compressonator)[https://gpuopen.com/gaming-product/compressonator/]. It can produce mipmaps inthe formats DXT1, DXT3 or DXT5.
