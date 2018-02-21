@@ -165,3 +165,6 @@ The two buffers used by the IA are the **vertex** and **index buffers**.
 
 #### Vertex Shader (VS)
 The VS is the first programmable shader, which means we have to program it ourselves.
+The VS stage is what all the vertices go through after the primitives have been assembled in the IA. It allows transformation, scaling, lighting, displacement mapping for textures and stuff like that.
+
+The vertex shader takes a single vertex as input and returns a single input.
