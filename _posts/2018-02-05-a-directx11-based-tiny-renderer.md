@@ -155,3 +155,5 @@ void InitPipeline()
   devcon->PSSetShader(pPS, 0, 0);
 }
 {% endhighlight %}
+
+### Programmable Graphics Rendering Pipeline
