@@ -159,3 +159,9 @@ void InitPipeline()
 ### Programmable Graphics Rendering Pipeline
 ![RenderPipeline.PNG]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/RenderPipeline.PNG)
 
+#### Input Assembler (IA)
+The IA is a fixed function stage, which reads geometric data, vertices and indices. It uses the data to create primitives which will be fed into and used by other stages.
+The two buffers used by the IA are the **vertex** and **index buffers**.
+
+#### Vertex Shader (VS)
+The VS is the first programmable shader, which means we have to program it ourselves.
