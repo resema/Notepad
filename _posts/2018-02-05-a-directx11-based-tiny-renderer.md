@@ -157,3 +157,5 @@ void InitPipeline()
 {% endhighlight %}
 
 ### Programmable Graphics Rendering Pipeline
+![RenderPipeline.PNG]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/RenderPipeline.PNG)
+
