@@ -168,3 +168,34 @@ The VS is the first programmable shader, which means we have to program it ourse
 The VS stage is what all the vertices go through after the primitives have been assembled in the IA. It allows transformation, scaling, lighting, displacement mapping for textures and stuff like that.
 
 The vertex shader takes a single vertex as input and returns a single input.
+
+#### Hull Shader (HS)
+The HS is the first of the three optional stages added to graphics rendering pipeline. The three new stages , Hull Shader, Tessellator and Domain Shader, all work together to implement **tesselation**.
+
+Tesselation takes a primitive object and divides it up into many smaller section to increase the detail of models. They are not saved to memory, so this saves much time in creating them on the CPU and memory.
+
+The **Hull Shader**  calculates how and where to add new verties to a primitive to make it more detailed.
+
+#### Tessellator (TS)
+The TS is the second, fixed stage in the tessellation process and actually does the diving of the primitive.
+
+#### Domains Shader (DS)
+This programmable function stage transforms the vertices from the the tessellator stage to create the more detail.
+
+#### Geometry Shader (GS)
+Another optional pragrammable function stage. It is able to create or destroy primitives.
+
+#### Stream Output (SO)
+This stage is used to obtain Vertex data from the pipeline. Vertex data output from the SO are always sent out as lists, such as line lists or triangle list. Incomplete primitives are never sent out, they are just silently discarded.
+
+#### Rasterization Stage (RS)
+The RS stage takes the vector information sent to it and turns them into pixels by interpolating per-vertex values across each primitive.
+It also handles the clipping.
+
+#### Pixel Shader (PS)
+This stage does calculations and modifies each pixel, such as lighting on a per pixel base. It is another programmable function and an optional stage.
+
+The job of the pixel shader is to calculate the final color of each pixel fragment.
+
+#### Output Merger (OM)
+The final stage in the pipeline. This stage takes the pixel fragments and depth/stencil buffers and determines which pixels are actually written to the render target.
