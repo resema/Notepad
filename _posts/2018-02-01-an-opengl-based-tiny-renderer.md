@@ -228,4 +228,4 @@ glTexParameteri(
 A useful tool to create compressed textures, which are understood by the graphics hardware is [The Compressonator](https://gpuopen.com/gaming-product/compressonator/). It can produce mipmaps inthe formats DXT1, DXT3 or DXT5.
 Your graphics card provides dedicated hardware to decompress such file formats. Therefor using texture compression yields a 20% increase in performance.
 
-The following link provides information about the file layout of a .dds file: [link](https://msdn.microsoft.com/en-us/library/bb943982.aspx).
+This [link](https://msdn.microsoft.com/en-us/library/bb943982.aspx) provides information about the file layout of a .dds file.
