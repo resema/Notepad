@@ -149,6 +149,51 @@ Vertex shaders are small programms that are written maily for transforming the v
 #### Pixel Shaders
 Pixel shaders are small programs that are written for doing the coloring of the polygons that we draw. They are run by the GPU for every visible pixel.
 
+#### Constant Buffers
+A constant buffer is basically a structure in an effect file which holds variables able to be updated from the game code. It can be created using the **cbuffer** type.
+
+{% highlight c++ linenos %}
+//
+// Vertex Shader
+cbuffer MatrixBuffer
+{
+  matrix worldMatrix;
+  matrix viewMatrix;
+  matrix projectionMatrix;
+};
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+//
+// Game Code
+
+// direct3D buffer interface
+ID3D11Buffer* m_matrixBuffer;  
+
+// constant buffer structure
+struct MatrixBufferType
+{
+  XMMATRIX world;
+  XMMATRIX view;
+  XMMATRIX projection;
+};
+
+// setup the description of the constant buffer
+matrixBufferDesc.Usage = D3D11_USAGE_DYNAMIC;
+matrixBufferDesc.ByteWidth = sizeof(MatrixBufferType);
+matrixBufferDesc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
+matrixBufferDesc.CPUAccessFlags = D3D11_CPU_ACCESS_WRITE;
+matrixBufferDesc.MiscFlags = 0;
+matrixBufferDesc.StructureByteStride = 0;
+
+// create the constant buffer ptr
+result = device->CreateBuffer(
+  &matrixBufferDesc,  // buffer description
+  NULL,               // pInitialData
+  &m_matrixBuffer     // ptr to buffer interface
+  );
+{% endhighlight %}
+
 ### Shaders And HLSL
 The vertex and pixel shader are **COM objects**.
 
