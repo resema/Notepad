@@ -177,6 +177,7 @@ struct MatrixBufferType
   XMMATRIX view;
   XMMATRIX projection;
 };
+MatrixBufferType matrices;
 
 // setup the description of the constant buffer
 matrixBufferDesc.Usage = D3D11_USAGE_DYNAMIC;
@@ -192,6 +193,24 @@ result = device->CreateBuffer(
   NULL,               // pInitialData
   &m_matrixBuffer     // ptr to buffer interface
   );
+{% endhighlight %}
+
+##### Update The Constant Buffer
+Important: When sending matrices to the effect file in direct3D 11, they must be **transposed**.
+
+{% highlight c++ linenos %}
+//
+// Game Code
+
+// transpose the matrices to prepare them for the shader
+matrices.worldMatrix = 
+  XMMatrixTranspose(worldMatrix);
+matrices.viewMatrix = 
+  XMMatrixTranspose(viewMatrix);
+matrices.projectionMatrix = 
+  XMMatrixTranspose(projectionMatrix);
+
+
 {% endhighlight %}
 
 ### Shaders And HLSL
