@@ -199,3 +199,8 @@ The job of the pixel shader is to calculate the final color of each pixel fragme
 
 #### Output Merger (OM)
 The final stage in the pipeline. This stage takes the pixel fragments and depth/stencil buffers and determines which pixels are actually written to the render target.
+
+##### Depth/Stencil View
+This lets the OM stage check all the pixel fragment's depth/stencil values on a render target.
+The depth values are used to draw pixel which are in front and discard those in the back.
+The stencila part of the depth view is for advanced techniques, such as mirrors.
