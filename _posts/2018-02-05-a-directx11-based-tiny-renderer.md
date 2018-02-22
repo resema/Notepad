@@ -210,6 +210,24 @@ matrices.view =
 matrices.projection = 
   XMMatrixTranspose(projectionMatrix);
 
+deviceContext->UpdateSubresource(
+  m_matrixBuffer,   // pDestResource
+  0,                // DstSubResource
+  NULL,             // pDstBox
+  &cbMatrices,      // pSrcData
+  0,                // SrcRowPitch
+  0                 // SrcDepthPitch
+  );
+
+	// set the position of the constant buffer in the vertex shader
+	bufferNumber = 0;
+
+	// finally set the constant buffer in the vertex shader with the updated values
+	deviceContext->VSSetConstantBuffers(
+		bufferNumber, 
+		1, 
+		&m_matrixBuffer
+		);
 
 {% endhighlight %}
 
