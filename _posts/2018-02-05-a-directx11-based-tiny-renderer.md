@@ -203,11 +203,11 @@ Important: When sending matrices to the effect file in direct3D 11, they must be
 // Game Code
 
 // transpose the matrices to prepare them for the shader
-matrices.worldMatrix = 
+matrices.world = 
   XMMatrixTranspose(worldMatrix);
-matrices.viewMatrix = 
+matrices.view = 
   XMMatrixTranspose(viewMatrix);
-matrices.projectionMatrix = 
+matrices.projection = 
   XMMatrixTranspose(projectionMatrix);
 
 
