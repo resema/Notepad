@@ -180,10 +180,10 @@ struct MatrixBufferType
 MatrixBufferType matrices;
 
 // setup the description of the constant buffer
-matrixBufferDesc.Usage = D3D11_USAGE_DYNAMIC;
+matrixBufferDesc.Usage = D3D11_USAGE_DEFAULT;
 matrixBufferDesc.ByteWidth = sizeof(MatrixBufferType);
 matrixBufferDesc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
-matrixBufferDesc.CPUAccessFlags = D3D11_CPU_ACCESS_WRITE;
+matrixBufferDesc.CPUAccessFlags = 0;
 matrixBufferDesc.MiscFlags = 0;
 matrixBufferDesc.StructureByteStride = 0;
 
@@ -219,15 +219,15 @@ deviceContext->UpdateSubresource(
   0                 // SrcDepthPitch
   );
 
-	// set the position of the constant buffer in the vertex shader
-	bufferNumber = 0;
+// set the position of the constant buffer in the vertex shader
+bufferNumber = 0;
 
-	// finally set the constant buffer in the vertex shader with the updated values
-	deviceContext->VSSetConstantBuffers(
-		bufferNumber, 
-		1, 
-		&m_matrixBuffer
-		);
+// finally set the constant buffer in the vertex shader with the updated values
+deviceContext->VSSetConstantBuffers(
+  bufferNumber, 
+  1, 
+  &m_matrixBuffer
+  );
 
 {% endhighlight %}
 
