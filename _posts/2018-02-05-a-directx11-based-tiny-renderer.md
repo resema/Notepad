@@ -101,13 +101,22 @@ void DrawScene()
 ### Spaces
 
 #### Local Space
+Local space is the space relative to an object.
+
 #### World Space
+World space is used to position each object relative to eatch other, in the world space.
+
 #### View Space
+The view space is basically the camera's space.
+
 #### Projection Space
+The space that, if objects are in, they are rendered to the screen, and if objects are out, they are discarded. It is defined by six planes, the near plane, far plane, top, left, bottom and right planes.
+
 #### Screen Space
-#### Transforming Spaces
+The last space is basicallz the x and y values in pixels of the backbuffer, where $$(0,0)$$ marks the top left of the space. This is the 2D space thats actually displayed on the monitor.
 
 ### Matrices
+The rendering pipeline uses three spaces: World, View and Projection. To transform them from one to the other, we will multiply them together.
 
 #### World Matrix
 This matrix is used to **convert the vertices of our objects into vertices in the 3D scene**.
