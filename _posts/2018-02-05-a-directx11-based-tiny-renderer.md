@@ -304,3 +304,10 @@ The final stage in the pipeline. This stage takes the pixel fragments and depth/
 This lets the OM stage check all the pixel fragment's depth/stencil values on a render target.
 The depth values are used to draw pixel which are in front and discard those in the back.
 The stencila part of the depth view is for advanced techniques, such as mirrors.
+
+### Texturing
+To map pixels from a texture file onto the polygo the **Texel Coordinate** system is to be used. This system converts the integer value of the pixel into a floating point value between *0.f* and *1.f*.
+
+In the texel coordinate system the width value is named **U** and the height value is named **V**. The width goes from *0.0* on the left to *1.0* on the right. The height goes from *0.0* on the top to *1.0* on the bottom.
+
+n
