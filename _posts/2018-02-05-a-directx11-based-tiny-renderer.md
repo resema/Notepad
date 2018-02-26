@@ -310,4 +310,4 @@ To map pixels from a texture file onto the polygo the **Texel Coordinate** syste
 
 In the texel coordinate system the width value is named **U** and the height value is named **V**. The width goes from *0.0* on the left to *1.0* on the right. The height goes from *0.0* on the top to *1.0* on the bottom.
 
-n
+![texelCoord.PNG]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/texelCoord.PNG)
