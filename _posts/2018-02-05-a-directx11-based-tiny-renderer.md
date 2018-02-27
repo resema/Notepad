@@ -311,3 +311,7 @@ To map pixels from a texture file onto the polygo the **Texel Coordinate** syste
 In the texel coordinate system the width value is named **U** and the height value is named **V**. The width goes from *0.0* on the left to *1.0* on the right. The height goes from *0.0* on the top to *1.0* on the bottom.
 
 ![texelCoord.PNG]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/texelCoord.PNG)
+
+#### Copy Data Into Textures
+Using **Map** and **Unmap** is generally a lot quicker than using **UpdateSubresource**. 
+The recommendation is to use **Map** and **Unmap** for data that is going to be reloaded **each frame** or on a **very reular basis**. And to use **UpdatSubresource** for something that will be loaded **once** or that gets loaded **rarely during loading sequences**.
