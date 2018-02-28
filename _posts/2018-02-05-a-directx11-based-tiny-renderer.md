@@ -315,3 +315,31 @@ In the texel coordinate system the width value is named **U** and the height val
 #### Copy Data Into Textures
 Using **Map** and **Unmap** is generally a lot quicker than using **UpdateSubresource**. 
 The recommendation is to use **Map** and **Unmap** for data that is going to be reloaded **each frame** or on a **very reular basis**. And to use **UpdatSubresource** for something that will be loaded **once** or that gets loaded **rarely during loading sequences**.
+
+#### Sampler State
+We have to create, define a sampler state and pass it over to the **Pixel Shader**.
+
+{% highlight c++ linenos %}
+// create a texture sampler state description
+sDesc.Filter = D3D11_FILTER_MIN_MAG_MIP_LINEAR;	// filter method
+sDesc.AddressU = D3D11_TEXTURE_ADDRESS_WRAP;		// behavior if U is larger than 1 or less than 0
+sDesc.AddressV = D3D11_TEXTURE_ADDRESS_WRAP;  // behavior if V is larger than 1 or less than 0
+sDesc.AddressW = D3D11_TEXTURE_ADDRESS_WRAP;  // behavior if W is larger than 1 or less than 0
+sDesc.MipLODBias = 0.f;      // offset from calculated mipmap level
+sDesc.MaxAnisotropy = 1;     // filter	
+sDesc.ComparisonFunc = D3D11_COMPARISON_ALWAYS;	    // compare mipmap data with another mipmaps sampled data for this texture
+sDesc.BorderColor[0] = 0;
+sDesc..BorderColor[1] = 0;
+sDesc..BorderColor[2] = 0;
+sDesc.BorderColor[3] = 0;
+sDesc.MinLOD = 0;            // lowest mipmap level (0=most detailed and largest)
+sDesc.MaxLOD = D3D11_FLOAT32_MAX;  // largest mipmap level (0=most detailed and largest)
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+// create the texture sampler state
+result = device->CreateSamplerState(
+  &samplerDesc,
+  &m_sampleState
+  );
+{% endhighlight %}
