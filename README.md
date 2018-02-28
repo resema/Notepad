@@ -12,6 +12,10 @@ My journeys brought my to interesting places such as
 - Artificial intelligence
 - Robotics
 
+My latest journeys are in the field of computer graphics such as
+- OpenGL
+- DirectX 11
+
 
 The main reason for this blog is to help myself to look up things I read or learned. If it helps others I'm very happy.
 
