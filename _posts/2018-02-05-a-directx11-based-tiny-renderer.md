@@ -343,3 +343,12 @@ result = device->CreateSamplerState(
   &m_sampleState
   );
 {% endhighlight %}
+
+{% highglight c++ linenos %}
+// set the sampler state in the pixel shader
+deviceContext->PSSetSamplers(
+  0,                // start slot
+  1,                // number of samplers
+  &m_sampleState    // sampler
+  );
+{% endhighlight %}
