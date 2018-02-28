@@ -329,8 +329,8 @@ sDesc.MipLODBias = 0.f;      // offset from calculated mipmap level
 sDesc.MaxAnisotropy = 1;     // filter	
 sDesc.ComparisonFunc = D3D11_COMPARISON_ALWAYS;	    // compare mipmap data with another mipmaps sampled data for this texture
 sDesc.BorderColor[0] = 0;
-sDesc..BorderColor[1] = 0;
-sDesc..BorderColor[2] = 0;
+sDesc.BorderColor[1] = 0;
+sDesc.BorderColor[2] = 0;
 sDesc.BorderColor[3] = 0;
 sDesc.MinLOD = 0;            // lowest mipmap level (0=most detailed and largest)
 sDesc.MaxLOD = D3D11_FLOAT32_MAX;  // largest mipmap level (0=most detailed and largest)
@@ -344,7 +344,7 @@ result = device->CreateSamplerState(
   );
 {% endhighlight %}
 
-{% highglight c++ linenos %}
+{% highlight c++ linenos %}
 // set the sampler state in the pixel shader
 deviceContext->PSSetSamplers(
   0,                // start slot
