@@ -24,6 +24,10 @@ With this little tutorial created by Jofrey Luc I try to fill this mind gap. The
 
 I will document my humble opinion and what I learnt from it here in this posts. 
 
+### Homogeneous Coordinates
+The basis for computer graphics is suited in the approach of **Affin transformation** and results in the used of homogeneous coordinates.
+This [link](http://deltaorange.com/2012/03/08/the-truth-behind-homogenous-coordinates/) describes a mathematical view of the used method.
+
 ### Modelview Matrix
 Due to the camera position the new coordinate system of the objects has to be calculated.
 
