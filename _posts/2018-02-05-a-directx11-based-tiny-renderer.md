@@ -354,3 +354,4 @@ deviceContext->PSSetSamplers(
 {% endhighlight %}
 
 ### Lighting
+Description...
