@@ -322,12 +322,12 @@ We have to create, define a sampler state and pass it over to the **Pixel Shader
 {% highlight c++ linenos %}
 // create a texture sampler state description
 sDesc.Filter = D3D11_FILTER_MIN_MAG_MIP_LINEAR;	// filter method
-sDesc.AddressU = D3D11_TEXTURE_ADDRESS_WRAP;		// behavior if U is larger than 1 or less than 0
-sDesc.AddressV = D3D11_TEXTURE_ADDRESS_WRAP;  // behavior if V is larger than 1 or less than 0
-sDesc.AddressW = D3D11_TEXTURE_ADDRESS_WRAP;  // behavior if W is larger than 1 or less than 0
+sDesc.AddressU = D3D11_TEXTURE_ADDRESS_WRAP;    // behavior if U is larger than 1 or less than 0
+sDesc.AddressV = D3D11_TEXTURE_ADDRESS_WRAP;    // behavior if V is larger than 1 or less than 0
+sDesc.AddressW = D3D11_TEXTURE_ADDRESS_WRAP;    // behavior if W is larger than 1 or less than 0
 sDesc.MipLODBias = 0.f;      // offset from calculated mipmap level
 sDesc.MaxAnisotropy = 1;     // filter	
-sDesc.ComparisonFunc = D3D11_COMPARISON_ALWAYS;	    // compare mipmap data with another mipmaps sampled data for this texture
+sDesc.ComparisonFunc = D3D11_COMPARISON_ALWAYS; // compare mipmap data with another mipmaps sampled data for this texture
 sDesc.BorderColor[0] = 0;
 sDesc.BorderColor[1] = 0;
 sDesc.BorderColor[2] = 0;
@@ -352,3 +352,5 @@ deviceContext->PSSetSamplers(
   &m_sampleState    // sampler
   );
 {% endhighlight %}
+
+### Lighting
