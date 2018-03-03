@@ -140,6 +140,9 @@ Direct3D uses what is called an **input layout**. An input layout is the layout 
 
 Input layout let us select which information we want to use and send just that data. This enables us to send many more vertices between each frame.
 
+{% highlight c++ linenos %}
+
+{% endhighlight %}
 
 #### Index Buffers
 Index buffers are related to vertex buffers. Their purpose is to record the location of each vertex that is in the vertex buffer. They help find the vertex faster.
