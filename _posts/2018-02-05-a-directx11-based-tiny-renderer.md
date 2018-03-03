@@ -142,7 +142,7 @@ Input layout let us select which information we want to use and send just that d
 
 {% highlight c++ linenos %}
 // create the vertex input layout description
-// this setup needs to match the vertextype structure in the ModelClass and shader
+// this setup needs to match the VERTEXTYPE structure in the vertexbuffer and shader
 polygonLayout[0].SemanticName = "POSITION";
 polygonLayout[0].SemanticIndex = 0;
 polygonLayout[0].Format = DXGI_FORMAT_R32G32B32A32_FLOAT;
@@ -179,6 +179,54 @@ Index buffers are related to vertex buffers. Their purpose is to record the loca
 
 #### Vertex Shaders
 Vertex shaders are small programms that are written maily for transforming the vertices from the vertex buffer into 3d space.
+
+{% highlight c++ linenos %}
+struct VertexType
+{
+  XMFLOAT3 position;
+  XMFLOAT2 texture;
+};
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+VertexType* vertices;
+
+// load the vertex array data
+vertices[0].position = XMFLOAT3(-1.f, -1.f, 0.f); // bottom left
+vertices[0].texture = XMFLOAT2(0.f, 1.f);
+
+vertices[1].position = XMFLOAT3(-1.f, 1.f, 0.f);  // top left
+vertices[1].texture = XMFLOAT2(0.f, 0.f);
+
+vertices[2].position = XMFLOAT3(1.f, 1.f, 0.f);   // top right 
+vertices[2].texture = XMFLOAT2(1.f, 0.f);
+
+vertices[3].position = XMFLOAT3(1.f, -1.f, 0.f);  // bottom right
+vertices[3].texture = XMFLOAT2(1.f, 1.f);
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+// set up the description of the static vertex buffer
+vertexBufferDesc.Usage = D3D11_USAGE_DEFAULT;
+vertexBufferDesc.ByteWidth = sizeof(VertexType) * m_vertexCount;
+vertexBufferDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
+vertexBufferDesc.CPUAccessFlags = 0;
+vertexBufferDesc.MiscFlags = 0;
+vertexBufferDesc.StructureByteStride = 0;
+// give the subresource structure a pointer to the VERTEX DATA
+vertexData.pSysMem = vertices;
+vertexData.SysMemPitch = 0;
+vertexData.SysMemSlicePitch = 0;
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+// now create the vertex buffer
+result = device->CreateBuffer(
+  &vertexBufferDesc,    // ptr to buffer description
+  &vertexData,          // ptr to subresource data structure
+  &m_vertexBuffer       // returned ID3D11 buffer
+  );
+{% endhighlight %}
 
 #### Pixel Shaders
 Pixel shaders are small programs that are written for doing the coloring of the polygons that we draw. They are run by the GPU for every visible pixel.
