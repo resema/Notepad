@@ -400,6 +400,7 @@ The recommendation is to use **Map** and **Unmap** for data that is going to be 
 
 #### Sampler State
 [Sampler State](https://msdn.microsoft.com/en-us/library/ff604998.aspx) determines how texture data is sampled using texture addressing modes, filtering and level of detail.
+The texture coordinates are used to address a texel (texture pixel) when samping a texture.
 
 We have to create, define a sampler state and pass it over to the **Pixel Shader**.
 
