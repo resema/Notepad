@@ -396,7 +396,46 @@ In the texel coordinate system the width value is named **U** and the height val
 
 #### Copy Data Into Textures
 Using **Map** and **Unmap** is generally a lot quicker than using **UpdateSubresource**. 
-The recommendation is to use **Map** and **Unmap** for data that is going to be reloaded **each frame** or on a **very reular basis**. And to use **UpdatSubresource** for something that will be loaded **once** or that gets loaded **rarely during loading sequences**.
+The recommendation is to use **Map** and **Unmap** for data that is going to be reloaded **each frame** or on a **very reular basis**. And to use **UpdateSubresource** for something that will be loaded **once** or that gets loaded **rarely during loading sequences**.
+
+{% highlight c++ linenos %}
+// must match the cbuffer from VS
+struct MatrixBufferType
+{
+  XMMATRIX world;
+  XMMATRIX view;
+  XMMATRIX projection;
+};
+{% endhighlight %}
+
+{% highlight c++ linenos %}
+HRESULT result;
+D3D11_MAPPED_SUBRESOURCE mappedResource;
+MatrixBufferType* dataPtr;
+
+// lock the constant buffer so it can be written to
+result = deviceContext->Map(
+  m_matrixBuffer,
+  0,
+  D3D11_MAP_WRITE_DISCARD,
+  0,
+  &mappedResource
+  );
+
+// get a pointer to the data in the constant buffer
+dataPtr = (MatrixBufferType*)mappedResource.pData;
+
+// copy the matrices into the constant buffer
+dataPtr->world = worldMatrix;
+dataPtr->view = viewMatrix;
+dataPtr->projection = projectionMatrix;
+
+// unlock the constant buffer
+deviceContext->Unmap(
+  m_matrixBuffer,
+  0
+  );
+{% endhighlight %}
 
 #### Sampler State
 [Sampler State](https://msdn.microsoft.com/en-us/library/ff604998.aspx) determines how texture data is sampled using texture addressing modes, filtering and level of detail.
