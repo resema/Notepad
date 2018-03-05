@@ -400,6 +400,7 @@ The recommendation is to use **Map** and **Unmap** for data that is going to be 
 
 
 ##### Example: Copying Matrices To Vertex Shaders
+This procedure is also usable in case of copying light data, such as diffuse color, light direction and likewise.
 {% highlight c++ linenos %}
 // must match the cbuffer from VS
 struct MatrixBufferType
