@@ -437,6 +437,25 @@ deviceContext->Unmap(
   );
 {% endhighlight %}
 
+{% highlight c++ linenos %}
+// set the position of the constant buffer in the vertex shader
+bufferNumber = 0;
+
+// now set the constant buffer in the vertex shader with the updated values
+deviceContext->VSSetConstantBuffers(
+  bufferNumber,
+  1,
+  &m_matrixBuffer
+  );
+
+// set shader texture resoure in pixel shader
+deviceContext->PSSetShaderResources(
+  0,
+  1,
+  &texture
+  );
+{% endhighlight %}
+
 #### Sampler State
 [Sampler State](https://msdn.microsoft.com/en-us/library/ff604998.aspx) determines how texture data is sampled using texture addressing modes, filtering and level of detail.
 The texture coordinates are used to address a texel (texture pixel) when samping a texture.
