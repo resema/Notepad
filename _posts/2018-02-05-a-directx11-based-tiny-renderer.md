@@ -398,6 +398,8 @@ In the texel coordinate system the width value is named **U** and the height val
 Using **Map** and **Unmap** is generally a lot quicker than using **UpdateSubresource**. 
 The recommendation is to use **Map** and **Unmap** for data that is going to be reloaded **each frame** or on a **very reular basis**. And to use **UpdateSubresource** for something that will be loaded **once** or that gets loaded **rarely during loading sequences**.
 
+
+##### Example: Copying Matrices To Vertex Shaders
 {% highlight c++ linenos %}
 // must match the cbuffer from VS
 struct MatrixBufferType
