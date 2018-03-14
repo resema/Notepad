@@ -621,6 +621,7 @@ PixelInputType LightVertexShader(VertexInputType input)
   output.viewDirection = normalize(output.viewDirection);
 
   return output;
+}
 {% endhighlight %}
 
 Finally in the pixel shader happens all the magic (lighting). First we need again a constant buffer to accept the data from the CPU and secondly an input struct to receive the data from the vertex shader.
