@@ -507,4 +507,64 @@ deviceContext->PSSetSamplers(
 {% endhighlight %}
 
 ### Lighting
+Different lighting concept are used to implemente *basic* lighting effects. These includes **ambient**, **diffuse** and **specular light**.
+This [link](https://resema.github.io/mathematics/c++/programming/a-cpu-based-tinyrenderer) gives a closer look to the background of this basic shading concepts.
 
+Most of this concepts happens in the **pixel shader** and some pre-calculations in the **vertex shader**.
+
+We have to create two structures to pass data to the shaders, the **LightBufferType** and the **CameraBufferType**.
+
+{% highlight c++ linenos %}
+struct LightBufferType
+{
+  XMVECTOR ambientColor;
+  XMVECTOR diffuseColor;
+  XMFLOAT3 lightDirection;
+  float specularPower;
+  XMVECTOR specularColor;
+};
+
+struct CameraBufferType
+{
+  XMFLOAT3 cameraPosition;
+  float padding;  // needed to fullfil the 16bit arrangement
+};
+{% endhighlight %}
+
+These constant buffers are mapped to the constant buffers in the shaders. Similar what happens to the matrix buffer (world matrix, view matrix, projection matrix).
+
+{% highlight c++ linenos %}
+// lock the camera constant buffer so it can be written to
+result = deviceContext->Map(
+  m_cameraBuffer,
+  0,
+  D3D11_MAP_WRITE_DISCARD,
+  0,
+  &mappedResource
+  );
+
+// get a pointer to the data in the constant buffer
+dataPtr3 = (CameraBufferType*)mappedResource.pData;
+
+// copy the camera position into the constant buffer
+dataPtr3->cameraPosition = cameraPosition;
+dataPtr3->padding = 0.f;
+
+// unlock the camera constant buffer
+deviceContext->Unmap(
+  m_cameraBuffer, 
+  0
+  );
+
+ 
+// set the position of the camera constant buffer in the vertex shader
+bufferNumber = 1;
+
+// now set the camera constant buffer in the vertex shader with the updated values
+deviceContext->VSSetConstantBuffers(
+  bufferNumber,
+  1,
+  &m_cameraBuffer
+  );
+
+{% endhighlight %}
