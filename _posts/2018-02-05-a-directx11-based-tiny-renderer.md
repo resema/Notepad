@@ -701,3 +701,5 @@ float4 LightPixelShader(PixelInputType input) : SV_TARGET
   return color;
 }
 {% endhighlight %}
+
+### 2D Rendering aka Sprites
