@@ -570,7 +570,6 @@ deviceContext->VSSetConstantBuffers(
 /* Same for the light buffer
    ...
 */
-
 // finally set the light constant buffer in the PIXEL shader with the updated values
 deviceContext->PSSetConstantBuffers(
   bufferNumber,
@@ -609,7 +608,7 @@ PixelInputType LightVertexShader(VertexInputType input)
   float4 worldPosition;
 
   /* ... */
- 
+  
   // calculate the position of the vertex in the world
   worldPosition = mul(input.position, worldMatrix);
 
