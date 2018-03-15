@@ -704,3 +704,28 @@ float4 LightPixelShader(PixelInputType input) : SV_TARGET
 
 ### 2D Rendering aka Sprites
 2D overlays such as text or program information which are not related to the 3D world are displayed by an **orthographic projection**.
+
+The information is displayed as **texture** on a polygon. The keep the information on the screen, the vertices have to be **updated dynamically**. This is achieved by using **dynamic vertex buffers** instead of **static vertex buffers**.
+
+To make it dynamic we set Usage to D3D11_USAGE_DYNAMIC and CPUAccessFlags to D3D11_CPU_ACCESS_WRITE in the description.
+{% highlight c++ linenos %}
+// set up the description of the DYNAMIC VERTEX BUFFER
+vertexBufferDesc.Usage = D3D11_USAGE_DYNAMIC;
+vertexBufferDesc.ByteWidth = sizeof(VertexType) * m_vertexCount;
+vertexBufferDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
+vertexBufferDesc.CPUAccessFlags = D3D11_CPU_ACCESS_WRITE;
+vertexBufferDesc.MiscFlags = 0;
+vertexBufferDesc.StructureByteStride = 0;
+
+// give the subresource structure a pointer to the vertex data
+vertexData.pSysMem = vertices;
+vertexData.SysMemPitch = 0;
+vertexData.SysMemSlicePitch = 0;
+
+// now create the vertex buffer
+result = device->CreateBuffer(
+  &vertexBufferDesc,
+  &vertexData,
+  &m_vertexBuffer
+  );
+{% endhighlight %}
