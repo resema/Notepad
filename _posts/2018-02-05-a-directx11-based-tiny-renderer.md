@@ -703,3 +703,4 @@ float4 LightPixelShader(PixelInputType input) : SV_TARGET
 {% endhighlight %}
 
 ### 2D Rendering aka Sprites
+2D overlays such as text or program information which are not related to the 3D world are displayed by an **orthographic projection**.
