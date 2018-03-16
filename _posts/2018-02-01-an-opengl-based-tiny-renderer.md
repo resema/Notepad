@@ -229,3 +229,80 @@ A useful tool to create compressed textures, which are understood by the graphic
 Your graphics card provides dedicated hardware to decompress such file formats. Therefor using texture compression yields a 20% increase in performance.
 
 This [link](https://msdn.microsoft.com/en-us/library/bb943982.aspx) provides information about the file layout of a .dds file.
+
+#### Texture Sampler
+A texture sampler helps to access the color at a specific UV coordinate in a texture. This is done in the **fragment shader**.
+
+{% highlight glsl linenos }
+// interpolated values from the vertex shaders
+in vec2 UV;
+
+// output data
+out vec3 color;
+
+// values that stay constant for the whole mesh
+uniform sampler2D textureSampler;
+
+void main()
+{
+  color = texture(textureSampler, UV).rgb;
+}
+{% endhighlight %}
+
+### Basic Shading
+This includes the following lighting effects which increase the realism of the scene: **ambient**, **diffuse** and **specular light**. 
+
+#### Vertex Shader
+The vertex shader is used to compute the **normal vectors**, the **eye point coordination** and **light direction vector**. All three must be in the same space.
+
+{% highlight glsl linenos %}
+//input vertex data
+/* location 0 is used for vertex position */
+layout(location = 1) in vec2 vertexUV;
+layout(location = 2) in vec3 vertexNormal_modelspace;
+
+// output data ; will be interpolated for each fragment
+out vec2 UV;
+out vec3 Position_worldspace;
+out vec3 Normal_cameraspace;
+out vec3 EyeDirection_cameraspace;
+out vec3 LightDirection_cameraspace;
+
+// values that stay constant for the whole mesh
+uniform mat4 MVP;
+uniform mat4 V;
+uniform mat4 M;
+uniform vec3 LightPosition_worldspace;
+
+void main()
+{
+  /* output position of the vertex, in clip space : gl_Position */
+
+  // position of the vertex, in worldspace : M * position
+  Position_worldspace = (M * vec4(vertexPosition_modelspace, 1)).xyz;
+
+  // vector that goes from the vertex to the camera, in camera space
+    
+  //  in camera space, the camera is at the origin (0,0,0)
+  vec3 vertexPosition_modelspace = (V * M * vec4(vertexPosition_modelspace, 1)).xyz;
+  EyeDirection_cameraspace = vec3(0,0,0) - vertexPosition_modelspace;
+
+  // vector that goes from the vertex to the light, in camera space.
+  //  M is ommited because it's identity
+  vec3 LightPosition_cameraspace = (V * vec4(LightPosition_worldspace, 1)).xyz;
+  LightDirection_cameraspace = LightPosition_cameraspace + EyeDirection_cameraspace;
+
+  // normal of the vertex, in camera space
+  Normal_cameraspace = (V * M * vec4(vertexNormal_modelspace, 0)).xyz; // generally use its inverse transpose
+
+  // UV of the vertex. no special space for this one
+  UV = vertexUV;
+}
+{% endhighlight %}
+
+#### Ambient Light
+This is most faked light in computer graphics. It is done by adding simply a fixed value in the shader.
+
+{% highlight glsl linenos %}
+
+{% endhighlight %}
