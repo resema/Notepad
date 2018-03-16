@@ -293,7 +293,7 @@ void main()
   LightDirection_cameraspace = LightPosition_cameraspace + EyeDirection_cameraspace;
 
   // normal of the vertex, in camera space
-s  //  generally use its inverse transpose
+  //  generally use its inverse transpose
   Normal_cameraspace = (V * M * vec4(vertexNormal_modelspace, 0)).xyz; 
 
   // UV of the vertex. no special space for this one
