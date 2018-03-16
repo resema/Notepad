@@ -233,7 +233,7 @@ This [link](https://msdn.microsoft.com/en-us/library/bb943982.aspx) provides inf
 #### Texture Sampler
 A texture sampler helps to access the color at a specific UV coordinate in a texture. This is done in the **fragment shader**.
 
-{% highlight glsl linenos }
+{% highlight glsl linenos %}
 // interpolated values from the vertex shaders
 in vec2 UV;
 
