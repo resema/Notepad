@@ -729,3 +729,10 @@ result = device->CreateBuffer(
   &m_vertexBuffer
   );
 {% endhighlight %}
+
+### Font
+- principe
+
+#### Blending
+- alpha values
+  -- src / dest / operation
