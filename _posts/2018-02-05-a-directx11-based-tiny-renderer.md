@@ -795,9 +795,9 @@ blendFactor[3] = 0.f;
 
 // turn on the alpha blending
 m_deviceContext->OMSetBlendState(
-  m_alphaEnableBlendingState,		// blend state
-  blendFactor,					// blend factor
-  0xFFFFFFFF						// sample mask
+  m_alphaEnableBlendingState,  // blend state
+  blendFactor,                 // blend factor
+  0xFFFFFFFF                   // sample mask
   );
 {% endhighlight %}
 
