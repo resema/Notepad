@@ -303,16 +303,6 @@ void main()
 
 #### Fragment Shader
 
-##### Ambient Lighting
-This is most faked light in computer graphics. It is done by adding simply a fixed value in the shader.
-It simulates **indirect light**.
-
-##### Diffuse Lighting
-This is the color of the **object**.
-
-##### Specular Lighting
-This is the **reflective highlight** like a mirror.
-
 {% highlight glsl linenos %}
 // interpolated values from the vertex shaders
 in vec2 UV;
@@ -376,3 +366,13 @@ void main()
           MaterialSpecularColor * LIghtColor * LightPower * pow(cosAlpha, 5) / pow(distance,2);
 }
 {% endhighlight %}
+
+##### Ambient Lighting
+This is most faked light in computer graphics. It is done by adding simply a fixed value in the shader.
+It simulates **indirect light**.
+
+##### Diffuse Lighting
+This is the color of the **object**.
+
+##### Specular Lighting
+This is the **reflective highlight** like a mirror.
