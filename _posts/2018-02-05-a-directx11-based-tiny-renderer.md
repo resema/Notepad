@@ -730,9 +730,76 @@ result = device->CreateBuffer(
   );
 {% endhighlight %}
 
+#### Z-Buffer
+The **Depth/Stencil State Description** has a parameter to enable or disable the depth handling.
+
+{% highlight c++ linenos %}
+ID3D11DepthStencilState* m_depthDisabledStencilState;
+D3D11_DEPTH_STENCIL_DESC depthDisabledStencilDesc;
+
+// create a depth stencil state which turns off the Z Buffer
+//  e.g. for 2D rendering 
+depthDisabledStencilDesc.DepthEnable = false;  // true
+/* ... */
+
+// create the state using the device
+result = m_device->CreateDepthStencilState(
+  &depthDisabledStencilDesc,			// description
+  &m_depthDisabledStencilState		// stencil state
+  );
+{% endhighlight %}
+
+To switch between activated and disabled depth buffering, e.g. for 2D rendering, a second depth/stencil state description is needed. Passing the corresponding state to the **Output Merger State (OM)** controls the depth buffering.
+
+{% highlight c++ linenos %}
+m_deviceContext->OMSetDepthStencilState(
+  m_depthDisabledStencilState,   // depth/stencil state
+  1                              // stencil reference
+  );
+{% endhighlight %}
+
+##### To Remember
+The **Output Merger State** determines which pixels are actually written to the render target.
+
 ### Font
-- principe
+- principle
 
 #### Blending
+The **Blend State Decription** has a parameter to enable or disable the blening.
+
+{% highlight c++ linenos %}
+D3D11_BLEND_DESC blendStateDesc;
+ID3D11BlendState* m_alphaEnableBlendingState;
+
+// create an ALPHA ENABLED state description
+blendStateDesc.RenderTarget[0].BlendEnable = TRUE;
+/* ... */
+
+// create the blend state using the description
+result = m_device->CreateBlendState(
+  &blendStateDesc,
+  &m_alphaEnableBlendingState
+  );
+{% endhighlight %}
+
+To witch between alpha blending, e.g. for writing font, a second blend state description is needed. Passing teh corresponding state to the **Output Merger State (OM)** controls the alpha blending.
+
+{% highlight c++ linenos %}
+float blendFactor[4];
+
+// set up the blend factor
+blendFactor[0] = 0.f;
+blendFactor[1] = 0.f;
+blendFactor[2] = 0.f;
+blendFactor[3] = 0.f;
+
+// turn on the alpha blending
+m_deviceContext->OMSetBlendState(
+  m_alphaEnableBlendingState,		// blend state
+  blendFactor,					// blend factor
+  0xFFFFFFFF						// sample mask
+  );
+{% endhighlight %}
+
 - alpha values
   -- src / dest / operation
