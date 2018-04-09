@@ -762,7 +762,8 @@ m_deviceContext->OMSetDepthStencilState(
 The **Output Merger State** determines which pixels are actually written to the render target.
 
 ### Font
-- principle
+Writing text onto the screen is a pretty important function of any application. It is done in DirectX 11 by **rendering 2D images**.
+The font is stored in a DDS texture and access from the font engine by cutting out a square (two triangels) and render the content of the texture (font) to a bitmap.
 
 #### Blending
 The **Blend State Decription** has a parameter to enable or disable the blening.
@@ -801,5 +802,6 @@ m_deviceContext->OMSetBlendState(
   );
 {% endhighlight %}
 
-- alpha values
-  -- src / dest / operation
+#### Alpha Blending
+Alpha blending is a convex combination of two colors alowing for **transparency** effects in computer graphics.
+Alpha Blending is the **process of combining** a translucent foreground color wiht ha background color, thereby producing a new blended color.
