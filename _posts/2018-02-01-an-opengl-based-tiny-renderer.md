@@ -376,3 +376,8 @@ This is the color of the **object**.
 
 ##### Specular Lighting
 This is the **reflective highlight** like a mirror.
+
+### VBO Indexing
+![vbo_indexing.png]({{site.baseurl}}/images/posts/OpenGL_AnIntroduction/vbo_indexing.png)
+
+The principal of indexing reduces the **duplication of vertices** shared at an edge. It enables to reuse the same vertex over and over again. This is done with an **index buffer**.
