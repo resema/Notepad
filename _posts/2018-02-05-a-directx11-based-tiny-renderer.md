@@ -783,7 +783,7 @@ result = m_device->CreateBlendState(
   );
 {% endhighlight %}
 
-To witch between alpha blending, e.g. for writing font, a second blend state description is needed. Passing teh corresponding state to the **Output Merger State (OM)** controls the alpha blending.
+To switch between alpha blending, e.g. for writing font, a second blend state description is needed. Passing teh corresponding state to the **Output Merger State (OM)** controls the alpha blending.
 
 {% highlight c++ linenos %}
 float blendFactor[4];
@@ -803,5 +803,13 @@ m_deviceContext->OMSetBlendState(
 {% endhighlight %}
 
 #### Alpha Blending
-Alpha blending is a convex combination of two colors alowing for **transparency** effects in computer graphics.
+Alpha blending is a convex combination of two colors allowing for **transparency** effects in computer graphics.
 Alpha Blending is the **process of combining** a translucent foreground color wiht ha background color, thereby producing a new blended color.
+
+### Frustum Culling
+Frustum culling helps to reduce the calculation of **not drawn** object.
+
+#### Frustum
+We calculate the frustum's plane **near, far, left, right, up, down** by means of trigonometry. [This](http://gamedevs.org/uploads/fast-extraction-viewing-frustum-planes-from-world-view-projection-matrix.pdf) paper describes the math behind it.
+
+By means of the frustum we then can check, prior of rendering the objects, if they lie in the frustum or not. This is in the current approach done on the CPU.
