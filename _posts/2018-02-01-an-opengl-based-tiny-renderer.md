@@ -422,6 +422,10 @@ Read this [article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minim
 
 Finally, an interessting [link](http://www.valvesoftware.com/publications/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) from Valve about displaying fonts sharply.
 
+Create per character two polygon's and choose by means of the UV-coordinates the right position of the texture.
+
+![font.png]({{site.baseurl}}/images/posts/OpenGL_AnIntroduction/font.png)
+
 #### A Little Excurs into Unicode
 Unicode defines for every possible character a so called **code point** consisting of a letter *U* and a hex.
 
