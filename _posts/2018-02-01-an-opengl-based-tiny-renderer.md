@@ -381,3 +381,35 @@ This is the **reflective highlight** like a mirror.
 ![vbo_indexing.png]({{site.baseurl}}/images/posts/OpelGL_AnIntroduction/vbo_indexing.png)
 
 The principal of indexing reduces the **duplication of vertices** shared at an edge. It enables to reuse the same vertex over and over again. This is done with an **index buffer**.
+
+Instead of generating of buffer with an **ARRAY_BUFFER** now it is an **ELEMENT_ARRAY_BUFFER**.
+
+{% highlight glsl linenos %}
+std::vector<unsigned int> indices;
+/* fill "indices" as needed */
+
+// generate a buffer for the indices
+GLuint elementbuffer;
+glGenBuffers(1, &elementbuffer);
+glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementbuffer);
+glBufferData(
+  GL_ELEMENT_ARRAY_BUFFER, 
+  indices.size() * sizeof(unsigned int),
+  &indices[0],
+  GL_STATIC_DRAW
+  );
+{% endhighlight %}
+
+and the corresponding draw command looks like this:
+
+{% highlight glsl linenos %}
+// index buffer
+glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementbuffer);
+
+// draw the triangles
+glDrawElements(
+  GL_TRIANGLES,     // mode
+  indices.size(),   // count
+  GL_UNSIGNED_INT,  // type
+  (void*)0          // element array buffer offset
+);
