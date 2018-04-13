@@ -433,7 +433,7 @@ U+0048 U+0065 U+006C U+006C U+006F
 
 ##### Encodings
 These **code points** are now stored in a specific amount of bytes and order (high-endian or low-endian).
-There are hundreds of traditional encodings which can only store *some* code points correctly and change all the other code points into a little question marks &#65110; or a box &#0;.
+There are hundreds of traditional encodings which can only store *some* code points correctly and change all the other code points into a little question marks &#65110; or a box &#686868;.
 
 ###### UTF-8
 **UTF-8** is system for storing your string of Unicode **code points** in memory using 8 bit bytes. In UTF-8, every code point from 0-127 is stored in a single byte. Only code points 128 and above are stored using 2, 3, up to 6 bytes.
