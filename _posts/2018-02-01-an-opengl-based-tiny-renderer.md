@@ -413,3 +413,4 @@ glDrawElements(
   GL_UNSIGNED_INT,  // type
   (void*)0          // element array buffer offset
 );
+{% endhighlight %}
