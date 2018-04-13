@@ -420,6 +420,8 @@ To display text on the screen we have to use **bitmaps** and a texture containin
 
 Read this [article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) to get some background on ASCII, ANSI and Unicode. Further, here is the [link](http://www.unicode.org) to the unicode consortium. And this [tool](http://www.online-toolz.com/tools/character-map2.php) lets you find every character.
 
+Finally, an interessting [link](http://www.valvesoftware.com/publications/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) from Valve about displaying fonts sharply.
+
 #### A Little Excurs into Unicode
 Unicode defines for every possible character a so called **code point** consisting of a letter *U* and a hex.
 
