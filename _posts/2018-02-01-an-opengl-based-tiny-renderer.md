@@ -417,3 +417,25 @@ glDrawElements(
 
 ### Text Font
 To display text on the screen we have to use **bitmaps** and a texture containing the font. [CBFG](http://www.codehead.co.uk/cbfg/) can help to generate such a texture. Remark: CBFG is only Win32 specific. There is no portable version for Linux/Mac of it.
+
+Read this [article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) to get some background on ASCII, ANSI and Unicode. Further, here is the [link](http://www.unicode.org) to the unicode consortium. And this [tool](http://www.online-toolz.com/tools/character-map2.php) lets you find every character.
+
+#### A Little Excurs into Unicode
+Unicode defines for every possible character a so called **code point** consisting of a letter *U* and a hex.
+
+**Hello**
+
+is represented, in Unicode, as the corresponding five code points:
+
+{% highlight unicode %}
+U+0048 U+0065 U+006C U+006C U+006F
+{% endhighlight %}
+
+##### Encodings
+These **code points** are now stored in a specific amount of bytes and order (high-endian or low-endian).
+There are hundreds of traditional encodings which can only store *some* code points correctly and change all the other code points into a little question marks &#65110; or a box &#0;.
+
+###### UTF-8
+**UTF-8** is system for storing your string of Unicode **code points** in memory using 8 bit bytes. In UTF-8, every code point from 0-127 is stored in a single byte. Only code points 128 and above are stored using 2, 3, up to 6 bytes.
+
+This has the neat side effect that English text looks exactly the same in UTF-8 as it did in ASCII.
