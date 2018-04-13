@@ -439,3 +439,16 @@ There are hundreds of traditional encodings which can only store *some* code poi
 **UTF-8** is system for storing your string of Unicode **code points** in memory using 8 bit bytes. In UTF-8, every code point from 0-127 is stored in a single byte. Only code points 128 and above are stored using 2, 3, up to 6 bytes.
 
 This has the neat side effect that English text looks exactly the same in UTF-8 as it did in ASCII.
+
+###### Most Important Fact About Encodings
+**There Ain't No Such Thing As Plain Text**
+
+Luckily, almost every encoding in common use does the same thing with the characters between 32 and 127, so we can always get this far on the HTML page without starting to use funny letters:
+
+{% highlight html linenos %}
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{% endhighlight %}
+
+But this meta tag really has to be the very first thing in the <head> section because as soon as the web browser sees this tag it's going to stop parsing the page and start over after reinterpreting the whole page using the encoding you specified.
