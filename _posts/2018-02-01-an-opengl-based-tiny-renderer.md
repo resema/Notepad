@@ -414,3 +414,6 @@ glDrawElements(
   (void*)0          // element array buffer offset
 );
 {% endhighlight %}
+
+### Text Font
+To display text on the screen we have to use **bitmaps** and a texture containing the font. [CBFG](http://www.codehead.co.uk/cbfg/) can help to generate such a texture. Remark: CBFG is only Win32 specific. There is no portable version for Linux/Mac of it.
