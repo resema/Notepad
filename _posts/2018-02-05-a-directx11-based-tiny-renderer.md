@@ -813,3 +813,8 @@ Frustum culling helps to reduce the calculation of **not drawn** object.
 We calculate the frustum's plane **near, far, left, right, up, down** by means of trigonometry. [This](http://gamedevs.org/uploads/fast-extraction-viewing-frustum-planes-from-world-view-projection-matrix.pdf) paper describes the math behind it.
 
 By means of the frustum we then can check, prior of rendering the objects, if they lie in the frustum or not. This is in the current approach done on the CPU.
+
+#### Multitexturing And Texture Arrays
+**Multitexturing** is the process of blending two different textures to create a final texture. The equation you use to blend two textures can differ depending on the result you are trying to achieve.
+
+**Texture Arrays** is a new feature since DirectX 10 that allows you to have multiple textures active at once in the gpu.
