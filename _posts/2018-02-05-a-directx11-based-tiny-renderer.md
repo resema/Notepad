@@ -825,31 +825,31 @@ First, create a **Shader Resource Array** containing both loaded textures.
 ID3D11ShaderResourceView* m_textureArray[2];
 
 // load the first texture in
-	result = DirectX::CreateDDSTextureFromFile(
-		device,
-		filename1,
-		NULL,
-		&m_textureArray[0]
-	);
+result = DirectX::CreateDDSTextureFromFile(
+  device,
+  filename1,
+  NULL,
+  &m_textureArray[0]
+);
 
 // load the second texture in
-	result = DirectX::CreateDDSTextureFromFile(
-		device,
-		filename2,
-		NULL,
-		&m_textureArray[1]
-	);
+result = DirectX::CreateDDSTextureFromFile(
+  device, 
+  filename2,
+  NULL,
+  &m_textureArray[1]
+);
 {% endhighlight %}
 
 Then all that is to be done is to pass this **array of textures** to the *Pixel Shader*.
 
 {% highlight c++ linenos %}
 // set shader texture resoure in pixel shader
-	deviceContext->PSSetShaderResources(
-		0,            // start slot
-		2,            // number of textures in the array
-		textureArray  // texture resource array [2]
-		);
+deviceContext->PSSetShaderResources(
+  0,            // start slot
+  2,            // number of textures in the array
+  textureArray  // texture resource array [2]
+);
 {% endhighlight %}
 
 Finally in the **Pixel Shader** the two textures are combined to the final color.
@@ -869,12 +869,12 @@ float4 PixelShader(PixelInputType input) : SV_TARGET
   float4 color;
 
   // sample the pixel color from the texture using the sampler 
-	//  at this texture coord location
-	textureColor1 = shaderTexture[0].Sample(SampleType, input.tex);
-	textureColor2 = shaderTexture[1].Sample(SampleType, input.tex);
+  //  at this texture coord location
+  textureColor1 = shaderTexture[0].Sample(SampleType, input.tex);
+  textureColor2 = shaderTexture[1].Sample(SampleType, input.tex);
 
   color = textureColor1 * textureColor2 * 2.0;
-	color = saturate(color);
+  color = saturate(color);
 
   return color;
 }
