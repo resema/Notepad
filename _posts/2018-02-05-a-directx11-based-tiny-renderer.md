@@ -891,3 +891,27 @@ float4 PixelShader(PixelInputType input) : SV_TARGET
 Light map are a cheap but static alternative to light calculations. They are achieved by using **Multitexturing** with an additional light map.
 
 In the Pixel Shader it's possible to adjust the intensity of the multitexturing to create different light effects.
+
+### Alpha Maps
+The realization of alpha maps is highly related to **Multitexturing** and **light maps**. Two merge two textures from one to the other, an additional textures is passed to the **pixel shader**. This texure contains a black/white/alpha value in the style how the to textures should merge.
+
+Then in the Pixel Shader they have been matched.
+{% highlight c++ linenos %}
+float PixelShader(PixelInputType input) : SV_TARGET
+{
+  float4 textureColor1;
+  float4 textureColor2;
+  float4 alphaValue;
+  float4 blendTexColor;
+
+  // sample the pixel color from the texture using the sampler 
+  //  at this texture coord location
+  textureColor1 = shaderTexture[0].Sample(SampleType, input.tex);
+  textureColor2 = shaderTexture[1].Sample(SampleType, input.tex);
+  alphaValue	  = shaderTexture[2].Sample(SampleType, input.tex);
+
+  // combine the two textures based on the alpha value
+  blendTexColor = (alphaValue * textureColor1) + ((1.0 - alphaValue) * textureColor2);
+  blendTexColor = saturate(blendTexColor);
+}
+{% endhighlight %}
