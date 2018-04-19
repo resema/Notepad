@@ -814,7 +814,74 @@ We calculate the frustum's plane **near, far, left, right, up, down** by means o
 
 By means of the frustum we then can check, prior of rendering the objects, if they lie in the frustum or not. This is in the current approach done on the CPU.
 
-#### Multitexturing And Texture Arrays
+### Multitexturing And Texture Arrays
 **Multitexturing** is the process of blending two different textures to create a final texture. The equation you use to blend two textures can differ depending on the result you are trying to achieve.
 
 **Texture Arrays** is a new feature since DirectX 10 that allows you to have multiple textures active at once in the gpu.
+
+First, create a **Shader Resource Array** containing both loaded textures.
+
+{% highlight c++ linenos %}
+ID3D11ShaderResourceView* m_textureArray[2];
+
+// load the first texture in
+	result = DirectX::CreateDDSTextureFromFile(
+		device,
+		filename1,
+		NULL,
+		&m_textureArray[0]
+	);
+
+// load the second texture in
+	result = DirectX::CreateDDSTextureFromFile(
+		device,
+		filename2,
+		NULL,
+		&m_textureArray[1]
+	);
+{% endhighlight %}
+
+Then all that is to be done is to pass this **array of textures** to the *Pixel Shader*.
+
+{% highlight c++ linenos %}
+// set shader texture resoure in pixel shader
+	deviceContext->PSSetShaderResources(
+		0,            // start slot
+		2,            // number of textures in the array
+		textureArray  // texture resource array [2]
+		);
+{% endhighlight %}
+
+Finally in the **Pixel Shader** the two textures are combined to the final color.
+
+{% highlight c++ linenos %}
+Texture2D shaderTexture[2];
+SamplerState SampleType;
+/* ... */
+
+//
+// pixel shader
+float4 PixelShader(PixelInputType input) : SV_TARGET
+{
+  float4 textureColor1;
+  float4 textureColor2;
+  /* ... */
+  float4 color;
+
+  // sample the pixel color from the texture using the sampler 
+	//  at this texture coord location
+	textureColor1 = shaderTexture[0].Sample(SampleType, input.tex);
+	textureColor2 = shaderTexture[1].Sample(SampleType, input.tex);
+
+  color = textureColor1 * textureColor2 * 2.0;
+	color = saturate(color);
+
+  return color;
+}
+
+{% endhighlight %}
+
+### Light Maps
+Light map are a cheap but static alternative to light calculations. They are achieved by using **Multitexturing** with an additional light map.
+
+In the Pixel Shader it's possible to adjust the intensity of the multitexturing to create different light effects.
