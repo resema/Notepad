@@ -870,8 +870,14 @@ float4 PixelShader(PixelInputType input) : SV_TARGET
 
   // sample the pixel color from the texture using the sampler 
   //  at this texture coord location
-  textureColor1 = shaderTexture[0].Sample(SampleType, input.tex);
-  textureColor2 = shaderTexture[1].Sample(SampleType, input.tex);
+  textureColor1 = shaderTexture[0].Sample(
+    SampleType, 
+    input.tex
+  );
+  textureColor2 = shaderTexture[1].Sample(
+    SampleType, 
+    input.tex
+  );
 
   color = textureColor1 * textureColor2 * 2.0;
   color = saturate(color);
