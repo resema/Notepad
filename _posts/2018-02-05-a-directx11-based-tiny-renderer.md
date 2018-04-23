@@ -895,7 +895,9 @@ In the Pixel Shader it's possible to adjust the intensity of the multitexturing 
 ### Alpha Maps
 The realization of alpha maps is highly related to **Multitexturing** and **light maps**. Two merge two textures from one to the other, an additional textures is passed to the **pixel shader**. This texure contains a black/white/alpha value in the style how the to textures should merge.
 
-Then in the Pixel Shader they have been matched.
+In the **pixel shader** the alpha map is used to calculate the color of the current pixel by using:
+$$\text{color} = (\text{alpha} * \text{Tex_1}) + ((1.0 - \text{alpha}) * Tex_2)$$
+
 {% highlight c++ linenos %}
 float PixelShader(PixelInputType input) : SV_TARGET
 {
@@ -908,7 +910,7 @@ float PixelShader(PixelInputType input) : SV_TARGET
   //  at this texture coord location
   textureColor1 = shaderTexture[0].Sample(SampleType, input.tex);
   textureColor2 = shaderTexture[1].Sample(SampleType, input.tex);
-  alphaValue	  = shaderTexture[2].Sample(SampleType, input.tex);
+  alphaValue    = shaderTexture[2].Sample(SampleType, input.tex);
 
   // combine the two textures based on the alpha value
   blendTexColor = (alphaValue * textureColor1) + ((1.0 - alphaValue) * textureColor2);
