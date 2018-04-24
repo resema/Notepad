@@ -928,3 +928,5 @@ $$n_{bump} = (x_{bumpmap} * i_{tangent}) + (y_{bumpmap} * i_{binormal}) + (z_{bu
 
 After this calculation the normal for each pixel can be used for the final result.
 
+This calculation can be done during **model loading** or **stored** in the model format. 
+This should *never* be done in the shader due to fairly expensive *floating point math*.
