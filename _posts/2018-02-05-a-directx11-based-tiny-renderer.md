@@ -896,6 +896,7 @@ In the Pixel Shader it's possible to adjust the intensity of the multitexturing 
 The realization of alpha maps is highly related to **Multitexturing** and **light maps**. Two merge two textures from one to the other, an additional textures is passed to the **pixel shader**. This texure contains a black/white/alpha value in the style how the to textures should merge.
 
 In the **pixel shader** the alpha map is used to calculate the color of the current pixel by using:
+
 $$\text{color} = (\text{alpha} * \text{Tex_1}) + ((1.0 - \text{alpha}) * Tex_2)$$
 
 {% highlight c++ linenos %}
@@ -917,3 +918,13 @@ float PixelShader(PixelInputType input) : SV_TARGET
   blendTexColor = saturate(blendTexColor);
 }
 {% endhighlight %}
+
+### Bump Mapping
+The proper terminology for the bump mapping technique explained here is called **normal mapping**. The reason being is that here a special texture called a normal map is used to loop up the surface normals.
+
+The **binormal** and **tangent vector** are to be determined at each pixel. This creates the local coordinate system in which the **bump normal** can be calculated by means of the bump map.
+
+$$n_{bump} = (x_{bumpmap} * i_{tangent}) + (y_{bumpmap} * i_{binormal}) + (z_{bumpmap} + i_{normal})$$
+
+After this calculation the normal for each pixel can be used for the final result.
+
