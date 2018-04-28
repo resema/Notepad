@@ -922,7 +922,19 @@ float PixelShader(PixelInputType input) : SV_TARGET
 ### Bump Mapping
 The proper terminology for the bump mapping technique explained here is called **normal mapping**. The reason being is that here a special texture called a normal map is used to loop up the surface normals.
 
+![bumpmapCoord.PNG]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/bumpmapCoord.PNG)
+
 The **binormal** and **tangent vector** are to be determined at each pixel. This creates the local coordinate system in which the **bump normal** can be calculated by means of the bump map.
+
+#### Tangent & Binormal Calculation
+This two vectors are calculated within the CPU. 
+
+{% highlight c++ linenos %}
+void CalculateTangentBinormal(VertexType v1, VertexType v2, VertexType v3, VertexType& tangent, VertexType& binormal)
+{
+
+}
+{%% endhighlight %}
 
 $$n_{bump} = (x_{bumpmap} * i_{tangent}) + (y_{bumpmap} * i_{binormal}) + (z_{bumpmap} + i_{normal})$$
 
@@ -930,3 +942,6 @@ After this calculation the normal for each pixel can be used for the final resul
 
 This calculation can be done during **model loading** or **stored** in the model format. 
 This should *never* be done in the shader due to fairly expensive *floating point math*.
+
+The outcome looks like this:
+![bumpmapSphere.PNG]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/bumpmapSphere.PNG)
