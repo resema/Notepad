@@ -927,18 +927,15 @@ The proper terminology for the bump mapping technique explained here is called *
 The **binormal** and **tangent vector** are to be determined at each pixel. This creates the local coordinate system in which the **bump normal** can be calculated by means of the bump map.
 
 #### Tangent & Binormal Calculation
-This two vectors are calculated within the CPU. 
+This two vectors are calculated within the CPU. The two vectors are the **coordination vectors from the UV texture** transferred into **Modelspace**.
 
-{% highlight c++ linenos %}
-void CalculateTangentBinormal(VertexType v1, VertexType v2, VertexType v3, VertexType& tangent, VertexType& binormal)
-{
+This transformation is better explained [here](https://stackoverflow.com/questions/5255806/how-to-calculate-tangent-and-binormal).
 
-}
-{% endhighlight %}
+The **bumpmap** represents the normal vectors in the modelspace for each pixel as a texture. Multiplying them with the **unit vector** of the above calculated coordinate system results in the actually normal vectors to be used in the lighting calculations.
+
+After the following calculation the new normal for each pixel can be used for the final result.
 
 $$n_{bump} = (x_{bumpmap} * i_{tangent}) + (y_{bumpmap} * i_{binormal}) + (z_{bumpmap} + i_{normal})$$
-
-After this calculation the normal for each pixel can be used for the final result.
 
 This calculation can be done during **model loading** or **stored** in the model format. 
 This should *never* be done in the shader due to fairly expensive *floating point math*.
