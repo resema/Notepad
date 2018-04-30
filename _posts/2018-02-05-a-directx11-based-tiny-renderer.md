@@ -941,4 +941,5 @@ This calculation can be done during **model loading** or **stored** in the model
 This should *never* be done in the shader due to fairly expensive *floating point math*.
 
 The outcome looks like this:
+
 ![bumpmapSphere.png]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/bumpmapSphere.png)
