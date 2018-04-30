@@ -934,7 +934,7 @@ void CalculateTangentBinormal(VertexType v1, VertexType v2, VertexType v3, Verte
 {
 
 }
-{%% endhighlight %}
+{% endhighlight %}
 
 $$n_{bump} = (x_{bumpmap} * i_{tangent}) + (y_{bumpmap} * i_{binormal}) + (z_{bumpmap} + i_{normal})$$
 
