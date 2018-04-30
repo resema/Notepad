@@ -943,3 +943,12 @@ This should *never* be done in the shader due to fairly expensive *floating poin
 The outcome looks like this:
 
 ![bumpmapSphere.png]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/bumpmapSphere.png)
+
+### Specular Mapping
+Additionally to the above described process of bumpmapping, in **specular mapping** a **grey scale map** is used to determine the intensity of specular light at each pixel.
+
+The calculation for the reflection remains the same as in the reflection model. Now the amount of specular light is multiplied by the **specular intensity** defined in the specular map.
+
+In the following image a specular map has been added to the existing model.
+
+![specmapSphere.png]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/specmapSphere.png)
