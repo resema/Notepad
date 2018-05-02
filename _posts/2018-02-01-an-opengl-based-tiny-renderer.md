@@ -470,8 +470,8 @@ This is known as the **Dabour space** and is aligned to the **local coordinate s
 #### Tangent and Bitangent
 To choose an appropriate coordinate system and to be consistent with the neighbors, the tangent is choosen to be in the **same direction as the texture coordinates**.
 
-$$\Delta P^1 = \Delta UV^x_1 * T + \Delta UV^y_1 * B$$ <br>
-$$\Delta P^2 = \Delta UV^x_2 * T + \Delta UV^y_2 * B$$ <br>
+$$\Delta P_1 = \Delta UV^x_1 * T + \Delta UV^y_1 * B$$ <br>
+$$\Delta P_2 = \Delta UV^x_2 * T + \Delta UV^y_2 * B$$ <br>
 
 After solving this educations for $$T$$ and $$B$$ it can be used for calculating the tangent and bitangent:
 
