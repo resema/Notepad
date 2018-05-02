@@ -458,3 +458,25 @@ Luckily, almost every encoding in common use does the same thing with the charac
 {% endhighlight %}
 
 But this meta tag really has to be the very first thing in the <head> section because as soon as the web browser sees this tag it's going to stop parsing the page and start over after reinterpreting the whole page using the encoding you specified.
+
+### Normal Mapping
+It is also called **bump mapping**. The basic idea of normal mapping is to sample a texture to get the **per pixel normals**.
+
+The texture has a general blue tone because overall, the normals is towards the *outside of the surface*. As usual X is right in the plane, Y is up and given the right hand rule Z points to the outside of the plane of the texture.
+
+#### Dabour Space
+This is known as the **Dabour space** and is aligned to the **local coordinate system per polygon**. The normal, which is expressed in the space of each individual triangle (**tangent space** or **image space**), has to be converted into **model space**.
+
+#### Tangent and Bitangent
+To choose an appropriate coordinate system and to be consistent with the neighbors, the tangent is choosen to be in the **same direction as the texture coordinates**.
+
+$$\delta P^1 = \delta UV_x^1 * T + \delta UV_z^1 * B$$ <br>
+$$\delta P^2 = \delta UV_x^2 * T + \delta UV_z^2 * B$$ <br>
+
+Solving this educations for $$T$$ and $$B$$ can be done like this:
+
+{% highlight glsl linenos %}
+float r = 1.0f / (deltaUV1.x * deltaUV2.y - deltaUV1.y * deltaUV2.x);
+glm::vec3 tangent = (deltaPos1 * deltaUV2.y   - deltaPos2 * deltaUV1.y)*r;
+glm::vec3 bitangent = (deltaPos2 * deltaUV1.x   - deltaPos1 * deltaUV2.x)*r;
+{% endhighlight %}
