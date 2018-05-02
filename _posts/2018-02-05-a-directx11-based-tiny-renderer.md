@@ -895,7 +895,10 @@ In the Pixel Shader it's possible to adjust the intensity of the multitexturing 
 ### Alpha Maps
 The realization of alpha maps is highly related to **Multitexturing** and **light maps**. Two merge two textures from one to the other, an additional textures is passed to the **pixel shader**. This texure contains a black/white/alpha value in the style how the to textures should merge.
 
-Then in the Pixel Shader they have been matched.
+In the **pixel shader** the alpha map is used to calculate the color of the current pixel by using:
+
+$$\text{color} = (\text{alpha} * \text{Tex_1}) + ((1.0 - \text{alpha}) * Tex_2)$$
+
 {% highlight c++ linenos %}
 float PixelShader(PixelInputType input) : SV_TARGET
 {
@@ -908,10 +911,44 @@ float PixelShader(PixelInputType input) : SV_TARGET
   //  at this texture coord location
   textureColor1 = shaderTexture[0].Sample(SampleType, input.tex);
   textureColor2 = shaderTexture[1].Sample(SampleType, input.tex);
-  alphaValue	  = shaderTexture[2].Sample(SampleType, input.tex);
+  alphaValue    = shaderTexture[2].Sample(SampleType, input.tex);
 
   // combine the two textures based on the alpha value
   blendTexColor = (alphaValue * textureColor1) + ((1.0 - alphaValue) * textureColor2);
   blendTexColor = saturate(blendTexColor);
 }
 {% endhighlight %}
+
+### Bump Mapping
+The proper terminology for the bump mapping technique explained here is called **normal mapping**. The reason being is that here a special texture called a normal map is used to loop up the surface normals.
+
+![bumpmapCoord.png]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/bumpmapCoord.png)
+
+The **binormal** and **tangent vector** are to be determined at each pixel. This creates the local coordinate system in which the **bump normal** can be calculated by means of the bump map.
+
+#### Tangent & Binormal Calculation
+This two vectors are calculated within the CPU. The two vectors are the **coordination vectors from the UV texture** transferred into **Modelspace**.
+
+This transformation is better explained [here](https://stackoverflow.com/questions/5255806/how-to-calculate-tangent-and-binormal).
+
+The **bumpmap** represents the normal vectors in the modelspace for each pixel as a texture. Multiplying them with the **unit vector** of the above calculated coordinate system results in the actually normal vectors to be used in the lighting calculations.
+
+After the following calculation the new normal for each pixel can be used for the final result.
+
+$$n_{bump} = (x_{bumpmap} * i_{tangent}) + (y_{bumpmap} * i_{binormal}) + (z_{bumpmap} + i_{normal})$$
+
+This calculation can be done during **model loading** or **stored** in the model format. 
+This should *never* be done in the shader due to fairly expensive *floating point math*.
+
+The outcome looks like this:
+
+![bumpmapSphere.png]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/bumpmapSphere.png)
+
+### Specular Mapping
+Additionally to the above described process of bumpmapping, in **specular mapping** a **grey scale map** is used to determine the intensity of specular light at each pixel.
+
+The calculation for the reflection remains the same as in the reflection model. Now the amount of specular light is multiplied by the **specular intensity** defined in the specular map.
+
+In the following image a specular map has been added to the existing model.
+
+![specmapSphere.png]({{site.baseurl}}/images/posts/DirectX11_AnIntroduction/specmapSphere.png)
