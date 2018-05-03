@@ -480,3 +480,80 @@ float r = 1.0f / (deltaUV1.x * deltaUV2.y - deltaUV1.y * deltaUV2.x);
 glm::vec3 tangent = (deltaPos1 * deltaUV2.y   - deltaPos2 * deltaUV1.y)*r;
 glm::vec3 bitangent = (deltaPos2 * deltaUV1.x   - deltaPos1 * deltaUV2.x)*r;
 {% endhighlight %}
+
+### Render To Texture
+Rendering to a texture contains three tasks: **Creating the texture** in which we are going to render, **render** something and **use the generated texture**.
+
+The destination which is rendered to is called a **Framebuffer**. It is a container for textures and an optional depth buffer and is created just like any other object in OpenGL.
+
+{% highlight glsl linenos %}
+// the framebuffer, which regroups 0, 1 or more textures ;
+//  and 0 or 1 depth buffer
+GLuint FramebufferName = 0;
+glGenFramebuffers(1, &FramebufferName);
+glBindFramebuffer(GL_FRAMEBUFFER, FramebufferName);
+{% endhighlight %}
+
+A empty texture has to be created which will contain the **RBG output of the shader**.
+
+{% highlight glsl linenos %}
+// the texture in which it will be rendered
+GLuint renderedTexture;
+glGenTextures(1, &renderedTexture);
+
+// bind the texture
+glBindTexture(GL_TEXTURE_2D, renderedTexture);
+
+// give an empty image to OpenGL ; indicated by the last "0"
+glTexImage2D(
+  GL_TEXTURE_2D,     // target texture
+  0,                 // level of detail
+  GL_RGB,            // internal format
+  1024, 768,         // texture image
+  0,                 // border
+  GL_RGB,            // data format
+  GL_UNSIGNED_BYTE,  // data type
+  0                  // ptr to image data
+);
+
+// filtering
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+{% endhighlight %}
+
+After creating the texture, the framebuffer can be configured:
+
+{% highlight glsl linenos %}
+// set the texture as color attachement #0
+glFramebufferTexture(
+  GL_FRAMEBUFFER,        // target buffer
+  GL_COLOR_ATTACHMENT0,  // attachment point
+  renderedTexture,       // texture object
+  0                      // mipmap level of the texture
+);
+
+// set the list of draw buffers into which outputs from 
+//  fragment shader will be written
+GLenum DrawBuffers[1] = {GL_COLOR_ATTACHMENT0};
+glDrawBuffers(
+  1,             // number of buffers
+  Drawbuffers    // specifies the buffers to be written into
+);
+{% endhighlight %}
+
+To render to the texture is straightforward. Simply bind the framebuffer and draw the scene as usual.
+
+{% highlight glsl linenos %}
+glBindFramebuffer(GL_FRAMEBUFFER, FramebufferName);
+glViewport(
+  0, 0,        // x, y of lower left corner
+  1024, 768    // width and height of the viewport
+)
+{% endhighlight %}
+
+#### Fragment Shader
+The output from the fragment shader has to be into a **Render Target**, which happens to be the texture.
+
+{% highlight glsl linenos %}
+layout(location = 0) out vec3 color;
+{% endhighlight %}
